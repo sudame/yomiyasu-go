@@ -3,36 +3,41 @@ on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
-permissions:
-  contents: write
-  pull-requests: write
+permissions: {}
 jobs:
-  sync:
+  # 本家のコード（Python のスクリプト）を実行するジョブには、書き込みの権限を渡さない。
+  test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      changed: ${{ steps.sync.outputs.changed }}
+      new: ${{ steps.sync.outputs.new }}
     steps:
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       - uses: jdx/mise-action@v5
       - name: 本家を取り込む
         id: sync
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           old="$(cat upstream/UPSTREAM_COMMIT)"
           new="$(scripts/sync-upstream.sh main | tail -n1)"
-          echo "old=$old" >> "$GITHUB_OUTPUT"
           echo "new=$new" >> "$GITHUB_OUTPUT"
-      - name: 既に PR があるか確かめる
-        id: exists
-        if: steps.sync.outputs.old != steps.sync.outputs.new
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          n="$(gh pr list --head "upstream-sync/${{ steps.sync.outputs.new }}" --state open --json number --jq length)"
-          echo "count=$n" >> "$GITHUB_OUTPUT"
+          open="$(gh pr list --repo "$GITHUB_REPOSITORY" --head "upstream-sync/$new" --state open --json number --jq length)"
+          if [ "$old" != "$new" ] && [ "$open" = 0 ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+          echo "$old" > /tmp/old
       # GITHUB_TOKEN で作った PR では ci.yml が動かないので、テストはここで実行して結果を PR の本文に載せる。
-      - name: テストして PR を作る
-        if: steps.sync.outputs.old != steps.sync.outputs.new && steps.exists.outputs.count == '0'
+      - name: テストして PR の中身を作る
+        if: steps.sync.outputs.changed == 'true'
         env:
-          GH_TOKEN: ${{ github.token }}
-          OLD: ${{ steps.sync.outputs.old }}
           NEW: ${{ steps.sync.outputs.new }}
         run: |
           set +e
@@ -41,13 +46,10 @@ jobs:
           test_status=$?
           go test ./internal/skill/ -update -run TestGolden > /dev/null 2>&1
           set -e
-          branch="upstream-sync/$NEW"
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git switch -c "$branch"
+          OLD="$(cat /tmp/old)"
+          mkdir -p /tmp/out
           git add -A
-          git commit -m "chore: 本家 nanaism/yomiyasu を ${NEW:0:7} に更新する"
-          git push origin "$branch"
+          git diff --cached --binary > /tmp/out/changes.patch
           {
             echo "本家 nanaism/yomiyasu を \`${OLD:0:7}\` から \`${NEW:0:7}\` に更新する。"
             echo
@@ -66,5 +68,36 @@ jobs:
             echo "</details>"
             echo
             echo "golden（生成した SKILL.md）の差分は、この PR の testdata/golden/ で確かめる。"
-          } > /tmp/body.md
-          gh pr create --title "本家を ${NEW:0:7} に更新する" --body-file /tmp/body.md --base main --head "$branch"
+          } > /tmp/out/body.md
+      - uses: actions/upload-artifact@v7
+        if: steps.sync.outputs.changed == 'true'
+        with:
+          name: upstream-sync
+          path: /tmp/out
+  # 書き込みの権限を持つジョブは、前のジョブが作った差分を当てて PR を作るだけで、本家のコードは実行しない。
+  pr:
+    needs: test
+    if: needs.test.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
+        with:
+          name: upstream-sync
+          path: /tmp/out
+      - name: PR を作る
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NEW: ${{ needs.test.outputs.new }}
+        run: |
+          branch="upstream-sync/$NEW"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git apply --index /tmp/out/changes.patch
+          git commit -m "chore: 本家 nanaism/yomiyasu を ${NEW:0:7} に更新する"
+          git push origin "$branch"
+          gh pr create --title "本家を ${NEW:0:7} に更新する" --body-file /tmp/out/body.md --base main --head "$branch"
