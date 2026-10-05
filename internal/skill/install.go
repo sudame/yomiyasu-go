@@ -6,6 +6,8 @@ import (
 	"io/fs"
 	"os"
 	"path/filepath"
+
+	"github.com/sudame/yomiyasu-go/internal/config"
 )
 
 // MarkerName は yomiyasu-go が書き出したディレクトリに置く印。印のないディレクトリには書き込まない。
@@ -13,9 +15,9 @@ const MarkerName = ".yomiyasu-go"
 
 // DefaultDir は既定の書き出し先 ~/.claude/skills/yomiyasu-go を返す。
 func DefaultDir(getenv func(string) string) (string, error) {
-	home := getenv("HOME")
-	if home == "" {
-		return "", errors.New("HOME が設定されていないので、書き出し先を決められない")
+	home, err := config.HomeDir(getenv)
+	if err != nil {
+		return "", err
 	}
 	return filepath.Join(home, ".claude", "skills", "yomiyasu-go"), nil
 }
@@ -23,6 +25,8 @@ func DefaultDir(getenv func(string) string) (string, error) {
 // Install は files を dir に書き出し、印を置く。dir が印のあるディレクトリなら消してから書き直す。
 // dir がシンボリックリンク、ディレクトリでないもの、印のないディレクトリなら、何も書かずにエラーを返す。
 func Install(dir string, files map[string]string, marker string) error {
+	// 末尾の / があると Lstat がリンク先をたどってしまうので、先に取り除く。
+	dir = filepath.Clean(dir)
 	fi, err := os.Lstat(dir)
 	switch {
 	case errors.Is(err, fs.ErrNotExist):

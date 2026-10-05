@@ -93,3 +93,33 @@ func TestDefaultDir(t *testing.T) {
 		t.Errorf("DefaultDir = %q", d)
 	}
 }
+
+func TestDefaultDirFallsBackToUserProfile(t *testing.T) {
+	get := func(k string) string { return map[string]string{"USERPROFILE": "/users/u"}[k] }
+	if d, err := DefaultDir(get); err != nil || d != filepath.Join("/users/u", ".claude", "skills", "yomiyasu-go") {
+		t.Errorf("DefaultDir = %q, %v", d, err)
+	}
+}
+
+// 末尾に / を付けると Lstat がリンク先をたどるので、リンクとして扱えているかを確かめる。
+func TestInstallRefusesSymlinkWithTrailingSlash(t *testing.T) {
+	base := t.TempDir()
+	target := filepath.Join(base, "real")
+	if err := os.MkdirAll(target, 0o755); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(filepath.Join(target, MarkerName), nil, 0o644); err != nil {
+		t.Fatal(err)
+	}
+	link := filepath.Join(base, "yomiyasu-go")
+	if err := os.Symlink(target, link); err != nil {
+		t.Fatal(err)
+	}
+	err := Install(link+"/", sample, "v")
+	if err == nil || !strings.Contains(err.Error(), "シンボリックリンク") {
+		t.Fatalf("err = %v", err)
+	}
+	if fi, err := os.Lstat(link); err != nil || fi.Mode()&os.ModeSymlink == 0 {
+		t.Error("リンクが消えた")
+	}
+}

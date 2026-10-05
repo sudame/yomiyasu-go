@@ -66,3 +66,11 @@ func TestConfigInit(t *testing.T) {
 		t.Error("既存の設定を上書きした")
 	}
 }
+
+// 本家は HOME がなくても動くので、設定の場所を決められないときは設定なしとして検査する。
+func TestLintWithoutHomeRunsWithoutConfig(t *testing.T) {
+	out, errOut, code := run(t, "本文です。\n", map[string]string{}, "lint", "--json")
+	if code != 0 || !strings.Contains(out, `"score": 100`) {
+		t.Errorf("code=%d out=%s stderr=%s", code, out, errOut)
+	}
+}

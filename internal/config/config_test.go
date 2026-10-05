@@ -7,6 +7,14 @@ import (
 	"testing"
 )
 
+// Windows では HOME がなく、USERPROFILE がホームを指す。
+func TestDefaultPathFallsBackToUserProfile(t *testing.T) {
+	get := func(k string) string { return map[string]string{"USERPROFILE": "/users/u"}[k] }
+	if p, err := DefaultPath(get); err != nil || p != filepath.Join("/users/u", ".config", "yomiyasu-go", "config.toml") {
+		t.Errorf("DefaultPath = %q, %v", p, err)
+	}
+}
+
 func write(t *testing.T, body string) string {
 	t.Helper()
 	p := filepath.Join(t.TempDir(), "config.toml")

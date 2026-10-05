@@ -25,11 +25,21 @@ func DefaultPath(getenv func(string) string) (string, error) {
 	if x := getenv("XDG_CONFIG_HOME"); filepath.IsAbs(x) {
 		return filepath.Join(x, "yomiyasu-go", "config.toml"), nil
 	}
-	home := getenv("HOME")
-	if home == "" {
-		return "", errors.New("HOME が設定されていないので、設定ファイルの場所を決められない")
+	home, err := HomeDir(getenv)
+	if err != nil {
+		return "", err
 	}
 	return filepath.Join(home, ".config", "yomiyasu-go", "config.toml"), nil
+}
+
+// HomeDir はホームディレクトリを返す。HOME がなければ、Windows で使われる USERPROFILE を見る。
+func HomeDir(getenv func(string) string) (string, error) {
+	for _, k := range []string{"HOME", "USERPROFILE"} {
+		if v := getenv(k); v != "" {
+			return v, nil
+		}
+	}
+	return "", errors.New("HOME も USERPROFILE も設定されていないので、ホームディレクトリを決められない")
 }
 
 type fileFormat struct {

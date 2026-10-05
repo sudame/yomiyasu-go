@@ -20,15 +20,13 @@ func newLintCmd(e *env) *cobra.Command {
 		Short: "日本語の表現とMarkdownの書式を、設定されたルールで点検します。指摘は見直し候補です。",
 		Args:  cobra.MaximumNArgs(1),
 		RunE: func(_ *cobra.Command, args []string) error {
-			path, err := config.DefaultPath(e.getenv)
-			if err != nil {
-				fmt.Fprintf(e.stderr, "設定ファイルのエラー: %v\n", err)
-				return exitError{2}
-			}
-			cfg, err := config.Load(path)
-			if err != nil {
-				fmt.Fprintf(e.stderr, "設定ファイルのエラー: %v\n", err)
-				return exitError{2}
+			// 本家は HOME がなくても動くので、設定の場所を決められないときは設定なしとして検査する。
+			cfg := config.Config{Disabled: map[string]bool{}}
+			if path, err := config.DefaultPath(e.getenv); err == nil {
+				if cfg, err = config.Load(path); err != nil {
+					fmt.Fprintf(e.stderr, "設定ファイルのエラー: %v\n", err)
+					return exitError{2}
+				}
 			}
 			// Python はファイルから読むときだけ改行を \n にそろえ、標準入力の改行はそのまま読む。
 			var text string
