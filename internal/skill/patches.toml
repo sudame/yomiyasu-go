@@ -1,0 +1,837 @@
+# 本家 nanaism/yomiyasu の SKILL.md と references に当てる変換規則。
+# rules の規則がすべて無効で、unless の規則がすべて有効なときに当てる。rules がなければ常に当てる。
+# anchor は元の文書にちょうど count 回現れること。置き換えるのは anchor の中の target（省略時は anchor 全体）。
+# section は、その見出しの行から、同じ深さかより浅い次の見出しの手前までを replace に置き換える。
+
+# スキル名と見出しを yomiyasu-go にし、Python のスクリプトを yomiyasu-go のコマンドに置き換える。
+
+[[patch]]
+id = "name"
+file = "SKILL.md"
+anchor = "name: yomiyasu\n"
+replace = "name: yomiyasu-go\n"
+count = 1
+
+[[patch]]
+id = "title"
+file = "SKILL.md"
+anchor = "\n# yomiyasu\n"
+replace = "\n# yomiyasu-go\n"
+count = 1
+
+[[patch]]
+id = "lint-command"
+file = "SKILL.md"
+anchor = "# スキル配置先（${CLAUDE_SKILL_DIR}等）を基準にスクリプトの絶対パスを解決して実行\npython3 <スキル配置ディレクトリ>/scripts/yomiyasu_lint.py <対象ファイル>"
+replace = "yomiyasu-go lint <対象ファイル>"
+count = 1
+
+[[patch]]
+id = "diff-command"
+file = "SKILL.md"
+anchor = "python3 <スキル配置ディレクトリ>/scripts/yomiyasu_diff.py 元の文.txt"
+replace = "yomiyasu-go diff 元の文.txt"
+count = 1
+
+[[patch]]
+id = "no-python-fallback"
+file = "SKILL.md"
+anchor = "Pythonが実行できない環境では、"
+replace = "yomiyasu-go が実行できない環境では、"
+count = 1
+
+# sentence_end_repetition: 同一文末が続くことを理由にした文末の調整をしない。
+
+[[patch]]
+id = "ser-step2-8"
+rules = ["sentence_end_repetition"]
+file = "SKILL.md"
+anchor = "文末のリズム調整は、AIっぽさを直すついでに同一文末が3連続した場合にのみ行います。"
+replace = "同一文末が続くことを理由にした文末のリズム調整は行いません。"
+count = 1
+
+[[patch]]
+id = "ser-gemini-8"
+rules = ["sentence_end_repetition"]
+file = "references/gemini-syntax.md"
+anchor = "ただし、文末のリズム調整は、AIっぽさを直すついでに同一文末（「〜です」「〜ます」等）が3文以上連続した場合にのみ行う。リズムを整える場合でも、文書の立場に合致した文末の種類（勧め・決まり・説明）は変えずに維持する。"
+replace = "ただし、同一文末（「〜です」「〜ます」等）が続くことを理由にした文末のリズム調整は行わない。"
+count = 1
+
+[[patch]]
+id = "ser-tech"
+rules = ["sentence_end_repetition"]
+file = "references/domains/tech.md"
+anchor = "同一文末の連続は見直すきっかけにとどめ、"
+replace = "同一文末の連続は見直す理由にせず、"
+count = 1
+
+# excess_bold と bold_not_rendered: 「装飾記号と不要な空白の排除」の太字の段落は、2 つの規則の組み合わせごとに書き換える。
+
+[[patch]]
+id = "bold-para-bnr"
+rules = ["bold_not_rendered"]
+unless = ["excess_bold"]
+file = "SKILL.md"
+anchor = "\nまた、Markdownとして表示される文章（GitHubや技術記事など）で太字を残すときは、太字として正しく表示される書き方に整えます。GitHubなどでは、`**` のすぐ内側が記号（「」『』（）【】、。やバッククォート等）で、すぐ外側が文字（ひらがな・漢字・英数字）だと、太字にならず `**` がそのまま表示されてしまいます。太字を残すときは、次の優先順で直します。\n1. かっこごと太字にしているときは、かっこの内側だけを太字にします（例: `次に**「文書の立場」**を決めます。` → `次に「**文書の立場**」を決めます。`）。\n2. 太字の終わりが句点などのときは、句点を太字の外に出します（例: `これは**必須です。**詳しくは下に書きます。` → `これは**必須です**。詳しくは下に書きます。`）。\n3. 1と2ができないとき（コードで始まる・終わる太字、かっこが2つ以上ある太字など）は、`**` の外側の、文字に接する側に半角スペースを1つ入れます（例: `立場は**「勧め」か「決まり」**で決めます。` → `立場は **「勧め」か「決まり」** で決めます。`）。\nこの半角スペースは表示のためのものであり、排除対象の不自然な半角空白には当たらないため消しません。\n元の文で太字にならない書き方になっている箇所は、太字を残すなら、ほかに直す箇所がない文でも同様に直します（意味は変わらないため「変えたところ」には書きません）。これは太字を増やす決まりではなく、太字を減らす決まり（domains/tech.md の1,000文字あたり1〜2箇所など）はそのまま維持します。"
+replace = "\n太字を減らす決まり（domains/tech.md の1,000文字あたり1〜2箇所など）はそのまま維持します。"
+count = 1
+
+[[patch]]
+id = "bold-para-excess"
+rules = ["excess_bold"]
+unless = ["bold_not_rendered"]
+file = "SKILL.md"
+anchor = "\nまた、Markdownとして表示される文章（GitHubや技術記事など）で太字を残すときは、太字として正しく表示される書き方に整えます。GitHubなどでは、`**` のすぐ内側が記号（「」『』（）【】、。やバッククォート等）で、すぐ外側が文字（ひらがな・漢字・英数字）だと、太字にならず `**` がそのまま表示されてしまいます。太字を残すときは、次の優先順で直します。\n1. かっこごと太字にしているときは、かっこの内側だけを太字にします（例: `次に**「文書の立場」**を決めます。` → `次に「**文書の立場**」を決めます。`）。\n2. 太字の終わりが句点などのときは、句点を太字の外に出します（例: `これは**必須です。**詳しくは下に書きます。` → `これは**必須です**。詳しくは下に書きます。`）。\n3. 1と2ができないとき（コードで始まる・終わる太字、かっこが2つ以上ある太字など）は、`**` の外側の、文字に接する側に半角スペースを1つ入れます（例: `立場は**「勧め」か「決まり」**で決めます。` → `立場は **「勧め」か「決まり」** で決めます。`）。\nこの半角スペースは表示のためのものであり、排除対象の不自然な半角空白には当たらないため消しません。\n元の文で太字にならない書き方になっている箇所は、太字を残すなら、ほかに直す箇所がない文でも同様に直します（意味は変わらないため「変えたところ」には書きません）。これは太字を増やす決まりではなく、太字を減らす決まり（domains/tech.md の1,000文字あたり1〜2箇所など）はそのまま維持します。"
+target = "これは太字を増やす決まりではなく、太字を減らす決まり（domains/tech.md の1,000文字あたり1〜2箇所など）はそのまま維持します。"
+replace = "これは太字を増やす決まりではありません。"
+count = 1
+
+[[patch]]
+id = "bold-para-both"
+rules = ["bold_not_rendered", "excess_bold"]
+file = "SKILL.md"
+anchor = "\nまた、Markdownとして表示される文章（GitHubや技術記事など）で太字を残すときは、太字として正しく表示される書き方に整えます。GitHubなどでは、`**` のすぐ内側が記号（「」『』（）【】、。やバッククォート等）で、すぐ外側が文字（ひらがな・漢字・英数字）だと、太字にならず `**` がそのまま表示されてしまいます。太字を残すときは、次の優先順で直します。\n1. かっこごと太字にしているときは、かっこの内側だけを太字にします（例: `次に**「文書の立場」**を決めます。` → `次に「**文書の立場**」を決めます。`）。\n2. 太字の終わりが句点などのときは、句点を太字の外に出します（例: `これは**必須です。**詳しくは下に書きます。` → `これは**必須です**。詳しくは下に書きます。`）。\n3. 1と2ができないとき（コードで始まる・終わる太字、かっこが2つ以上ある太字など）は、`**` の外側の、文字に接する側に半角スペースを1つ入れます（例: `立場は**「勧め」か「決まり」**で決めます。` → `立場は **「勧め」か「決まり」** で決めます。`）。\nこの半角スペースは表示のためのものであり、排除対象の不自然な半角空白には当たらないため消しません。\n元の文で太字にならない書き方になっている箇所は、太字を残すなら、ほかに直す箇所がない文でも同様に直します（意味は変わらないため「変えたところ」には書きません）。これは太字を増やす決まりではなく、太字を減らす決まり（domains/tech.md の1,000文字あたり1〜2箇所など）はそのまま維持します。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "excess-bold-tech"
+rules = ["excess_bold"]
+file = "references/domains/tech.md"
+anchor = "太字は1,000文字あたり1〜2箇所までに抑え、段落内に複数の太字を乱発しません。残す太字は、かっこの内側だけを太字にするなど、表示される書き方に整えます（SKILL.md「装飾記号と不要な空白の排除」）。思考の流れや論理展開を箇条書きに頼らず、地の文の段落で記述します。"
+target = "太字は1,000文字あたり1〜2箇所までに抑え、段落内に複数の太字を乱発しません。"
+replace = ""
+count = 1
+
+# bold_not_rendered: 太字が表示される形への修正をしない。
+
+[[patch]]
+id = "bnr-step2-14"
+rules = ["bold_not_rendered"]
+file = "SKILL.md"
+anchor = "14. 太字を残すときは、「装飾記号と不要な空白の排除」の書き方に従い、太字として表示される形にします。"
+target = "太字を残すときは、「装飾記号と不要な空白の排除」の書き方に従い、太字として表示される形にします。"
+replace = "太字は、表示される形に直さず元の書き方のまま残します。"
+count = 1
+
+[[patch]]
+id = "bnr-step3"
+rules = ["bold_not_rendered"]
+file = "SKILL.md"
+anchor = "\nbold_not_rendered（太字にならない書き方）が出た場合は、元の太字が正しく表示されるか確認します。すでに表示される書き方なら変更しません。修正が必要な場合も、太字の範囲や前後の文が崩れないかを確認します。不確かな案はそのまま適用せず、目視で整えます。修正の試行は最大2回とし、警告を消すためだけに言い換えを繰り返しません。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "bnr-step4"
+rules = ["bold_not_rendered"]
+file = "SKILL.md"
+anchor = "\n- 太字の表示: 「太字にならない書き方」が出たら、元の太字の表示可否と案の範囲を確認し、適切であれば案に従って直します（すでに正しく表示される場合や不確かな案はそのまま適用せず、意味が変わらないため「変えたところ」には書きません）。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "bnr-step4-fallback"
+rules = ["bold_not_rendered"]
+file = "SKILL.md"
+anchor = "接続関係、太字が表示される書き方か）"
+target = "、太字が表示される書き方か"
+replace = ""
+count = 1
+
+[[patch]]
+id = "bnr-tech"
+rules = ["bold_not_rendered"]
+file = "references/domains/tech.md"
+anchor = "太字は1,000文字あたり1〜2箇所までに抑え、段落内に複数の太字を乱発しません。残す太字は、かっこの内側だけを太字にするなど、表示される書き方に整えます（SKILL.md「装飾記号と不要な空白の排除」）。思考の流れや論理展開を箇条書きに頼らず、地の文の段落で記述します。"
+target = "残す太字は、かっこの内側だけを太字にするなど、表示される書き方に整えます（SKILL.md「装飾記号と不要な空白の排除」）。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "bnr-gemini-rule"
+rules = ["bold_not_rendered"]
+file = "references/gemini-syntax.md"
+anchor = "\n\n---\n\n### 原則 14:"
+target = "\n\n---\n"
+replace = ""
+count = 1
+
+[[patch]]
+id = "bnr-gemini-section"
+rules = ["bold_not_rendered"]
+file = "references/gemini-syntax.md"
+section = "### 原則 14: Markdownの太字が表示される書き方"
+replace = ""
+
+[[patch]]
+id = "bnr-gemini-11-ref"
+rules = ["bold_not_rendered"]
+unless = ["unnatural_halfwidth_space"]
+file = "references/gemini-syntax.md"
+anchor = "表示のために入れる半角スペースは例外とする（原則14）。"
+target = "（原則14）"
+replace = ""
+count = 1
+
+[[patch]]
+id = "bnr-gemini-13-ref"
+rules = ["bold_not_rendered"]
+file = "references/gemini-syntax.md"
+anchor = "文末は原則2、分割は原則7、太字は原則14の方針を維持する。"
+target = "、太字は原則14"
+replace = ""
+count = 1
+
+# excess_list: 箇条書きの比率を下げるために地の文へまとめることをしない。
+
+[[patch]]
+id = "excess-list-skill-57"
+rules = ["excess_list"]
+file = "SKILL.md"
+anchor = "（domains/tech.md の「箇条書きは15%以下」より優先します）"
+replace = ""
+count = 1
+
+[[patch]]
+id = "excess-list-skill-tech"
+rules = ["excess_list"]
+file = "SKILL.md"
+anchor = "箇条書きを15%以下に抑え、"
+replace = ""
+count = 1
+
+[[patch]]
+id = "excess-list-tech-1"
+rules = ["excess_list"]
+file = "references/domains/tech.md"
+anchor = "太字は1,000文字あたり1〜2箇所までに抑え、段落内に複数の太字を乱発しません。残す太字は、かっこの内側だけを太字にするなど、表示される書き方に整えます（SKILL.md「装飾記号と不要な空白の排除」）。思考の流れや論理展開を箇条書きに頼らず、地の文の段落で記述します。"
+target = "思考の流れや論理展開を箇条書きに頼らず、地の文の段落で記述します。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "excess-list-tech-2"
+rules = ["excess_list"]
+file = "references/domains/tech.md"
+anchor = "箇条書きのまま残し、全体の15%以下の上限よりもこの規則を優先します。"
+target = "残し、全体の15%以下の上限よりもこの規則を優先します。"
+replace = "残します。"
+count = 1
+
+# emoji_prohibited: 絵文字を削除しない。
+
+[[patch]]
+id = "emoji-skill-deco"
+rules = ["emoji_prohibited"]
+file = "SKILL.md"
+anchor = "絵文字、文末コロン、ダッシュ記号（em dash）、情報量の増えない言い換えカッコ、和欧文間の不自然な半角空白を排除します。"
+target = "絵文字、"
+replace = ""
+count = 1
+
+[[patch]]
+id = "emoji-skill-step7"
+rules = ["emoji_prohibited"]
+file = "SKILL.md"
+anchor = "7. 「装飾記号と不要な空白の排除」に従い、絵文字、文末の装飾としてのコロン、ダッシュ記号を排除します。"
+target = "絵文字、"
+replace = ""
+count = 1
+
+[[patch]]
+id = "emoji-tech"
+rules = ["emoji_prohibited"]
+file = "references/domains/tech.md"
+anchor = "見出しや本文に絵文字は使いません。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "emoji-tech-particle"
+rules = ["emoji_prohibited"]
+file = "references/domains/tech.md"
+anchor = "ダッシュ記号（—）も除きます。"
+target = "も"
+replace = "を"
+count = 1
+
+[[patch]]
+id = "emoji-business"
+rules = ["emoji_prohibited"]
+unless = ["trailing_colon"]
+file = "references/domains/business.md"
+anchor = "絵文字や装飾としての文末コロン（：）も使いません。"
+target = "絵文字や"
+replace = ""
+count = 1
+
+[[patch]]
+id = "colon-business"
+rules = ["trailing_colon"]
+unless = ["emoji_prohibited"]
+file = "references/domains/business.md"
+anchor = "絵文字や装飾としての文末コロン（：）も使いません。"
+target = "や装飾としての文末コロン（：）"
+replace = ""
+count = 1
+
+[[patch]]
+id = "emoji-colon-business"
+rules = ["emoji_prohibited", "trailing_colon"]
+file = "references/domains/business.md"
+anchor = "\n絵文字や装飾としての文末コロン（：）も使いません。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "emoji-essay"
+rules = ["emoji_prohibited"]
+unless = ["trailing_colon"]
+file = "references/domains/essay.md"
+anchor = "絵文字や装飾としての文末コロン（：）は使いません。"
+target = "絵文字や"
+replace = ""
+count = 1
+
+[[patch]]
+id = "colon-essay"
+rules = ["trailing_colon"]
+unless = ["emoji_prohibited"]
+file = "references/domains/essay.md"
+anchor = "絵文字や装飾としての文末コロン（：）は使いません。"
+target = "や装飾としての文末コロン（：）"
+replace = ""
+count = 1
+
+[[patch]]
+id = "emoji-colon-essay"
+rules = ["emoji_prohibited", "trailing_colon"]
+file = "references/domains/essay.md"
+anchor = "\n絵文字や装飾としての文末コロン（：）は使いません。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "emoji-gemini-12-head"
+rules = ["emoji_prohibited"]
+unless = ["trailing_colon"]
+file = "references/gemini-syntax.md"
+anchor = "### 原則 12: 絵文字および文末の装飾としてのコロン（：）の排除"
+replace = "### 原則 12: 文末の装飾としてのコロン（：）の排除"
+count = 1
+
+[[patch]]
+id = "emoji-gemini-12"
+rules = ["emoji_prohibited"]
+unless = ["trailing_colon"]
+file = "references/gemini-syntax.md"
+anchor = "本スキルでは、見出し・箇条書き・本文・表を問わず絵文字を使わない。"
+replace = ""
+count = 1
+
+# trailing_colon: 文末コロンを削除しない。
+
+[[patch]]
+id = "colon-skill-deco"
+rules = ["trailing_colon"]
+file = "SKILL.md"
+anchor = "絵文字、文末コロン、ダッシュ記号（em dash）、情報量の増えない言い換えカッコ、和欧文間の不自然な半角空白を排除します。"
+target = "文末コロン、"
+replace = ""
+count = 1
+
+[[patch]]
+id = "colon-skill-step7"
+rules = ["trailing_colon"]
+file = "SKILL.md"
+anchor = "7. 「装飾記号と不要な空白の排除」に従い、絵文字、文末の装飾としてのコロン、ダッシュ記号を排除します。"
+target = "文末の装飾としてのコロン、"
+replace = ""
+count = 1
+
+[[patch]]
+id = "colon-skill-label"
+rules = ["trailing_colon"]
+file = "SKILL.md"
+anchor = "\nただし、「日時：10時」「対象：社内ポータル」のように、ラベルと値の対応を示すコロンは文末の装飾とは区別し、元の区切りを残します。URLやコード内のコロンも変更しません。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "colon-tech"
+rules = ["trailing_colon"]
+file = "references/domains/tech.md"
+anchor = "装飾としての文末コロン（：）やダッシュ記号（—）も除きます。"
+target = "装飾としての文末コロン（：）や"
+replace = ""
+count = 1
+
+[[patch]]
+id = "colon-gemini-12-head"
+rules = ["trailing_colon"]
+unless = ["emoji_prohibited"]
+file = "references/gemini-syntax.md"
+anchor = "### 原則 12: 絵文字および文末の装飾としてのコロン（：）の排除"
+replace = "### 原則 12: 絵文字の排除"
+count = 1
+
+[[patch]]
+id = "colon-gemini-12"
+rules = ["trailing_colon"]
+unless = ["emoji_prohibited"]
+file = "references/gemini-syntax.md"
+anchor = "本スキルでは、見出し・箇条書き・本文・表を問わず絵文字を使わない。箇条書きの前置き文や見出しの直後、文末に装飾としての全角コロン（：）も置かない。句点（。）で文を閉じるか、不要な前置きを省いて直接書く。"
+target = "箇条書きの前置き文や見出しの直後、文末に装飾としての全角コロン（：）も置かない。句点（。）で文を閉じるか、不要な前置きを省いて直接書く。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "colon-gemini-12-label"
+rules = ["trailing_colon"]
+unless = ["emoji_prohibited"]
+file = "references/gemini-syntax.md"
+anchor = "\nただし、ラベルと値を対応づけるコロンは装飾ではない。「日時：10時」「対象：社内ポータル」のような元の区切りは残す。URLやコード内のコロンも変更しない。コロンを新たに足したり、前置きの不要な文末コロンまで残したりする規則ではない。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "emoji-colon-gemini-12"
+rules = ["emoji_prohibited", "trailing_colon"]
+file = "references/gemini-syntax.md"
+section = "### 原則 12: 絵文字および文末の装飾としてのコロン（：）の排除"
+replace = ""
+
+# redundant_bracket: 情報量の増えない補足カッコを削除しない。
+
+[[patch]]
+id = "bracket-skill-deco"
+rules = ["redundant_bracket"]
+file = "SKILL.md"
+anchor = "絵文字、文末コロン、ダッシュ記号（em dash）、情報量の増えない言い換えカッコ、和欧文間の不自然な半角空白を排除します。"
+target = "、情報量の増えない言い換えカッコ"
+replace = ""
+count = 1
+
+[[patch]]
+id = "bracket-skill-step5"
+rules = ["redundant_bracket"]
+unless = ["unnatural_halfwidth_space"]
+file = "SKILL.md"
+anchor = "5. 重複する補足カッコを削り、英単語前後の余計な半角空白を除去します（太字の表示のために ** の外側に入れる半角スペースは除きます）。"
+target = "重複する補足カッコを削り、英単語前後の余計な半角空白を除去します（太字の表示のために ** の外側に入れる半角スペースは除きます）。"
+replace = "英単語前後の余計な半角空白を除去します（太字の表示のために ** の外側に入れる半角スペースは除きます）。"
+count = 1
+
+[[patch]]
+id = "bracket-gemini-10"
+rules = ["redundant_bracket"]
+file = "references/gemini-syntax.md"
+section = "### 原則 10: 不要な補足カッコ（）の排除"
+replace = ""
+
+# unnatural_halfwidth_space: 和欧文間の半角空白を削除しない。
+
+[[patch]]
+id = "space-skill-deco"
+rules = ["unnatural_halfwidth_space"]
+file = "SKILL.md"
+anchor = "絵文字、文末コロン、ダッシュ記号（em dash）、情報量の増えない言い換えカッコ、和欧文間の不自然な半角空白を排除します。"
+target = "、和欧文間の不自然な半角空白"
+replace = ""
+count = 1
+
+[[patch]]
+id = "space-skill-step5"
+rules = ["unnatural_halfwidth_space"]
+unless = ["redundant_bracket"]
+file = "SKILL.md"
+anchor = "5. 重複する補足カッコを削り、英単語前後の余計な半角空白を除去します（太字の表示のために ** の外側に入れる半角スペースは除きます）。"
+target = "重複する補足カッコを削り、英単語前後の余計な半角空白を除去します（太字の表示のために ** の外側に入れる半角スペースは除きます）。"
+replace = "重複する補足カッコを削ります。"
+count = 1
+
+[[patch]]
+id = "bracket-space-skill-step5"
+rules = ["redundant_bracket", "unnatural_halfwidth_space"]
+file = "SKILL.md"
+anchor = "5. 重複する補足カッコを削り、英単語前後の余計な半角空白を除去します（太字の表示のために ** の外側に入れる半角スペースは除きます）。"
+target = "重複する補足カッコを削り、英単語前後の余計な半角空白を除去します（太字の表示のために ** の外側に入れる半角スペースは除きます）。"
+replace = "補足カッコや英単語前後の半角空白は、元の文のまま残します。"
+count = 1
+
+[[patch]]
+id = "space-skill-bold-note"
+rules = ["unnatural_halfwidth_space"]
+unless = ["bold_not_rendered"]
+file = "SKILL.md"
+anchor = "\nこの半角スペースは表示のためのものであり、排除対象の不自然な半角空白には当たらないため消しません。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "space-gemini-11"
+rules = ["unnatural_halfwidth_space"]
+file = "references/gemini-syntax.md"
+section = "### 原則 11: 和欧文間の不自然な半角空白の排除"
+replace = ""
+
+[[patch]]
+id = "space-gemini-14"
+rules = ["unnatural_halfwidth_space"]
+unless = ["bold_not_rendered"]
+file = "references/gemini-syntax.md"
+anchor = "この半角スペースは表示のためのものであり、和欧文間の不自然な半角空白には当たらないため消さない。"
+replace = ""
+count = 1
+
+# slop_vocabulary: 大げさな語や意味の曖昧な語を言い換えない。
+
+[[patch]]
+id = "slop-skill-section"
+rules = ["slop_vocabulary"]
+file = "SKILL.md"
+section = "### 内容に合わない大げさな名詞の整理"
+replace = ""
+
+[[patch]]
+id = "slop-skill-step2-15"
+rules = ["slop_vocabulary"]
+file = "SKILL.md"
+anchor = "15. 「内容に合わない大げさな名詞の整理」に従い、語の指す役割を確かめて直します。"
+target = "「内容に合わない大げさな名詞の整理」に従い、語の指す役割を確かめて直します。"
+replace = "大げさな語や意味の曖昧な語は、元の文のまま残します。"
+count = 1
+
+[[patch]]
+id = "slop-catalog-45"
+rules = ["slop_vocabulary"]
+file = "references/slop-catalog.md"
+section = "## 3. 2026年急増語（Qiita 7万件調査に基づく分類）"
+replace = ""
+
+[[patch]]
+id = "slop-catalog-58"
+rules = ["slop_vocabulary"]
+file = "references/slop-catalog.md"
+section = "## 4. 体験を大げさに見せる熟語"
+replace = ""
+
+[[patch]]
+id = "slop-catalog-70"
+rules = ["slop_vocabulary"]
+file = "references/slop-catalog.md"
+section = "## 5. 具体的に見えて意味が曖昧な言葉"
+replace = ""
+
+[[patch]]
+id = "slop-catalog-sot"
+rules = ["slop_vocabulary"]
+file = "references/slop-catalog.md"
+anchor = "\n| *single source of truth* | 「〜を正本にする」「〜の正本として」 | 原文や比較の基準、参照元など、その語が指す役割に合う言葉で書く。唯一の参照元と明示されている場合は、その限定を保つ。信頼性・唯一性・更新元という役割を新たに足さず、正式な文書を区別する「正本」は意味を保って残す。 |"
+replace = ""
+count = 1
+
+[[patch]]
+id = "slop-business-rows"
+rules = ["slop_vocabulary"]
+file = "references/domains/business.md"
+anchor = "\n| 新機能の手触り感を確認します。 | 新機能の使い勝手を確認します。 |\n| 現状の課題について解像度を上げます。 | 現状の課題についてより詳しく整理します。 |"
+replace = ""
+count = 1
+
+[[patch]]
+id = "slop-essay-table"
+rules = ["slop_vocabulary"]
+file = "references/domains/essay.md"
+anchor = "\n\n| 見直したい熟語 | 大げさな表現の例 | 自然な表現 |\n|---|---|---|\n| `真理` `虚飾` `境地` `美学` `深淵` `冷徹` `禁欲的` `優美` `極致` `宿命` | 日常の喧騒という虚飾を剥ぎ取った時、一杯のコーヒーに込められた真実が見えてくる。 | 日々の忙しさから離れたとき、一杯のコーヒーの本当の良さが見えてくる。 |"
+replace = ""
+count = 1
+
+[[patch]]
+id = "slop-essay-24"
+rules = ["slop_vocabulary"]
+file = "references/domains/essay.md"
+anchor = "「深淵」「極致」といった過剰な修飾語を削り、"
+replace = ""
+count = 1
+
+# metaphor_verb: 比喩動詞や、lint の METAPHOR_VERB_PATTERNS にある型を言い換えない。
+
+[[patch]]
+id = "metaphor-skill-section"
+rules = ["metaphor_verb"]
+file = "SKILL.md"
+section = "### 比喩動詞の具体化"
+replace = ""
+
+[[patch]]
+id = "metaphor-skill-step2-4"
+rules = ["metaphor_verb"]
+file = "SKILL.md"
+anchor = "4. 比喩動詞や言い回しは、ふだん使う言葉や文脈に合った言葉に置き換えます。データやシステムの「壊れる」は「おかしくなる」「使えなくなる」のように同等の広さの言葉にし、整合性の文脈であることが明らかな場合のみ「整合性が失われる」等とします。「静かに」「黙って」は「気づかないうちに」「知らないうちに」のように気づけない幅のまま直します。定着した慣用句や含みは維持します。"
+target = "比喩動詞や言い回しは、ふだん使う言葉や文脈に合った言葉に置き換えます。データやシステムの「壊れる」は「おかしくなる」「使えなくなる」のように同等の広さの言葉にし、整合性の文脈であることが明らかな場合のみ「整合性が失われる」等とします。「静かに」「黙って」は「気づかないうちに」「知らないうちに」のように気づけない幅のまま直します。定着した慣用句や含みは維持します。"
+replace = "比喩動詞や比喩的な言い回しは、言い換えずに元の文のまま残します。"
+count = 1
+
+[[patch]]
+id = "metaphor-gemini-4"
+rules = ["metaphor_verb"]
+file = "references/gemini-syntax.md"
+section = "### 原則 4: 比喩動詞の具体化とふだん使う言葉への変更"
+replace = ""
+
+[[patch]]
+id = "metaphor-catalog-1"
+rules = ["metaphor_verb"]
+file = "references/slop-catalog.md"
+section = "## 1. 比喩的に使われる動詞"
+replace = ""
+
+[[patch]]
+id = "metaphor-catalog-silent"
+rules = ["metaphor_verb"]
+file = "references/slop-catalog.md"
+anchor = "\n| *silently fail / ignored* | 「静かに壊れる」「黙って無視される」 | 「気づかないうちにデータがおかしくなる」「知らないうちに無視される」（データ等への「壊れる」は「おかしくなる」「使えなくなる」のように同等の広さの言葉にし、整合性の文脈であることが明らかな場合のみ「整合性が失われる」等とする。「静かに」「黙って」のぼかしは気づけない幅のまま直す。「通知なく」「エラーを出さずに」のように仕組みの話にするのは、元の文や前後から明らかな場合のみ） |"
+replace = ""
+count = 1
+
+[[patch]]
+id = "metaphor-catalog-moment"
+rules = ["metaphor_verb"]
+file = "references/slop-catalog.md"
+anchor = "\n| *the moment ...* | 「〜した瞬間」「〜した瞬間に」 | 「〜するとすぐに」「〜した時点で」 |"
+replace = ""
+count = 1
+
+[[patch]]
+id = "metaphor-tech-table"
+rules = ["metaphor_verb"]
+file = "references/domains/tech.md"
+anchor = "\n\n| 不自然な比喩表現 | 客観的・具体的な記述への変換 |\n|---|---|\n| 設定を保存した瞬間に、古いキャッシュが静かに壊れます。 | 設定を保存するとすぐに、古いキャッシュが気づかないうちに使えなくなります。 |\n| この調整が、検索の速さに地味に効いてきます。 | この調整が検索の速さに目立たないながらも役立ってきます。 |\n| 原因調査に丸一日溶かしてしまいました。 | 原因の調査に丸一日かかってしまいました。 |\n| この処理でデータの整合性を担保します。 | この処理でデータに矛盾が生じない状態を保ちます。 |"
+replace = ""
+count = 1
+
+[[patch]]
+id = "metaphor-business-head"
+rules = ["metaphor_verb"]
+file = "references/domains/business.md"
+anchor = "## 1. 比喩をふだんの言葉に直す"
+replace = "## 1. 表現を整える"
+count = 1
+
+[[patch]]
+id = "metaphor-business-body"
+rules = ["metaphor_verb"]
+file = "references/domains/business.md"
+anchor = "\n意味を取り違えやすい比喩は、直接的でふだん使う言葉に書き換えます。比喩や言い回しが持っていた気持ちや評価の向き、理由は残します。\n- 含みの例: 「うっかり」の不注意、「ようやく」の待ちくたびれた感じ、「〜てしまった」の後悔、「地味に」の目立たないけれど確かにある感じ。\n- 比喩の語は言い換えて構いませんが、その語が伝えていた含みや理由は、別のふだんの言葉で補って言い表します。\n- 比喩動詞だけでなく、副詞や前置きの言い回しも同じ扱いにします。\nなお、「骨が折れる」「手を焼く」「目から鱗が落ちる」「首を長くして待つ」のような、ふだんの日本語で定着した慣用句は、AIっぽい比喩として扱わずそのまま残します。業務仕様でも、意味を取り違えるおそれがなければ残します。迷ったときの目安は、その言い方を、AIが広まる前の人の文章でもふつうに見かけるかどうかです。見かけるなら残します。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "metaphor-business-rows"
+rules = ["metaphor_verb"]
+file = "references/domains/business.md"
+anchor = "\n| 判断に迷ったときは、安全側に倒して判断します。 | 判断に迷ったときは、安全を優先して判断します。 |\n| 前提の理解がずれていると、全体の設計が崩れやすくなります。 | 前提の理解がずれていると、全体の設計に問題が生じやすくなります。 |"
+replace = ""
+count = 1
+
+# meta_filler: 前置き、定型の結び、自己ラベリングを削らない。
+
+[[patch]]
+id = "filler-skill-head"
+rules = ["meta_filler"]
+unless = ["negative_parallelism"]
+file = "SKILL.md"
+anchor = "### セルフラベリングと否定対比の整理"
+replace = "### 否定対比の整理"
+count = 1
+
+[[patch]]
+id = "filler-skill-body"
+rules = ["meta_filler"]
+unless = ["negative_parallelism"]
+file = "SKILL.md"
+anchor = "\n「重要なのは」「大事なのは」が評価そのものを担っているときは、評価を消さずに述語に移して残します（「〜が大事です」「〜が重要です」）。前置きを削ってよいのは、削っても主張が変わらないときだけです。\n前置きが理由・対比・結論や、説明から方針への切替を示す場合は、その関係を残します。「結論として」が比較結果と採用方針をつないでいる場合など、他の語から同じ関係が読めなければ削りません。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "filler-skill-step2-6"
+rules = ["meta_filler"]
+unless = ["negative_parallelism"]
+file = "SKILL.md"
+anchor = "6. 「重要なのは」が評価を担っているときは述語に残し、否定対比（AではなくB）は意味や比重を担っているなら否定を残したまま表現を整えます。"
+target = "「重要なのは」が評価を担っているときは述語に残し、否定対比（AではなくB）は意味や比重を担っているなら否定を残したまま表現を整えます。"
+replace = "否定対比（AではなくB）は意味や比重を担っているなら否定を残したまま表現を整えます。"
+count = 1
+
+[[patch]]
+id = "filler-gemini-5-head"
+rules = ["meta_filler"]
+unless = ["negative_parallelism"]
+file = "references/gemini-syntax.md"
+anchor = "### 原則 5: 不要な前置きと否定対比の整理"
+replace = "### 原則 5: 否定対比の整理"
+count = 1
+
+[[patch]]
+id = "filler-gemini-5-intro"
+rules = ["meta_filler"]
+unless = ["negative_parallelism"]
+file = "references/gemini-syntax.md"
+anchor = "AIは「重要なのは」「結論から言うと」といった不要な前置き（セルフラベリング）や、否定対比の構文を好む傾向がある。"
+replace = "AIは否定対比の構文を好む傾向がある。"
+count = 1
+
+[[patch]]
+id = "filler-gemini-5-body"
+rules = ["meta_filler"]
+unless = ["negative_parallelism"]
+file = "references/gemini-syntax.md"
+anchor = "\n前置きを削ってよいのは、削っても主張が変わらないときだけである。「重要なのは」「大事なのは」が「何が大事か」という評価を担っているときは、評価を消さずに述語に残す（「〜が大事です」「〜が重要です」）。\n理由・対比・結論や、説明から方針への切替を担う前置きも保護する。比較結果を採用方針へつなぐ「結論として」などは、他の語から同じ関係が読めなければ削らない。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "filler-gemini-5-rows"
+rules = ["meta_filler"]
+unless = ["negative_parallelism"]
+file = "references/gemini-syntax.md"
+anchor = "\n| 結論から言うと、このボタンを押すだけで完了します。 | このボタンを押すだけで完了します。 | 単なる前置きは削り、本題から直接書く。 |\n| 重要なのは、画面の見た目ではなく裏側のデータ構造です。 | 画面の見た目ではなく、裏側のデータ構造が重要です。 | 評価（重要）を述語に残し、否定対比を保つ（「そのもの」等は足さない）。 |"
+replace = ""
+count = 1
+
+[[patch]]
+id = "filler-catalog-rule"
+rules = ["meta_filler"]
+unless = ["slop_vocabulary"]
+file = "references/slop-catalog.md"
+anchor = "\n\n---\n\n## 6."
+target = "\n\n---\n"
+replace = ""
+count = 1
+
+[[patch]]
+id = "filler-slop-catalog-rule"
+rules = ["meta_filler", "slop_vocabulary"]
+file = "references/slop-catalog.md"
+anchor = "\n\n---\n\n## 3."
+target = "\n\n---\n"
+replace = ""
+count = 1
+
+[[patch]]
+id = "filler-catalog-6"
+rules = ["meta_filler"]
+file = "references/slop-catalog.md"
+section = "## 6. 不要な前置きと定型の結び"
+replace = ""
+
+[[patch]]
+id = "filler-essay"
+rules = ["meta_filler"]
+file = "references/domains/essay.md"
+anchor = "\n文の意味や働きを担わない定型の結び（`〜してみてはいかがでしょうか`、`ぜひ参考にしてみてください`、`いかがでしたでしょうか`）は使いません。"
+replace = ""
+count = 1
+
+# negative_parallelism: 否定対比（AではなくB）を肯定文にしない。
+
+[[patch]]
+id = "neg-skill-head"
+rules = ["negative_parallelism"]
+unless = ["meta_filler"]
+file = "SKILL.md"
+anchor = "### セルフラベリングと否定対比の整理"
+replace = "### セルフラベリングの整理"
+count = 1
+
+[[patch]]
+id = "neg-skill-body"
+rules = ["negative_parallelism"]
+unless = ["meta_filler"]
+file = "SKILL.md"
+anchor = "\n否定対比（AではなくB）は、否定を外しても主張が変わらないときだけ肯定文にします。Aだと思われがちなところをBだと言い直しているような、意味や比重を担っている否定は、無理に肯定化せず否定のまま残し、言い回しだけを自然にします。否定していたAを「Aに加えてB」と並べたり、「AよりB」と順位づけしたりしません。否定を残すときに、元にない理由の文は足しません。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "neg-skill-step2-6"
+rules = ["negative_parallelism"]
+unless = ["meta_filler"]
+file = "SKILL.md"
+anchor = "6. 「重要なのは」が評価を担っているときは述語に残し、否定対比（AではなくB）は意味や比重を担っているなら否定を残したまま表現を整えます。"
+target = "「重要なのは」が評価を担っているときは述語に残し、否定対比（AではなくB）は意味や比重を担っているなら否定を残したまま表現を整えます。"
+replace = "「重要なのは」が評価を担っているときは述語に残します。"
+count = 1
+
+[[patch]]
+id = "neg-gemini-5-head"
+rules = ["negative_parallelism"]
+unless = ["meta_filler"]
+file = "references/gemini-syntax.md"
+anchor = "### 原則 5: 不要な前置きと否定対比の整理"
+replace = "### 原則 5: 不要な前置きの整理"
+count = 1
+
+[[patch]]
+id = "neg-gemini-5-intro"
+rules = ["negative_parallelism"]
+unless = ["meta_filler"]
+file = "references/gemini-syntax.md"
+anchor = "AIは「重要なのは」「結論から言うと」といった不要な前置き（セルフラベリング）や、否定対比の構文を好む傾向がある。"
+replace = "AIは「重要なのは」「結論から言うと」といった不要な前置き（セルフラベリング）を好む傾向がある。"
+count = 1
+
+[[patch]]
+id = "neg-gemini-5-body"
+rules = ["negative_parallelism"]
+unless = ["meta_filler"]
+file = "references/gemini-syntax.md"
+anchor = "\n否定対比（AではなくB）は、否定を外しても主張が変わらないときだけ肯定文にする。Aだと思われがちなところをBだと言い直しているような、意味や比重を担っている否定は、否定を残したまま言い回しだけを自然にする。否定していたAを「Aに加えてB」と並べたり、「AよりB」と順位づけしたりしない。否定を残すときに、元にない理由の文や勝手な強調語（「そのもの」等）は足さない。"
+replace = ""
+count = 1
+
+[[patch]]
+id = "neg-gemini-5-row"
+rules = ["negative_parallelism"]
+unless = ["meta_filler"]
+file = "references/gemini-syntax.md"
+anchor = "\n| 目的は、機能の追加ではなく使いやすさの向上です。 | 機能の追加ではなく、使いやすさを高めることが目的です。 | 否定対比が方針の切り替えを示しているため、否定を残して表現を整える。 |"
+replace = ""
+count = 1
+
+[[patch]]
+id = "neg-catalog-row"
+rules = ["negative_parallelism"]
+file = "references/slop-catalog.md"
+anchor = "\n| *it is not X, it is Y* | 「Xではなく、Yです」 | 単なる修辞でXを削っても通じる場合は「Yです」とする。Xと誤解されやすい点への反論や見方の切り替えを担っている場合は、否定を残して「Xではなく、Yです」と自然に整える（Aに加えてBなどに改変しない。「そのもの」等の余計な強調語は足さない）。 |"
+replace = ""
+count = 1
+
+# meta_filler と negative_parallelism の両方が無効なとき。
+
+[[patch]]
+id = "filler-neg-skill-section"
+rules = ["meta_filler", "negative_parallelism"]
+file = "SKILL.md"
+section = "### セルフラベリングと否定対比の整理"
+replace = ""
+
+[[patch]]
+id = "filler-neg-skill-step2-6"
+rules = ["meta_filler", "negative_parallelism"]
+file = "SKILL.md"
+anchor = "6. 「重要なのは」が評価を担っているときは述語に残し、否定対比（AではなくB）は意味や比重を担っているなら否定を残したまま表現を整えます。"
+target = "「重要なのは」が評価を担っているときは述語に残し、否定対比（AではなくB）は意味や比重を担っているなら否定を残したまま表現を整えます。"
+replace = "前置き、定型の結び、否定対比（AではなくB）は、元の文のまま残します。"
+count = 1
+
+[[patch]]
+id = "filler-neg-gemini-5"
+rules = ["meta_filler", "negative_parallelism"]
+file = "references/gemini-syntax.md"
+section = "### 原則 5: 不要な前置きと否定対比の整理"
+replace = ""
