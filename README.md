@@ -10,6 +10,23 @@
 
 lint と diff の出力は、本家の Python スクリプトと同じです。設定ファイルがなければ、本家と同じ規則で検査します。
 
+## 性能
+
+本家の Python スクリプトより、lint は 2.7〜9.2 倍、diff は 2.8〜4.2 倍速く終わります。
+
+| 処理 | 入力 | yomiyasu（Python） | yomiyasu-go | 比 |
+| --- | --- | ---: | ---: | ---: |
+| lint | 473 文字 | 29.1 ms | 3.2 ms | 9.2 倍 |
+| lint | 10,509 文字 | 33.4 ms | 12.4 ms | 2.7 倍 |
+| diff | 473 文字と書き直し後 | 26.3 ms | 6.3 ms | 4.2 倍 |
+| diff | 10,509 文字と書き直し後 | 1,706 ms | 614 ms | 2.8 倍 |
+
+値は hyperfine で 20 回以上実行した平均で、計測した環境は Apple M4、macOS、Python 3.14.8、Go 1.27.1 です。どちらも `--json` を付けて実行し、出力が一致することを確かめています。入力は本家のコーパスから作りました。小さい入力は `raw_ai/01_tech_arch_sonnet_default.md` で、大きい入力は `raw_ai/` の 24 本と、それぞれを書き直した `yomiyasu_rewritten/` の文書をつなげたものです。
+
+小さい入力で差が大きいのは、Python の起動だけで約 10 ms かかるためです。大きい入力の diff は、文末の種類の変化を調べるために、書き直し後の文ごとに元の文すべてと似ている度合いを計算します。計算の回数が文の数の 2 乗に比例して増えるので、どちらも時間がかかります（本家ではこの処理が時間の約 9 割を占めます）。
+
+`scripts/bench.sh` で同じ計測ができます。
+
 ## 入れ方
 
 ```bash
@@ -100,6 +117,9 @@ scripts/gen-compat.sh
 
 # 生成した SKILL.md の golden を書き直す
 go test ./internal/skill/ -update -run TestGolden
+
+# 本家の Python スクリプトと実行時間を比べる
+scripts/bench.sh
 ```
 
 ## ライセンス
