@@ -7,7 +7,7 @@ permissions: {}
 jobs:
   # 本家のコード（Python のスクリプト）を実行するジョブには、書き込みの権限を渡さない。
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       pull-requests: read
@@ -78,7 +78,7 @@ jobs:
   pr:
     needs: test
     if: needs.test.outputs.changed == 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
       pull-requests: write
