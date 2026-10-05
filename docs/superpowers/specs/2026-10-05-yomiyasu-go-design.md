@@ -20,7 +20,7 @@
 
 - `yomiyasu_lint.py` と `yomiyasu_diff.py` の Go への移植（引数と JSON 出力は本家と同じにする）
 - 規則ごとの有効・無効の設定
-- 設定を反映した SKILL.md と references の生成と、`~/.claude/skills/yomiyasu/` への書き出し
+- 設定を反映した SKILL.md と references の生成と、`~/.claude/skills/yomiyasu-go/` への書き出し
 - 本家の更新を検出して取り込む仕組みと、本家との互換テスト
 - GitHub Releases によるバイナリ配布
 
@@ -76,7 +76,7 @@ yomiyasu-go/
 | --- | --- |
 | `yomiyasu-go lint [file] [--json] [--strict]` | 本家の `yomiyasu_lint.py` と同じ。無効にした規則は検出しない |
 | `yomiyasu-go diff <元> <書き直し> [--stance=勧め\|決まり\|説明]` | 本家の `yomiyasu_diff.py` と同じ |
-| `yomiyasu-go skill install [--dir <path>]` | SKILL.md、references、LICENSE を書き出す。既定の書き出し先は `~/.claude/skills/yomiyasu/` |
+| `yomiyasu-go skill install [--dir <path>]` | SKILL.md、references、LICENSE を書き出す。既定の書き出し先は `~/.claude/skills/yomiyasu-go/` |
 | `yomiyasu-go skill render` | `skill install` で書き出す SKILL.md を標準出力に表示する |
 | `yomiyasu-go config init` | すべての規則を有効にした設定の雛形を書き出す |
 | `yomiyasu-go version` | 自身のバージョンと、取り込んだ本家のコミットを表示する |
@@ -115,7 +115,9 @@ replace = "絵文字、ダッシュ記号"
 count = 1                            # 一致数がこれと違えば生成エラーにする
 ```
 
-常に当てる変換は次の 3 つである。
+常に当てる変換は次の 4 つである。
+
+- frontmatter の `name` と冒頭の見出し `# yomiyasu` を `yomiyasu-go` に置き換える（「スキル名と書き出し先」を参照）。
 
 - `python3 <スキル配置ディレクトリ>/scripts/yomiyasu_lint.py` を `yomiyasu-go lint` に置き換える。diff も同じように置き換える。
 - 「Pythonが実行できない環境では」で始まる代替手順を削る。
@@ -129,9 +131,9 @@ count = 1                            # 一致数がこれと違えば生成エ�
 
 ### スキル名と書き出し先
 
-スキル名は本家と同じ `yomiyasu` のままにする。CLAUDE.md に書いた「yomiyasu スキルを使う」という指示をそのまま効かせるためである。そのかわり本家のスキルとは名前がぶつかるので、移行するときに本家のスキルを外す。
+スキル名は `yomiyasu-go` とし、本家の `yomiyasu` と区別する。本家と同じ名前を名乗らないためである。常に当てる変換で、frontmatter の `name` と冒頭の見出しを `yomiyasu-go` に置き換える。書き出し先も `~/.claude/skills/yomiyasu-go/` になるので、本家のスキルやフォーク `sudame/yomiyasu` のスキル（`~/.claude/skills/yomiyasu`）とは別の場所に置かれる。乗り換えるときは、CLAUDE.md の「yomiyasu スキルを使う」という指示を `yomiyasu-go` に書き換え、本家やフォークのスキルを外す。
 
-現在の `~/.claude/skills/yomiyasu` は、フォーク `sudame/yomiyasu` の worktree へのシンボリックリンクである。フォークは yomiyasu-go とは別に管理するので、`skill install` がリンクをたどってフォークのファイルを上書きしてはならない。そこで `skill install` は、書き出し先に yomiyasu-go が書いた印（`.yomiyasu-go` ファイル）がなければ、何も書かずにエラーで止める。シンボリックリンクの場合も同じように止める。印のないディレクトリに書き出すには、利用者が既存のディレクトリやリンクを自分で外す。
+`skill install` は、書き出し先に yomiyasu-go が書いた印（`.yomiyasu-go` ファイル）がなければ、何も書かずにエラーで止める。書き出し先がシンボリックリンクの場合も同じように止める。利用者が置いた別のファイルを上書きしないためである。
 
 ## 移植
 
