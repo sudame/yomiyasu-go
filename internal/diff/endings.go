@@ -306,7 +306,8 @@ func boldLines(ps []bold.Problem) []string {
 }
 
 // Endings は --endings の出力全体を返す。stance が空文字なら立場を指定しない。
-func Endings(text, stance string) string {
+// checkBold が false なら、太字にならない書き方の節を出さない。
+func Endings(text, stance string, checkBold bool) string {
 	var b strings.Builder
 	rows, flags := stanceFlags(text, stance, true)
 
@@ -334,6 +335,9 @@ func Endings(text, stance string) string {
 		for _, r := range f.rows {
 			b.WriteString("  ・" + truncate(r.sentence, 60) + "\n")
 		}
+	}
+	if !checkBold {
+		return b.String()
 	}
 	if bp := bold.Problems(text, true); len(bp) > 0 {
 		b.WriteString(boldHead("") + "\n")

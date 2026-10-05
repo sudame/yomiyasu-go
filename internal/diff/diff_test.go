@@ -22,7 +22,7 @@ func TestEndingKind(t *testing.T) {
 }
 
 func TestEndingsMostCommonKeepsFirstSeenOrderOnTies(t *testing.T) {
-	out := Endings("保存してください。設定を読み込みます。保存してください。設定を読み込みます。\n", "")
+	out := Endings("保存してください。設定を読み込みます。保存してください。設定を読み込みます。\n", "", true)
 	if !strings.HasPrefix(out, "■ 文末の種類（表を除く）: 依頼 2、動作（〜します） 2\n") {
 		t.Errorf("Endings =\n%s", out)
 	}

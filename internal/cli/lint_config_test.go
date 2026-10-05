@@ -67,6 +67,29 @@ func TestConfigInit(t *testing.T) {
 	}
 }
 
+// bold_not_rendered を無効にしたら、diff も太字を直す候補を出さない。
+func TestDiffSkipsBoldWhenDisabled(t *testing.T) {
+	xdg := t.TempDir()
+	cfg := filepath.Join(xdg, "yomiyasu-go", "config.toml")
+	if err := os.MkdirAll(filepath.Dir(cfg), 0o755); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.WriteFile(cfg, []byte("[rules.bold_not_rendered]\nenabled = false\n"), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	doc := filepath.Join(t.TempDir(), "a.md")
+	if err := os.WriteFile(doc, []byte("これは**「重要」**です。\n"), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	env := map[string]string{"XDG_CONFIG_HOME": xdg}
+	for _, args := range [][]string{{"diff", "--endings", doc}, {"diff", doc, doc}, {"diff", doc, doc, "--json"}} {
+		out, errOut, code := run(t, "", env, args...)
+		if code != 0 || strings.Contains(out, "太字にならない") || strings.Contains(out, "かっこの内側") {
+			t.Errorf("%v: code=%d out=%s stderr=%s", args, code, out, errOut)
+		}
+	}
+}
+
 // 本家は HOME がなくても動くので、設定の場所を決められないときは設定なしとして検査する。
 func TestLintWithoutHomeRunsWithoutConfig(t *testing.T) {
 	out, errOut, code := run(t, "本文です。\n", map[string]string{}, "lint", "--json")

@@ -8,6 +8,7 @@ import (
 
 	"github.com/spf13/cobra"
 
+	"github.com/sudame/yomiyasu-go/internal/config"
 	"github.com/sudame/yomiyasu-go/internal/diff"
 	"github.com/sudame/yomiyasu-go/internal/pycompat"
 )
@@ -35,6 +36,15 @@ func newDiffCmd(e *env) *cobra.Command {
 					stance = stances[v]
 				}
 			}
+			// bold_not_rendered を無効にしたら、太字を直す候補も出さない
+			cfg := config.Config{Disabled: map[string]bool{}}
+			if path, err := config.DefaultPath(e.getenv); err == nil {
+				if cfg, err = config.Load(path); err != nil {
+					fmt.Fprintf(e.stderr, "設定ファイルのエラー: %v\n", err)
+					return exitError{2}
+				}
+			}
+			checkBold := !cfg.Disabled["bold_not_rendered"]
 			// 本家は読めないファイルで例外を出して終了コード 1 で終わる
 			read := func(p string) (string, error) {
 				b, err := os.ReadFile(p)
@@ -49,7 +59,7 @@ func newDiffCmd(e *env) *cobra.Command {
 				if err != nil {
 					return err
 				}
-				fmt.Fprint(e.stdout, diff.Endings(t, stance))
+				fmt.Fprint(e.stdout, diff.Endings(t, stance, checkBold))
 				return nil
 			}
 			if len(args) < 2 {
@@ -66,6 +76,9 @@ func newDiffCmd(e *env) *cobra.Command {
 				return err
 			}
 			d := diff.Diff(o, r, stance)
+			if !checkBold {
+				d.Bold = nil
+			}
 			if slices.Contains(argv, "--json") {
 				fmt.Fprint(e.stdout, diff.JSON(d))
 			} else {
