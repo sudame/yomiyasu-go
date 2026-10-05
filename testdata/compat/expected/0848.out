@@ -1,0 +1,53 @@
+{
+ "markers": [
+  {
+   "kind": "意志",
+   "orig": 0,
+   "rewrite": 1,
+   "orig_hits": [],
+   "rewrite_hits": [
+    "ようにしている"
+   ]
+  },
+  {
+   "kind": "条件",
+   "orig": 1,
+   "rewrite": 0,
+   "orig_hits": [
+    "場合"
+   ],
+   "rewrite_hits": []
+  }
+ ],
+ "new_words": [
+  "順番"
+ ],
+ "lost_words": [
+  "付与",
+  "単位",
+  "反映",
+  "同一",
+  "問題",
+  "場合",
+  "失敗時",
+  "応答遅延",
+  "監視対象",
+  "退避",
+  "送信",
+  "間近",
+  "防止",
+  "順次処理"
+ ],
+ "structure": [
+  "文の数が変わった（8 → 9）"
+ ],
+ "spans": [],
+ "logic": [],
+ "bold": [],
+ "endings": {
+  "stance": "決まり",
+  "changes": [],
+  "flags": [],
+  "orig_flags": []
+ }
+}

@@ -1,0 +1,21 @@
+{
+  "score": 95,
+  "is_clean": false,
+  "metrics": {
+    "char_count": 560,
+    "total_lines": 5,
+    "list_lines": 0,
+    "list_ratio": 0.0,
+    "bold_count": 0,
+    "bold_per_1000": 0.0
+  },
+  "findings": [
+    {
+      "rule": "sentence_end_repetition",
+      "line": 5,
+      "severity": "warn",
+      "message": "同一文末「ます」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
+      "snippet": "次に、処理に失敗したメッセージの扱いを決めます。"
+    }
+  ]
+}

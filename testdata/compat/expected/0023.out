@@ -1,0 +1,35 @@
+{
+  "score": 85,
+  "is_clean": false,
+  "metrics": {
+    "char_count": 402,
+    "total_lines": 20,
+    "list_lines": 10,
+    "list_ratio": 0.5,
+    "bold_count": 10,
+    "bold_per_1000": 24.88
+  },
+  "findings": [
+    {
+      "rule": "excess_bold",
+      "line": 1,
+      "severity": "warn",
+      "message": "太字の頻度（1,000字あたり 24.88個）が設定した目安を超えています（推奨: 2.0以下）。強調の役割を確かめ、不要なものだけ整理してください。",
+      "snippet": "太字数: 10回 / 402文字"
+    },
+    {
+      "rule": "excess_list",
+      "line": 1,
+      "severity": "warn",
+      "message": "箇条書きの比率（50.0%）が設定した目安を超えています（推奨: 15%以下）。項目の役割を確かめ、不要なものだけ整理してください。",
+      "snippet": "リスト行: 10 / 全非空行: 20"
+    },
+    {
+      "rule": "sentence_end_repetition",
+      "line": 6,
+      "severity": "warn",
+      "message": "同一文末「ます」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
+      "snippet": "知らないキーは**エラー**として扱い、打ち間違いに気づけます。"
+    }
+  ]
+}

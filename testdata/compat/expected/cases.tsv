@@ -1,0 +1,964 @@
+0001	-	lint	testdata/compat/inputs/local/astral.md	--json
+0002	-	lint	testdata/compat/inputs/local/astral.md
+0003	-	lint	testdata/compat/inputs/local/astral.md	--strict	--json
+0004	-	diff	--endings	testdata/compat/inputs/local/astral.md
+0005	-	lint	testdata/compat/inputs/local/blank.md	--json
+0006	-	lint	testdata/compat/inputs/local/blank.md
+0007	-	lint	testdata/compat/inputs/local/blank.md	--strict	--json
+0008	-	diff	--endings	testdata/compat/inputs/local/blank.md
+0009	-	lint	testdata/compat/inputs/local/cr.md	--json
+0010	-	lint	testdata/compat/inputs/local/cr.md
+0011	-	lint	testdata/compat/inputs/local/cr.md	--strict	--json
+0012	-	diff	--endings	testdata/compat/inputs/local/cr.md
+0013	-	lint	testdata/compat/inputs/local/crlf.md	--json
+0014	-	lint	testdata/compat/inputs/local/crlf.md
+0015	-	lint	testdata/compat/inputs/local/crlf.md	--strict	--json
+0016	-	diff	--endings	testdata/compat/inputs/local/crlf.md
+0017	-	lint	testdata/compat/inputs/local/ctrl.md	--json
+0018	-	lint	testdata/compat/inputs/local/ctrl.md
+0019	-	lint	testdata/compat/inputs/local/ctrl.md	--strict	--json
+0020	-	diff	--endings	testdata/compat/inputs/local/ctrl.md
+0021	-	lint	testdata/compat/inputs/local/dense.md	--json
+0022	-	lint	testdata/compat/inputs/local/dense.md
+0023	-	lint	testdata/compat/inputs/local/dense.md	--strict	--json
+0024	-	diff	--endings	testdata/compat/inputs/local/dense.md
+0025	-	lint	testdata/compat/inputs/local/diff/stance.orig.md	--json
+0026	-	lint	testdata/compat/inputs/local/diff/stance.orig.md
+0027	-	lint	testdata/compat/inputs/local/diff/stance.orig.md	--strict	--json
+0028	-	diff	--endings	testdata/compat/inputs/local/diff/stance.orig.md
+0029	-	lint	testdata/compat/inputs/local/diff/stance.rewrite.md	--json
+0030	-	lint	testdata/compat/inputs/local/diff/stance.rewrite.md
+0031	-	lint	testdata/compat/inputs/local/diff/stance.rewrite.md	--strict	--json
+0032	-	diff	--endings	testdata/compat/inputs/local/diff/stance.rewrite.md
+0033	-	lint	testdata/compat/inputs/local/empty.md	--json
+0034	-	lint	testdata/compat/inputs/local/empty.md
+0035	-	lint	testdata/compat/inputs/local/empty.md	--strict	--json
+0036	-	diff	--endings	testdata/compat/inputs/local/empty.md
+0037	-	lint	testdata/compat/inputs/local/frontmatter.md	--json
+0038	-	lint	testdata/compat/inputs/local/frontmatter.md
+0039	-	lint	testdata/compat/inputs/local/frontmatter.md	--strict	--json
+0040	-	diff	--endings	testdata/compat/inputs/local/frontmatter.md
+0041	-	lint	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_casual.md	--json
+0042	-	lint	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_casual.md
+0043	-	lint	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_casual.md	--strict	--json
+0044	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_casual.md
+0045	-	lint	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_default.md	--json
+0046	-	lint	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_default.md
+0047	-	lint	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_default.md	--strict	--json
+0048	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_default.md
+0049	-	lint	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_formal.md	--json
+0050	-	lint	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_formal.md
+0051	-	lint	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_formal.md	--strict	--json
+0052	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_formal.md
+0053	-	lint	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_casual.md	--json
+0054	-	lint	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_casual.md
+0055	-	lint	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_casual.md	--strict	--json
+0056	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_casual.md
+0057	-	lint	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_default.md	--json
+0058	-	lint	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_default.md
+0059	-	lint	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_default.md	--strict	--json
+0060	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_default.md
+0061	-	lint	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_formal.md	--json
+0062	-	lint	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_formal.md
+0063	-	lint	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_formal.md	--strict	--json
+0064	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_formal.md
+0065	-	lint	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_casual.md	--json
+0066	-	lint	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_casual.md
+0067	-	lint	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_casual.md	--strict	--json
+0068	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_casual.md
+0069	-	lint	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_default.md	--json
+0070	-	lint	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_default.md
+0071	-	lint	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_default.md	--strict	--json
+0072	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_default.md
+0073	-	lint	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_formal.md	--json
+0074	-	lint	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_formal.md
+0075	-	lint	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_formal.md	--strict	--json
+0076	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_formal.md
+0077	-	lint	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_casual.md	--json
+0078	-	lint	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_casual.md
+0079	-	lint	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_casual.md	--strict	--json
+0080	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_casual.md
+0081	-	lint	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_default.md	--json
+0082	-	lint	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_default.md
+0083	-	lint	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_default.md	--strict	--json
+0084	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_default.md
+0085	-	lint	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_formal.md	--json
+0086	-	lint	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_formal.md
+0087	-	lint	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_formal.md	--strict	--json
+0088	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_formal.md
+0089	-	lint	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_casual.md	--json
+0090	-	lint	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_casual.md
+0091	-	lint	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_casual.md	--strict	--json
+0092	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_casual.md
+0093	-	lint	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_default.md	--json
+0094	-	lint	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_default.md
+0095	-	lint	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_default.md	--strict	--json
+0096	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_default.md
+0097	-	lint	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_formal.md	--json
+0098	-	lint	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_formal.md
+0099	-	lint	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_formal.md	--strict	--json
+0100	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_formal.md
+0101	-	lint	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_casual.md	--json
+0102	-	lint	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_casual.md
+0103	-	lint	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_casual.md	--strict	--json
+0104	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_casual.md
+0105	-	lint	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_default.md	--json
+0106	-	lint	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_default.md
+0107	-	lint	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_default.md	--strict	--json
+0108	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_default.md
+0109	-	lint	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_formal.md	--json
+0110	-	lint	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_formal.md
+0111	-	lint	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_formal.md	--strict	--json
+0112	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_formal.md
+0113	-	lint	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_casual.md	--json
+0114	-	lint	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_casual.md
+0115	-	lint	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_casual.md	--strict	--json
+0116	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_casual.md
+0117	-	lint	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_default.md	--json
+0118	-	lint	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_default.md
+0119	-	lint	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_default.md	--strict	--json
+0120	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_default.md
+0121	-	lint	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_formal.md	--json
+0122	-	lint	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_formal.md
+0123	-	lint	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_formal.md	--strict	--json
+0124	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_formal.md
+0125	-	lint	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_casual.md	--json
+0126	-	lint	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_casual.md
+0127	-	lint	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_casual.md	--strict	--json
+0128	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_casual.md
+0129	-	lint	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_default.md	--json
+0130	-	lint	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_default.md
+0131	-	lint	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_default.md	--strict	--json
+0132	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_default.md
+0133	-	lint	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_formal.md	--json
+0134	-	lint	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_formal.md
+0135	-	lint	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_formal.md	--strict	--json
+0136	-	diff	--endings	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_formal.md
+0137	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kiku_45.md	--json
+0138	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kiku_45.md
+0139	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kiku_45.md	--strict	--json
+0140	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_kiku_45.md
+0141	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kiku_46.md	--json
+0142	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kiku_46.md
+0143	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kiku_46.md	--strict	--json
+0144	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_kiku_46.md
+0145	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_37.md	--json
+0146	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_37.md
+0147	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_37.md	--strict	--json
+0148	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_37.md
+0149	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_38.md	--json
+0150	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_38.md
+0151	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_38.md	--strict	--json
+0152	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_38.md
+0153	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_39.md	--json
+0154	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_39.md
+0155	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_39.md	--strict	--json
+0156	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_39.md
+0157	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_40.md	--json
+0158	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_40.md
+0159	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_40.md	--strict	--json
+0160	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_40.md
+0161	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_41.md	--json
+0162	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_41.md
+0163	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_41.md	--strict	--json
+0164	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_41.md
+0165	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_42.md	--json
+0166	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_42.md
+0167	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_42.md	--strict	--json
+0168	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_42.md
+0169	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_43.md	--json
+0170	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_43.md
+0171	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_43.md	--strict	--json
+0172	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_43.md
+0173	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_44.md	--json
+0174	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_44.md
+0175	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_44.md	--strict	--json
+0176	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_kowareru_44.md
+0177	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_01.md	--json
+0178	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_01.md
+0179	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_01.md	--strict	--json
+0180	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_01.md
+0181	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_02.md	--json
+0182	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_02.md
+0183	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_02.md	--strict	--json
+0184	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_02.md
+0185	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_03.md	--json
+0186	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_03.md
+0187	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_03.md	--strict	--json
+0188	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_03.md
+0189	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_04.md	--json
+0190	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_04.md
+0191	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_04.md	--strict	--json
+0192	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_04.md
+0193	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_05.md	--json
+0194	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_05.md
+0195	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_05.md	--strict	--json
+0196	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_05.md
+0197	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_06.md	--json
+0198	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_06.md
+0199	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_06.md	--strict	--json
+0200	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_06.md
+0201	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_07.md	--json
+0202	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_07.md
+0203	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_07.md	--strict	--json
+0204	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_07.md
+0205	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_08.md	--json
+0206	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_08.md
+0207	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_08.md	--strict	--json
+0208	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_08.md
+0209	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_09.md	--json
+0210	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_09.md
+0211	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_09.md	--strict	--json
+0212	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_09.md
+0213	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_10.md	--json
+0214	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_10.md
+0215	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_10.md	--strict	--json
+0216	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_nigiru_10.md
+0217	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_11.md	--json
+0218	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_11.md
+0219	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_11.md	--strict	--json
+0220	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_taosu_11.md
+0221	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_12.md	--json
+0222	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_12.md
+0223	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_12.md	--strict	--json
+0224	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_taosu_12.md
+0225	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_13.md	--json
+0226	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_13.md
+0227	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_13.md	--strict	--json
+0228	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_taosu_13.md
+0229	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_14.md	--json
+0230	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_14.md
+0231	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_14.md	--strict	--json
+0232	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_taosu_14.md
+0233	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_15.md	--json
+0234	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_15.md
+0235	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_15.md	--strict	--json
+0236	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_taosu_15.md
+0237	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_16.md	--json
+0238	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_16.md
+0239	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_16.md	--strict	--json
+0240	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_taosu_16.md
+0241	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_17.md	--json
+0242	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_17.md
+0243	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_17.md	--strict	--json
+0244	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_taosu_17.md
+0245	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_18.md	--json
+0246	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_18.md
+0247	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_18.md	--strict	--json
+0248	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_taosu_18.md
+0249	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_19.md	--json
+0250	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_19.md
+0251	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_19.md	--strict	--json
+0252	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_taosu_19.md
+0253	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_20.md	--json
+0254	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_20.md
+0255	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_taosu_20.md	--strict	--json
+0256	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_taosu_20.md
+0257	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_21.md	--json
+0258	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_21.md
+0259	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_21.md	--strict	--json
+0260	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_21.md
+0261	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_22.md	--json
+0262	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_22.md
+0263	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_22.md	--strict	--json
+0264	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_22.md
+0265	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_23.md	--json
+0266	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_23.md
+0267	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_23.md	--strict	--json
+0268	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_23.md
+0269	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_24.md	--json
+0270	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_24.md
+0271	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_24.md	--strict	--json
+0272	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_24.md
+0273	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_25.md	--json
+0274	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_25.md
+0275	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_25.md	--strict	--json
+0276	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_25.md
+0277	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_26.md	--json
+0278	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_26.md
+0279	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_26.md	--strict	--json
+0280	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_26.md
+0281	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_27.md	--json
+0282	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_27.md
+0283	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_27.md	--strict	--json
+0284	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_27.md
+0285	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_28.md	--json
+0286	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_28.md
+0287	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_28.md	--strict	--json
+0288	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_tokasu_28.md
+0289	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_29.md	--json
+0290	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_29.md
+0291	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_29.md	--strict	--json
+0292	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_waru_29.md
+0293	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_30.md	--json
+0294	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_30.md
+0295	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_30.md	--strict	--json
+0296	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_waru_30.md
+0297	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_31.md	--json
+0298	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_31.md
+0299	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_31.md	--strict	--json
+0300	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_waru_31.md
+0301	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_32.md	--json
+0302	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_32.md
+0303	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_32.md	--strict	--json
+0304	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_waru_32.md
+0305	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_33.md	--json
+0306	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_33.md
+0307	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_33.md	--strict	--json
+0308	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_waru_33.md
+0309	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_34.md	--json
+0310	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_34.md
+0311	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_34.md	--strict	--json
+0312	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_waru_34.md
+0313	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_35.md	--json
+0314	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_35.md
+0315	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_35.md	--strict	--json
+0316	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_waru_35.md
+0317	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_36.md	--json
+0318	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_36.md
+0319	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_waru_36.md	--strict	--json
+0320	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_waru_36.md
+0321	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_watasu_47.md	--json
+0322	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_watasu_47.md
+0323	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_watasu_47.md	--strict	--json
+0324	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_watasu_47.md
+0325	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_watasu_48.md	--json
+0326	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_watasu_48.md
+0327	-	lint	testdata/compat/inputs/upstream/edge_cases/edge_watasu_48.md	--strict	--json
+0328	-	diff	--endings	testdata/compat/inputs/upstream/edge_cases/edge_watasu_48.md
+0329	-	lint	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_casual.md	--json
+0330	-	lint	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_casual.md
+0331	-	lint	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_casual.md	--strict	--json
+0332	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_casual.md
+0333	-	lint	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_default.md	--json
+0334	-	lint	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_default.md
+0335	-	lint	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_default.md	--strict	--json
+0336	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_default.md
+0337	-	lint	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_formal.md	--json
+0338	-	lint	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_formal.md
+0339	-	lint	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_formal.md	--strict	--json
+0340	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_formal.md
+0341	-	lint	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_casual.md	--json
+0342	-	lint	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_casual.md
+0343	-	lint	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_casual.md	--strict	--json
+0344	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_casual.md
+0345	-	lint	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_default.md	--json
+0346	-	lint	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_default.md
+0347	-	lint	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_default.md	--strict	--json
+0348	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_default.md
+0349	-	lint	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_formal.md	--json
+0350	-	lint	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_formal.md
+0351	-	lint	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_formal.md	--strict	--json
+0352	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_formal.md
+0353	-	lint	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_casual.md	--json
+0354	-	lint	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_casual.md
+0355	-	lint	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_casual.md	--strict	--json
+0356	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_casual.md
+0357	-	lint	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_default.md	--json
+0358	-	lint	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_default.md
+0359	-	lint	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_default.md	--strict	--json
+0360	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_default.md
+0361	-	lint	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_formal.md	--json
+0362	-	lint	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_formal.md
+0363	-	lint	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_formal.md	--strict	--json
+0364	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_formal.md
+0365	-	lint	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_casual.md	--json
+0366	-	lint	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_casual.md
+0367	-	lint	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_casual.md	--strict	--json
+0368	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_casual.md
+0369	-	lint	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_default.md	--json
+0370	-	lint	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_default.md
+0371	-	lint	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_default.md	--strict	--json
+0372	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_default.md
+0373	-	lint	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_formal.md	--json
+0374	-	lint	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_formal.md
+0375	-	lint	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_formal.md	--strict	--json
+0376	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_formal.md
+0377	-	lint	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_casual.md	--json
+0378	-	lint	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_casual.md
+0379	-	lint	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_casual.md	--strict	--json
+0380	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_casual.md
+0381	-	lint	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_default.md	--json
+0382	-	lint	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_default.md
+0383	-	lint	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_default.md	--strict	--json
+0384	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_default.md
+0385	-	lint	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_formal.md	--json
+0386	-	lint	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_formal.md
+0387	-	lint	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_formal.md	--strict	--json
+0388	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_formal.md
+0389	-	lint	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_casual.md	--json
+0390	-	lint	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_casual.md
+0391	-	lint	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_casual.md	--strict	--json
+0392	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_casual.md
+0393	-	lint	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_default.md	--json
+0394	-	lint	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_default.md
+0395	-	lint	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_default.md	--strict	--json
+0396	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_default.md
+0397	-	lint	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_formal.md	--json
+0398	-	lint	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_formal.md
+0399	-	lint	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_formal.md	--strict	--json
+0400	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_formal.md
+0401	-	lint	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_casual.md	--json
+0402	-	lint	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_casual.md
+0403	-	lint	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_casual.md	--strict	--json
+0404	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_casual.md
+0405	-	lint	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_default.md	--json
+0406	-	lint	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_default.md
+0407	-	lint	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_default.md	--strict	--json
+0408	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_default.md
+0409	-	lint	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_formal.md	--json
+0410	-	lint	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_formal.md
+0411	-	lint	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_formal.md	--strict	--json
+0412	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_formal.md
+0413	-	lint	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_casual.md	--json
+0414	-	lint	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_casual.md
+0415	-	lint	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_casual.md	--strict	--json
+0416	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_casual.md
+0417	-	lint	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_default.md	--json
+0418	-	lint	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_default.md
+0419	-	lint	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_default.md	--strict	--json
+0420	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_default.md
+0421	-	lint	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_formal.md	--json
+0422	-	lint	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_formal.md
+0423	-	lint	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_formal.md	--strict	--json
+0424	-	diff	--endings	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_formal.md
+0425	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual.md	--json
+0426	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual.md
+0427	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual.md	--strict	--json
+0428	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual.md
+0429	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual_bl.md	--json
+0430	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual_bl.md
+0431	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual_bl.md	--strict	--json
+0432	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual_bl.md
+0433	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default.md	--json
+0434	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default.md
+0435	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default.md	--strict	--json
+0436	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default.md
+0437	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default_bl.md	--json
+0438	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default_bl.md
+0439	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default_bl.md	--strict	--json
+0440	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default_bl.md
+0441	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal.md	--json
+0442	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal.md
+0443	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal.md	--strict	--json
+0444	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal.md
+0445	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal_bl.md	--json
+0446	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal_bl.md
+0447	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal_bl.md	--strict	--json
+0448	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal_bl.md
+0449	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual.md	--json
+0450	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual.md
+0451	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual.md	--strict	--json
+0452	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual.md
+0453	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual_bl.md	--json
+0454	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual_bl.md
+0455	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual_bl.md	--strict	--json
+0456	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual_bl.md
+0457	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default.md	--json
+0458	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default.md
+0459	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default.md	--strict	--json
+0460	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default.md
+0461	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default_bl.md	--json
+0462	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default_bl.md
+0463	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default_bl.md	--strict	--json
+0464	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default_bl.md
+0465	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal.md	--json
+0466	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal.md
+0467	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal.md	--strict	--json
+0468	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal.md
+0469	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal_bl.md	--json
+0470	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal_bl.md
+0471	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal_bl.md	--strict	--json
+0472	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal_bl.md
+0473	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual.md	--json
+0474	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual.md
+0475	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual.md	--strict	--json
+0476	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual.md
+0477	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual_bl.md	--json
+0478	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual_bl.md
+0479	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual_bl.md	--strict	--json
+0480	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual_bl.md
+0481	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default.md	--json
+0482	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default.md
+0483	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default.md	--strict	--json
+0484	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default.md
+0485	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default_bl.md	--json
+0486	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default_bl.md
+0487	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default_bl.md	--strict	--json
+0488	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default_bl.md
+0489	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal.md	--json
+0490	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal.md
+0491	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal.md	--strict	--json
+0492	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal.md
+0493	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal_bl.md	--json
+0494	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal_bl.md
+0495	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal_bl.md	--strict	--json
+0496	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal_bl.md
+0497	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual.md	--json
+0498	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual.md
+0499	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual.md	--strict	--json
+0500	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual.md
+0501	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual_bl.md	--json
+0502	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual_bl.md
+0503	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual_bl.md	--strict	--json
+0504	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual_bl.md
+0505	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default.md	--json
+0506	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default.md
+0507	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default.md	--strict	--json
+0508	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default.md
+0509	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default_bl.md	--json
+0510	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default_bl.md
+0511	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default_bl.md	--strict	--json
+0512	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default_bl.md
+0513	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal.md	--json
+0514	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal.md
+0515	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal.md	--strict	--json
+0516	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal.md
+0517	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal_bl.md	--json
+0518	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal_bl.md
+0519	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal_bl.md	--strict	--json
+0520	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal_bl.md
+0521	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual.md	--json
+0522	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual.md
+0523	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual.md	--strict	--json
+0524	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual.md
+0525	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual_bl.md	--json
+0526	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual_bl.md
+0527	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual_bl.md	--strict	--json
+0528	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual_bl.md
+0529	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default.md	--json
+0530	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default.md
+0531	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default.md	--strict	--json
+0532	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default.md
+0533	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default_bl.md	--json
+0534	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default_bl.md
+0535	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default_bl.md	--strict	--json
+0536	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default_bl.md
+0537	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal.md	--json
+0538	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal.md
+0539	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal.md	--strict	--json
+0540	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal.md
+0541	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal_bl.md	--json
+0542	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal_bl.md
+0543	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal_bl.md	--strict	--json
+0544	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal_bl.md
+0545	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual.md	--json
+0546	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual.md
+0547	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual.md	--strict	--json
+0548	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual.md
+0549	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual_bl.md	--json
+0550	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual_bl.md
+0551	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual_bl.md	--strict	--json
+0552	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual_bl.md
+0553	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default.md	--json
+0554	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default.md
+0555	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default.md	--strict	--json
+0556	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default.md
+0557	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default_bl.md	--json
+0558	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default_bl.md
+0559	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default_bl.md	--strict	--json
+0560	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default_bl.md
+0561	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal.md	--json
+0562	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal.md
+0563	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal.md	--strict	--json
+0564	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal.md
+0565	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal_bl.md	--json
+0566	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal_bl.md
+0567	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal_bl.md	--strict	--json
+0568	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal_bl.md
+0569	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual.md	--json
+0570	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual.md
+0571	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual.md	--strict	--json
+0572	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual.md
+0573	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual_bl.md	--json
+0574	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual_bl.md
+0575	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual_bl.md	--strict	--json
+0576	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual_bl.md
+0577	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default.md	--json
+0578	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default.md
+0579	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default.md	--strict	--json
+0580	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default.md
+0581	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default_bl.md	--json
+0582	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default_bl.md
+0583	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default_bl.md	--strict	--json
+0584	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default_bl.md
+0585	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal.md	--json
+0586	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal.md
+0587	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal.md	--strict	--json
+0588	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal.md
+0589	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal_bl.md	--json
+0590	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal_bl.md
+0591	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal_bl.md	--strict	--json
+0592	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal_bl.md
+0593	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual.md	--json
+0594	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual.md
+0595	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual.md	--strict	--json
+0596	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual.md
+0597	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual_bl.md	--json
+0598	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual_bl.md
+0599	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual_bl.md	--strict	--json
+0600	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual_bl.md
+0601	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default.md	--json
+0602	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default.md
+0603	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default.md	--strict	--json
+0604	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default.md
+0605	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default_bl.md	--json
+0606	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default_bl.md
+0607	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default_bl.md	--strict	--json
+0608	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default_bl.md
+0609	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal.md	--json
+0610	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal.md
+0611	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal.md	--strict	--json
+0612	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal.md
+0613	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal_bl.md	--json
+0614	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal_bl.md
+0615	-	lint	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal_bl.md	--strict	--json
+0616	-	diff	--endings	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal_bl.md
+0617	testdata/compat/inputs/local/crlf.md	lint	--json
+0618	testdata/compat/inputs/local/cr.md	lint	--json
+0619	testdata/compat/inputs/local/astral.md	lint	--json
+0620	-	lint	testdata/compat/inputs/does-not-exist.md	--json
+0621	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual.md	--json
+0622	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual.md
+0623	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual.md	--stance=勧め	--json
+0624	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual.md	--stance=決まり	--json
+0625	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual.md	--stance=説明	--json
+0626	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual.md	--stance=報告	--json
+0627	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual.md	--stance=不明	--json
+0628	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default.md	--json
+0629	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default.md
+0630	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default.md	--stance=勧め	--json
+0631	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default.md	--stance=決まり	--json
+0632	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default.md	--stance=説明	--json
+0633	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default.md	--stance=報告	--json
+0634	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default.md	--stance=不明	--json
+0635	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal.md	--json
+0636	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal.md
+0637	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal.md	--stance=勧め	--json
+0638	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal.md	--stance=決まり	--json
+0639	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal.md	--stance=説明	--json
+0640	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal.md	--stance=報告	--json
+0641	-	diff	testdata/compat/inputs/upstream/raw_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal.md	--stance=不明	--json
+0642	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual.md	--json
+0643	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual.md
+0644	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual.md	--stance=勧め	--json
+0645	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual.md	--stance=決まり	--json
+0646	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual.md	--stance=説明	--json
+0647	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual.md	--stance=報告	--json
+0648	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual.md	--stance=不明	--json
+0649	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default.md	--json
+0650	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default.md
+0651	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default.md	--stance=勧め	--json
+0652	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default.md	--stance=決まり	--json
+0653	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default.md	--stance=説明	--json
+0654	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default.md	--stance=報告	--json
+0655	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default.md	--stance=不明	--json
+0656	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal.md	--json
+0657	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal.md
+0658	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal.md	--stance=勧め	--json
+0659	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal.md	--stance=決まり	--json
+0660	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal.md	--stance=説明	--json
+0661	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal.md	--stance=報告	--json
+0662	-	diff	testdata/compat/inputs/upstream/raw_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal.md	--stance=不明	--json
+0663	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual.md	--json
+0664	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual.md
+0665	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual.md	--stance=勧め	--json
+0666	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual.md	--stance=決まり	--json
+0667	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual.md	--stance=説明	--json
+0668	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual.md	--stance=報告	--json
+0669	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual.md	--stance=不明	--json
+0670	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default.md	--json
+0671	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default.md
+0672	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default.md	--stance=勧め	--json
+0673	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default.md	--stance=決まり	--json
+0674	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default.md	--stance=説明	--json
+0675	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default.md	--stance=報告	--json
+0676	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default.md	--stance=不明	--json
+0677	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal.md	--json
+0678	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal.md
+0679	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal.md	--stance=勧め	--json
+0680	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal.md	--stance=決まり	--json
+0681	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal.md	--stance=説明	--json
+0682	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal.md	--stance=報告	--json
+0683	-	diff	testdata/compat/inputs/upstream/raw_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal.md	--stance=不明	--json
+0684	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual.md	--json
+0685	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual.md
+0686	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual.md	--stance=勧め	--json
+0687	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual.md	--stance=決まり	--json
+0688	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual.md	--stance=説明	--json
+0689	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual.md	--stance=報告	--json
+0690	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual.md	--stance=不明	--json
+0691	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default.md	--json
+0692	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default.md
+0693	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default.md	--stance=勧め	--json
+0694	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default.md	--stance=決まり	--json
+0695	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default.md	--stance=説明	--json
+0696	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default.md	--stance=報告	--json
+0697	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default.md	--stance=不明	--json
+0698	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal.md	--json
+0699	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal.md
+0700	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal.md	--stance=勧め	--json
+0701	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal.md	--stance=決まり	--json
+0702	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal.md	--stance=説明	--json
+0703	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal.md	--stance=報告	--json
+0704	-	diff	testdata/compat/inputs/upstream/raw_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal.md	--stance=不明	--json
+0705	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual.md	--json
+0706	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual.md
+0707	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual.md	--stance=勧め	--json
+0708	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual.md	--stance=決まり	--json
+0709	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual.md	--stance=説明	--json
+0710	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual.md	--stance=報告	--json
+0711	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual.md	--stance=不明	--json
+0712	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default.md	--json
+0713	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default.md
+0714	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default.md	--stance=勧め	--json
+0715	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default.md	--stance=決まり	--json
+0716	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default.md	--stance=説明	--json
+0717	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default.md	--stance=報告	--json
+0718	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default.md	--stance=不明	--json
+0719	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal.md	--json
+0720	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal.md
+0721	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal.md	--stance=勧め	--json
+0722	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal.md	--stance=決まり	--json
+0723	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal.md	--stance=説明	--json
+0724	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal.md	--stance=報告	--json
+0725	-	diff	testdata/compat/inputs/upstream/raw_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal.md	--stance=不明	--json
+0726	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual.md	--json
+0727	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual.md
+0728	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual.md	--stance=勧め	--json
+0729	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual.md	--stance=決まり	--json
+0730	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual.md	--stance=説明	--json
+0731	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual.md	--stance=報告	--json
+0732	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual.md	--stance=不明	--json
+0733	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default.md	--json
+0734	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default.md
+0735	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default.md	--stance=勧め	--json
+0736	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default.md	--stance=決まり	--json
+0737	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default.md	--stance=説明	--json
+0738	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default.md	--stance=報告	--json
+0739	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default.md	--stance=不明	--json
+0740	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal.md	--json
+0741	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal.md
+0742	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal.md	--stance=勧め	--json
+0743	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal.md	--stance=決まり	--json
+0744	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal.md	--stance=説明	--json
+0745	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal.md	--stance=報告	--json
+0746	-	diff	testdata/compat/inputs/upstream/raw_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal.md	--stance=不明	--json
+0747	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual.md	--json
+0748	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual.md
+0749	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual.md	--stance=勧め	--json
+0750	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual.md	--stance=決まり	--json
+0751	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual.md	--stance=説明	--json
+0752	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual.md	--stance=報告	--json
+0753	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual.md	--stance=不明	--json
+0754	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default.md	--json
+0755	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default.md
+0756	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default.md	--stance=勧め	--json
+0757	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default.md	--stance=決まり	--json
+0758	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default.md	--stance=説明	--json
+0759	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default.md	--stance=報告	--json
+0760	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default.md	--stance=不明	--json
+0761	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal.md	--json
+0762	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal.md
+0763	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal.md	--stance=勧め	--json
+0764	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal.md	--stance=決まり	--json
+0765	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal.md	--stance=説明	--json
+0766	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal.md	--stance=報告	--json
+0767	-	diff	testdata/compat/inputs/upstream/raw_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal.md	--stance=不明	--json
+0768	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual.md	--json
+0769	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual.md
+0770	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual.md	--stance=勧め	--json
+0771	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual.md	--stance=決まり	--json
+0772	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual.md	--stance=説明	--json
+0773	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual.md	--stance=報告	--json
+0774	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual.md	--stance=不明	--json
+0775	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default.md	--json
+0776	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default.md
+0777	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default.md	--stance=勧め	--json
+0778	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default.md	--stance=決まり	--json
+0779	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default.md	--stance=説明	--json
+0780	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default.md	--stance=報告	--json
+0781	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default.md	--stance=不明	--json
+0782	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal.md	--json
+0783	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal.md
+0784	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal.md	--stance=勧め	--json
+0785	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal.md	--stance=決まり	--json
+0786	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal.md	--stance=説明	--json
+0787	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal.md	--stance=報告	--json
+0788	-	diff	testdata/compat/inputs/upstream/raw_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal.md	--stance=不明	--json
+0789	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual_bl.md	--json
+0790	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual_bl.md
+0791	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual_bl.md	--stance=勧め	--json
+0792	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual_bl.md	--stance=決まり	--json
+0793	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual_bl.md	--stance=説明	--json
+0794	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual_bl.md	--stance=報告	--json
+0795	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_casual_bl.md	--stance=不明	--json
+0796	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default_bl.md	--json
+0797	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default_bl.md
+0798	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default_bl.md	--stance=勧め	--json
+0799	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default_bl.md	--stance=決まり	--json
+0800	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default_bl.md	--stance=説明	--json
+0801	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default_bl.md	--stance=報告	--json
+0802	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_default_bl.md	--stance=不明	--json
+0803	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal_bl.md	--json
+0804	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal_bl.md
+0805	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal_bl.md	--stance=勧め	--json
+0806	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal_bl.md	--stance=決まり	--json
+0807	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal_bl.md	--stance=説明	--json
+0808	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal_bl.md	--stance=報告	--json
+0809	-	diff	testdata/compat/inputs/upstream/blacklist_ai/01_tech_arch_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/01_tech_arch_sonnet_formal_bl.md	--stance=不明	--json
+0810	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual_bl.md	--json
+0811	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual_bl.md
+0812	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual_bl.md	--stance=勧め	--json
+0813	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual_bl.md	--stance=決まり	--json
+0814	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual_bl.md	--stance=説明	--json
+0815	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual_bl.md	--stance=報告	--json
+0816	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_casual_bl.md	--stance=不明	--json
+0817	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default_bl.md	--json
+0818	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default_bl.md
+0819	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default_bl.md	--stance=勧め	--json
+0820	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default_bl.md	--stance=決まり	--json
+0821	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default_bl.md	--stance=説明	--json
+0822	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default_bl.md	--stance=報告	--json
+0823	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_default_bl.md	--stance=不明	--json
+0824	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal_bl.md	--json
+0825	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal_bl.md
+0826	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal_bl.md	--stance=勧め	--json
+0827	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal_bl.md	--stance=決まり	--json
+0828	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal_bl.md	--stance=説明	--json
+0829	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal_bl.md	--stance=報告	--json
+0830	-	diff	testdata/compat/inputs/upstream/blacklist_ai/02_incident_report_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/02_incident_report_sonnet_formal_bl.md	--stance=不明	--json
+0831	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual_bl.md	--json
+0832	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual_bl.md
+0833	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual_bl.md	--stance=勧め	--json
+0834	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual_bl.md	--stance=決まり	--json
+0835	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual_bl.md	--stance=説明	--json
+0836	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual_bl.md	--stance=報告	--json
+0837	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_casual_bl.md	--stance=不明	--json
+0838	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default_bl.md	--json
+0839	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default_bl.md
+0840	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default_bl.md	--stance=勧め	--json
+0841	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default_bl.md	--stance=決まり	--json
+0842	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default_bl.md	--stance=説明	--json
+0843	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default_bl.md	--stance=報告	--json
+0844	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_default_bl.md	--stance=不明	--json
+0845	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal_bl.md	--json
+0846	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal_bl.md
+0847	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal_bl.md	--stance=勧め	--json
+0848	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal_bl.md	--stance=決まり	--json
+0849	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal_bl.md	--stance=説明	--json
+0850	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal_bl.md	--stance=報告	--json
+0851	-	diff	testdata/compat/inputs/upstream/blacklist_ai/03_pr_description_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/03_pr_description_sonnet_formal_bl.md	--stance=不明	--json
+0852	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual_bl.md	--json
+0853	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual_bl.md
+0854	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual_bl.md	--stance=勧め	--json
+0855	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual_bl.md	--stance=決まり	--json
+0856	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual_bl.md	--stance=説明	--json
+0857	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual_bl.md	--stance=報告	--json
+0858	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_casual_bl.md	--stance=不明	--json
+0859	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default_bl.md	--json
+0860	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default_bl.md
+0861	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default_bl.md	--stance=勧め	--json
+0862	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default_bl.md	--stance=決まり	--json
+0863	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default_bl.md	--stance=説明	--json
+0864	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default_bl.md	--stance=報告	--json
+0865	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_default_bl.md	--stance=不明	--json
+0866	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal_bl.md	--json
+0867	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal_bl.md
+0868	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal_bl.md	--stance=勧め	--json
+0869	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal_bl.md	--stance=決まり	--json
+0870	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal_bl.md	--stance=説明	--json
+0871	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal_bl.md	--stance=報告	--json
+0872	-	diff	testdata/compat/inputs/upstream/blacklist_ai/04_slack_announce_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/04_slack_announce_sonnet_formal_bl.md	--stance=不明	--json
+0873	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual_bl.md	--json
+0874	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual_bl.md
+0875	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual_bl.md	--stance=勧め	--json
+0876	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual_bl.md	--stance=決まり	--json
+0877	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual_bl.md	--stance=説明	--json
+0878	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual_bl.md	--stance=報告	--json
+0879	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_casual_bl.md	--stance=不明	--json
+0880	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default_bl.md	--json
+0881	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default_bl.md
+0882	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default_bl.md	--stance=勧め	--json
+0883	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default_bl.md	--stance=決まり	--json
+0884	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default_bl.md	--stance=説明	--json
+0885	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default_bl.md	--stance=報告	--json
+0886	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_default_bl.md	--stance=不明	--json
+0887	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal_bl.md	--json
+0888	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal_bl.md
+0889	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal_bl.md	--stance=勧め	--json
+0890	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal_bl.md	--stance=決まり	--json
+0891	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal_bl.md	--stance=説明	--json
+0892	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal_bl.md	--stance=報告	--json
+0893	-	diff	testdata/compat/inputs/upstream/blacklist_ai/05_comparison_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/05_comparison_sonnet_formal_bl.md	--stance=不明	--json
+0894	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual_bl.md	--json
+0895	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual_bl.md
+0896	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual_bl.md	--stance=勧め	--json
+0897	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual_bl.md	--stance=決まり	--json
+0898	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual_bl.md	--stance=説明	--json
+0899	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual_bl.md	--stance=報告	--json
+0900	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_casual_bl.md	--stance=不明	--json
+0901	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default_bl.md	--json
+0902	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default_bl.md
+0903	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default_bl.md	--stance=勧め	--json
+0904	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default_bl.md	--stance=決まり	--json
+0905	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default_bl.md	--stance=説明	--json
+0906	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default_bl.md	--stance=報告	--json
+0907	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_default_bl.md	--stance=不明	--json
+0908	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal_bl.md	--json
+0909	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal_bl.md
+0910	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal_bl.md	--stance=勧め	--json
+0911	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal_bl.md	--stance=決まり	--json
+0912	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal_bl.md	--stance=説明	--json
+0913	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal_bl.md	--stance=報告	--json
+0914	-	diff	testdata/compat/inputs/upstream/blacklist_ai/06_spec_draft_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/06_spec_draft_sonnet_formal_bl.md	--stance=不明	--json
+0915	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual_bl.md	--json
+0916	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual_bl.md
+0917	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual_bl.md	--stance=勧め	--json
+0918	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual_bl.md	--stance=決まり	--json
+0919	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual_bl.md	--stance=説明	--json
+0920	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual_bl.md	--stance=報告	--json
+0921	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_casual_bl.md	--stance=不明	--json
+0922	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default_bl.md	--json
+0923	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default_bl.md
+0924	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default_bl.md	--stance=勧め	--json
+0925	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default_bl.md	--stance=決まり	--json
+0926	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default_bl.md	--stance=説明	--json
+0927	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default_bl.md	--stance=報告	--json
+0928	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_default_bl.md	--stance=不明	--json
+0929	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal_bl.md	--json
+0930	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal_bl.md
+0931	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal_bl.md	--stance=勧め	--json
+0932	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal_bl.md	--stance=決まり	--json
+0933	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal_bl.md	--stance=説明	--json
+0934	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal_bl.md	--stance=報告	--json
+0935	-	diff	testdata/compat/inputs/upstream/blacklist_ai/07_code_review_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/07_code_review_sonnet_formal_bl.md	--stance=不明	--json
+0936	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual_bl.md	--json
+0937	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual_bl.md
+0938	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual_bl.md	--stance=勧め	--json
+0939	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual_bl.md	--stance=決まり	--json
+0940	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual_bl.md	--stance=説明	--json
+0941	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual_bl.md	--stance=報告	--json
+0942	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_casual.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_casual_bl.md	--stance=不明	--json
+0943	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default_bl.md	--json
+0944	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default_bl.md
+0945	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default_bl.md	--stance=勧め	--json
+0946	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default_bl.md	--stance=決まり	--json
+0947	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default_bl.md	--stance=説明	--json
+0948	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default_bl.md	--stance=報告	--json
+0949	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_default.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_default_bl.md	--stance=不明	--json
+0950	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal_bl.md	--json
+0951	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal_bl.md
+0952	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal_bl.md	--stance=勧め	--json
+0953	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal_bl.md	--stance=決まり	--json
+0954	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal_bl.md	--stance=説明	--json
+0955	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal_bl.md	--stance=報告	--json
+0956	-	diff	testdata/compat/inputs/upstream/blacklist_ai/08_essay_retrospective_sonnet_formal.md	testdata/compat/inputs/upstream/yomiyasu_rewritten/08_essay_retrospective_sonnet_formal_bl.md	--stance=不明	--json
+0957	-	diff	testdata/compat/inputs/local/diff/stance.orig.md	testdata/compat/inputs/local/diff/stance.rewrite.md	--json
+0958	-	diff	testdata/compat/inputs/local/diff/stance.orig.md	testdata/compat/inputs/local/diff/stance.rewrite.md
+0959	-	diff	testdata/compat/inputs/local/diff/stance.orig.md	testdata/compat/inputs/local/diff/stance.rewrite.md	--stance=勧め	--json
+0960	-	diff	testdata/compat/inputs/local/diff/stance.orig.md	testdata/compat/inputs/local/diff/stance.rewrite.md	--stance=決まり	--json
+0961	-	diff	testdata/compat/inputs/local/diff/stance.orig.md	testdata/compat/inputs/local/diff/stance.rewrite.md	--stance=説明	--json
+0962	-	diff	testdata/compat/inputs/local/diff/stance.orig.md	testdata/compat/inputs/local/diff/stance.rewrite.md	--stance=報告	--json
+0963	-	diff	testdata/compat/inputs/local/diff/stance.orig.md	testdata/compat/inputs/local/diff/stance.rewrite.md	--stance=不明	--json
+0964	-	diff	only-one-arg.md

@@ -1,0 +1,21 @@
+{
+  "score": 95,
+  "is_clean": false,
+  "metrics": {
+    "char_count": 24,
+    "total_lines": 1,
+    "list_lines": 0,
+    "list_ratio": 0.0,
+    "bold_count": 0,
+    "bold_per_1000": 0.0
+  },
+  "findings": [
+    {
+      "rule": "meta_filler",
+      "line": 1,
+      "severity": "warn",
+      "message": "前置フィラー「重要なのは」が検出されました。単なる前置きや不要な飾りであれば削り、本題から書いてください。ただし、「何が大事か」という評価や主張そのものを担っている場合は、述語に移すなどして意味を残してください。",
+      "snippet": "重要なのは、設計です。\r結論から言うと、運用です。"
+    }
+  ]
+}

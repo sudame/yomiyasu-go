@@ -1,0 +1,28 @@
+{
+  "score": 90,
+  "is_clean": false,
+  "metrics": {
+    "char_count": 437,
+    "total_lines": 11,
+    "list_lines": 3,
+    "list_ratio": 0.273,
+    "bold_count": 5,
+    "bold_per_1000": 11.44
+  },
+  "findings": [
+    {
+      "rule": "excess_bold",
+      "line": 1,
+      "severity": "warn",
+      "message": "太字の頻度（1,000字あたり 11.44個）が設定した目安を超えています（推奨: 2.0以下）。強調の役割を確かめ、不要なものだけ整理してください。",
+      "snippet": "太字数: 5回 / 437文字"
+    },
+    {
+      "rule": "excess_list",
+      "line": 1,
+      "severity": "warn",
+      "message": "箇条書きの比率（27.3%）が設定した目安を超えています（推奨: 15%以下）。項目の役割を確かめ、不要なものだけ整理してください。",
+      "snippet": "リスト行: 3 / 全非空行: 11"
+    }
+  ]
+}

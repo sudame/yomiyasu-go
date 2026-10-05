@@ -1,0 +1,28 @@
+{
+  "score": 90,
+  "is_clean": false,
+  "metrics": {
+    "char_count": 554,
+    "total_lines": 11,
+    "list_lines": 0,
+    "list_ratio": 0.0,
+    "bold_count": 0,
+    "bold_per_1000": 0.0
+  },
+  "findings": [
+    {
+      "rule": "sentence_end_repetition",
+      "line": 10,
+      "severity": "warn",
+      "message": "同一文末「ました」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
+      "snippet": "その結果、接続が解放されないまま待機リクエストが積み上がり、プールが枯渇しました。"
+    },
+    {
+      "rule": "sentence_end_repetition",
+      "line": 13,
+      "severity": "warn",
+      "message": "同一文末「ました」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
+      "snippet": "20:24に該当テーブルへインデックスを追加し、プール上限を40へ引き上げたところ、20:30に正常化しました。"
+    }
+  ]
+}
