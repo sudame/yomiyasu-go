@@ -41,6 +41,7 @@ func Run(args []string, stdin io.Reader, stdout, stderr io.Writer, getenv func(s
 	root.AddCommand(newVersionCmd(e))
 	root.AddCommand(newLintCmd(e))
 	root.AddCommand(newDiffCmd(e))
+	root.AddCommand(newConfigCmd(e))
 
 	err := root.Execute()
 	var ee exitError

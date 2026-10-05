@@ -291,7 +291,8 @@ func ListPercent(m Metrics) string {
 const metaphorMessage = "が検出されました。不自然な比喩動詞であれば、ふだん使う動詞や客観的な表現に書き直してください。ただし、文字どおりの動作や状態変化を表している場合は無理に言い換える必要はありません。"
 
 // Lint は文章全体を検査する。
-func Lint(text string, _ map[string]bool) Result {
+// disabled に含まれる規則の指摘は除き、点数にも数えない。計測値はそのまま返す。
+func Lint(text string, disabled map[string]bool) Result {
 	var findings []Finding
 	m := metrics(text)
 	sentences := plainSentences(text)
@@ -417,7 +418,13 @@ func Lint(text string, _ map[string]bool) Result {
 		}
 	}
 
-	return Result{Score: score(findings), IsClean: len(findings) == 0, Metrics: m, Findings: findings}
+	kept := []Finding{}
+	for _, f := range findings {
+		if !disabled[f.Rule] {
+			kept = append(kept, f)
+		}
+	}
+	return Result{Score: score(kept), IsClean: len(kept) == 0, Metrics: m, Findings: kept}
 }
 
 // score は 100 点からの減点で点数を出す。warn と error は 5 点、それ以外は 2 点を引く。

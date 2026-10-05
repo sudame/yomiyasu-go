@@ -8,6 +8,7 @@ import (
 
 	"github.com/spf13/cobra"
 
+	"github.com/sudame/yomiyasu-go/internal/config"
 	"github.com/sudame/yomiyasu-go/internal/lint"
 	"github.com/sudame/yomiyasu-go/internal/pycompat"
 )
@@ -19,6 +20,16 @@ func newLintCmd(e *env) *cobra.Command {
 		Short: "日本語の表現とMarkdownの書式を、設定されたルールで点検します。指摘は見直し候補です。",
 		Args:  cobra.MaximumNArgs(1),
 		RunE: func(_ *cobra.Command, args []string) error {
+			path, err := config.DefaultPath(e.getenv)
+			if err != nil {
+				fmt.Fprintf(e.stderr, "設定ファイルのエラー: %v\n", err)
+				return exitError{2}
+			}
+			cfg, err := config.Load(path)
+			if err != nil {
+				fmt.Fprintf(e.stderr, "設定ファイルのエラー: %v\n", err)
+				return exitError{2}
+			}
 			// Python はファイルから読むときだけ改行を \n にそろえ、標準入力の改行はそのまま読む。
 			var text string
 			if len(args) == 1 {
@@ -38,7 +49,7 @@ func newLintCmd(e *env) *cobra.Command {
 				}
 				text = string(raw)
 			}
-			disabled := map[string]bool{}
+			disabled := cfg.Disabled
 			r := lint.Lint(text, disabled)
 			if asJSON {
 				fmt.Fprint(e.stdout, lint.JSON(r))

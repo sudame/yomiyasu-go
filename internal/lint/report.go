@@ -5,6 +5,7 @@ import (
 	"strings"
 
 	"github.com/sudame/yomiyasu-go/internal/pycompat"
+	"github.com/sudame/yomiyasu-go/internal/rules"
 )
 
 // JSON は本家の --json と同じ出力を返す。
@@ -29,17 +30,33 @@ func JSON(r Result) string {
 	}, 2) + "\n"
 }
 
-// TextReport は本家の --json なしの出力を返す。
-func TextReport(r Result, _ map[string]bool) string {
+// TextReport は本家の --json なしの出力を返す。disabled が空なら本家と同じ文字列になる。
+func TextReport(r Result, disabled map[string]bool) string {
 	var b strings.Builder
 	rule := func(c string) { b.WriteString(strings.Repeat(c, 60) + "\n") }
 	m := r.Metrics
 	rule("=")
 	fmt.Fprintf(&b, "AIっぽさ 検査レポート (スコア: %d/100)\n", r.Score)
 	rule("=")
+	var off []string
+	for _, id := range rules.All {
+		if disabled[id] {
+			off = append(off, id)
+		}
+	}
+	if len(off) > 0 {
+		fmt.Fprintf(&b, "・無効にした規則: %s\n", strings.Join(off, ", "))
+	}
+	boldNote, listNote := "(推奨: 2.0以下 / 警告: 3.0超)", "(推奨: 15%以下 / 警告: 25%超)"
+	if disabled["excess_bold"] {
+		boldNote = "(検査は無効)"
+	}
+	if disabled["excess_list"] {
+		listNote = "(検査は無効)"
+	}
 	fmt.Fprintf(&b, "・文字数: %d | 行数: %d\n", m.CharCount, m.TotalLines)
-	fmt.Fprintf(&b, "・太字頻度: 1,000字あたり %s 個 (推奨: 2.0以下 / 警告: 3.0超)\n", m.BoldPer1000)
-	fmt.Fprintf(&b, "・箇条書き比率: %s%% (推奨: 15%%以下 / 警告: 25%%超)\n", ListPercent(m))
+	fmt.Fprintf(&b, "・太字頻度: 1,000字あたり %s 個 %s\n", m.BoldPer1000, boldNote)
+	fmt.Fprintf(&b, "・箇条書き比率: %s%% %s\n", ListPercent(m), listNote)
 	rule("-")
 	if r.IsClean {
 		b.WriteString("[PASS] 設定された検査ルールによる指摘はありません。\n")
