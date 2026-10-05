@@ -3,8 +3,8 @@ package pyre
 
 import (
 	"fmt"
-	"regexp"
 	"strconv"
+	"strings"
 
 	"github.com/dlclark/regexp2"
 )
@@ -21,18 +21,63 @@ type Regexp struct {
 	re, anchored *regexp2.Regexp
 }
 
-// .NET の構文には \UXXXXXXXX がないので、その文字そのものに置き換える。
-var upperU = regexp.MustCompile(`\\U([0-9A-Fa-f]{8})`)
+// translate は、Python と .NET で意味の違うエスケープを .NET の書き方に直す。
+//   - \UXXXXXXXX は .NET にないので、その文字そのものに置き換える。
+//   - Python の \s は str.isspace() と同じく \x1c〜\x1f も含むので、.NET の \s に足す。
+func translate(pattern string) string {
+	rs := []rune(pattern)
+	var b strings.Builder
+	inClass := false
+	for i := 0; i < len(rs); i++ {
+		r := rs[i]
+		switch {
+		case r == '\\' && i+1 < len(rs):
+			n := rs[i+1]
+			i++
+			switch {
+			case n == 'U' && i+8 < len(rs):
+				v, err := strconv.ParseUint(string(rs[i+1:i+9]), 16, 32)
+				if err != nil {
+					panic(fmt.Sprintf("pyre: %q の \\U を読めない: %v", pattern, err))
+				}
+				b.WriteRune(rune(v))
+				i += 8
+			case n == 's' && inClass:
+				b.WriteString(`\s\x1c-\x1f`)
+			case n == 's':
+				b.WriteString(`[\s\x1c-\x1f]`)
+			case n == 'S' && inClass:
+				panic(fmt.Sprintf("pyre: %q の文字クラス内の \\S は扱えない", pattern))
+			case n == 'S':
+				b.WriteString(`[^\s\x1c-\x1f]`)
+			default:
+				b.WriteRune(r)
+				b.WriteRune(n)
+			}
+		case r == '[' && !inClass:
+			inClass = true
+			b.WriteRune(r)
+			if i+1 < len(rs) && rs[i+1] == '^' {
+				i++
+				b.WriteRune('^')
+			}
+			if i+1 < len(rs) && rs[i+1] == ']' {
+				i++
+				b.WriteRune(']')
+			}
+		case r == ']' && inClass:
+			inClass = false
+			b.WriteRune(r)
+		default:
+			b.WriteRune(r)
+		}
+	}
+	return b.String()
+}
 
 // MustCompile は Python の re の構文で書いたパターンをコンパイルする。
 func MustCompile(pattern string) *Regexp {
-	p := upperU.ReplaceAllStringFunc(pattern, func(s string) string {
-		n, err := strconv.ParseUint(s[2:], 16, 32)
-		if err != nil {
-			panic(err)
-		}
-		return string(rune(n))
-	})
+	p := translate(pattern)
 	return &Regexp{
 		re:       regexp2.MustCompile(p, regexp2.None),
 		anchored: regexp2.MustCompile(`\A(?:`+p+`)`, regexp2.None),

@@ -1,0 +1,21 @@
+{
+  "score": 95,
+  "is_clean": false,
+  "metrics": {
+    "char_count": 425,
+    "total_lines": 13,
+    "list_lines": 4,
+    "list_ratio": 0.308,
+    "bold_count": 1,
+    "bold_per_1000": 2.35
+  },
+  "findings": [
+    {
+      "rule": "excess_list",
+      "line": 1,
+      "severity": "warn",
+      "message": "箇条書きの比率（30.8%）が設定した目安を超えています（推奨: 15%以下）。項目の役割を確かめ、不要なものだけ整理してください。",
+      "snippet": "リスト行: 4 / 全非空行: 13"
+    }
+  ]
+}

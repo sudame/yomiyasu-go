@@ -69,6 +69,22 @@ func TestSubGroup1(t *testing.T) {
 	}
 }
 
+// Python の \s は str.isspace() と同じく \x1c〜\x1f も含むが、.NET の \s は含まない。
+func TestWhitespaceClassMatchesPython(t *testing.T) {
+	if got := MustCompile(`\s+`).Sub("a\x1cb\x1f c", func(Match) string { return "" }); got != "abc" {
+		t.Errorf("\\s = %q", got)
+	}
+	if got := MustCompile(`[。\s]+$`).Sub("文\x1e。", func(Match) string { return "" }); got != "文" {
+		t.Errorf("[\\s] = %q", got)
+	}
+	if _, ok := MustCompile(`a\S`).Search("a\x1d"); ok {
+		t.Error("\\S が \\x1d にマッチした")
+	}
+	if _, ok := MustCompile(`\\s`).Search(`\s`); !ok {
+		t.Error("エスケープしたバックスラッシュのあとの s を書き換えた")
+	}
+}
+
 func TestDollarBeforeTrailingNewline(t *testing.T) {
 	if _, ok := MustCompile(`[：:]$`).Search("ラベル：\n"); !ok {
 		t.Error("$ が末尾の改行の前でマッチしない")

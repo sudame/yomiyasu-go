@@ -1,0 +1,28 @@
+{
+  "score": 90,
+  "is_clean": false,
+  "metrics": {
+    "char_count": 466,
+    "total_lines": 11,
+    "list_lines": 4,
+    "list_ratio": 0.364,
+    "bold_count": 0,
+    "bold_per_1000": 0.0
+  },
+  "findings": [
+    {
+      "rule": "excess_list",
+      "line": 1,
+      "severity": "warn",
+      "message": "箇条書きの比率（36.4%）が設定した目安を超えています（推奨: 15%以下）。項目の役割を確かめ、不要なものだけ整理してください。",
+      "snippet": "リスト行: 4 / 全非空行: 11"
+    },
+    {
+      "rule": "sentence_end_repetition",
+      "line": 5,
+      "severity": "warn",
+      "message": "同一文末「ました」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
+      "snippet": "同じユーザーの並行リクエストが同時にリフレッシュを叩き、古いリフレッシュトークンで失敗して強制ログアウトになる事故が月に数件出ていました。"
+    }
+  ]
+}

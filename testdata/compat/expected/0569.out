@@ -1,0 +1,21 @@
+{
+  "score": 95,
+  "is_clean": false,
+  "metrics": {
+    "char_count": 461,
+    "total_lines": 4,
+    "list_lines": 0,
+    "list_ratio": 0.0,
+    "bold_count": 0,
+    "bold_per_1000": 0.0
+  },
+  "findings": [
+    {
+      "rule": "sentence_end_repetition",
+      "line": 1,
+      "severity": "warn",
+      "message": "同一文末「ます」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
+      "snippet": "たとえば決済APIの仕様が変わると、開発者は注文サービスのテストまで書き直すことになります。"
+    }
+  ]
+}

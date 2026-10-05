@@ -1,0 +1,2 @@
+使い方: python3 yomiyasu_diff.py 元の文.txt 書き直した文.txt [--stance=勧め|決まり|説明] [--json]
+　　　  python3 yomiyasu_diff.py --endings ファイル [--stance=勧め|決まり|説明]

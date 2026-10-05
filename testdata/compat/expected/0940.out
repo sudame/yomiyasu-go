@@ -1,0 +1,49 @@
+{
+ "markers": [
+  {
+   "kind": "つなぎ",
+   "orig": 2,
+   "rewrite": 1,
+   "orig_hits": [
+    "ことで",
+    "ので"
+   ],
+   "rewrite_hits": [
+    "ので"
+   ]
+  }
+ ],
+ "new_words": [
+  "作業"
+ ],
+ "lost_words": [
+  "運用"
+ ],
+ "structure": [
+  "文の数が変わった（12 → 11）"
+ ],
+ "spans": [
+  {
+   "added": "この作業で、",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "作業"
+   ],
+   "where": "の場で本人に直してもらうことにした。［この作業で、］古くなった記述も見つかる。\n\n半年後"
+  }
+ ],
+ "logic": [
+  {
+   "kind": "文頭の指示語",
+   "sentence": "この作業で、古くなった記述も見つかる。"
+  }
+ ],
+ "bold": [],
+ "endings": {
+  "stance": "説明",
+  "changes": [],
+  "flags": [],
+  "orig_flags": []
+ }
+}
