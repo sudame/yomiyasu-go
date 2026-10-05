@@ -37,5 +37,30 @@ func newSkillCmd(e *env) *cobra.Command {
 			return nil
 		},
 	})
+
+	var dir string
+	install := &cobra.Command{
+		Use:   "install",
+		Short: "設定を反映した SKILL.md、references、LICENSE を書き出す",
+		Args:  cobra.NoArgs,
+		RunE: func(*cobra.Command, []string) error {
+			files, err := e.buildSkill()
+			if err != nil {
+				return err
+			}
+			if dir == "" {
+				if dir, err = skill.DefaultDir(e.getenv); err != nil {
+					return err
+				}
+			}
+			if err := skill.Install(dir, files, "yomiyasu-go "+Version+" (nanaism/yomiyasu@"+upstreamCommit()+")"); err != nil {
+				return err
+			}
+			fmt.Fprintln(e.stdout, dir)
+			return nil
+		},
+	}
+	install.Flags().StringVar(&dir, "dir", "", "書き出し先（既定は ~/.claude/skills/yomiyasu-go）")
+	cmd.AddCommand(install)
 	return cmd
 }

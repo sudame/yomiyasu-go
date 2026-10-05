@@ -331,6 +331,16 @@ anchor = "本スキルでは、見出し・箇条書き・本文・表を問わ�
 replace = ""
 count = 1
 
+[[patch]]
+id = "emoji-gemini-12-particle"
+rules = ["emoji_prohibited"]
+unless = ["trailing_colon"]
+file = "references/gemini-syntax.md"
+anchor = "全角コロン（：）も置かない。"
+target = "も"
+replace = "を"
+count = 1
+
 # trailing_colon: 文末コロンを削除しない。
 
 [[patch]]
