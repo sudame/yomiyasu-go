@@ -1,88 +1,88 @@
 {
  "markers": [],
  "new_words": [
-  "修正",
-  "定着",
-  "業務",
-  "習慣",
-  "記述"
+  "\u4fee\u6b63",
+  "\u5b9a\u7740",
+  "\u696d\u52d9",
+  "\u7fd2\u6163",
+  "\u8a18\u8ff0"
  ],
  "lost_words": [
-  "オンボーディング",
-  "入口",
-  "実際",
-  "文化"
+  "\u30aa\u30f3\u30dc\u30fc\u30c7\u30a3\u30f3\u30b0",
+  "\u5165\u53e3",
+  "\u5b9f\u969b",
+  "\u6587\u5316"
  ],
  "structure": [],
  "spans": [
   {
-   "added": "、",
+   "added": "\u3001",
    "was": "",
    "kinds": [
-    "つなぎ"
+    "\u3064\u306a\u304e"
    ],
    "new_words": [],
-   "where": "Wikiだけが残っていた。\n\nそこで［、］まず書く量を減らした。PRテンプレー"
+   "where": "Wiki\u3060\u3051\u304c\u6b8b\u3063\u3066\u3044\u305f\u3002\n\n\u305d\u3053\u3067\uff3b\u3001\uff3d\u307e\u305a\u66f8\u304f\u91cf\u3092\u6e1b\u3089\u3057\u305f\u3002PR\u30c6\u30f3\u30d7\u30ec\u30fc"
   },
   {
-   "added": "修正",
-   "was": "直",
+   "added": "\u4fee\u6b63",
+   "was": "\u76f4",
    "kinds": [],
    "new_words": [
-    "修正"
+    "\u4fee\u6b63"
    ],
-   "where": "プしてもらい、詰まった箇所はその場で［修正］した。\n\n半年後、新人が業務を始めら"
+   "where": "\u30d7\u3057\u3066\u3082\u3089\u3044\u3001\u8a70\u307e\u3063\u305f\u7b87\u6240\u306f\u305d\u306e\u5834\u3067\uff3b\u4fee\u6b63\uff3d\u3057\u305f\u3002\n\n\u534a\u5e74\u5f8c\u3001\u65b0\u4eba\u304c\u696d\u52d9\u3092\u59cb\u3081\u3089"
   },
   {
-   "added": "新人が業務を始められ",
-   "was": "オンボーディングにかか",
+   "added": "\u65b0\u4eba\u304c\u696d\u52d9\u3092\u59cb\u3081\u3089\u308c",
+   "was": "\u30aa\u30f3\u30dc\u30fc\u30c7\u30a3\u30f3\u30b0\u306b\u304b\u304b",
    "kinds": [],
    "new_words": [
-    "業務"
+    "\u696d\u52d9"
    ],
-   "where": "箇所はその場で修正した。\n\n半年後、［新人が業務を始められ］るまでの日数は二週間から五日に縮まっ"
+   "where": "\u7b87\u6240\u306f\u305d\u306e\u5834\u3067\u4fee\u6b63\u3057\u305f\u3002\n\n\u534a\u5e74\u5f8c\u3001\uff3b\u65b0\u4eba\u304c\u696d\u52d9\u3092\u59cb\u3081\u3089\u308c\uff3d\u308b\u307e\u3067\u306e\u65e5\u6570\u306f\u4e8c\u9031\u9593\u304b\u3089\u4e94\u65e5\u306b\u7e2e\u307e\u3063"
   },
   {
-   "added": "書く習慣",
-   "was": "文化",
+   "added": "\u66f8\u304f\u7fd2\u6163",
+   "was": "\u6587\u5316",
    "kinds": [],
    "new_words": [
-    "習慣"
+    "\u7fd2\u6163"
    ],
-   "where": "二週間から五日に縮まった。それでも、［書く習慣］が定着したと感じたのは、レビューで「"
+   "where": "\u4e8c\u9031\u9593\u304b\u3089\u4e94\u65e5\u306b\u7e2e\u307e\u3063\u305f\u3002\u305d\u308c\u3067\u3082\u3001\uff3b\u66f8\u304f\u7fd2\u6163\uff3d\u304c\u5b9a\u7740\u3057\u305f\u3068\u611f\u3058\u305f\u306e\u306f\u3001\u30ec\u30d3\u30e5\u30fc\u3067\u300c"
   },
   {
-   "added": "定着し",
-   "was": "根づい",
+   "added": "\u5b9a\u7740\u3057",
+   "was": "\u6839\u3065\u3044",
    "kinds": [],
    "new_words": [
-    "定着"
+    "\u5b9a\u7740"
    ],
-   "where": "五日に縮まった。それでも、書く習慣が［定着し］たと感じたのは、レビューで「ここは理"
+   "where": "\u4e94\u65e5\u306b\u7e2e\u307e\u3063\u305f\u3002\u305d\u308c\u3067\u3082\u3001\u66f8\u304f\u7fd2\u6163\u304c\uff3b\u5b9a\u7740\u3057\uff3d\u305f\u3068\u611f\u3058\u305f\u306e\u306f\u3001\u30ec\u30d3\u30e5\u30fc\u3067\u300c\u3053\u3053\u306f\u7406"
   },
   {
-   "added": "記述を始めるきっかけ",
-   "was": "入口",
+   "added": "\u8a18\u8ff0\u3092\u59cb\u3081\u308b\u304d\u3063\u304b\u3051",
+   "was": "\u5165\u53e3",
    "kinds": [],
    "new_words": [
-    "記述"
+    "\u8a18\u8ff0"
    ],
-   "where": "テンプレートやADRといったルールは［記述を始めるきっかけ］になったが、書いた人を素直に褒める空"
+   "where": "\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8\u3084ADR\u3068\u3044\u3063\u305f\u30eb\u30fc\u30eb\u306f\uff3b\u8a18\u8ff0\u3092\u59cb\u3081\u308b\u304d\u3063\u304b\u3051\uff3d\u306b\u306a\u3063\u305f\u304c\u3001\u66f8\u3044\u305f\u4eba\u3092\u7d20\u76f4\u306b\u8912\u3081\u308b\u7a7a"
   }
  ],
  "logic": [
   {
-   "kind": "文頭のつなぎ",
-   "sentence": "そこで、まず書く量を減らした。"
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u305d\u3053\u3067\u3001\u307e\u305a\u66f8\u304f\u91cf\u3092\u6e1b\u3089\u3057\u305f\u3002"
   },
   {
-   "kind": "文頭のつなぎ",
-   "sentence": "それでも、書く習慣が定着したと感じたのは、レビューで「ここは理由を残してほしい」という指摘が自然に出るようになってからだ。"
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u305d\u308c\u3067\u3082\u3001\u66f8\u304f\u7fd2\u6163\u304c\u5b9a\u7740\u3057\u305f\u3068\u611f\u3058\u305f\u306e\u306f\u3001\u30ec\u30d3\u30e5\u30fc\u3067\u300c\u3053\u3053\u306f\u7406\u7531\u3092\u6b8b\u3057\u3066\u307b\u3057\u3044\u300d\u3068\u3044\u3046\u6307\u6458\u304c\u81ea\u7136\u306b\u51fa\u308b\u3088\u3046\u306b\u306a\u3063\u3066\u304b\u3089\u3060\u3002"
   }
  ],
  "bold": [],
  "endings": {
-  "stance": "説明",
+  "stance": "\u8aac\u660e",
   "changes": [],
   "flags": [],
   "orig_flags": []

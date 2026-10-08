@@ -1,162 +1,162 @@
 {
  "markers": [
   {
-   "kind": "義務",
+   "kind": "\u7fa9\u52d9",
    "orig": 0,
    "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "べき"
+    "\u3079\u304d"
    ]
   },
   {
-   "kind": "意志",
+   "kind": "\u610f\u5fd7",
    "orig": 0,
    "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "ようにします"
+    "\u3088\u3046\u306b\u3057\u307e\u3059"
    ]
   },
   {
-   "kind": "条件",
+   "kind": "\u6761\u4ef6",
    "orig": 0,
    "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "たら"
+    "\u305f\u3089"
    ]
   }
  ],
  "new_words": [
-  "システム",
-  "チーム",
-  "実行",
-  "管理者",
-  "設定",
-  "通知",
-  "開発",
-  "集計処理"
+  "\u30b7\u30b9\u30c6\u30e0",
+  "\u30c1\u30fc\u30e0",
+  "\u5b9f\u884c",
+  "\u7ba1\u7406\u8005",
+  "\u8a2d\u5b9a",
+  "\u901a\u77e5",
+  "\u958b\u767a",
+  "\u96c6\u8a08\u51e6\u7406"
  ],
  "lost_words": [
-  "キュー",
-  "返却"
+  "\u30ad\u30e5\u30fc",
+  "\u8fd4\u5374"
  ],
  "structure": [
-  "箇条書きを地の文にした。各項目の文末（指示・説明・評価）が元と同じか見る"
+  "\u7b87\u6761\u66f8\u304d\u3092\u5730\u306e\u6587\u306b\u3057\u305f\u3002\u5404\u9805\u76ee\u306e\u6587\u672b\uff08\u6307\u793a\u30fb\u8aac\u660e\u30fb\u8a55\u4fa1\uff09\u304c\u5143\u3068\u540c\u3058\u304b\u898b\u308b"
  ],
  "spans": [
   {
-   "added": "処理が",
-   "was": "を",
+   "added": "\u51e6\u7406\u304c",
+   "was": "\u3092",
    "kinds": [],
    "new_words": [
-    "処理"
+    "\u51e6\u7406"
    ],
-   "where": "までした。さらに在庫照会クエリに集計［処理が］含まれており、1件の実行に数秒かかっ"
+   "where": "\u307e\u3067\u3057\u305f\u3002\u3055\u3089\u306b\u5728\u5eab\u7167\u4f1a\u30af\u30a8\u30ea\u306b\u96c6\u8a08\uff3b\u51e6\u7406\u304c\uff3d\u542b\u307e\u308c\u3066\u304a\u308a\u30011\u4ef6\u306e\u5b9f\u884c\u306b\u6570\u79d2\u304b\u304b\u3063"
   },
   {
-   "added": "の実行",
+   "added": "\u306e\u5b9f\u884c",
    "was": "",
    "kinds": [],
    "new_words": [
-    "実行"
+    "\u5b9f\u884c"
    ],
-   "where": "クエリに集計処理が含まれており、1件［の実行］に数秒かかっていました。接続がプール"
+   "where": "\u30af\u30a8\u30ea\u306b\u96c6\u8a08\u51e6\u7406\u304c\u542b\u307e\u308c\u3066\u304a\u308a\u30011\u4ef6\uff3b\u306e\u5b9f\u884c\uff3d\u306b\u6570\u79d2\u304b\u304b\u3063\u3066\u3044\u307e\u3057\u305f\u3002\u63a5\u7d9a\u304c\u30d7\u30fc\u30eb"
   },
   {
-   "added": "開発チームは",
+   "added": "\u958b\u767a\u30c1\u30fc\u30e0\u306f",
    "was": "",
    "kinds": [],
    "new_words": [
-    "開発",
-    "チーム"
+    "\u958b\u767a",
+    "\u30c1\u30fc\u30e0"
    ],
-   "where": "たことを確認しました。\n\n再発防止\n［開発チームは］在庫照会にインデックスを追加し、集計"
+   "where": "\u305f\u3053\u3068\u3092\u78ba\u8a8d\u3057\u307e\u3057\u305f\u3002\n\n\u518d\u767a\u9632\u6b62\n\uff3b\u958b\u767a\u30c1\u30fc\u30e0\u306f\uff3d\u5728\u5eab\u7167\u4f1a\u306b\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u3092\u8ffd\u52a0\u3057\u3001\u96c6\u8a08"
   },
   {
-   "added": "ようにします。",
+   "added": "\u3088\u3046\u306b\u3057\u307e\u3059\u3002",
    "was": "\n",
    "kinds": [
-    "意志"
+    "\u610f\u5fd7"
    ],
    "new_words": [],
-   "where": "追加し、集計結果をキャッシュから返す［ようにします。］プール使用率が80%を超えたら、シス"
+   "where": "\u8ffd\u52a0\u3057\u3001\u96c6\u8a08\u7d50\u679c\u3092\u30ad\u30e3\u30c3\u30b7\u30e5\u304b\u3089\u8fd4\u3059\uff3b\u3088\u3046\u306b\u3057\u307e\u3059\u3002\uff3d\u30d7\u30fc\u30eb\u4f7f\u7528\u7387\u304c80%\u3092\u8d85\u3048\u305f\u3089\u3001\u30b7\u30b9"
   },
   {
-   "added": "、システム管理者に通知する",
+   "added": "\u3001\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u306b\u901a\u77e5\u3059\u308b",
    "was": "",
    "kinds": [
-    "条件"
+    "\u6761\u4ef6"
    ],
    "new_words": [
-    "システム",
-    "管理者",
-    "通知"
+    "\u30b7\u30b9\u30c6\u30e0",
+    "\u7ba1\u7406\u8005",
+    "\u901a\u77e5"
    ],
-   "where": "ます。プール使用率が80%を超えたら［、システム管理者に通知する］アラートを設定します。大型キャンペー"
+   "where": "\u307e\u3059\u3002\u30d7\u30fc\u30eb\u4f7f\u7528\u7387\u304c80%\u3092\u8d85\u3048\u305f\u3089\uff3b\u3001\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u306b\u901a\u77e5\u3059\u308b\uff3d\u30a2\u30e9\u30fc\u30c8\u3092\u8a2d\u5b9a\u3057\u307e\u3059\u3002\u5927\u578b\u30ad\u30e3\u30f3\u30da\u30fc"
   },
   {
-   "added": "設定しま",
-   "was": "飛ば",
+   "added": "\u8a2d\u5b9a\u3057\u307e",
+   "was": "\u98db\u3070",
    "kinds": [],
    "new_words": [
-    "設定"
+    "\u8a2d\u5b9a"
    ],
-   "where": "、システム管理者に通知するアラートを［設定しま］す。大型キャンペーンの前には、必ず負"
+   "where": "\u3001\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u306b\u901a\u77e5\u3059\u308b\u30a2\u30e9\u30fc\u30c8\u3092\uff3b\u8a2d\u5b9a\u3057\u307e\uff3d\u3059\u3002\u5927\u578b\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u306e\u524d\u306b\u306f\u3001\u5fc5\u305a\u8ca0"
   },
   {
-   "added": "は、必ず",
+   "added": "\u306f\u3001\u5fc5\u305a",
    "was": "",
    "kinds": [
-    "念押し"
+    "\u5ff5\u62bc\u3057"
    ],
    "new_words": [],
-   "where": "を設定します。大型キャンペーンの前に［は、必ず］負荷試験を実施します。\n\n私たちはプ"
+   "where": "\u3092\u8a2d\u5b9a\u3057\u307e\u3059\u3002\u5927\u578b\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u306e\u524d\u306b\uff3b\u306f\u3001\u5fc5\u305a\uff3d\u8ca0\u8377\u8a66\u9a13\u3092\u5b9f\u65bd\u3057\u307e\u3059\u3002\n\n\u79c1\u305f\u3061\u306f\u30d7"
   },
   {
-   "added": "にすべき",
+   "added": "\u306b\u3059\u3079\u304d",
    "was": "",
    "kinds": [
-    "義務"
+    "\u7fa9\u52d9"
    ],
    "new_words": [],
-   "where": "受け、上限値もキャパシティ計画の対象［にすべき］だと認識しました。"
+   "where": "\u53d7\u3051\u3001\u4e0a\u9650\u5024\u3082\u30ad\u30e3\u30d1\u30b7\u30c6\u30a3\u8a08\u753b\u306e\u5bfe\u8c61\uff3b\u306b\u3059\u3079\u304d\uff3d\u3060\u3068\u8a8d\u8b58\u3057\u307e\u3057\u305f\u3002"
   }
  ],
  "logic": [
   {
-   "kind": "文頭のつなぎ",
-   "sentence": "さらに在庫照会クエリに集計処理が含まれており、1件の実行に数秒かかっていました。"
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u3055\u3089\u306b\u5728\u5eab\u7167\u4f1a\u30af\u30a8\u30ea\u306b\u96c6\u8a08\u51e6\u7406\u304c\u542b\u307e\u308c\u3066\u304a\u308a\u30011\u4ef6\u306e\u5b9f\u884c\u306b\u6570\u79d2\u304b\u304b\u3063\u3066\u3044\u307e\u3057\u305f\u3002"
   }
  ],
  "bold": [],
  "endings": {
-  "stance": "決まり",
+  "stance": "\u6c7a\u307e\u308a",
   "changes": [
    {
-    "orig": "在庫照会にインデックスを追加し、集計結果はキャッシュから返す",
-    "orig_kind": "常体・箇条書き",
-    "rewrite": "開発チームは在庫照会にインデックスを追加し、集計結果をキャッシュから返すようにします。",
-    "rewrite_kind": "動作（〜します）"
+    "orig": "\u5728\u5eab\u7167\u4f1a\u306b\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u3092\u8ffd\u52a0\u3057\u3001\u96c6\u8a08\u7d50\u679c\u306f\u30ad\u30e3\u30c3\u30b7\u30e5\u304b\u3089\u8fd4\u3059",
+    "orig_kind": "\u5e38\u4f53\u30fb\u7b87\u6761\u66f8\u304d",
+    "rewrite": "\u958b\u767a\u30c1\u30fc\u30e0\u306f\u5728\u5eab\u7167\u4f1a\u306b\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u3092\u8ffd\u52a0\u3057\u3001\u96c6\u8a08\u7d50\u679c\u3092\u30ad\u30e3\u30c3\u30b7\u30e5\u304b\u3089\u8fd4\u3059\u3088\u3046\u306b\u3057\u307e\u3059\u3002",
+    "rewrite_kind": "\u52d5\u4f5c\uff08\u301c\u3057\u307e\u3059\uff09"
    },
    {
-    "orig": "プール使用率が80%を超えたらアラートを飛ばす",
-    "orig_kind": "常体・箇条書き",
-    "rewrite": "プール使用率が80%を超えたら、システム管理者に通知するアラートを設定します。",
-    "rewrite_kind": "動作（〜します）"
+    "orig": "\u30d7\u30fc\u30eb\u4f7f\u7528\u7387\u304c80%\u3092\u8d85\u3048\u305f\u3089\u30a2\u30e9\u30fc\u30c8\u3092\u98db\u3070\u3059",
+    "orig_kind": "\u5e38\u4f53\u30fb\u7b87\u6761\u66f8\u304d",
+    "rewrite": "\u30d7\u30fc\u30eb\u4f7f\u7528\u7387\u304c80%\u3092\u8d85\u3048\u305f\u3089\u3001\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u306b\u901a\u77e5\u3059\u308b\u30a2\u30e9\u30fc\u30c8\u3092\u8a2d\u5b9a\u3057\u307e\u3059\u3002",
+    "rewrite_kind": "\u52d5\u4f5c\uff08\u301c\u3057\u307e\u3059\uff09"
    },
    {
-    "orig": "大型キャンペーンの前に負荷試験を必ず実施する",
-    "orig_kind": "常体・箇条書き",
-    "rewrite": "大型キャンペーンの前には、必ず負荷試験を実施します。",
-    "rewrite_kind": "動作（〜します）"
+    "orig": "\u5927\u578b\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u306e\u524d\u306b\u8ca0\u8377\u8a66\u9a13\u3092\u5fc5\u305a\u5b9f\u65bd\u3059\u308b",
+    "orig_kind": "\u5e38\u4f53\u30fb\u7b87\u6761\u66f8\u304d",
+    "rewrite": "\u5927\u578b\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u306e\u524d\u306b\u306f\u3001\u5fc5\u305a\u8ca0\u8377\u8a66\u9a13\u3092\u5b9f\u65bd\u3057\u307e\u3059\u3002",
+    "rewrite_kind": "\u52d5\u4f5c\uff08\u301c\u3057\u307e\u3059\uff09"
    },
    {
-    "orig": "プール上限は「とりあえず動く値」のまま放置しがちです。",
-    "orig_kind": "断定（〜です）",
-    "rewrite": "私たちはプール上限を「とりあえず動く値」のまま放置しがちでした。",
-    "rewrite_kind": "過去"
+    "orig": "\u30d7\u30fc\u30eb\u4e0a\u9650\u306f\u300c\u3068\u308a\u3042\u3048\u305a\u52d5\u304f\u5024\u300d\u306e\u307e\u307e\u653e\u7f6e\u3057\u304c\u3061\u3067\u3059\u3002",
+    "orig_kind": "\u65ad\u5b9a\uff08\u301c\u3067\u3059\uff09",
+    "rewrite": "\u79c1\u305f\u3061\u306f\u30d7\u30fc\u30eb\u4e0a\u9650\u3092\u300c\u3068\u308a\u3042\u3048\u305a\u52d5\u304f\u5024\u300d\u306e\u307e\u307e\u653e\u7f6e\u3057\u304c\u3061\u3067\u3057\u305f\u3002",
+    "rewrite_kind": "\u904e\u53bb"
    }
   ],
   "flags": [],

@@ -1,121 +1,121 @@
 {
  "markers": [
   {
-   "kind": "可能",
+   "kind": "\u53ef\u80fd",
    "orig": 1,
    "rewrite": 0,
    "orig_hits": [
-    "できない"
+    "\u3067\u304d\u306a\u3044"
    ],
    "rewrite_hits": []
   },
   {
-   "kind": "つなぎ",
+   "kind": "\u3064\u306a\u304e",
    "orig": 0,
    "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "さらに"
+    "\u3055\u3089\u306b"
    ]
   }
  ],
  "new_words": [
-  "システム",
-  "保持",
-  "管理者",
-  "設定",
-  "開発者"
+  "\u30b7\u30b9\u30c6\u30e0",
+  "\u4fdd\u6301",
+  "\u7ba1\u7406\u8005",
+  "\u8a2d\u5b9a",
+  "\u958b\u767a\u8005"
  ],
  "lost_words": [
-  "データベースコネクションプール",
-  "占有",
-  "増加",
-  "枯渇",
-  "状態",
-  "発生",
-  "負荷実績",
-  "返却"
+  "\u30c7\u30fc\u30bf\u30d9\u30fc\u30b9\u30b3\u30cd\u30af\u30b7\u30e7\u30f3\u30d7\u30fc\u30eb",
+  "\u5360\u6709",
+  "\u5897\u52a0",
+  "\u67af\u6e07",
+  "\u72b6\u614b",
+  "\u767a\u751f",
+  "\u8ca0\u8377\u5b9f\u7e3e",
+  "\u8fd4\u5374"
  ],
  "structure": [
-  "箇条書きを地の文にした。各項目の文末（指示・説明・評価）が元と同じか見る"
+  "\u7b87\u6761\u66f8\u304d\u3092\u5730\u306e\u6587\u306b\u3057\u305f\u3002\u5404\u9805\u76ee\u306e\u6587\u672b\uff08\u6307\u793a\u30fb\u8aac\u660e\u30fb\u8a55\u4fa1\uff09\u304c\u5143\u3068\u540c\u3058\u304b\u898b\u308b"
  ],
  "spans": [
   {
-   "added": "保持",
-   "was": "長く占有",
+   "added": "\u4fdd\u6301",
+   "was": "\u9577\u304f\u5360\u6709",
    "kinds": [],
    "new_words": [
-    "保持"
+    "\u4fdd\u6301"
    ],
-   "where": "切った。実行時間の長いクエリが接続を［保持］し続けたため、後続のリクエストは接続"
+   "where": "\u5207\u3063\u305f\u3002\u5b9f\u884c\u6642\u9593\u306e\u9577\u3044\u30af\u30a8\u30ea\u304c\u63a5\u7d9a\u3092\uff3b\u4fdd\u6301\uff3d\u3057\u7d9a\u3051\u305f\u305f\u3081\u3001\u5f8c\u7d9a\u306e\u30ea\u30af\u30a8\u30b9\u30c8\u306f\u63a5\u7d9a"
   },
   {
-   "added": "システム管理者が",
+   "added": "\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u304c",
    "was": "",
    "kinds": [],
    "new_words": [
-    "システム",
-    "管理者"
+    "\u30b7\u30b9\u30c6\u30e0",
+    "\u7ba1\u7406\u8005"
    ],
-   "where": "にタイムアウトした。\n\n3. 対応\n［システム管理者が］接続上限を一時的に引き上げ、アプリケ"
+   "where": "\u306b\u30bf\u30a4\u30e0\u30a2\u30a6\u30c8\u3057\u305f\u3002\n\n3. \u5bfe\u5fdc\n\uff3b\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u304c\uff3d\u63a5\u7d9a\u4e0a\u9650\u3092\u4e00\u6642\u7684\u306b\u5f15\u304d\u4e0a\u3052\u3001\u30a2\u30d7\u30ea\u30b1"
   },
   {
-   "added": "開発者は、負荷の実績に基づいて",
+   "added": "\u958b\u767a\u8005\u306f\u3001\u8ca0\u8377\u306e\u5b9f\u7e3e\u306b\u57fa\u3065\u3044\u3066",
    "was": "",
    "kinds": [],
    "new_words": [
-    "開発者"
+    "\u958b\u767a\u8005"
    ],
-   "where": "とを確認した。\n\n4. 再発防止策\n［開発者は、負荷の実績に基づいて］プールサイズと接続取得のタイムアウト"
+   "where": "\u3068\u3092\u78ba\u8a8d\u3057\u305f\u3002\n\n4. \u518d\u767a\u9632\u6b62\u7b56\n\uff3b\u958b\u767a\u8005\u306f\u3001\u8ca0\u8377\u306e\u5b9f\u7e3e\u306b\u57fa\u3065\u3044\u3066\uff3d\u30d7\u30fc\u30eb\u30b5\u30a4\u30ba\u3068\u63a5\u7d9a\u53d6\u5f97\u306e\u30bf\u30a4\u30e0\u30a2\u30a6\u30c8"
   },
   {
-   "added": "システム管理者は",
+   "added": "\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u306f",
    "was": "\n",
    "kinds": [],
    "new_words": [
-    "システム",
-    "管理者"
+    "\u30b7\u30b9\u30c6\u30e0",
+    "\u7ba1\u7406\u8005"
    ],
-   "where": "善し、必要なインデックスを追加する。［システム管理者は］接続使用率を監視し、閾値を超えた時点"
+   "where": "\u5584\u3057\u3001\u5fc5\u8981\u306a\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u3092\u8ffd\u52a0\u3059\u308b\u3002\uff3b\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u306f\uff3d\u63a5\u7d9a\u4f7f\u7528\u7387\u3092\u76e3\u8996\u3057\u3001\u95be\u5024\u3092\u8d85\u3048\u305f\u6642\u70b9"
   },
   {
-   "added": "が届くように設定",
+   "added": "\u304c\u5c4a\u304f\u3088\u3046\u306b\u8a2d\u5b9a",
    "was": "",
    "kinds": [],
    "new_words": [
-    "設定"
+    "\u8a2d\u5b9a"
    ],
-   "where": "用率を監視し、閾値を超えた時点で通知［が届くように設定］する。さらに負荷試験を定期的に実施し"
+   "where": "\u7528\u7387\u3092\u76e3\u8996\u3057\u3001\u95be\u5024\u3092\u8d85\u3048\u305f\u6642\u70b9\u3067\u901a\u77e5\uff3b\u304c\u5c4a\u304f\u3088\u3046\u306b\u8a2d\u5b9a\uff3d\u3059\u308b\u3002\u3055\u3089\u306b\u8ca0\u8377\u8a66\u9a13\u3092\u5b9a\u671f\u7684\u306b\u5b9f\u65bd\u3057"
   },
   {
-   "added": "さらに",
+   "added": "\u3055\u3089\u306b",
    "was": "\n",
    "kinds": [
-    "つなぎ"
+    "\u3064\u306a\u304e"
    ],
    "new_words": [],
-   "where": "えた時点で通知が届くように設定する。［さらに］負荷試験を定期的に実施し、オートスケ"
+   "where": "\u3048\u305f\u6642\u70b9\u3067\u901a\u77e5\u304c\u5c4a\u304f\u3088\u3046\u306b\u8a2d\u5b9a\u3059\u308b\u3002\uff3b\u3055\u3089\u306b\uff3d\u8ca0\u8377\u8a66\u9a13\u3092\u5b9a\u671f\u7684\u306b\u5b9f\u65bd\u3057\u3001\u30aa\u30fc\u30c8\u30b9\u30b1"
   }
  ],
  "logic": [
   {
-   "kind": "文頭の指示語",
-   "sentence": "この間、一部の利用者がサービスを利用できなかった。"
+   "kind": "\u6587\u982d\u306e\u6307\u793a\u8a9e",
+   "sentence": "\u3053\u306e\u9593\u3001\u4e00\u90e8\u306e\u5229\u7528\u8005\u304c\u30b5\u30fc\u30d3\u30b9\u3092\u5229\u7528\u3067\u304d\u306a\u304b\u3063\u305f\u3002"
   },
   {
-   "kind": "文頭のつなぎ",
-   "sentence": "さらに負荷試験を定期的に実施し、オートスケールを導入する。"
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u3055\u3089\u306b\u8ca0\u8377\u8a66\u9a13\u3092\u5b9a\u671f\u7684\u306b\u5b9f\u65bd\u3057\u3001\u30aa\u30fc\u30c8\u30b9\u30b1\u30fc\u30eb\u3092\u5c0e\u5165\u3059\u308b\u3002"
   }
  ],
  "bold": [],
  "endings": {
-  "stance": "勧め",
+  "stance": "\u52e7\u3081",
   "changes": [
    {
-    "orig": "**件名：** 高負荷時のデータベースコネクションプール枯渇によるAPI 504エラーの発生",
-    "orig_kind": "体言止めなど",
-    "rewrite": "件名は、高負荷時にデータベースのコネクションプールの空きがなくなり、APIが504エラーを返した件である。",
-    "rewrite_kind": "常体"
+    "orig": "**\u4ef6\u540d\uff1a** \u9ad8\u8ca0\u8377\u6642\u306e\u30c7\u30fc\u30bf\u30d9\u30fc\u30b9\u30b3\u30cd\u30af\u30b7\u30e7\u30f3\u30d7\u30fc\u30eb\u67af\u6e07\u306b\u3088\u308bAPI 504\u30a8\u30e9\u30fc\u306e\u767a\u751f",
+    "orig_kind": "\u4f53\u8a00\u6b62\u3081\u306a\u3069",
+    "rewrite": "\u4ef6\u540d\u306f\u3001\u9ad8\u8ca0\u8377\u6642\u306b\u30c7\u30fc\u30bf\u30d9\u30fc\u30b9\u306e\u30b3\u30cd\u30af\u30b7\u30e7\u30f3\u30d7\u30fc\u30eb\u306e\u7a7a\u304d\u304c\u306a\u304f\u306a\u308a\u3001API\u304c504\u30a8\u30e9\u30fc\u3092\u8fd4\u3057\u305f\u4ef6\u3067\u3042\u308b\u3002",
+    "rewrite_kind": "\u5e38\u4f53"
    }
   ],
   "flags": [],

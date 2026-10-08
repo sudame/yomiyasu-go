@@ -1,49 +1,49 @@
 {
  "markers": [],
  "new_words": [
-  "チーム",
-  "使用中",
-  "秒以上",
-  "開発"
+  "\u30c1\u30fc\u30e0",
+  "\u4f7f\u7528\u4e2d",
+  "\u79d2\u4ee5\u4e0a",
+  "\u958b\u767a"
  ],
  "lost_words": [
-  "実行時間",
-  "影響",
-  "発生日時"
+  "\u5b9f\u884c\u6642\u9593",
+  "\u5f71\u97ff",
+  "\u767a\u751f\u65e5\u6642"
  ],
  "structure": [
-  "箇条書きを地の文にした。各項目の文末（指示・説明・評価）が元と同じか見る",
-  "段落をまとめた（9 → 8）。まとめた段落の話題が1つか見る",
-  "文の数が変わった（15 → 14）"
+  "\u7b87\u6761\u66f8\u304d\u3092\u5730\u306e\u6587\u306b\u3057\u305f\u3002\u5404\u9805\u76ee\u306e\u6587\u672b\uff08\u6307\u793a\u30fb\u8aac\u660e\u30fb\u8a55\u4fa1\uff09\u304c\u5143\u3068\u540c\u3058\u304b\u898b\u308b",
+  "\u6bb5\u843d\u3092\u307e\u3068\u3081\u305f\uff089 \u2192 8\uff09\u3002\u307e\u3068\u3081\u305f\u6bb5\u843d\u306e\u8a71\u984c\u304c1\u3064\u304b\u898b\u308b",
+  "\u6587\u306e\u6570\u304c\u5909\u308f\u3063\u305f\uff0815 \u2192 14\uff09"
  ],
  "spans": [
   {
-   "added": "以上かかり",
-   "was": "を超え",
+   "added": "\u4ee5\u4e0a\u304b\u304b\u308a",
+   "was": "\u3092\u8d85\u3048",
    "kinds": [],
    "new_words": [
-    "以上"
+    "\u4ee5\u4e0a"
    ],
-   "where": "は20本だった。在庫集計クエリが2秒［以上かかり］、コネクションを保持したまま待つリク"
+   "where": "\u306f20\u672c\u3060\u3063\u305f\u3002\u5728\u5eab\u96c6\u8a08\u30af\u30a8\u30ea\u304c2\u79d2\uff3b\u4ee5\u4e0a\u304b\u304b\u308a\uff3d\u3001\u30b3\u30cd\u30af\u30b7\u30e7\u30f3\u3092\u4fdd\u6301\u3057\u305f\u307e\u307e\u5f85\u3064\u30ea\u30af"
   },
   {
-   "added": "使用中にな",
-   "was": "埋ま",
+   "added": "\u4f7f\u7528\u4e2d\u306b\u306a",
+   "was": "\u57cb\u307e",
    "kinds": [],
    "new_words": [
-    "使用中"
+    "\u4f7f\u7528\u4e2d"
    ],
-   "where": "クエストが増え続けた。20本すべてが［使用中にな］ったため、後続のリクエストはコネクシ"
+   "where": "\u30af\u30a8\u30b9\u30c8\u304c\u5897\u3048\u7d9a\u3051\u305f\u300220\u672c\u3059\u3079\u3066\u304c\uff3b\u4f7f\u7528\u4e2d\u306b\u306a\uff3d\u3063\u305f\u305f\u3081\u3001\u5f8c\u7d9a\u306e\u30ea\u30af\u30a8\u30b9\u30c8\u306f\u30b3\u30cd\u30af\u30b7"
   },
   {
-   "added": "\n開発チームは",
+   "added": "\n\u958b\u767a\u30c1\u30fc\u30e0\u306f",
    "was": "",
    "kinds": [],
    "new_words": [
-    "開発",
-    "チーム"
+    "\u958b\u767a",
+    "\u30c1\u30fc\u30e0"
    ],
-   "where": "47に復旧を確認した。\n\n再発防止\n［\n開発チームは］集計クエリを読み取りレプリカへ移し、"
+   "where": "47\u306b\u5fa9\u65e7\u3092\u78ba\u8a8d\u3057\u305f\u3002\n\n\u518d\u767a\u9632\u6b62\n\uff3b\n\u958b\u767a\u30c1\u30fc\u30e0\u306f\uff3d\u96c6\u8a08\u30af\u30a8\u30ea\u3092\u8aad\u307f\u53d6\u308a\u30ec\u30d7\u30ea\u30ab\u3078\u79fb\u3057\u3001"
   }
  ],
  "logic": [],

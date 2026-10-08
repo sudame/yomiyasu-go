@@ -1,256 +1,256 @@
 {
  "markers": [
   {
-   "kind": "義務",
+   "kind": "\u7fa9\u52d9",
    "orig": 0,
    "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "必要がある"
+    "\u5fc5\u8981\u304c\u3042\u308b"
    ]
   },
   {
-   "kind": "可能",
+   "kind": "\u53ef\u80fd",
    "orig": 4,
    "rewrite": 3,
    "orig_hits": [
-    "できる",
-    "できる",
-    "できる",
-    "できる"
+    "\u3067\u304d\u308b",
+    "\u3067\u304d\u308b",
+    "\u3067\u304d\u308b",
+    "\u3067\u304d\u308b"
    ],
    "rewrite_hits": [
-    "できる",
-    "できる",
-    "できる"
+    "\u3067\u304d\u308b",
+    "\u3067\u304d\u308b",
+    "\u3067\u304d\u308b"
    ]
   },
   {
-   "kind": "つなぎ",
+   "kind": "\u3064\u306a\u304e",
    "orig": 2,
    "rewrite": 0,
    "orig_hits": [
-    "また",
-    "ただし"
+    "\u307e\u305f",
+    "\u305f\u3060\u3057"
    ],
    "rewrite_hits": []
   }
  ],
  "new_words": [
-  "クライアント",
-  "システム",
-  "チーム",
-  "上限設定",
-  "不要",
-  "別途実装",
-  "原因",
-  "変更",
-  "指定",
-  "段階的",
-  "活用",
-  "管理者",
-  "複数回",
-  "設定",
-  "運用上",
-  "開発",
-  "開発者",
-  "頻繁"
+  "\u30af\u30e9\u30a4\u30a2\u30f3\u30c8",
+  "\u30b7\u30b9\u30c6\u30e0",
+  "\u30c1\u30fc\u30e0",
+  "\u4e0a\u9650\u8a2d\u5b9a",
+  "\u4e0d\u8981",
+  "\u5225\u9014\u5b9f\u88c5",
+  "\u539f\u56e0",
+  "\u5909\u66f4",
+  "\u6307\u5b9a",
+  "\u6bb5\u968e\u7684",
+  "\u6d3b\u7528",
+  "\u7ba1\u7406\u8005",
+  "\u8907\u6570\u56de",
+  "\u8a2d\u5b9a",
+  "\u904b\u7528\u4e0a",
+  "\u958b\u767a",
+  "\u958b\u767a\u8005",
+  "\u983b\u7e41"
  ],
  "lost_words": [
-  "一律",
-  "互換性維持",
-  "利用",
-  "可能",
-  "変動",
-  "多重",
-  "契約管理",
-  "容易",
-  "必要項目",
-  "抑制",
-  "既存運用資産",
-  "段階導入",
-  "画面集約用途",
-  "追加",
-  "運用統制",
-  "過剰取得",
-  "障害時"
+  "\u4e00\u5f8b",
+  "\u4e92\u63db\u6027\u7dad\u6301",
+  "\u5229\u7528",
+  "\u53ef\u80fd",
+  "\u5909\u52d5",
+  "\u591a\u91cd",
+  "\u5951\u7d04\u7ba1\u7406",
+  "\u5bb9\u6613",
+  "\u5fc5\u8981\u9805\u76ee",
+  "\u6291\u5236",
+  "\u65e2\u5b58\u904b\u7528\u8cc7\u7523",
+  "\u6bb5\u968e\u5c0e\u5165",
+  "\u753b\u9762\u96c6\u7d04\u7528\u9014",
+  "\u8ffd\u52a0",
+  "\u904b\u7528\u7d71\u5236",
+  "\u904e\u5270\u53d6\u5f97",
+  "\u969c\u5bb3\u6642"
  ],
  "structure": [
-  "文の数が変わった（10 → 12）"
+  "\u6587\u306e\u6570\u304c\u5909\u308f\u3063\u305f\uff0810 \u2192 12\uff09"
  ],
  "spans": [
   {
-   "added": "システム管理者は",
+   "added": "\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u306f",
    "was": "",
    "kinds": [],
    "new_words": [
-    "システム",
-    "管理者"
+    "\u30b7\u30b9\u30c6\u30e0",
+    "\u7ba1\u7406\u8005"
    ],
-   "where": "TPの標準機構をそのまま使えるため、［システム管理者は］キャッシュ制御、認可、監視、レート制"
+   "where": "TP\u306e\u6a19\u6e96\u6a5f\u69cb\u3092\u305d\u306e\u307e\u307e\u4f7f\u3048\u308b\u305f\u3081\u3001\uff3b\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u306f\uff3d\u30ad\u30e3\u30c3\u30b7\u30e5\u5236\u5fa1\u3001\u8a8d\u53ef\u3001\u76e3\u8996\u3001\u30ec\u30fc\u30c8\u5236"
   },
   {
-   "added": "同じ設定で",
+   "added": "\u540c\u3058\u8a2d\u5b9a\u3067",
    "was": "",
    "kinds": [],
    "new_words": [
-    "設定"
+    "\u8a2d\u5b9a"
    ],
-   "where": "ート制限をゲートウェイ層で全APIに［同じ設定で］適用できる。開発者はOpenAPIで"
+   "where": "\u30fc\u30c8\u5236\u9650\u3092\u30b2\u30fc\u30c8\u30a6\u30a7\u30a4\u5c64\u3067\u5168API\u306b\uff3b\u540c\u3058\u8a2d\u5b9a\u3067\uff3d\u9069\u7528\u3067\u304d\u308b\u3002\u958b\u767a\u8005\u306fOpenAPI\u3067"
   },
   {
-   "added": "開発者は",
-   "was": "また、",
+   "added": "\u958b\u767a\u8005\u306f",
+   "was": "\u307e\u305f\u3001",
    "kinds": [],
    "new_words": [
-    "開発者"
+    "\u958b\u767a\u8005"
    ],
-   "where": "層で全APIに同じ設定で適用できる。［開発者は］OpenAPIでAPIの契約を管理で"
+   "where": "\u5c64\u3067\u5168API\u306b\u540c\u3058\u8a2d\u5b9a\u3067\u9069\u7528\u3067\u304d\u308b\u3002\uff3b\u958b\u767a\u8005\u306f\uff3dOpenAPI\u3067API\u306e\u5951\u7d04\u3092\u7ba1\u7406\u3067"
   },
   {
-   "added": "きる。",
-   "was": "あり、",
+   "added": "\u304d\u308b\u3002",
+   "was": "\u3042\u308a\u3001",
    "kinds": [
-    "可能"
+    "\u53ef\u80fd"
    ],
    "new_words": [],
-   "where": "約を管理でき、既存の運用資産も流用で［きる。］障害が起きたときも、原因を切り分けや"
+   "where": "\u7d04\u3092\u7ba1\u7406\u3067\u304d\u3001\u65e2\u5b58\u306e\u904b\u7528\u8cc7\u7523\u3082\u6d41\u7528\u3067\uff3b\u304d\u308b\u3002\uff3d\u969c\u5bb3\u304c\u8d77\u304d\u305f\u3068\u304d\u3082\u3001\u539f\u56e0\u3092\u5207\u308a\u5206\u3051\u3084"
   },
   {
-   "added": "が起きたときも、原因を",
-   "was": "時の",
+   "added": "\u304c\u8d77\u304d\u305f\u3068\u304d\u3082\u3001\u539f\u56e0\u3092",
+   "was": "\u6642\u306e",
    "kinds": [],
    "new_words": [
-    "原因"
+    "\u539f\u56e0"
    ],
-   "where": "き、既存の運用資産も流用できる。障害［が起きたときも、原因を］切り分けやすい。\nGraphQLはク"
+   "where": "\u304d\u3001\u65e2\u5b58\u306e\u904b\u7528\u8cc7\u7523\u3082\u6d41\u7528\u3067\u304d\u308b\u3002\u969c\u5bb3\uff3b\u304c\u8d77\u304d\u305f\u3068\u304d\u3082\u3001\u539f\u56e0\u3092\uff3d\u5207\u308a\u5206\u3051\u3084\u3059\u3044\u3002\nGraphQL\u306f\u30af"
   },
   {
-   "added": "クライアントが",
+   "added": "\u30af\u30e9\u30a4\u30a2\u30f3\u30c8\u304c",
    "was": "",
    "kinds": [],
    "new_words": [
-    "クライアント"
+    "\u30af\u30e9\u30a4\u30a2\u30f3\u30c8"
    ],
-   "where": "を切り分けやすい。\nGraphQLは［クライアントが］必要な項目だけを指定して取得するため"
+   "where": "\u3092\u5207\u308a\u5206\u3051\u3084\u3059\u3044\u3002\nGraphQL\u306f\uff3b\u30af\u30e9\u30a4\u30a2\u30f3\u30c8\u304c\uff3d\u5fc5\u8981\u306a\u9805\u76ee\u3060\u3051\u3092\u6307\u5b9a\u3057\u3066\u53d6\u5f97\u3059\u308b\u305f\u3081"
   },
   {
-   "added": "指定して",
+   "added": "\u6307\u5b9a\u3057\u3066",
    "was": "",
    "kinds": [],
    "new_words": [
-    "指定"
+    "\u6307\u5b9a"
    ],
-   "where": "QLはクライアントが必要な項目だけを［指定して］取得するため、不要な項目の取得と複数"
+   "where": "QL\u306f\u30af\u30e9\u30a4\u30a2\u30f3\u30c8\u304c\u5fc5\u8981\u306a\u9805\u76ee\u3060\u3051\u3092\uff3b\u6307\u5b9a\u3057\u3066\uff3d\u53d6\u5f97\u3059\u308b\u305f\u3081\u3001\u4e0d\u8981\u306a\u9805\u76ee\u306e\u53d6\u5f97\u3068\u8907\u6570"
   },
   {
-   "added": "不要な項目の",
-   "was": "過剰",
+   "added": "\u4e0d\u8981\u306a\u9805\u76ee\u306e",
+   "was": "\u904e\u5270",
    "kinds": [],
    "new_words": [
-    "不要"
+    "\u4e0d\u8981"
    ],
-   "where": "要な項目だけを指定して取得するため、［不要な項目の］取得と複数回のリクエストを減らせる。"
+   "where": "\u8981\u306a\u9805\u76ee\u3060\u3051\u3092\u6307\u5b9a\u3057\u3066\u53d6\u5f97\u3059\u308b\u305f\u3081\u3001\uff3b\u4e0d\u8981\u306a\u9805\u76ee\u306e\uff3d\u53d6\u5f97\u3068\u8907\u6570\u56de\u306e\u30ea\u30af\u30a8\u30b9\u30c8\u3092\u6e1b\u3089\u305b\u308b\u3002"
   },
   {
-   "added": "複数回の",
-   "was": "多重",
+   "added": "\u8907\u6570\u56de\u306e",
+   "was": "\u591a\u91cd",
    "kinds": [],
    "new_words": [
-    "複数回"
+    "\u8907\u6570\u56de"
    ],
-   "where": "して取得するため、不要な項目の取得と［複数回の］リクエストを減らせる。一方で、リクエ"
+   "where": "\u3057\u3066\u53d6\u5f97\u3059\u308b\u305f\u3081\u3001\u4e0d\u8981\u306a\u9805\u76ee\u306e\u53d6\u5f97\u3068\uff3b\u8907\u6570\u56de\u306e\uff3d\u30ea\u30af\u30a8\u30b9\u30c8\u3092\u6e1b\u3089\u305b\u308b\u3002\u4e00\u65b9\u3067\u3001\u30ea\u30af\u30a8"
   },
   {
-   "added": "開発者は",
+   "added": "\u958b\u767a\u8005\u306f",
    "was": "",
    "kinds": [],
    "new_words": [
-    "開発者"
+    "\u958b\u767a\u8005"
    ],
-   "where": "が単一のエンドポイントに集まるため、［開発者は］クエリ深度の上限設定、クエリのコスト"
+   "where": "\u304c\u5358\u4e00\u306e\u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u306b\u96c6\u307e\u308b\u305f\u3081\u3001\uff3b\u958b\u767a\u8005\u306f\uff3d\u30af\u30a8\u30ea\u6df1\u5ea6\u306e\u4e0a\u9650\u8a2d\u5b9a\u3001\u30af\u30a8\u30ea\u306e\u30b3\u30b9\u30c8"
   },
   {
-   "added": "設定",
+   "added": "\u8a2d\u5b9a",
    "was": "",
    "kinds": [],
    "new_words": [
-    "設定"
+    "\u8a2d\u5b9a"
    ],
-   "where": "集まるため、開発者はクエリ深度の上限［設定］、クエリのコスト解析、フィールド単位"
+   "where": "\u96c6\u307e\u308b\u305f\u3081\u3001\u958b\u767a\u8005\u306f\u30af\u30a8\u30ea\u6df1\u5ea6\u306e\u4e0a\u9650\uff3b\u8a2d\u5b9a\uff3d\u3001\u30af\u30a8\u30ea\u306e\u30b3\u30b9\u30c8\u89e3\u6790\u3001\u30d5\u30a3\u30fc\u30eb\u30c9\u5358\u4f4d"
   },
   {
-   "added": "を別途実装する",
-   "was": "といった追加の統制が",
+   "added": "\u3092\u5225\u9014\u5b9f\u88c5\u3059\u308b",
+   "was": "\u3068\u3044\u3063\u305f\u8ffd\u52a0\u306e\u7d71\u5236\u304c",
    "kinds": [],
    "new_words": [
-    "別途実装"
+    "\u5225\u9014\u5b9f\u88c5"
    ],
-   "where": "リのコスト解析、フィールド単位の認可［を別途実装する］必要がある。\n\n【判断根拠】取引先に"
+   "where": "\u30ea\u306e\u30b3\u30b9\u30c8\u89e3\u6790\u3001\u30d5\u30a3\u30fc\u30eb\u30c9\u5358\u4f4d\u306e\u8a8d\u53ef\uff3b\u3092\u5225\u9014\u5b9f\u88c5\u3059\u308b\uff3d\u5fc5\u8981\u304c\u3042\u308b\u3002\n\n\u3010\u5224\u65ad\u6839\u62e0\u3011\u53d6\u5f15\u5148\u306b"
   },
   {
-   "added": "があ",
-   "was": "とな",
+   "added": "\u304c\u3042",
+   "was": "\u3068\u306a",
    "kinds": [
-    "義務"
+    "\u7fa9\u52d9"
    ],
    "new_words": [],
-   "where": "ィールド単位の認可を別途実装する必要［があ］る。\n\n【判断根拠】取引先にも提供す"
+   "where": "\u30a3\u30fc\u30eb\u30c9\u5358\u4f4d\u306e\u8a8d\u53ef\u3092\u5225\u9014\u5b9f\u88c5\u3059\u308b\u5fc5\u8981\uff3b\u304c\u3042\uff3d\u308b\u3002\n\n\u3010\u5224\u65ad\u6839\u62e0\u3011\u53d6\u5f15\u5148\u306b\u3082\u63d0\u4f9b\u3059"
   },
   {
-   "added": "が頻繁に",
-   "was": "の",
+   "added": "\u304c\u983b\u7e41\u306b",
+   "was": "\u306e",
    "kinds": [],
    "new_words": [
-    "頻繁"
+    "\u983b\u7e41"
    ],
-   "where": "持と運用上の統制を優先する。画面要件［が頻繁に］変わる社内アプリケーションでは、クラ"
+   "where": "\u6301\u3068\u904b\u7528\u4e0a\u306e\u7d71\u5236\u3092\u512a\u5148\u3059\u308b\u3002\u753b\u9762\u8981\u4ef6\uff3b\u304c\u983b\u7e41\u306b\uff3d\u5909\u308f\u308b\u793e\u5185\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u3067\u306f\u3001\u30af\u30e9"
   },
   {
-   "added": "クライアントが画面の変更に合わせてクエリを書き換えるだけで済むため、",
+   "added": "\u30af\u30e9\u30a4\u30a2\u30f3\u30c8\u304c\u753b\u9762\u306e\u5909\u66f4\u306b\u5408\u308f\u305b\u3066\u30af\u30a8\u30ea\u3092\u66f8\u304d\u63db\u3048\u308b\u3060\u3051\u3067\u6e08\u3080\u305f\u3081\u3001",
    "was": "",
    "kinds": [],
    "new_words": [
-    "クライアント",
-    "変更"
+    "\u30af\u30e9\u30a4\u30a2\u30f3\u30c8",
+    "\u5909\u66f4"
    ],
-   "where": "繁に変わる社内アプリケーションでは、［クライアントが画面の変更に合わせてクエリを書き換えるだけで済むため、］GraphQLの柔軟性を活用できる。"
+   "where": "\u7e41\u306b\u5909\u308f\u308b\u793e\u5185\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u3067\u306f\u3001\uff3b\u30af\u30e9\u30a4\u30a2\u30f3\u30c8\u304c\u753b\u9762\u306e\u5909\u66f4\u306b\u5408\u308f\u305b\u3066\u30af\u30a8\u30ea\u3092\u66f8\u304d\u63db\u3048\u308b\u3060\u3051\u3067\u6e08\u3080\u305f\u3081\u3001\uff3dGraphQL\u306e\u67d4\u8edf\u6027\u3092\u6d3b\u7528\u3067\u304d\u308b\u3002"
   },
   {
-   "added": "活用",
-   "was": "評価",
+   "added": "\u6d3b\u7528",
+   "was": "\u8a55\u4fa1",
    "kinds": [
-    "可能"
+    "\u53ef\u80fd"
    ],
    "new_words": [
-    "活用"
+    "\u6d3b\u7528"
    ],
-   "where": "で済むため、GraphQLの柔軟性を［活用］できる。\n\n【次のアクション】開発チ"
+   "where": "\u3067\u6e08\u3080\u305f\u3081\u3001GraphQL\u306e\u67d4\u8edf\u6027\u3092\uff3b\u6d3b\u7528\uff3d\u3067\u304d\u308b\u3002\n\n\u3010\u6b21\u306e\u30a2\u30af\u30b7\u30e7\u30f3\u3011\u958b\u767a\u30c1"
   },
   {
-   "added": "開発チームが",
+   "added": "\u958b\u767a\u30c1\u30fc\u30e0\u304c",
    "was": "",
    "kinds": [],
    "new_words": [
-    "開発",
-    "チーム"
+    "\u958b\u767a",
+    "\u30c1\u30fc\u30e0"
    ],
-   "where": "を活用できる。\n\n【次のアクション】［開発チームが］BFF層にGraphQLを試行導入し"
+   "where": "\u3092\u6d3b\u7528\u3067\u304d\u308b\u3002\n\n\u3010\u6b21\u306e\u30a2\u30af\u30b7\u30e7\u30f3\u3011\uff3b\u958b\u767a\u30c1\u30fc\u30e0\u304c\uff3dBFF\u5c64\u306bGraphQL\u3092\u8a66\u884c\u5c0e\u5165\u3057"
   }
  ],
  "logic": [
   {
-   "kind": "主題の「も」",
-   "sentence": "障害が起きたときも、原因を切り分けやすい。"
+   "kind": "\u4e3b\u984c\u306e\u300c\u3082\u300d",
+   "sentence": "\u969c\u5bb3\u304c\u8d77\u304d\u305f\u3068\u304d\u3082\u3001\u539f\u56e0\u3092\u5207\u308a\u5206\u3051\u3084\u3059\u3044\u3002"
   },
   {
-   "kind": "文頭のつなぎ",
-   "sentence": "一方で、リクエストが単一のエンドポイントに集まるため、開発者はクエリ深度の上限設定、クエリのコスト解析、フィールド単位の認可を別途実装する必要がある。"
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u4e00\u65b9\u3067\u3001\u30ea\u30af\u30a8\u30b9\u30c8\u304c\u5358\u4e00\u306e\u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u306b\u96c6\u307e\u308b\u305f\u3081\u3001\u958b\u767a\u8005\u306f\u30af\u30a8\u30ea\u6df1\u5ea6\u306e\u4e0a\u9650\u8a2d\u5b9a\u3001\u30af\u30a8\u30ea\u306e\u30b3\u30b9\u30c8\u89e3\u6790\u3001\u30d5\u30a3\u30fc\u30eb\u30c9\u5358\u4f4d\u306e\u8a8d\u53ef\u3092\u5225\u9014\u5b9f\u88c5\u3059\u308b\u5fc5\u8981\u304c\u3042\u308b\u3002"
   }
  ],
  "bold": [],
  "endings": {
-  "stance": "説明",
+  "stance": "\u8aac\u660e",
   "changes": [],
   "flags": [],
   "orig_flags": []
