@@ -1,135 +1,135 @@
 {
  "markers": [
   {
-   "kind": "可能",
+   "kind": "\u53ef\u80fd",
    "orig": 1,
    "rewrite": 2,
    "orig_hits": [
-    "める"
+    "\u3081\u308b"
    ],
    "rewrite_hits": [
-    "める",
-    "できない"
+    "\u3081\u308b",
+    "\u3067\u304d\u306a\u3044"
    ]
   }
  ],
  "new_words": [
-  "アプリケーション",
-  "停止",
-  "先頭",
-  "受信側",
-  "破棄",
-  "確認",
-  "稼働状況"
+  "\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3",
+  "\u505c\u6b62",
+  "\u5148\u982d",
+  "\u53d7\u4fe1\u5074",
+  "\u7834\u68c4",
+  "\u78ba\u8a8d",
+  "\u7a3c\u50cd\u72b6\u6cc1"
  ],
  "lost_words": [
-  "生死",
-  "相手",
-  "退避"
+  "\u751f\u6b7b",
+  "\u76f8\u624b",
+  "\u9000\u907f"
  ],
  "structure": [],
  "spans": [
   {
-   "added": "停止し",
-   "was": "落ち",
+   "added": "\u505c\u6b62\u3057",
+   "was": "\u843d\u3061",
    "kinds": [],
    "new_words": [
-    "停止"
+    "\u505c\u6b62"
    ],
-   "where": "TTPでつなぐと、下流サービスが一つ［停止し］ただけで、上流のサービスまでタイムア"
+   "where": "TTP\u3067\u3064\u306a\u3050\u3068\u3001\u4e0b\u6d41\u30b5\u30fc\u30d3\u30b9\u304c\u4e00\u3064\uff3b\u505c\u6b62\u3057\uff3d\u305f\u3060\u3051\u3067\u3001\u4e0a\u6d41\u306e\u30b5\u30fc\u30d3\u30b9\u307e\u3067\u30bf\u30a4\u30e0\u30a2"
   },
   {
-   "added": "受信側",
-   "was": "相手",
+   "added": "\u53d7\u4fe1\u5074",
+   "was": "\u76f8\u624b",
    "kinds": [],
    "new_words": [
-    "受信側"
+    "\u53d7\u4fe1\u5074"
    ],
-   "where": "えた。\n\nキューを入れると、送信側は［受信側］の稼働状況を確認せずにメッセージを置"
+   "where": "\u3048\u305f\u3002\n\n\u30ad\u30e5\u30fc\u3092\u5165\u308c\u308b\u3068\u3001\u9001\u4fe1\u5074\u306f\uff3b\u53d7\u4fe1\u5074\uff3d\u306e\u7a3c\u50cd\u72b6\u6cc1\u3092\u78ba\u8a8d\u305b\u305a\u306b\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u7f6e"
   },
   {
-   "added": "稼働状況",
-   "was": "生死",
+   "added": "\u7a3c\u50cd\u72b6\u6cc1",
+   "was": "\u751f\u6b7b",
    "kinds": [],
    "new_words": [
-    "稼働状況"
+    "\u7a3c\u50cd\u72b6\u6cc1"
    ],
-   "where": "\nキューを入れると、送信側は受信側の［稼働状況］を確認せずにメッセージを置いて次の処"
+   "where": "\n\u30ad\u30e5\u30fc\u3092\u5165\u308c\u308b\u3068\u3001\u9001\u4fe1\u5074\u306f\u53d7\u4fe1\u5074\u306e\uff3b\u7a3c\u50cd\u72b6\u6cc1\uff3d\u3092\u78ba\u8a8d\u305b\u305a\u306b\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u7f6e\u3044\u3066\u6b21\u306e\u51e6"
   },
   {
-   "added": "確認",
-   "was": "気に",
+   "added": "\u78ba\u8a8d",
+   "was": "\u6c17\u306b",
    "kinds": [],
    "new_words": [
-    "確認"
+    "\u78ba\u8a8d"
    ],
-   "where": "入れると、送信側は受信側の稼働状況を［確認］せずにメッセージを置いて次の処理へ進"
+   "where": "\u5165\u308c\u308b\u3068\u3001\u9001\u4fe1\u5074\u306f\u53d7\u4fe1\u5074\u306e\u7a3c\u50cd\u72b6\u6cc1\u3092\uff3b\u78ba\u8a8d\uff3d\u305b\u305a\u306b\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u7f6e\u3044\u3066\u6b21\u306e\u51e6\u7406\u3078\u9032"
   },
   {
-   "added": "次の処理へ",
-   "was": "先に",
+   "added": "\u6b21\u306e\u51e6\u7406\u3078",
+   "was": "\u5148\u306b",
    "kinds": [
-    "可能"
+    "\u53ef\u80fd"
    ],
    "new_words": [],
-   "where": "働状況を確認せずにメッセージを置いて［次の処理へ］進める。ただしキューを置くだけでは耐"
+   "where": "\u50cd\u72b6\u6cc1\u3092\u78ba\u8a8d\u305b\u305a\u306b\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u7f6e\u3044\u3066\uff3b\u6b21\u306e\u51e6\u7406\u3078\uff3d\u9032\u3081\u308b\u3002\u305f\u3060\u3057\u30ad\u30e5\u30fc\u3092\u7f6e\u304f\u3060\u3051\u3067\u306f\u8010"
   },
   {
-   "added": "キューを置く",
-   "was": "、それ",
+   "added": "\u30ad\u30e5\u30fc\u3092\u7f6e\u304f",
+   "was": "\u3001\u305d\u308c",
    "kinds": [
-    "つなぎ"
+    "\u3064\u306a\u304e"
    ],
    "new_words": [],
-   "where": "ージを置いて次の処理へ進める。ただし［キューを置く］だけでは耐障害性は上がらない。押さえ"
+   "where": "\u30fc\u30b8\u3092\u7f6e\u3044\u3066\u6b21\u306e\u51e6\u7406\u3078\u9032\u3081\u308b\u3002\u305f\u3060\u3057\uff3b\u30ad\u30e5\u30fc\u3092\u7f6e\u304f\uff3d\u3060\u3051\u3067\u306f\u8010\u969c\u5bb3\u6027\u306f\u4e0a\u304c\u3089\u306a\u3044\u3002\u62bc\u3055\u3048"
   },
   {
-   "added": "破棄す",
-   "was": "捨て",
+   "added": "\u7834\u68c4\u3059",
+   "was": "\u6368\u3066",
    "kinds": [],
    "new_words": [
-    "破棄"
+    "\u7834\u68c4"
    ],
-   "where": "ジIDを記録し、重複したメッセージは［破棄す］る。\n\n二つ目はリトライとDLQだ。"
+   "where": "\u30b8ID\u3092\u8a18\u9332\u3057\u3001\u91cd\u8907\u3057\u305f\u30e1\u30c3\u30bb\u30fc\u30b8\u306f\uff3b\u7834\u68c4\u3059\uff3d\u308b\u3002\n\n\u4e8c\u3064\u76ee\u306f\u30ea\u30c8\u30e9\u30a4\u3068DLQ\u3060\u3002"
   },
   {
-   "added": "こうすれば、処理できない",
+   "added": "\u3053\u3046\u3059\u308c\u3070\u3001\u51e6\u7406\u3067\u304d\u306a\u3044",
    "was": "",
    "kinds": [
-    "可能",
-    "条件"
+    "\u53ef\u80fd",
+    "\u6761\u4ef6"
    ],
    "new_words": [],
-   "where": "d Letter Queueへ移す。［こうすれば、処理できない］毒メッセージが先頭に残ってキューが進"
+   "where": "d Letter Queue\u3078\u79fb\u3059\u3002\uff3b\u3053\u3046\u3059\u308c\u3070\u3001\u51e6\u7406\u3067\u304d\u306a\u3044\uff3d\u6bd2\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\u5148\u982d\u306b\u6b8b\u3063\u3066\u30ad\u30e5\u30fc\u304c\u9032"
   },
   {
-   "added": "先頭に残って",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "先頭"
-   ],
-   "where": "うすれば、処理できない毒メッセージが［先頭に残って］キューが進まなくなる事故を防げる。\n"
-  },
-  {
-   "added": "アプリケーションは",
+   "added": "\u5148\u982d\u306b\u6b8b\u3063\u3066",
    "was": "",
    "kinds": [],
    "new_words": [
-    "アプリケーション"
+    "\u5148\u982d"
    ],
-   "where": "\n\n三つ目はOutboxパターンだ。［アプリケーションは］DB更新とメッセージ送信を同じトラン"
+   "where": "\u3046\u3059\u308c\u3070\u3001\u51e6\u7406\u3067\u304d\u306a\u3044\u6bd2\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\uff3b\u5148\u982d\u306b\u6b8b\u3063\u3066\uff3d\u30ad\u30e5\u30fc\u304c\u9032\u307e\u306a\u304f\u306a\u308b\u4e8b\u6545\u3092\u9632\u3052\u308b\u3002\n"
+  },
+  {
+   "added": "\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u306f",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3"
+   ],
+   "where": "\n\n\u4e09\u3064\u76ee\u306fOutbox\u30d1\u30bf\u30fc\u30f3\u3060\u3002\uff3b\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u306f\uff3dDB\u66f4\u65b0\u3068\u30e1\u30c3\u30bb\u30fc\u30b8\u9001\u4fe1\u3092\u540c\u3058\u30c8\u30e9\u30f3"
   }
  ],
  "logic": [
   {
-   "kind": "文頭のつなぎ",
-   "sentence": "ただしキューを置くだけでは耐障害性は上がらない。"
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u305f\u3060\u3057\u30ad\u30e5\u30fc\u3092\u7f6e\u304f\u3060\u3051\u3067\u306f\u8010\u969c\u5bb3\u6027\u306f\u4e0a\u304c\u3089\u306a\u3044\u3002"
   }
  ],
  "bold": [],
  "endings": {
-  "stance": "決まり",
+  "stance": "\u6c7a\u307e\u308a",
   "changes": [],
   "flags": [],
   "orig_flags": []

@@ -1,157 +1,157 @@
 {
  "markers": [
   {
-   "kind": "可能",
+   "kind": "\u53ef\u80fd",
    "orig": 0,
    "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "できる"
+    "\u3067\u304d\u308b"
    ]
   },
   {
-   "kind": "条件",
+   "kind": "\u6761\u4ef6",
    "orig": 0,
    "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "れば"
+    "\u308c\u3070"
    ]
   }
  ],
  "new_words": [
-  "アプリ",
-  "バックエンドチーム",
-  "フロントエンド",
-  "モバイルアプリ",
-  "両方",
-  "人手",
-  "前段",
-  "問題",
-  "回直列",
-  "担当",
-  "構築",
-  "適用"
+  "\u30a2\u30d7\u30ea",
+  "\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0",
+  "\u30d5\u30ed\u30f3\u30c8\u30a8\u30f3\u30c9",
+  "\u30e2\u30d0\u30a4\u30eb\u30a2\u30d7\u30ea",
+  "\u4e21\u65b9",
+  "\u4eba\u624b",
+  "\u524d\u6bb5",
+  "\u554f\u984c",
+  "\u56de\u76f4\u5217",
+  "\u62c5\u5f53",
+  "\u69cb\u7bc9",
+  "\u9069\u7528"
  ],
  "lost_words": [
-  "リクエスト",
-  "仕様共有",
-  "余裕",
-  "枚挟",
-  "画面要件",
-  "結論",
-  "背負",
-  "逆算"
+  "\u30ea\u30af\u30a8\u30b9\u30c8",
+  "\u4ed5\u69d8\u5171\u6709",
+  "\u4f59\u88d5",
+  "\u679a\u631f",
+  "\u753b\u9762\u8981\u4ef6",
+  "\u7d50\u8ad6",
+  "\u80cc\u8ca0",
+  "\u9006\u7b97"
  ],
  "structure": [],
  "spans": [
   {
-   "added": "アプリ",
+   "added": "\u30a2\u30d7\u30ea",
    "was": "",
    "kinds": [],
    "new_words": [
-    "アプリ"
+    "\u30a2\u30d7\u30ea"
    ],
-   "where": "PIにはRESTを使い、自社のWeb［アプリ］とモバイルアプリにはGraphQLの"
+   "where": "PI\u306b\u306fREST\u3092\u4f7f\u3044\u3001\u81ea\u793e\u306eWeb\uff3b\u30a2\u30d7\u30ea\uff3d\u3068\u30e2\u30d0\u30a4\u30eb\u30a2\u30d7\u30ea\u306b\u306fGraphQL\u306e"
   },
   {
-   "added": "アプリに",
-   "was": "向け",
+   "added": "\u30a2\u30d7\u30ea\u306b",
+   "was": "\u5411\u3051",
    "kinds": [],
    "new_words": [
-    "アプリ"
+    "\u30a2\u30d7\u30ea"
    ],
-   "where": "を使い、自社のWebアプリとモバイル［アプリに］はGraphQLのBFF層を置いて、"
+   "where": "\u3092\u4f7f\u3044\u3001\u81ea\u793e\u306eWeb\u30a2\u30d7\u30ea\u3068\u30e2\u30d0\u30a4\u30eb\uff3b\u30a2\u30d7\u30ea\u306b\uff3d\u306fGraphQL\u306eBFF\u5c64\u3092\u7f6e\u3044\u3066\u3001"
   },
   {
-   "added": "いて、両方を",
-   "was": "く",
+   "added": "\u3044\u3066\u3001\u4e21\u65b9\u3092",
+   "was": "\u304f",
    "kinds": [],
    "new_words": [
-    "両方"
+    "\u4e21\u65b9"
    ],
-   "where": "プリにはGraphQLのBFF層を置［いて、両方を］併用することにした。\n\n当初はGra"
+   "where": "\u30d7\u30ea\u306b\u306fGraphQL\u306eBFF\u5c64\u3092\u7f6e\uff3b\u3044\u3066\u3001\u4e21\u65b9\u3092\uff3d\u4f75\u7528\u3059\u308b\u3053\u3068\u306b\u3057\u305f\u3002\n\n\u5f53\u521d\u306fGra"
   },
   {
-   "added": "でき",
-   "was": "がそのまま使え",
+   "added": "\u3067\u304d",
+   "was": "\u304c\u305d\u306e\u307e\u307e\u4f7f\u3048",
    "kinds": [
-    "可能"
+    "\u53ef\u80fd"
    ],
    "new_words": [],
-   "where": "まま使え、OpenAPIで仕様も共有［でき］るRESTのほうが運用しやすい。Gr"
+   "where": "\u307e\u307e\u4f7f\u3048\u3001OpenAPI\u3067\u4ed5\u69d8\u3082\u5171\u6709\uff3b\u3067\u304d\uff3d\u308bREST\u306e\u307b\u3046\u304c\u904b\u7528\u3057\u3084\u3059\u3044\u3002Gr"
   },
   {
-   "added": "問題への",
+   "added": "\u554f\u984c\u3078\u306e",
    "was": "",
    "kinds": [],
    "new_words": [
-    "問題"
+    "\u554f\u984c"
    ],
-   "where": "では、クエリ単位のコスト制限やN+1［問題への］対策を自前で実装しなければならない。"
+   "where": "\u3067\u306f\u3001\u30af\u30a8\u30ea\u5358\u4f4d\u306e\u30b3\u30b9\u30c8\u5236\u9650\u3084N+1\uff3b\u554f\u984c\u3078\u306e\uff3d\u5bfe\u7b56\u3092\u81ea\u524d\u3067\u5b9f\u88c5\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044\u3002"
   },
   {
-   "added": "実装しなければならない",
-   "was": "作り込む必要がある",
+   "added": "\u5b9f\u88c5\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044",
+   "was": "\u4f5c\u308a\u8fbc\u3080\u5fc5\u8981\u304c\u3042\u308b",
    "kinds": [
-    "義務",
-    "条件"
+    "\u7fa9\u52d9",
+    "\u6761\u4ef6"
    ],
    "new_words": [],
-   "where": "スト制限やN+1問題への対策を自前で［実装しなければならない］。バックエンドは4人のチームで、その"
+   "where": "\u30b9\u30c8\u5236\u9650\u3084N+1\u554f\u984c\u3078\u306e\u5bfe\u7b56\u3092\u81ea\u524d\u3067\uff3b\u5b9f\u88c5\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044\uff3d\u3002\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u306f4\u4eba\u306e\u30c1\u30fc\u30e0\u3067\u3001\u305d\u306e"
   },
   {
-   "added": "担当する人手",
-   "was": "背負う余裕",
+   "added": "\u62c5\u5f53\u3059\u308b\u4eba\u624b",
+   "was": "\u80cc\u8ca0\u3046\u4f59\u88d5",
    "kinds": [],
    "new_words": [
-    "担当",
-    "人手"
+    "\u62c5\u5f53",
+    "\u4eba\u624b"
    ],
-   "where": "クエンドは4人のチームで、その保守を［担当する人手］がない。\n\nそこで既存のRESTは残"
+   "where": "\u30af\u30a8\u30f3\u30c9\u306f4\u4eba\u306e\u30c1\u30fc\u30e0\u3067\u3001\u305d\u306e\u4fdd\u5b88\u3092\uff3b\u62c5\u5f53\u3059\u308b\u4eba\u624b\uff3d\u304c\u306a\u3044\u3002\n\n\u305d\u3053\u3067\u65e2\u5b58\u306eREST\u306f\u6b8b"
   },
   {
-   "added": "構築して、RESTの前段に置く",
-   "was": "1枚挟む",
+   "added": "\u69cb\u7bc9\u3057\u3066\u3001REST\u306e\u524d\u6bb5\u306b\u7f6e\u304f",
+   "was": "1\u679a\u631f\u3080",
    "kinds": [],
    "new_words": [
-    "構築",
-    "前段"
+    "\u69cb\u7bc9",
+    "\u524d\u6bb5"
    ],
-   "where": "Apollo ServerでBFFを［構築して、RESTの前段に置く］。画面の要件をもとにスキーマを設計し"
+   "where": "Apollo Server\u3067BFF\u3092\uff3b\u69cb\u7bc9\u3057\u3066\u3001REST\u306e\u524d\u6bb5\u306b\u7f6e\u304f\uff3d\u3002\u753b\u9762\u306e\u8981\u4ef6\u3092\u3082\u3068\u306b\u30b9\u30ad\u30fc\u30de\u3092\u8a2d\u8a08\u3057"
   },
   {
-   "added": "に適用",
-   "was": "で試",
+   "added": "\u306b\u9069\u7528",
+   "was": "\u3067\u8a66",
    "kinds": [],
    "new_words": [
-    "適用"
+    "\u9069\u7528"
    ],
-   "where": "、最初は注文一覧とマイページの2画面［に適用］する。3か月後にバックエンドチームが"
+   "where": "\u3001\u6700\u521d\u306f\u6ce8\u6587\u4e00\u89a7\u3068\u30de\u30a4\u30da\u30fc\u30b8\u306e2\u753b\u9762\uff3b\u306b\u9069\u7528\uff3d\u3059\u308b\u30023\u304b\u6708\u5f8c\u306b\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0\u304c"
   },
   {
-   "added": "バックエンドチームが",
+   "added": "\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0\u304c",
    "was": "",
    "kinds": [],
    "new_words": [
-    "バックエンドチーム"
+    "\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0"
    ],
-   "where": "ページの2画面に適用する。3か月後に［バックエンドチームが］レスポンス時間と実装工数を計測し、対"
+   "where": "\u30da\u30fc\u30b8\u306e2\u753b\u9762\u306b\u9069\u7528\u3059\u308b\u30023\u304b\u6708\u5f8c\u306b\uff3b\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0\u304c\uff3d\u30ec\u30b9\u30dd\u30f3\u30b9\u6642\u9593\u3068\u5b9f\u88c5\u5de5\u6570\u3092\u8a08\u6e2c\u3057\u3001\u5bfe"
   }
  ],
  "logic": [
   {
-   "kind": "文頭のつなぎ",
-   "sentence": "ただしパートナー向けAPIでは、HTTPキャッシュとレート制限をそのまま使え、OpenAPIで仕様も共有できるRESTのほうが運用しやすい。"
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u305f\u3060\u3057\u30d1\u30fc\u30c8\u30ca\u30fc\u5411\u3051API\u3067\u306f\u3001HTTP\u30ad\u30e3\u30c3\u30b7\u30e5\u3068\u30ec\u30fc\u30c8\u5236\u9650\u3092\u305d\u306e\u307e\u307e\u4f7f\u3048\u3001OpenAPI\u3067\u4ed5\u69d8\u3082\u5171\u6709\u3067\u304d\u308bREST\u306e\u307b\u3046\u304c\u904b\u7528\u3057\u3084\u3059\u3044\u3002"
   },
   {
-   "kind": "文頭のつなぎ",
-   "sentence": "そこで既存のRESTは残し、フロントエンド向けにApollo ServerでBFFを構築して、RESTの前段に置く。"
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u305d\u3053\u3067\u65e2\u5b58\u306eREST\u306f\u6b8b\u3057\u3001\u30d5\u30ed\u30f3\u30c8\u30a8\u30f3\u30c9\u5411\u3051\u306bApollo Server\u3067BFF\u3092\u69cb\u7bc9\u3057\u3066\u3001REST\u306e\u524d\u6bb5\u306b\u7f6e\u304f\u3002"
   }
  ],
  "bold": [],
  "endings": {
-  "stance": "勧め",
+  "stance": "\u52e7\u3081",
   "changes": [],
   "flags": [],
   "orig_flags": []

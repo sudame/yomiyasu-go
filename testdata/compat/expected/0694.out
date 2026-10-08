@@ -2,27 +2,27 @@
  "markers": [],
  "new_words": [],
  "lost_words": [
-  "作業前"
+  "\u4f5c\u696d\u524d"
  ],
  "structure": [
-  "段落をまとめた（12 → 9）。まとめた段落の話題が1つか見る"
+  "\u6bb5\u843d\u3092\u307e\u3068\u3081\u305f\uff0812 \u2192 9\uff09\u3002\u307e\u3068\u3081\u305f\u6bb5\u843d\u306e\u8a71\u984c\u304c1\u3064\u304b\u898b\u308b"
  ],
  "spans": [],
  "logic": [
   {
-   "kind": "主題の「も」",
-   "sentence": "作業が想定より長引く場合も、このチャンネルで随時お知らせします。"
+   "kind": "\u4e3b\u984c\u306e\u300c\u3082\u300d",
+   "sentence": "\u4f5c\u696d\u304c\u60f3\u5b9a\u3088\u308a\u9577\u5f15\u304f\u5834\u5408\u3082\u3001\u3053\u306e\u30c1\u30e3\u30f3\u30cd\u30eb\u3067\u968f\u6642\u304a\u77e5\u3089\u305b\u3057\u307e\u3059\u3002"
   }
  ],
  "bold": [],
  "endings": {
-  "stance": "決まり",
+  "stance": "\u6c7a\u307e\u308a",
   "changes": [
    {
-    "orig": "お願いしたいことは3点あります。",
-    "orig_kind": "説明（〜ます）",
-    "rewrite": "次の3点をお願いします。",
-    "rewrite_kind": "動作（〜します）"
+    "orig": "\u304a\u9858\u3044\u3057\u305f\u3044\u3053\u3068\u306f3\u70b9\u3042\u308a\u307e\u3059\u3002",
+    "orig_kind": "\u8aac\u660e\uff08\u301c\u307e\u3059\uff09",
+    "rewrite": "\u6b21\u306e3\u70b9\u3092\u304a\u9858\u3044\u3057\u307e\u3059\u3002",
+    "rewrite_kind": "\u52d5\u4f5c\uff08\u301c\u3057\u307e\u3059\uff09"
    }
   ],
   "flags": [],

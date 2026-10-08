@@ -1,190 +1,190 @@
 {
  "markers": [
   {
-   "kind": "可能",
+   "kind": "\u53ef\u80fd",
    "orig": 0,
    "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "できない"
+    "\u3067\u304d\u306a\u3044"
    ]
   },
   {
-   "kind": "条件",
+   "kind": "\u6761\u4ef6",
    "orig": 2,
    "rewrite": 1,
    "orig_hits": [
-    "れば",
-    "場合"
+    "\u308c\u3070",
+    "\u5834\u5408"
    ],
    "rewrite_hits": [
-    "れば"
+    "\u308c\u3070"
    ]
   },
   {
-   "kind": "つなぎ",
+   "kind": "\u3064\u306a\u304e",
    "orig": 2,
    "rewrite": 0,
    "orig_hits": [
-    "ただし",
-    "最後に"
+    "\u305f\u3060\u3057",
+    "\u6700\u5f8c\u306b"
    ],
    "rewrite_hits": []
   }
  ],
  "new_words": [
-  "アウトボックステーブル",
-  "アプリケーション",
-  "スケールアウト",
-  "仕組",
-  "保存",
-  "採用",
-  "用意",
-  "設計段階",
-  "配信方式",
-  "開発者"
+  "\u30a2\u30a6\u30c8\u30dc\u30c3\u30af\u30b9\u30c6\u30fc\u30d6\u30eb",
+  "\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3",
+  "\u30b9\u30b1\u30fc\u30eb\u30a2\u30a6\u30c8",
+  "\u4ed5\u7d44",
+  "\u4fdd\u5b58",
+  "\u63a1\u7528",
+  "\u7528\u610f",
+  "\u8a2d\u8a08\u6bb5\u968e",
+  "\u914d\u4fe1\u65b9\u5f0f",
+  "\u958b\u767a\u8005"
  ],
  "lost_words": [
-  "セマンティクス",
-  "一回配信",
-  "一意",
-  "事態",
-  "処理不能",
-  "同一",
-  "基本",
-  "場合",
-  "担保",
-  "整備",
-  "整合性",
-  "明示的",
-  "最後",
-  "永続化",
-  "波及",
-  "滞留数",
-  "第一",
-  "第三",
-  "第二",
-  "結合",
-  "退避",
-  "適用"
+  "\u30bb\u30de\u30f3\u30c6\u30a3\u30af\u30b9",
+  "\u4e00\u56de\u914d\u4fe1",
+  "\u4e00\u610f",
+  "\u4e8b\u614b",
+  "\u51e6\u7406\u4e0d\u80fd",
+  "\u540c\u4e00",
+  "\u57fa\u672c",
+  "\u5834\u5408",
+  "\u62c5\u4fdd",
+  "\u6574\u5099",
+  "\u6574\u5408\u6027",
+  "\u660e\u793a\u7684",
+  "\u6700\u5f8c",
+  "\u6c38\u7d9a\u5316",
+  "\u6ce2\u53ca",
+  "\u6ede\u7559\u6570",
+  "\u7b2c\u4e00",
+  "\u7b2c\u4e09",
+  "\u7b2c\u4e8c",
+  "\u7d50\u5408",
+  "\u9000\u907f",
+  "\u9069\u7528"
  ],
  "structure": [
-  "文の数が変わった（9 → 10）"
+  "\u6587\u306e\u6570\u304c\u5909\u308f\u3063\u305f\uff089 \u2192 10\uff09"
  ],
  "spans": [
   {
-   "added": "開発者が",
+   "added": "\u958b\u767a\u8005\u304c",
    "was": "",
    "kinds": [],
    "new_words": [
-    "開発者"
+    "\u958b\u767a\u8005"
    ],
-   "where": "がりにくくなる。この利点を得るには、［開発者が］配信保証とエラー処理を設計段階で決め"
+   "where": "\u304c\u308a\u306b\u304f\u304f\u306a\u308b\u3002\u3053\u306e\u5229\u70b9\u3092\u5f97\u308b\u306b\u306f\u3001\uff3b\u958b\u767a\u8005\u304c\uff3d\u914d\u4fe1\u4fdd\u8a3c\u3068\u30a8\u30e9\u30fc\u51e6\u7406\u3092\u8a2d\u8a08\u6bb5\u968e\u3067\u6c7a\u3081"
   },
   {
-   "added": "段階で決めておく",
-   "was": "する",
+   "added": "\u6bb5\u968e\u3067\u6c7a\u3081\u3066\u304a\u304f",
+   "was": "\u3059\u308b",
    "kinds": [],
    "new_words": [
-    "段階"
+    "\u6bb5\u968e"
    ],
-   "where": "、開発者が配信保証とエラー処理を設計［段階で決めておく］必要がある。\n\n配信方式には少なくと"
+   "where": "\u3001\u958b\u767a\u8005\u304c\u914d\u4fe1\u4fdd\u8a3c\u3068\u30a8\u30e9\u30fc\u51e6\u7406\u3092\u8a2d\u8a08\uff3b\u6bb5\u968e\u3067\u6c7a\u3081\u3066\u304a\u304f\uff3d\u5fc5\u8981\u304c\u3042\u308b\u3002\n\n\u914d\u4fe1\u65b9\u5f0f\u306b\u306f\u5c11\u306a\u304f\u3068"
   },
   {
-   "added": "方式に",
-   "was": "セマンティクス",
+   "added": "\u65b9\u5f0f\u306b",
+   "was": "\u30bb\u30de\u30f3\u30c6\u30a3\u30af\u30b9",
    "kinds": [],
    "new_words": [
-    "方式"
+    "\u65b9\u5f0f"
    ],
-   "where": "段階で決めておく必要がある。\n\n配信［方式に］は少なくとも1回配信を採用し、コンシ"
+   "where": "\u6bb5\u968e\u3067\u6c7a\u3081\u3066\u304a\u304f\u5fc5\u8981\u304c\u3042\u308b\u3002\n\n\u914d\u4fe1\uff3b\u65b9\u5f0f\u306b\uff3d\u306f\u5c11\u306a\u304f\u3068\u30821\u56de\u914d\u4fe1\u3092\u63a1\u7528\u3057\u3001\u30b3\u30f3\u30b7"
   },
   {
-   "added": "採用",
-   "was": "基本と",
+   "added": "\u63a1\u7528",
+   "was": "\u57fa\u672c\u3068",
    "kinds": [],
    "new_words": [
-    "採用"
+    "\u63a1\u7528"
    ],
-   "where": "\n\n配信方式には少なくとも1回配信を［採用］し、コンシューマ側で冪等性を確保する"
+   "where": "\n\n\u914d\u4fe1\u65b9\u5f0f\u306b\u306f\u5c11\u306a\u304f\u3068\u30821\u56de\u914d\u4fe1\u3092\uff3b\u63a1\u7528\uff3d\u3057\u3001\u30b3\u30f3\u30b7\u30e5\u30fc\u30de\u5074\u3067\u51aa\u7b49\u6027\u3092\u78ba\u4fdd\u3059\u308b"
   },
   {
-   "added": "データベースに保存",
-   "was": "永続化",
+   "added": "\u30c7\u30fc\u30bf\u30d9\u30fc\u30b9\u306b\u4fdd\u5b58",
+   "was": "\u6c38\u7d9a\u5316",
    "kinds": [],
    "new_words": [
-    "保存"
+    "\u4fdd\u5b58"
    ],
-   "where": "で冪等性を確保する。メッセージIDを［データベースに保存］して重複を検出すれば、メッセージが再"
+   "where": "\u3067\u51aa\u7b49\u6027\u3092\u78ba\u4fdd\u3059\u308b\u3002\u30e1\u30c3\u30bb\u30fc\u30b8ID\u3092\uff3b\u30c7\u30fc\u30bf\u30d9\u30fc\u30b9\u306b\u4fdd\u5b58\uff3d\u3057\u3066\u91cd\u8907\u3092\u691c\u51fa\u3059\u308c\u3070\u3001\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\u518d"
   },
   {
-   "added": "メッセージが",
-   "was": "",
-   "kinds": [
-    "条件"
-   ],
-   "new_words": [],
-   "where": "タベースに保存して重複を検出すれば、［メッセージが］再送されても業務上の状態は1つに定ま"
-  },
-  {
-   "added": "でき",
-   "was": "不能",
-   "kinds": [
-    "可能"
-   ],
-   "new_words": [],
-   "where": "レターキューへ移す。こうすると、処理［でき］ないメッセージが後続のメッセージの処"
-  },
-  {
-   "added": "い",
+   "added": "\u30e1\u30c3\u30bb\u30fc\u30b8\u304c",
    "was": "",
    "kinds": [
-    "可能"
+    "\u6761\u4ef6"
    ],
    "new_words": [],
-   "where": "キューへ移す。こうすると、処理できな［い］メッセージが後続のメッセージの処理を"
+   "where": "\u30bf\u30d9\u30fc\u30b9\u306b\u4fdd\u5b58\u3057\u3066\u91cd\u8907\u3092\u691c\u51fa\u3059\u308c\u3070\u3001\uff3b\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\uff3d\u518d\u9001\u3055\u308c\u3066\u3082\u696d\u52d9\u4e0a\u306e\u72b6\u614b\u306f1\u3064\u306b\u5b9a\u307e"
   },
   {
-   "added": "アプリケーションは",
+   "added": "\u3067\u304d",
+   "was": "\u4e0d\u80fd",
+   "kinds": [
+    "\u53ef\u80fd"
+   ],
+   "new_words": [],
+   "where": "\u30ec\u30bf\u30fc\u30ad\u30e5\u30fc\u3078\u79fb\u3059\u3002\u3053\u3046\u3059\u308b\u3068\u3001\u51e6\u7406\uff3b\u3067\u304d\uff3d\u306a\u3044\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\u5f8c\u7d9a\u306e\u30e1\u30c3\u30bb\u30fc\u30b8\u306e\u51e6"
+  },
+  {
+   "added": "\u3044",
+   "was": "",
+   "kinds": [
+    "\u53ef\u80fd"
+   ],
+   "new_words": [],
+   "where": "\u30ad\u30e5\u30fc\u3078\u79fb\u3059\u3002\u3053\u3046\u3059\u308b\u3068\u3001\u51e6\u7406\u3067\u304d\u306a\uff3b\u3044\uff3d\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\u5f8c\u7d9a\u306e\u30e1\u30c3\u30bb\u30fc\u30b8\u306e\u51e6\u7406\u3092"
+  },
+  {
+   "added": "\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u306f",
    "was": "",
    "kinds": [],
    "new_words": [
-    "アプリケーション"
+    "\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3"
    ],
-   "where": "ョナルアウトボックスパターンを使う。［アプリケーションは］更新と同じトランザクションでイベント"
+   "where": "\u30e7\u30ca\u30eb\u30a2\u30a6\u30c8\u30dc\u30c3\u30af\u30b9\u30d1\u30bf\u30fc\u30f3\u3092\u4f7f\u3046\u3002\uff3b\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u306f\uff3d\u66f4\u65b0\u3068\u540c\u3058\u30c8\u30e9\u30f3\u30b6\u30af\u30b7\u30e7\u30f3\u3067\u30a4\u30d9\u30f3\u30c8"
   },
   {
-   "added": "アウトボックステーブルに",
+   "added": "\u30a2\u30a6\u30c8\u30dc\u30c3\u30af\u30b9\u30c6\u30fc\u30d6\u30eb\u306b",
    "was": "",
    "kinds": [],
    "new_words": [
-    "アウトボックステーブル"
+    "\u30a2\u30a6\u30c8\u30dc\u30c3\u30af\u30b9\u30c6\u30fc\u30d6\u30eb"
    ],
-   "where": "新と同じトランザクションでイベントを［アウトボックステーブルに］記録し、別のプロセスがそのイベントを"
+   "where": "\u65b0\u3068\u540c\u3058\u30c8\u30e9\u30f3\u30b6\u30af\u30b7\u30e7\u30f3\u3067\u30a4\u30d9\u30f3\u30c8\u3092\uff3b\u30a2\u30a6\u30c8\u30dc\u30c3\u30af\u30b9\u30c6\u30fc\u30d6\u30eb\u306b\uff3d\u8a18\u9332\u3057\u3001\u5225\u306e\u30d7\u30ed\u30bb\u30b9\u304c\u305d\u306e\u30a4\u30d9\u30f3\u30c8\u3092"
   },
   {
-   "added": "仕組みも",
-   "was": "運",
+   "added": "\u4ed5\u7d44\u307f\u3082",
+   "was": "\u904b",
    "kinds": [],
    "new_words": [
-    "仕組"
+    "\u4ed5\u7d44"
    ],
-   "where": "ンシューマを自動でスケールアウトする［仕組みも］用意する。"
+   "where": "\u30f3\u30b7\u30e5\u30fc\u30de\u3092\u81ea\u52d5\u3067\u30b9\u30b1\u30fc\u30eb\u30a2\u30a6\u30c8\u3059\u308b\uff3b\u4ed5\u7d44\u307f\u3082\uff3d\u7528\u610f\u3059\u308b\u3002"
   }
  ],
  "logic": [
   {
-   "kind": "文頭の指示語",
-   "sentence": "この利点を得るには、開発者が配信保証とエラー処理を設計段階で決めておく必要がある。"
+   "kind": "\u6587\u982d\u306e\u6307\u793a\u8a9e",
+   "sentence": "\u3053\u306e\u5229\u70b9\u3092\u5f97\u308b\u306b\u306f\u3001\u958b\u767a\u8005\u304c\u914d\u4fe1\u4fdd\u8a3c\u3068\u30a8\u30e9\u30fc\u51e6\u7406\u3092\u8a2d\u8a08\u6bb5\u968e\u3067\u6c7a\u3081\u3066\u304a\u304f\u5fc5\u8981\u304c\u3042\u308b\u3002"
   },
   {
-   "kind": "文頭の指示語",
-   "sentence": "こうすると、処理できないメッセージが後続のメッセージの処理を止めることはない。"
+   "kind": "\u6587\u982d\u306e\u6307\u793a\u8a9e",
+   "sentence": "\u3053\u3046\u3059\u308b\u3068\u3001\u51e6\u7406\u3067\u304d\u306a\u3044\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\u5f8c\u7d9a\u306e\u30e1\u30c3\u30bb\u30fc\u30b8\u306e\u51e6\u7406\u3092\u6b62\u3081\u308b\u3053\u3068\u306f\u306a\u3044\u3002"
   }
  ],
  "bold": [],
  "endings": {
-  "stance": "説明",
+  "stance": "\u8aac\u660e",
   "changes": [],
   "flags": [],
   "orig_flags": []

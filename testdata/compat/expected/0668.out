@@ -1,96 +1,96 @@
 {
  "markers": [
   {
-   "kind": "条件",
+   "kind": "\u6761\u4ef6",
    "orig": 0,
    "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "場合"
+    "\u5834\u5408"
    ]
   }
  ],
  "new_words": [
-  "同期的",
-  "回目",
-  "場合",
-  "数秒返",
-  "方式",
-  "登録"
+  "\u540c\u671f\u7684",
+  "\u56de\u76ee",
+  "\u5834\u5408",
+  "\u6570\u79d2\u8fd4",
+  "\u65b9\u5f0f",
+  "\u767b\u9332"
  ],
  "lost_words": [
-  "同期呼",
-  "失敗時",
-  "数秒止"
+  "\u540c\u671f\u547c",
+  "\u5931\u6557\u6642",
+  "\u6570\u79d2\u6b62"
  ],
  "structure": [],
  "spans": [
   {
-   "added": "ぶ方式",
-   "was": "び出し",
+   "added": "\u3076\u65b9\u5f0f",
+   "was": "\u3073\u51fa\u3057",
    "kinds": [],
    "new_words": [
-    "方式"
+    "\u65b9\u5f0f"
    ],
-   "where": "クエスト内で同期的に認証サーバーを呼［ぶ方式］から、非同期キューに積んでワーカーが"
+   "where": "\u30af\u30a8\u30b9\u30c8\u5185\u3067\u540c\u671f\u7684\u306b\u8a8d\u8a3c\u30b5\u30fc\u30d0\u30fc\u3092\u547c\uff3b\u3076\u65b9\u5f0f\uff3d\u304b\u3089\u3001\u975e\u540c\u671f\u30ad\u30e5\u30fc\u306b\u7a4d\u3093\u3067\u30ef\u30fc\u30ab\u30fc\u304c"
   },
   {
-   "added": "する方式へ変更し",
-   "was": "に切り替え",
+   "added": "\u3059\u308b\u65b9\u5f0f\u3078\u5909\u66f4\u3057",
+   "was": "\u306b\u5207\u308a\u66ff\u3048",
    "kinds": [],
    "new_words": [
-    "方式"
+    "\u65b9\u5f0f"
    ],
-   "where": "、非同期キューに積んでワーカーが実行［する方式へ変更し］た。\n\n背景\nこれまでは、トークンの"
+   "where": "\u3001\u975e\u540c\u671f\u30ad\u30e5\u30fc\u306b\u7a4d\u3093\u3067\u30ef\u30fc\u30ab\u30fc\u304c\u5b9f\u884c\uff3b\u3059\u308b\u65b9\u5f0f\u3078\u5909\u66f4\u3057\uff3d\u305f\u3002\n\n\u80cc\u666f\n\u3053\u308c\u307e\u3067\u306f\u3001\u30c8\u30fc\u30af\u30f3\u306e"
   },
   {
-   "added": "登録し",
-   "was": "積み",
+   "added": "\u767b\u9332\u3057",
+   "was": "\u7a4d\u307f",
    "kinds": [],
    "new_words": [
-    "登録"
+    "\u767b\u9332"
    ],
-   "where": "検知するとリフレッシュ要求をキューに［登録し］、ワーカーがその要求を処理する。ユー"
+   "where": "\u691c\u77e5\u3059\u308b\u3068\u30ea\u30d5\u30ec\u30c3\u30b7\u30e5\u8981\u6c42\u3092\u30ad\u30e5\u30fc\u306b\uff3b\u767b\u9332\u3057\uff3d\u3001\u30ef\u30fc\u30ab\u30fc\u304c\u305d\u306e\u8981\u6c42\u3092\u51e6\u7406\u3059\u308b\u3002\u30e6\u30fc"
   },
   {
-   "added": "しか登録されない。リフレッシュ",
+   "added": "\u3057\u304b\u767b\u9332\u3055\u308c\u306a\u3044\u3002\u30ea\u30d5\u30ec\u30c3\u30b7\u30e5",
    "was": "",
    "kinds": [],
    "new_words": [
-    "登録"
+    "\u767b\u9332"
    ],
-   "where": "けたので、同じユーザーのジョブは1件［しか登録されない。リフレッシュ］に失敗した場合は指数バックオフで最大"
+   "where": "\u3051\u305f\u306e\u3067\u3001\u540c\u3058\u30e6\u30fc\u30b6\u30fc\u306e\u30b8\u30e7\u30d6\u306f1\u4ef6\uff3b\u3057\u304b\u767b\u9332\u3055\u308c\u306a\u3044\u3002\u30ea\u30d5\u30ec\u30c3\u30b7\u30e5\uff3d\u306b\u5931\u6557\u3057\u305f\u5834\u5408\u306f\u6307\u6570\u30d0\u30c3\u30af\u30aa\u30d5\u3067\u6700\u5927"
   },
   {
-   "added": "した場合",
-   "was": "時",
+   "added": "\u3057\u305f\u5834\u5408",
+   "was": "\u6642",
    "kinds": [
-    "条件"
+    "\u6761\u4ef6"
    ],
    "new_words": [
-    "場合"
+    "\u5834\u5408"
    ],
-   "where": "しか登録されない。リフレッシュに失敗［した場合］は指数バックオフで最大3回までリトラ"
+   "where": "\u3057\u304b\u767b\u9332\u3055\u308c\u306a\u3044\u3002\u30ea\u30d5\u30ec\u30c3\u30b7\u30e5\u306b\u5931\u6557\uff3b\u3057\u305f\u5834\u5408\uff3d\u306f\u6307\u6570\u30d0\u30c3\u30af\u30aa\u30d5\u3067\u6700\u59273\u56de\u307e\u3067\u30ea\u30c8\u30e9"
   },
   {
-   "added": "3回目",
-   "was": "それで",
+   "added": "3\u56de\u76ee",
+   "was": "\u305d\u308c\u3067",
    "kinds": [],
    "new_words": [
-    "回目"
+    "\u56de\u76ee"
    ],
-   "where": "バックオフで最大3回までリトライし、［3回目］も失敗したらセッションを失効させる。"
+   "where": "\u30d0\u30c3\u30af\u30aa\u30d5\u3067\u6700\u59273\u56de\u307e\u3067\u30ea\u30c8\u30e9\u30a4\u3057\u3001\uff3b3\u56de\u76ee\uff3d\u3082\u5931\u6557\u3057\u305f\u3089\u30bb\u30c3\u30b7\u30e7\u30f3\u3092\u5931\u52b9\u3055\u305b\u308b\u3002"
   }
  ],
  "logic": [
   {
-   "kind": "文頭の指示語",
-   "sentence": "これまでは、トークンの期限切れを検知したリクエストが、その場で認証サーバーを呼んでいた。"
+   "kind": "\u6587\u982d\u306e\u6307\u793a\u8a9e",
+   "sentence": "\u3053\u308c\u307e\u3067\u306f\u3001\u30c8\u30fc\u30af\u30f3\u306e\u671f\u9650\u5207\u308c\u3092\u691c\u77e5\u3057\u305f\u30ea\u30af\u30a8\u30b9\u30c8\u304c\u3001\u305d\u306e\u5834\u3067\u8a8d\u8a3c\u30b5\u30fc\u30d0\u30fc\u3092\u547c\u3093\u3067\u3044\u305f\u3002"
   }
  ],
  "bold": [],
  "endings": {
-  "stance": "説明",
+  "stance": "\u8aac\u660e",
   "changes": [],
   "flags": [],
   "orig_flags": []

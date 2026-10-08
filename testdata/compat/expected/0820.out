@@ -1,159 +1,159 @@
 {
  "markers": [
   {
-   "kind": "念押し",
+   "kind": "\u5ff5\u62bc\u3057",
    "orig": 0,
    "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "必ず"
+    "\u5fc5\u305a"
    ]
   },
   {
-   "kind": "つなぎ",
+   "kind": "\u3064\u306a\u304e",
    "orig": 0,
    "rewrite": 2,
    "orig_hits": [],
    "rewrite_hits": [
-    "また",
-    "さらに"
+    "\u307e\u305f",
+    "\u3055\u3089\u306b"
    ]
   }
  ],
  "new_words": [
-  "サーバー",
-  "チーム",
-  "仕組",
-  "分間",
-  "実施",
-  "担当者",
-  "追加",
-  "運用",
-  "運用担当者",
-  "開発"
+  "\u30b5\u30fc\u30d0\u30fc",
+  "\u30c1\u30fc\u30e0",
+  "\u4ed5\u7d44",
+  "\u5206\u9593",
+  "\u5b9f\u65bd",
+  "\u62c5\u5f53\u8005",
+  "\u8ffd\u52a0",
+  "\u904b\u7528",
+  "\u904b\u7528\u62c5\u5f53\u8005",
+  "\u958b\u767a"
  ],
  "lost_words": [
-  "占有",
-  "待機中",
-  "必須",
-  "検証",
-  "正常化",
-  "流量"
+  "\u5360\u6709",
+  "\u5f85\u6a5f\u4e2d",
+  "\u5fc5\u9808",
+  "\u691c\u8a3c",
+  "\u6b63\u5e38\u5316",
+  "\u6d41\u91cf"
  ],
  "structure": [
-  "箇条書きを地の文にした。各項目の文末（指示・説明・評価）が元と同じか見る",
-  "文の数が変わった（20 → 18）"
+  "\u7b87\u6761\u66f8\u304d\u3092\u5730\u306e\u6587\u306b\u3057\u305f\u3002\u5404\u9805\u76ee\u306e\u6587\u672b\uff08\u6307\u793a\u30fb\u8aac\u660e\u30fb\u8a55\u4fa1\uff09\u304c\u5143\u3068\u540c\u3058\u304b\u898b\u308b",
+  "\u6587\u306e\u6570\u304c\u5909\u308f\u3063\u305f\uff0820 \u2192 18\uff09"
  ],
  "spans": [
   {
-   "added": "、APIサーバーは",
-   "was": "て",
+   "added": "\u3001API\u30b5\u30fc\u30d0\u30fc\u306f",
+   "was": "\u3066",
    "kinds": [],
    "new_words": [
-    "サーバー"
+    "\u30b5\u30fc\u30d0\u30fc"
    ],
-   "where": "クエストが30秒のタイムアウトに達し［、APIサーバーは］504を返した。\n\n原因\n開発チーム"
+   "where": "\u30af\u30a8\u30b9\u30c8\u304c30\u79d2\u306e\u30bf\u30a4\u30e0\u30a2\u30a6\u30c8\u306b\u9054\u3057\uff3b\u3001API\u30b5\u30fc\u30d0\u30fc\u306f\uff3d504\u3092\u8fd4\u3057\u305f\u3002\n\n\u539f\u56e0\n\u958b\u767a\u30c1\u30fc\u30e0"
   },
   {
-   "added": "開発チ",
-   "was": "プ",
+   "added": "\u958b\u767a\u30c1",
+   "was": "\u30d7",
    "kinds": [],
    "new_words": [
-    "開発"
+    "\u958b\u767a"
    ],
-   "where": "サーバーは504を返した。\n\n原因\n［開発チ］ームは、ピーク時の同時接続数より小さ"
+   "where": "\u30b5\u30fc\u30d0\u30fc\u306f504\u3092\u8fd4\u3057\u305f\u3002\n\n\u539f\u56e0\n\uff3b\u958b\u767a\u30c1\uff3d\u30fc\u30e0\u306f\u3001\u30d4\u30fc\u30af\u6642\u306e\u540c\u6642\u63a5\u7d9a\u6570\u3088\u308a\u5c0f\u3055"
   },
   {
-   "added": "また、",
+   "added": "\u307e\u305f\u3001",
    "was": "\n",
    "kinds": [
-    "つなぎ"
+    "\u3064\u306a\u304e"
    ],
    "new_words": [],
-   "where": "20接続をプール上限に設定していた。［また、］集計クエリに実行時間の上限を設定して"
+   "where": "20\u63a5\u7d9a\u3092\u30d7\u30fc\u30eb\u4e0a\u9650\u306b\u8a2d\u5b9a\u3057\u3066\u3044\u305f\u3002\uff3b\u307e\u305f\u3001\uff3d\u96c6\u8a08\u30af\u30a8\u30ea\u306b\u5b9f\u884c\u6642\u9593\u306e\u4e0a\u9650\u3092\u8a2d\u5b9a\u3057\u3066"
   },
   {
-   "added": "さらに、",
+   "added": "\u3055\u3089\u306b\u3001",
    "was": "\n",
    "kinds": [
-    "つなぎ"
+    "\u3064\u306a\u304e"
    ],
    "new_words": [],
-   "where": "実行時間の上限を設定していなかった。［さらに、］負荷試験ではキャンペーン規模のリクエ"
+   "where": "\u5b9f\u884c\u6642\u9593\u306e\u4e0a\u9650\u3092\u8a2d\u5b9a\u3057\u3066\u3044\u306a\u304b\u3063\u305f\u3002\uff3b\u3055\u3089\u306b\u3001\uff3d\u8ca0\u8377\u8a66\u9a13\u3067\u306f\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u898f\u6a21\u306e\u30ea\u30af\u30a8"
   },
   {
-   "added": "運用担当者は",
+   "added": "\u904b\u7528\u62c5\u5f53\u8005\u306f",
    "was": "",
    "kinds": [],
    "new_words": [
-    "運用担当者"
+    "\u904b\u7528\u62c5\u5f53\u8005"
    ],
-   "where": "スト数を流していなかった。\n\n対応\n［運用担当者は］集計バッチを停止し、プール上限を50"
+   "where": "\u30b9\u30c8\u6570\u3092\u6d41\u3057\u3066\u3044\u306a\u304b\u3063\u305f\u3002\n\n\u5bfe\u5fdc\n\uff3b\u904b\u7528\u62c5\u5f53\u8005\u306f\uff3d\u96c6\u8a08\u30d0\u30c3\u30c1\u3092\u505c\u6b62\u3057\u3001\u30d7\u30fc\u30eb\u4e0a\u9650\u309250"
   },
   {
-   "added": "開発チームは、",
+   "added": "\u958b\u767a\u30c1\u30fc\u30e0\u306f\u3001",
    "was": "",
    "kinds": [],
    "new_words": [
-    "開発",
-    "チーム"
+    "\u958b\u767a",
+    "\u30c1\u30fc\u30e0"
    ],
-   "where": "ったことを確認した。\n\n再発防止策\n［開発チームは、］クエリの実行時間に上限を設定し、集計"
+   "where": "\u3063\u305f\u3053\u3068\u3092\u78ba\u8a8d\u3057\u305f\u3002\n\n\u518d\u767a\u9632\u6b62\u7b56\n\uff3b\u958b\u767a\u30c1\u30fc\u30e0\u306f\u3001\uff3d\u30af\u30a8\u30ea\u306e\u5b9f\u884c\u6642\u9593\u306b\u4e0a\u9650\u3092\u8a2d\u5b9a\u3057\u3001\u96c6\u8a08"
   },
   {
-   "added": "運用チームは、",
+   "added": "\u904b\u7528\u30c1\u30fc\u30e0\u306f\u3001",
    "was": "\n",
    "kinds": [],
    "new_words": [
-    "運用",
-    "チーム"
+    "\u904b\u7528",
+    "\u30c1\u30fc\u30e0"
    ],
-   "where": "、集計処理を読み取りレプリカへ移す。［運用チームは、］プール使用率が80%を超えたら担当者"
+   "where": "\u3001\u96c6\u8a08\u51e6\u7406\u3092\u8aad\u307f\u53d6\u308a\u30ec\u30d7\u30ea\u30ab\u3078\u79fb\u3059\u3002\uff3b\u904b\u7528\u30c1\u30fc\u30e0\u306f\u3001\uff3d\u30d7\u30fc\u30eb\u4f7f\u7528\u7387\u304c80%\u3092\u8d85\u3048\u305f\u3089\u62c5\u5f53\u8005"
   },
   {
-   "added": "担当者に",
+   "added": "\u62c5\u5f53\u8005\u306b",
    "was": "",
    "kinds": [],
    "new_words": [
-    "担当者"
+    "\u62c5\u5f53\u8005"
    ],
-   "where": "ムは、プール使用率が80%を超えたら［担当者に］通知する仕組みを追加し、キャンペーン"
+   "where": "\u30e0\u306f\u3001\u30d7\u30fc\u30eb\u4f7f\u7528\u7387\u304c80%\u3092\u8d85\u3048\u305f\u3089\uff3b\u62c5\u5f53\u8005\u306b\uff3d\u901a\u77e5\u3059\u308b\u4ed5\u7d44\u307f\u3092\u8ffd\u52a0\u3057\u3001\u30ad\u30e3\u30f3\u30da\u30fc\u30f3"
   },
   {
-   "added": "仕組みを追加し、",
-   "was": "。\n",
+   "added": "\u4ed5\u7d44\u307f\u3092\u8ffd\u52a0\u3057\u3001",
+   "was": "\u3002\n",
    "kinds": [],
    "new_words": [
-    "仕組",
-    "追加"
+    "\u4ed5\u7d44",
+    "\u8ffd\u52a0"
    ],
-   "where": "率が80%を超えたら担当者に通知する［仕組みを追加し、］キャンペーン前には負荷試験を必ず実施"
+   "where": "\u7387\u304c80%\u3092\u8d85\u3048\u305f\u3089\u62c5\u5f53\u8005\u306b\u901a\u77e5\u3059\u308b\uff3b\u4ed5\u7d44\u307f\u3092\u8ffd\u52a0\u3057\u3001\uff3d\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u524d\u306b\u306f\u8ca0\u8377\u8a66\u9a13\u3092\u5fc5\u305a\u5b9f\u65bd"
   },
   {
-   "added": "ず実施",
-   "was": "須に",
+   "added": "\u305a\u5b9f\u65bd",
+   "was": "\u9808\u306b",
    "kinds": [
-    "念押し"
+    "\u5ff5\u62bc\u3057"
    ],
    "new_words": [
-    "実施"
+    "\u5b9f\u65bd"
    ],
-   "where": "加し、キャンペーン前には負荷試験を必［ず実施］する。"
+   "where": "\u52a0\u3057\u3001\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u524d\u306b\u306f\u8ca0\u8377\u8a66\u9a13\u3092\u5fc5\uff3b\u305a\u5b9f\u65bd\uff3d\u3059\u308b\u3002"
   }
  ],
  "logic": [
   {
-   "kind": "文頭のつなぎ",
-   "sentence": "また、集計クエリに実行時間の上限を設定していなかった。"
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u307e\u305f\u3001\u96c6\u8a08\u30af\u30a8\u30ea\u306b\u5b9f\u884c\u6642\u9593\u306e\u4e0a\u9650\u3092\u8a2d\u5b9a\u3057\u3066\u3044\u306a\u304b\u3063\u305f\u3002"
   },
   {
-   "kind": "文頭のつなぎ",
-   "sentence": "さらに、負荷試験ではキャンペーン規模のリクエスト数を流していなかった。"
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u3055\u3089\u306b\u3001\u8ca0\u8377\u8a66\u9a13\u3067\u306f\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u898f\u6a21\u306e\u30ea\u30af\u30a8\u30b9\u30c8\u6570\u3092\u6d41\u3057\u3066\u3044\u306a\u304b\u3063\u305f\u3002"
   }
  ],
  "bold": [],
  "endings": {
-  "stance": "決まり",
+  "stance": "\u6c7a\u307e\u308a",
   "changes": [],
   "flags": [],
   "orig_flags": []

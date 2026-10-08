@@ -1,6 +1,6 @@
 {
-  "score": 95,
-  "is_clean": false,
+  "score": 100,
+  "is_clean": true,
   "metrics": {
     "char_count": 429,
     "total_lines": 4,
@@ -9,13 +9,5 @@
     "bold_count": 0,
     "bold_per_1000": 0.0
   },
-  "findings": [
-    {
-      "rule": "sentence_end_repetition",
-      "line": 3,
-      "severity": "warn",
-      "message": "同一文末「ます」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
-      "snippet": "今の構造には3つの問題があります。"
-    }
-  ]
+  "findings": []
 }
