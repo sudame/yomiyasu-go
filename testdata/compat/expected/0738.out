@@ -1,94 +1,144 @@
 {
- "markers": [],
+ "markers": [
+  {
+   "kind": "\u6761\u4ef6",
+   "orig": 1,
+   "rewrite": 2,
+   "orig_hits": [
+    "\u305f\u3089"
+   ],
+   "rewrite_hits": [
+    "\u305f\u3089",
+    "\u5834\u5408"
+   ]
+  }
+ ],
  "new_words": [
-  "システム",
-  "秒後",
-  "運用担当者"
+  "\u30b7\u30b9\u30c6\u30e0",
+  "\u4ee5\u964d",
+  "\u4f55\u5ea6\u5b9f\u884c",
+  "\u4fdd\u5b58",
+  "\u518d\u8a66\u884c",
+  "\u51e6\u7406\u6e08",
+  "\u56de\u7d9a",
+  "\u5834\u5408",
+  "\u78ba\u8a8d",
+  "\u79d2\u5f8c"
  ],
  "lost_words": [
-  "再試行上限"
+  "\u4e8c\u91cd\u51e6\u7406",
+  "\u4fdd\u8a3c",
+  "\u500d\u3005",
+  "\u51aa\u7b49\u6027",
+  "\u5358\u4f53",
+  "\u5373\u5ea7",
+  "\u53d7\u4fe1\u6642",
+  "\u56de\u5931\u6557",
+  "\u5bfe\u8c61",
+  "\u91cd\u8907\u6392\u9664"
  ],
- "structure": [
-  "文の数が変わった（17 → 19）"
- ],
+ "structure": [],
  "spans": [
   {
-   "added": "システムは",
+   "added": "\u3057\u305f\u3089\u3001\u30b7\u30b9\u30c6\u30e0\u304c",
+   "was": "\u6642\u306b",
+   "kinds": [
+    "\u6761\u4ef6"
+   ],
+   "new_words": [
+    "\u30b7\u30b9\u30c6\u30e0"
+   ],
+   "where": "\u6e08\u30d7\u30ed\u30d0\u30a4\u30c0\u304b\u3089Webhook\u3092\u53d7\u4fe1\uff3b\u3057\u305f\u3089\u3001\u30b7\u30b9\u30c6\u30e0\u304c\uff3d\u7f72\u540d\u3092\u691c\u8a3c\u3057\u3001\u30a4\u30d9\u30f3\u30c8ID\u3067\u91cd\u8907\u3092\u9664"
+  },
+  {
+   "added": "\u51e6\u7406\u6e08\u307f\u304b\u3069\u3046\u304b",
+   "was": "\u3057\u305f\u51aa\u7b49\u6027",
+   "kinds": [],
+   "new_words": [
+    "\u51e6\u7406\u6e08"
+   ],
+   "where": "\u3088\u3046\u3001\u30ef\u30fc\u30ab\u30fc\u3082\u30a4\u30d9\u30f3\u30c8ID\u3092\u30ad\u30fc\u306b\uff3b\u51e6\u7406\u6e08\u307f\u304b\u3069\u3046\u304b\uff3d\u3092\u78ba\u8a8d\u3059\u308b\u3002\n\n\u30ef\u30fc\u30ab\u30fc\u306f\u51e6\u7406\u306b\u5931\u6557"
+  },
+  {
+   "added": "\u78ba\u8a8d",
+   "was": "\u30ef\u30fc\u30ab\u30fc\u5074\u3067\u3082\u4fdd\u8a3c",
+   "kinds": [],
+   "new_words": [
+    "\u78ba\u8a8d"
+   ],
+   "where": "\u30d9\u30f3\u30c8ID\u3092\u30ad\u30fc\u306b\u51e6\u7406\u6e08\u307f\u304b\u3069\u3046\u304b\u3092\uff3b\u78ba\u8a8d\uff3d\u3059\u308b\u3002\n\n\u30ef\u30fc\u30ab\u30fc\u306f\u51e6\u7406\u306b\u5931\u6557\u3057\u305f\u30e1"
+  },
+  {
+   "added": "\u518d\u8a66\u884c",
+   "was": "\u30ea\u30c8\u30e9\u30a4",
+   "kinds": [],
+   "new_words": [
+    "\u518d\u8a66\u884c"
+   ],
+   "where": "\u30d5\u306b\u30b8\u30c3\u30bf\u3092\u52a0\u3048\u305f\u9593\u9694\u3067\u6700\u59276\u56de\u307e\u3067\uff3b\u518d\u8a66\u884c\uff3d\u3059\u308b\u3002\u521d\u56de\u306f30\u79d2\u5f8c\u306b\u518d\u8a66\u884c\u3057\u3001\u4ee5\u964d"
+  },
+  {
+   "added": "\u5f8c\u306b\u518d\u8a66\u884c\u3057\u3001\u4ee5\u964d\u306f\u9593\u9694\u30922",
+   "was": "\u304b\u3089\u59cb\u3081\u3066",
+   "kinds": [],
+   "new_words": [
+    "\u518d\u8a66\u884c",
+    "\u4ee5\u964d"
+   ],
+   "where": "\u6700\u59276\u56de\u307e\u3067\u518d\u8a66\u884c\u3059\u308b\u3002\u521d\u56de\u306f30\u79d2\uff3b\u5f8c\u306b\u518d\u8a66\u884c\u3057\u3001\u4ee5\u964d\u306f\u9593\u9694\u30922\uff3d\u500d\u305a\u3064\u5ef6\u3070\u3057\u3066\u3001\u4e0a\u9650\u30921\u6642\u9593\u3068\u3059\u308b\u3002"
+  },
+  {
+   "added": "\u518d\u8a66\u884c\u3059\u308b\u306e",
+   "was": "\u30ea\u30c8\u30e9\u30a4\u5bfe\u8c61",
+   "kinds": [],
+   "new_words": [
+    "\u518d\u8a66\u884c"
+   ],
+   "where": "\u500d\u305a\u3064\u5ef6\u3070\u3057\u3066\u3001\u4e0a\u9650\u30921\u6642\u9593\u3068\u3059\u308b\u3002\uff3b\u518d\u8a66\u884c\u3059\u308b\u306e\uff3d\u306f\u30015xx\u3001\u30bf\u30a4\u30e0\u30a2\u30a6\u30c8\u3001DB\u63a5\u7d9a\u30a8"
+  },
+  {
+   "added": "\u3067\u5931\u6557\u3057\u305f\u5834\u5408",
    "was": "",
-   "kinds": [],
-   "new_words": [
-    "システム"
+   "kinds": [
+    "\u6761\u4ef6"
    ],
-   "where": "DLQ機能仕様 ドラフト版\n\n概要\n［システムは］決済プロバイダからWebhook通知"
+   "new_words": [
+    "\u5834\u5408"
+   ],
+   "where": "\u30a6\u30c8\u3001DB\u63a5\u7d9a\u30a8\u30e9\u30fc\u306a\u3069\u4e00\u6642\u7684\u306a\u969c\u5bb3\uff3b\u3067\u5931\u6557\u3057\u305f\u5834\u5408\uff3d\u306b\u9650\u308b\u3002\u30d0\u30ea\u30c7\u30fc\u30b7\u30e7\u30f3\u30a8\u30e9\u30fc\u3084\u672a\u5bfe\u5fdc"
   },
   {
-   "added": "す。運用担当者はDLQの通知を",
-   "was": "し、",
+   "added": "\u5b9f\u884c\u3057",
+   "was": "\u3084\u3063",
    "kinds": [],
    "new_words": [
-    "運用担当者"
+    "\u5b9f\u884c"
    ],
-   "where": "行の上限回数を超えた通知はDLQへ移［す。運用担当者はDLQの通知を］手動で再処理できる。\n\n受信\nシステ"
+   "where": "\u3084\u672a\u5bfe\u5fdc\u306e\u30a4\u30d9\u30f3\u30c8\u7a2e\u5225\u306e\u3088\u3046\u306b\u3001\u4f55\u5ea6\uff3b\u5b9f\u884c\u3057\uff3d\u3066\u3082\u7d50\u679c\u304c\u5909\u308f\u3089\u306a\u3044\u5931\u6557\u306f\u3001\u518d\u8a66\u884c\u305b"
   },
   {
-   "added": "システムは",
-   "was": "",
+   "added": "\u3001\u518d\u8a66\u884c\u305b\u305a\u3059\u3050",
+   "was": "\u5373\u5ea7",
    "kinds": [],
    "new_words": [
-    "システム"
+    "\u518d\u8a66\u884c"
    ],
-   "where": "通知を手動で再処理できる。\n\n受信\n［システムは］署名を検証し、通知をキューに保存して"
+   "where": "\u4f55\u5ea6\u5b9f\u884c\u3057\u3066\u3082\u7d50\u679c\u304c\u5909\u308f\u3089\u306a\u3044\u5931\u6557\u306f\uff3b\u3001\u518d\u8a66\u884c\u305b\u305a\u3059\u3050\uff3d\u306bDLQ\u3078\u9001\u308b\u3002\n\n6\u56de\u7d9a\u3051\u3066\u5931\u6557\u3057"
   },
   {
-   "added": "システムは",
-   "was": "",
+   "added": "\u4fdd\u5b58",
+   "was": "\u6b8b",
    "kinds": [],
    "new_words": [
-    "システム"
+    "\u4fdd\u5b58"
    ],
-   "where": "期ワーカーがキューの通知を処理する。［システムは］イベントIDを冪等キーに使い、同じ通"
-  },
-  {
-   "added": "システムが再試行するのは、",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "システム"
-   ],
-   "where": "知を二重に処理しない。\n\nリトライ\n［システムが再試行するのは、］タイムアウト、5xx、DB接続断とい"
-  },
-  {
-   "added": "システムは、",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "システム"
-   ],
-   "where": "、ただちにDLQへ送る。\n\nDLQ\n［システムは、］再試行の上限を超えた通知と恒久的エラ"
-  },
-  {
-   "added": "ると、システムは",
-   "was": "たら",
-   "kinds": [],
-   "new_words": [
-    "システム"
-   ],
-   "where": "保持する。DLQの件数が10件を超え［ると、システムは］運用チームへ通知する。運用担当者は管"
-  },
-  {
-   "added": "運用担当者は",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "運用担当者"
-   ],
-   "where": "と、システムは運用チームへ通知する。［運用担当者は］管理画面から、通知を個別または一括で"
+   "where": "\u5143\u306e\u30da\u30a4\u30ed\u30fc\u30c9\u3001\u5931\u6557\u7406\u7531\u3001\u8a66\u884c\u5c65\u6b74\u3092\uff3b\u4fdd\u5b58\uff3d\u3057\u3001\u4fdd\u6301\u671f\u9593\u306f14\u65e5\u3068\u3059\u308b\u3002DLQ\u306e"
   }
  ],
  "logic": [],
  "bold": [],
  "endings": {
-  "stance": "説明",
+  "stance": null,
   "changes": [],
   "flags": [],
   "orig_flags": []

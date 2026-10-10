@@ -1,124 +1,94 @@
 {
- "markers": [
-  {
-   "kind": "条件",
-   "orig": 3,
-   "rewrite": 5,
-   "orig_hits": [
-    "場合",
-    "場合",
-    "場合"
-   ],
-   "rewrite_hits": [
-    "場合",
-    "場合",
-    "場合",
-    "場合",
-    "たら"
-   ]
-  }
- ],
+ "markers": [],
  "new_words": [
-  "システム",
-  "一致",
-  "再試行方法",
-  "成功",
-  "日間保持"
+  "\u30b7\u30b9\u30c6\u30e0",
+  "\u79d2\u5f8c",
+  "\u904b\u7528\u62c5\u5f53\u8005"
  ],
  "lost_words": [
-  "不整合",
-  "保持期間",
-  "再試行回数",
-  "処理不能",
-  "初回間隔",
-  "本機能",
-  "滞留件数",
-  "署名不正",
-  "解消後"
+  "\u518d\u8a66\u884c\u4e0a\u9650"
  ],
- "structure": [],
+ "structure": [
+  "\u6587\u306e\u6570\u304c\u5909\u308f\u3063\u305f\uff0817 \u2192 19\uff09"
+ ],
  "spans": [
   {
-   "added": "起き",
-   "was": "生じ",
-   "kinds": [
-    "条件"
-   ],
-   "new_words": [],
-   "where": "答、ロック競合のような一時的な障害が［起き］た場合、ワーカーは指数バックオフにジ"
-  },
-  {
-   "added": "な場合",
-   "was": "",
-   "kinds": [
-    "条件"
-   ],
-   "new_words": [],
-   "where": "0秒、上限は6時間とする。署名が不正［な場合］やスキーマが一致しない場合など、再試"
-  },
-  {
-   "added": "が一致しない場",
-   "was": "不整",
-   "kinds": [
-    "条件"
-   ],
-   "new_words": [
-    "一致"
-   ],
-   "where": "間とする。署名が不正な場合やスキーマ［が一致しない場］合など、再試行しても成功しない恒久的"
-  },
-  {
-   "added": "、再試行しても成功しない",
-   "was": "の",
-   "kinds": [],
-   "new_words": [
-    "成功"
-   ],
-   "where": "な場合やスキーマが一致しない場合など［、再試行しても成功しない］恒久的なエラーでは、ワーカーは再試行"
-  },
-  {
-   "added": "ても成功しなかっ",
+   "added": "\u30b7\u30b9\u30c6\u30e0\u306f",
    "was": "",
    "kinds": [],
    "new_words": [
-    "成功"
+    "\u30b7\u30b9\u30c6\u30e0"
    ],
-   "where": "ーへ移送する。\n\n再試行が8回に達し［ても成功しなかっ］た通知も、ワーカーはDLQへ移送する"
+   "where": "DLQ\u6a5f\u80fd\u4ed5\u69d8 \u30c9\u30e9\u30d5\u30c8\u7248\n\n\u6982\u8981\n\uff3b\u30b7\u30b9\u30c6\u30e0\u306f\uff3d\u6c7a\u6e08\u30d7\u30ed\u30d0\u30a4\u30c0\u304b\u3089Webhook\u901a\u77e5"
   },
   {
-   "added": "間保持",
-   "was": "と",
+   "added": "\u3059\u3002\u904b\u7528\u62c5\u5f53\u8005\u306fDLQ\u306e\u901a\u77e5\u3092",
+   "was": "\u3057\u3001",
    "kinds": [],
    "new_words": [
-    "間保持"
+    "\u904b\u7528\u62c5\u5f53\u8005"
    ],
-   "where": "ントID、失敗理由、試行履歴を14日［間保持］する。DLQに溜まった通知の件数が閾"
+   "where": "\u884c\u306e\u4e0a\u9650\u56de\u6570\u3092\u8d85\u3048\u305f\u901a\u77e5\u306fDLQ\u3078\u79fb\uff3b\u3059\u3002\u904b\u7528\u62c5\u5f53\u8005\u306fDLQ\u306e\u901a\u77e5\u3092\uff3d\u624b\u52d5\u3067\u518d\u51e6\u7406\u3067\u304d\u308b\u3002\n\n\u53d7\u4fe1\n\u30b7\u30b9\u30c6"
   },
   {
-   "added": "ら",
-   "was": "場合は",
-   "kinds": [
-    "条件"
-   ],
-   "new_words": [],
-   "where": "Qに溜まった通知の件数が閾値を超えた［ら］、システムが運用担当者へ通知する。\n"
-  },
-  {
-   "added": "システムが",
+   "added": "\u30b7\u30b9\u30c6\u30e0\u306f",
    "was": "",
-   "kinds": [
-    "条件"
-   ],
+   "kinds": [],
    "new_words": [
-    "システム"
+    "\u30b7\u30b9\u30c6\u30e0"
    ],
-   "where": "溜まった通知の件数が閾値を超えたら、［システムが］運用担当者へ通知する。\n\n処理はイベ"
+   "where": "\u901a\u77e5\u3092\u624b\u52d5\u3067\u518d\u51e6\u7406\u3067\u304d\u308b\u3002\n\n\u53d7\u4fe1\n\uff3b\u30b7\u30b9\u30c6\u30e0\u306f\uff3d\u7f72\u540d\u3092\u691c\u8a3c\u3057\u3001\u901a\u77e5\u3092\u30ad\u30e5\u30fc\u306b\u4fdd\u5b58\u3057\u3066"
+  },
+  {
+   "added": "\u30b7\u30b9\u30c6\u30e0\u306f",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u30b7\u30b9\u30c6\u30e0"
+   ],
+   "where": "\u671f\u30ef\u30fc\u30ab\u30fc\u304c\u30ad\u30e5\u30fc\u306e\u901a\u77e5\u3092\u51e6\u7406\u3059\u308b\u3002\uff3b\u30b7\u30b9\u30c6\u30e0\u306f\uff3d\u30a4\u30d9\u30f3\u30c8ID\u3092\u51aa\u7b49\u30ad\u30fc\u306b\u4f7f\u3044\u3001\u540c\u3058\u901a"
+  },
+  {
+   "added": "\u30b7\u30b9\u30c6\u30e0\u304c\u518d\u8a66\u884c\u3059\u308b\u306e\u306f\u3001",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u30b7\u30b9\u30c6\u30e0"
+   ],
+   "where": "\u77e5\u3092\u4e8c\u91cd\u306b\u51e6\u7406\u3057\u306a\u3044\u3002\n\n\u30ea\u30c8\u30e9\u30a4\n\uff3b\u30b7\u30b9\u30c6\u30e0\u304c\u518d\u8a66\u884c\u3059\u308b\u306e\u306f\u3001\uff3d\u30bf\u30a4\u30e0\u30a2\u30a6\u30c8\u30015xx\u3001DB\u63a5\u7d9a\u65ad\u3068\u3044"
+  },
+  {
+   "added": "\u30b7\u30b9\u30c6\u30e0\u306f\u3001",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u30b7\u30b9\u30c6\u30e0"
+   ],
+   "where": "\u3001\u305f\u3060\u3061\u306bDLQ\u3078\u9001\u308b\u3002\n\nDLQ\n\uff3b\u30b7\u30b9\u30c6\u30e0\u306f\u3001\uff3d\u518d\u8a66\u884c\u306e\u4e0a\u9650\u3092\u8d85\u3048\u305f\u901a\u77e5\u3068\u6052\u4e45\u7684\u30a8\u30e9"
+  },
+  {
+   "added": "\u308b\u3068\u3001\u30b7\u30b9\u30c6\u30e0\u306f",
+   "was": "\u305f\u3089",
+   "kinds": [],
+   "new_words": [
+    "\u30b7\u30b9\u30c6\u30e0"
+   ],
+   "where": "\u4fdd\u6301\u3059\u308b\u3002DLQ\u306e\u4ef6\u6570\u304c10\u4ef6\u3092\u8d85\u3048\uff3b\u308b\u3068\u3001\u30b7\u30b9\u30c6\u30e0\u306f\uff3d\u904b\u7528\u30c1\u30fc\u30e0\u3078\u901a\u77e5\u3059\u308b\u3002\u904b\u7528\u62c5\u5f53\u8005\u306f\u7ba1"
+  },
+  {
+   "added": "\u904b\u7528\u62c5\u5f53\u8005\u306f",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u904b\u7528\u62c5\u5f53\u8005"
+   ],
+   "where": "\u3068\u3001\u30b7\u30b9\u30c6\u30e0\u306f\u904b\u7528\u30c1\u30fc\u30e0\u3078\u901a\u77e5\u3059\u308b\u3002\uff3b\u904b\u7528\u62c5\u5f53\u8005\u306f\uff3d\u7ba1\u7406\u753b\u9762\u304b\u3089\u3001\u901a\u77e5\u3092\u500b\u5225\u307e\u305f\u306f\u4e00\u62ec\u3067"
   }
  ],
  "logic": [],
  "bold": [],
  "endings": {
-  "stance": "説明",
+  "stance": null,
   "changes": [],
   "flags": [],
   "orig_flags": []

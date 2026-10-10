@@ -1,131 +1,106 @@
 {
  "markers": [
   {
-   "kind": "義務",
-   "orig": 0,
-   "rewrite": 1,
-   "orig_hits": [],
-   "rewrite_hits": [
-    "なければなりません"
-   ]
-  },
-  {
-   "kind": "条件",
+   "kind": "\u6761\u4ef6",
    "orig": 2,
-   "rewrite": 3,
+   "rewrite": 0,
    "orig_hits": [
-    "れば",
-    "れば"
+    "\u5834\u5408",
+    "\u5834\u5408"
    ],
-   "rewrite_hits": [
-    "れば",
-    "れば",
-    "れば"
-   ]
-  },
-  {
-   "kind": "つなぎ",
-   "orig": 2,
-   "rewrite": 1,
-   "orig_hits": [
-    "また",
-    "まず"
-   ],
-   "rewrite_hits": [
-    "まず"
-   ]
+   "rewrite_hits": []
   }
  ],
  "new_words": [
-  "用意"
+  "\u30b7\u30b9\u30c6\u30e0",
+  "\u4fdd\u6301\u4e2d",
+  "\u65e5\u9593\u4fdd\u7ba1",
+  "\u6700\u521d"
  ],
  "lost_words": [
-  "仕様変更",
-  "変更",
-  "毎回"
+  "\u30c9\u30e9\u30d5\u30c8",
+  "\u4ef6\u6570",
+  "\u4fdd\u7ba1\u671f\u9593",
+  "\u51aa\u7b49\u6027",
+  "\u5373\u6642",
+  "\u5834\u5408",
+  "\u5bfe\u8c61",
+  "\u6052\u4e45\u7684",
+  "\u624b\u52d5\u518d\u6295\u5165",
+  "\u62c5\u4fdd",
+  "\u91cd\u8907\u914d\u4fe1"
  ],
- "structure": [
-  "箇条書きを地の文にした。各項目の文末（指示・説明・評価）が元と同じか見る",
-  "段落をまとめた（4 → 3）。まとめた段落の話題が1つか見る"
- ],
+ "structure": [],
  "spans": [
   {
-   "added": "を用意する",
-   "was": "が",
+   "added": "\u30b7\u30b9\u30c6\u30e0\u306f\u3001",
+   "was": "",
    "kinds": [],
    "new_words": [
-    "用意"
+    "\u30b7\u30b9\u30c6\u30e0"
    ],
-   "where": "を確認するたびにDBとAPIのモック［を用意する］必要があり、単体テストを書きにくくな"
+   "where": "k\u53d7\u4fe1\u306e\u30ea\u30c8\u30e9\u30a4\u5236\u5fa1\u3068DLQ\u4ed5\u69d8\n\n\uff3b\u30b7\u30b9\u30c6\u30e0\u306f\u3001\uff3d\u6c7a\u6e08\u30d7\u30ed\u30d0\u30a4\u30c0\u304b\u3089\u306e\u901a\u77e5\u306e\u7f72\u540d\u3092\u691c\u8a3c"
   },
   {
-   "added": "ければな",
-   "was": "が",
-   "kinds": [
-    "条件"
+   "added": "\u6700\u521d\u306e",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u6700\u521d"
    ],
-   "new_words": [],
-   "where": "構造が変わると、サービス層も修正しな［ければな］りません。\n\n次のように責務を分ける"
+   "where": "\u3059\u308b\u3068\u3001\u6307\u6570\u30d0\u30c3\u30af\u30aa\u30d5\u3067\u518d\u8a66\u884c\u3059\u308b\u3002\uff3b\u6700\u521d\u306e\uff3d\u9593\u9694\u306f1\u5206\u3068\u3057\u3001\u5931\u6557\u306e\u305f\u3073\u306b2\u500d\u3078\u5ef6"
   },
   {
-   "added": "いただけ",
-   "was": "もらえ",
-   "kinds": [
-    "条件"
+   "added": "\u3059\u308b\u3053\u3068\u304c\u3042\u308b\u3002\u30b7\u30b9\u30c6\u30e0\u306f",
+   "was": "\u306b\u5099\u3048\u3001",
+   "kinds": [],
+   "new_words": [
+    "\u30b7\u30b9\u30c6\u30e0"
    ],
-   "new_words": [],
-   "where": "部API呼び出しの切り出しから始めて［いただけ］ればと思います。"
+   "where": "\n\u30d7\u30ed\u30d0\u30a4\u30c0\u306f\u540c\u3058\u901a\u77e5\u3092\u91cd\u8907\u3057\u3066\u914d\u4fe1\uff3b\u3059\u308b\u3053\u3068\u304c\u3042\u308b\u3002\u30b7\u30b9\u30c6\u30e0\u306f\uff3d\u30d7\u30ed\u30d0\u30a4\u30c0\u306e\u30a4\u30d9\u30f3\u30c8ID\u3092\u51e6\u7406\u6e08\u307f\u3068"
+  },
+  {
+   "added": "\u4fdd\u6301\u4e2d\u306e",
+   "was": "\u540c\u3058",
+   "kinds": [],
+   "new_words": [
+    "\u4fdd\u6301\u4e2d"
+   ],
+   "where": "ID\u3092\u51e6\u7406\u6e08\u307f\u3068\u3057\u306630\u65e5\u9593\u4fdd\u6301\u3057\u3001\uff3b\u4fdd\u6301\u4e2d\u306e\uff3dID\u3092\u53d7\u4fe1\u3057\u305f\u3068\u304d\u306f\u3001\u51e6\u7406\u305b\u305a\u306b2x"
+  },
+  {
+   "added": "\u3001\u30b7\u30b9\u30c6\u30e0\u306f",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u30b7\u30b9\u30c6\u30e0"
+   ],
+   "where": "Q\u306e\u30e1\u30c3\u30bb\u30fc\u30b8\u304c10\u4ef6\u3092\u8d85\u3048\u305f\u6642\u70b9\u3067\uff3b\u3001\u30b7\u30b9\u30c6\u30e0\u306f\uff3d\u904b\u7528\u30c1\u30e3\u30cd\u30eb\u306b\u901a\u77e5\u3059\u308b\u3002DLQ\u306e\u30e1\u30c3"
+  },
+  {
+   "added": "\u9593\u4fdd\u7ba1",
+   "was": "\u3068",
+   "kinds": [],
+   "new_words": [
+    "\u9593\u4fdd\u7ba1"
+   ],
+   "where": "\u901a\u77e5\u3059\u308b\u3002DLQ\u306e\u30e1\u30c3\u30bb\u30fc\u30b8\u306f14\u65e5\uff3b\u9593\u4fdd\u7ba1\uff3d\u3059\u308b\u3002\u904b\u7528\u62c5\u5f53\u8005\u306f\u7ba1\u7406\u753b\u9762\u3067\u5185\u5bb9\u3092\u78ba"
+  },
+  {
+   "added": "\u30b7\u30b9\u30c6\u30e0\u306f",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u30b7\u30b9\u30c6\u30e0"
+   ],
+   "where": "\u3046\u3048\u3067\u3001\u624b\u52d5\u3067\u306e\u518d\u6295\u5165\u304b\u7834\u68c4\u3092\u9078\u3076\u3002\uff3b\u30b7\u30b9\u30c6\u30e0\u306f\uff3d\u518d\u6295\u5165\u306e\u64cd\u4f5c\u3092\u76e3\u67fb\u30ed\u30b0\u306b\u8a18\u9332\u3059\u308b\u3002"
   }
  ],
- "logic": [
-  {
-   "kind": "文頭の指示語",
-   "sentence": "このサービス層では、1つのメソッドにDBアクセス、外部API呼び出し、ビジネスルールの判断が混在しています。"
-  },
-  {
-   "kind": "文頭の指示語",
-   "sentence": "こうすると、サービス層のテストはRepositoryとClientのスタブだけで書けます。"
-  },
-  {
-   "kind": "主題の「も」",
-   "sentence": "トランザクションの境界も、サービス層の1か所で管理できます。"
-  }
- ],
+ "logic": [],
  "bold": [],
  "endings": {
-  "stance": "説明",
-  "changes": [
-   {
-    "orig": "この状態だと、ロジックの確認に毎回DBとAPIのモックが必要になり、単体テストが書きにくくなります。",
-    "orig_kind": "説明（〜ます）",
-    "rewrite": "ロジックを確認するたびにDBとAPIのモックを用意する必要があり、単体テストを書きにくくなっています。",
-    "rewrite_kind": "説明（〜ています）"
-   },
-   {
-    "orig": "また、外部APIの仕様変更やテーブル構造の変更が、そのままサービス層の修正につながります。",
-    "orig_kind": "説明（〜ます）",
-    "rewrite": "外部APIの仕様やテーブル構造が変わると、サービス層も修正しなければなりません。",
-    "rewrite_kind": "義務"
-   },
-   {
-    "orig": "DBアクセスはRepositoryに移し、サービス層からはインターフェース越しに呼び出す",
-    "orig_kind": "常体・箇条書き",
-    "rewrite": "DBアクセスはRepositoryに移し、サービス層はインターフェース越しに呼び出します。",
-    "rewrite_kind": "動作（〜します）"
-   },
-   {
-    "orig": "外部API呼び出しはClientクラスにまとめ、タイムアウトやリトライもそこで扱う",
-    "orig_kind": "常体・箇条書き",
-    "rewrite": "外部API呼び出しはClientクラスにまとめ、タイムアウトやリトライもそこで扱います。",
-    "rewrite_kind": "動作（〜します）"
-   },
-   {
-    "orig": "サービス層には、割引の適用条件や状態遷移といったビジネスルールの判断だけを残す",
-    "orig_kind": "常体・箇条書き",
-    "rewrite": "サービス層には、割引の適用条件や状態遷移といったビジネスルールの判断だけを残します。",
-    "rewrite_kind": "動作（〜します）"
-   }
-  ],
+  "stance": null,
+  "changes": [],
   "flags": [],
   "orig_flags": []
  }

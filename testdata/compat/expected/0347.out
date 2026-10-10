@@ -1,11 +1,11 @@
 {
-  "score": 90,
+  "score": 95,
   "is_clean": false,
   "metrics": {
-    "char_count": 554,
-    "total_lines": 11,
-    "list_lines": 0,
-    "list_ratio": 0.0,
+    "char_count": 481,
+    "total_lines": 12,
+    "list_lines": 3,
+    "list_ratio": 0.25,
     "bold_count": 0,
     "bold_per_1000": 0.0
   },
@@ -14,15 +14,8 @@
       "rule": "sentence_end_repetition",
       "line": 10,
       "severity": "warn",
-      "message": "同一文末「ました」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
-      "snippet": "その結果、接続が解放されないまま待機リクエストが積み上がり、プールが枯渇しました。"
-    },
-    {
-      "rule": "sentence_end_repetition",
-      "line": 13,
-      "severity": "warn",
-      "message": "同一文末「ました」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
-      "snippet": "20:24に該当テーブルへインデックスを追加し、プール上限を40へ引き上げたところ、20:30に正常化しました。"
+      "message": "\u540c\u4e00\u6587\u672b\u300c\u307e\u3057\u305f\u300d\u304c3\u56de\u4ee5\u4e0a\u9023\u7d9a\u3057\u3066\u3044\u307e\u3059\u3002\u8aad\u307f\u306b\u304f\u304f\u306a\u3063\u3066\u3044\u306a\u3044\u304b\u78ba\u8a8d\u3057\u3001\u81ea\u7136\u306a\u8aac\u660e\u3084\u6587\u4f53\u306f\u4fdd\u3063\u3066\u304f\u3060\u3055\u3044\u3002",
+      "snippet": "12:48\u306b\u30a8\u30e9\u30fc\u7387\u304c\u5e73\u5e38\u5024\u3078\u623b\u3063\u305f\u3053\u3068\u3092\u78ba\u8a8d\u3057\u307e\u3057\u305f\u3002"
     }
   ]
 }

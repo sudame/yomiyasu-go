@@ -1,105 +1,122 @@
 {
  "markers": [
   {
-   "kind": "条件",
-   "orig": 2,
-   "rewrite": 0,
+   "kind": "\u6761\u4ef6",
+   "orig": 1,
+   "rewrite": 3,
    "orig_hits": [
-    "場合",
-    "場合"
+    "\u5834\u5408"
    ],
-   "rewrite_hits": []
+   "rewrite_hits": [
+    "\u308c\u3070",
+    "\u5834\u5408",
+    "\u5834\u5408"
+   ]
+  },
+  {
+   "kind": "\u3064\u306a\u304e",
+   "orig": 0,
+   "rewrite": 1,
+   "orig_hits": [],
+   "rewrite_hits": [
+    "\u305d\u306e\u305f\u3081"
+   ]
   }
  ],
  "new_words": [
-  "システム",
-  "保持中",
-  "日間保管",
-  "最初"
+  "\u4e0d\u8981",
+  "\u5224\u660e",
+  "\u5b9f\u88c5",
+  "\u7528\u610f"
  ],
  "lost_words": [
-  "ドラフト",
-  "件数",
-  "保管期間",
-  "冪等性",
-  "即時",
-  "場合",
-  "対象",
-  "恒久的",
-  "手動再投入",
-  "担保",
-  "重複配信"
+  "\u4ee5\u4e0b",
+  "\u6bd4\u8f03\u7d50\u679c",
+  "\u8981\u671b",
+  "\u8a72\u5f53\u9818\u57df",
+  "\u8ab2\u984c"
  ],
- "structure": [],
+ "structure": [
+  "\u6587\u306e\u6570\u304c\u5909\u308f\u3063\u305f\uff0810 \u2192 11\uff09"
+ ],
  "spans": [
   {
-   "added": "システムは、",
+   "added": "\u3002\u305d\u306e",
+   "was": "",
+   "kinds": [
+    "\u53ef\u80fd",
+    "\u3064\u306a\u304e"
+   ],
+   "new_words": [],
+   "where": "\u304c\u5fc5\u8981\u306a\u9805\u76ee\u3060\u3051\u3092\u6307\u5b9a\u3057\u3066\u53d6\u5f97\u3067\u304d\u308b\uff3b\u3002\u305d\u306e\uff3d\u305f\u3081\u3001\u30e2\u30d0\u30a4\u30eb\u30a2\u30d7\u30ea\u306e\u3088\u3046\u306b\u30c7\u30fc\u30bf\u91cf"
+  },
+  {
+   "added": "\u306f\u3001\u4e0d\u8981\u306a\u9805\u76ee\u3092\u53d6\u5f97\u3059\u308b",
    "was": "",
    "kinds": [],
    "new_words": [
-    "システム"
+    "\u4e0d\u8981"
    ],
-   "where": "k受信のリトライ制御とDLQ仕様\n\n［システムは、］決済プロバイダからの通知の署名を検証"
+   "where": "\u30d7\u30ea\u306e\u3088\u3046\u306b\u30c7\u30fc\u30bf\u91cf\u3092\u7d5e\u308a\u305f\u3044\u753b\u9762\u3067\uff3b\u306f\u3001\u4e0d\u8981\u306a\u9805\u76ee\u3092\u53d6\u5f97\u3059\u308b\uff3d\u30aa\u30fc\u30d0\u30fc\u30d5\u30a7\u30c3\u30c1\u3092\u6e1b\u3089\u305b\u308b\u3002\u4e00\u65b9\u3067\u3001"
   },
   {
-   "added": "最初の",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "最初"
+   "added": "\u5b9f\u88c5\u3057\u3001\u904b\u7528\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u305a",
+   "was": "\u884c\u3046\u5fc5\u8981\u304c\u3042\u308a",
+   "kinds": [
+    "\u6761\u4ef6"
    ],
-   "where": "すると、指数バックオフで再試行する。［最初の］間隔は1分とし、失敗のたびに2倍へ延"
+   "new_words": [
+    "\u5b9f\u88c5"
+   ],
+   "where": "\u554f\u984c\u3078\u306e\u5bfe\u7b56\u3001\u30ad\u30e3\u30c3\u30b7\u30e5\u8a2d\u8a08\u3092\u81ea\u524d\u3067\uff3b\u5b9f\u88c5\u3057\u3001\u904b\u7528\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u305a\uff3d\u3001\u904b\u7528\u30b3\u30b9\u30c8\u304c\u5897\u3048\u308b\u3002\u30c1\u30fc\u30e0\u306b\u306fGr"
   },
   {
-   "added": "することがある。システムは",
-   "was": "に備え、",
-   "kinds": [],
-   "new_words": [
-    "システム"
+   "added": "\u5834\u5408",
+   "was": "\u30c7\u30fc\u30bf\u53d6\u5f97\u306e\u8981\u671b\u306b",
+   "kinds": [
+    "\u6761\u4ef6"
    ],
-   "where": "\nプロバイダは同じ通知を重複して配信［することがある。システムは］プロバイダのイベントIDを処理済みと"
+   "new_words": [],
+   "where": "\u3055\u3044\u3002\u753b\u9762\u3054\u3068\u306b\u5fc5\u8981\u306a\u30c7\u30fc\u30bf\u304c\u7570\u306a\u308b\uff3b\u5834\u5408\uff3d\u306f\u3001BFF\u5c64\u3092\u8a2d\u3051\u308b\u304b\u3001\u30d5\u30a3\u30fc\u30eb\u30c9\u3092"
   },
   {
-   "added": "保持中の",
-   "was": "同じ",
+   "added": "\u3092\u7528\u610f\u3057\u3066",
+   "was": "\u3067",
    "kinds": [],
    "new_words": [
-    "保持中"
+    "\u7528\u610f"
    ],
-   "where": "IDを処理済みとして30日間保持し、［保持中の］IDを受信したときは、処理せずに2x"
+   "where": "\u308b\u304b\u3001\u30d5\u30a3\u30fc\u30eb\u30c9\u3092\u6307\u5b9a\u3059\u308b\u30d1\u30e9\u30e1\u30fc\u30bf\uff3b\u3092\u7528\u610f\u3057\u3066\uff3d\u5bfe\u5fdc\u3059\u308b\u3002\n\n\u4ee5\u4e0a\u3088\u308a\u3001\u5f53\u9762\u306fRES"
   },
   {
-   "added": "、システムは",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "システム"
+   "added": "\u3044\u3068\u5224\u660e\u3057",
+   "was": "\u3063",
+   "kinds": [
+    "\u6761\u4ef6"
    ],
-   "where": "Qのメッセージが10件を超えた時点で［、システムは］運用チャネルに通知する。DLQのメッ"
-  },
-  {
-   "added": "間保管",
-   "was": "と",
-   "kinds": [],
    "new_words": [
-    "間保管"
+    "\u5224\u660e"
    ],
-   "where": "通知する。DLQのメッセージは14日［間保管］する。運用担当者は管理画面で内容を確"
-  },
-  {
-   "added": "システムは",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "システム"
-   ],
-   "where": "うえで、手動での再投入か破棄を選ぶ。［システムは］再投入の操作を監査ログに記録する。"
+   "where": "\u3051API\u3067\u30c7\u30fc\u30bf\u53d6\u5f97\u306e\u67d4\u8edf\u6027\u304c\u8db3\u308a\u306a\uff3b\u3044\u3068\u5224\u660e\u3057\uff3d\u305f\u5834\u5408\u306b\u9650\u308a\u3001\u305d\u306e\u9818\u57df\u3078\u306eGraph"
   }
  ],
- "logic": [],
+ "logic": [
+  {
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u305d\u306e\u305f\u3081\u3001\u30e2\u30d0\u30a4\u30eb\u30a2\u30d7\u30ea\u306e\u3088\u3046\u306b\u30c7\u30fc\u30bf\u91cf\u3092\u7d5e\u308a\u305f\u3044\u753b\u9762\u3067\u306f\u3001\u4e0d\u8981\u306a\u9805\u76ee\u3092\u53d6\u5f97\u3059\u308b\u30aa\u30fc\u30d0\u30fc\u30d5\u30a7\u30c3\u30c1\u3092\u6e1b\u3089\u305b\u308b\u3002"
+  },
+  {
+   "kind": "\u6587\u982d\u306e\u6307\u793a\u8a9e",
+   "sentence": "\u305d\u306e\u305f\u3081\u3001\u30e2\u30d0\u30a4\u30eb\u30a2\u30d7\u30ea\u306e\u3088\u3046\u306b\u30c7\u30fc\u30bf\u91cf\u3092\u7d5e\u308a\u305f\u3044\u753b\u9762\u3067\u306f\u3001\u4e0d\u8981\u306a\u9805\u76ee\u3092\u53d6\u5f97\u3059\u308b\u30aa\u30fc\u30d0\u30fc\u30d5\u30a7\u30c3\u30c1\u3092\u6e1b\u3089\u305b\u308b\u3002"
+  },
+  {
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u4e00\u65b9\u3067\u3001\u30c1\u30fc\u30e0\u306f\u30af\u30a8\u30ea\u306e\u8907\u96d1\u5ea6\u5236\u9650\u3001N+1\u554f\u984c\u3078\u306e\u5bfe\u7b56\u3001\u30ad\u30e3\u30c3\u30b7\u30e5\u8a2d\u8a08\u3092\u81ea\u524d\u3067\u5b9f\u88c5\u3057\u3001\u904b\u7528\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u305a\u3001\u904b\u7528\u30b3\u30b9\u30c8\u304c\u5897\u3048\u308b\u3002"
+  }
+ ],
  "bold": [],
  "endings": {
-  "stance": "説明",
+  "stance": null,
   "changes": [],
   "flags": [],
   "orig_flags": []

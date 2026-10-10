@@ -2,8 +2,8 @@
   "score": 95,
   "is_clean": false,
   "metrics": {
-    "char_count": 395,
-    "total_lines": 16,
+    "char_count": 350,
+    "total_lines": 1,
     "list_lines": 0,
     "list_ratio": 0.0,
     "bold_count": 0,
@@ -11,11 +11,11 @@
   },
   "findings": [
     {
-      "rule": "unnatural_halfwidth_space",
-      "line": 8,
+      "rule": "sentence_end_repetition",
+      "line": 1,
       "severity": "warn",
-      "message": "英単語の前後に不要な半角空白が空けられています。日本語の助詞と自然に接続させてください。",
-      "snippet": "停止中は Web・API・管理画面のすべてが使えません。バッチ処理と外部連携の Webhook も止まります。"
+      "message": "\u540c\u4e00\u6587\u672b\u300c\u307e\u3059\u300d\u304c3\u56de\u4ee5\u4e0a\u9023\u7d9a\u3057\u3066\u3044\u307e\u3059\u3002\u8aad\u307f\u306b\u304f\u304f\u306a\u3063\u3066\u3044\u306a\u3044\u304b\u78ba\u8a8d\u3057\u3001\u81ea\u7136\u306a\u8aac\u660e\u3084\u6587\u4f53\u306f\u4fdd\u3063\u3066\u304f\u3060\u3055\u3044\u3002",
+      "snippet": "\u5931\u6557\u3057\u305f\u30b8\u30e7\u30d6\u306f\u6307\u6570\u30d0\u30c3\u30af\u30aa\u30d5\u3067\u518d\u8a66\u884c\u3057\u3001\u4e0a\u9650\u56de\u6570\u3092\u8d85\u3048\u305f\u5834\u5408\u306f\u30c7\u30c3\u30c9\u30ec\u30bf\u30fc\u30ad\u30e5\u30fc\u3078\u9000\u907f\u3057\u3066\u76e3\u8996\u30a2\u30e9\u30fc\u30c8\u3092\u767a\u5831\u3057\u307e\u3059\u3002"
     }
   ]
 }
