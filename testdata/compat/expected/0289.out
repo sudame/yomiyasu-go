@@ -2,10 +2,10 @@
   "score": 100,
   "is_clean": true,
   "metrics": {
-    "char_count": 52,
-    "total_lines": 2,
-    "list_lines": 0,
-    "list_ratio": 0.0,
+    "char_count": 227,
+    "total_lines": 9,
+    "list_lines": 3,
+    "list_ratio": 0.333,
     "bold_count": 0,
     "bold_per_1000": 0.0
   },

@@ -1,111 +1,96 @@
 {
  "markers": [
   {
-   "kind": "つなぎ",
-   "orig": 1,
-   "rewrite": 0,
-   "orig_hits": [
-    "そのため"
-   ],
-   "rewrite_hits": []
+   "kind": "\u6761\u4ef6",
+   "orig": 0,
+   "rewrite": 1,
+   "orig_hits": [],
+   "rewrite_hits": [
+    "\u5834\u5408"
+   ]
   }
  ],
  "new_words": [
-  "キー",
-  "取得",
-  "回失敗",
-  "必要",
-  "応答",
-  "間近",
-  "間隔"
+  "\u540c\u671f\u7684",
+  "\u56de\u76ee",
+  "\u5834\u5408",
+  "\u6570\u79d2\u8fd4",
+  "\u65b9\u5f0f",
+  "\u767b\u9332"
  ],
  "lost_words": [
-  "上限",
-  "単位",
-  "完了",
-  "本番反映",
-  "遅延",
-  "遷移"
+  "\u540c\u671f\u547c",
+  "\u5931\u6557\u6642",
+  "\u6570\u79d2\u6b62"
  ],
  "structure": [],
  "spans": [
   {
-   "added": "応答",
-   "was": "完了",
+   "added": "\u3076\u65b9\u5f0f",
+   "was": "\u3073\u51fa\u3057",
    "kinds": [],
    "new_words": [
-    "応答"
+    "\u65b9\u5f0f"
    ],
-   "where": "可サーバーへリフレッシュ要求を送り、［応答］を待っていました。認可サーバーの応答"
+   "where": "\u30af\u30a8\u30b9\u30c8\u5185\u3067\u540c\u671f\u7684\u306b\u8a8d\u8a3c\u30b5\u30fc\u30d0\u30fc\u3092\u547c\uff3b\u3076\u65b9\u5f0f\uff3d\u304b\u3089\u3001\u975e\u540c\u671f\u30ad\u30e5\u30fc\u306b\u7a4d\u3093\u3067\u30ef\u30fc\u30ab\u30fc\u304c"
   },
   {
-   "added": "応答が",
+   "added": "\u3059\u308b\u65b9\u5f0f\u3078\u5909\u66f4\u3057",
+   "was": "\u306b\u5207\u308a\u66ff\u3048",
+   "kinds": [],
+   "new_words": [
+    "\u65b9\u5f0f"
+   ],
+   "where": "\u3001\u975e\u540c\u671f\u30ad\u30e5\u30fc\u306b\u7a4d\u3093\u3067\u30ef\u30fc\u30ab\u30fc\u304c\u5b9f\u884c\uff3b\u3059\u308b\u65b9\u5f0f\u3078\u5909\u66f4\u3057\uff3d\u305f\u3002\n\n\u80cc\u666f\n\u3053\u308c\u307e\u3067\u306f\u3001\u30c8\u30fc\u30af\u30f3\u306e"
+  },
+  {
+   "added": "\u767b\u9332\u3057",
+   "was": "\u7a4d\u307f",
+   "kinds": [],
+   "new_words": [
+    "\u767b\u9332"
+   ],
+   "where": "\u691c\u77e5\u3059\u308b\u3068\u30ea\u30d5\u30ec\u30c3\u30b7\u30e5\u8981\u6c42\u3092\u30ad\u30e5\u30fc\u306b\uff3b\u767b\u9332\u3057\uff3d\u3001\u30ef\u30fc\u30ab\u30fc\u304c\u305d\u306e\u8981\u6c42\u3092\u51e6\u7406\u3059\u308b\u3002\u30e6\u30fc"
+  },
+  {
+   "added": "\u3057\u304b\u767b\u9332\u3055\u308c\u306a\u3044\u3002\u30ea\u30d5\u30ec\u30c3\u30b7\u30e5",
    "was": "",
    "kinds": [],
    "new_words": [
-    "応答"
+    "\u767b\u9332"
    ],
-   "where": "応答を待っていました。認可サーバーの［応答が］遅れると、その分だけAPIのレスポン"
+   "where": "\u3051\u305f\u306e\u3067\u3001\u540c\u3058\u30e6\u30fc\u30b6\u30fc\u306e\u30b8\u30e7\u30d6\u306f1\u4ef6\uff3b\u3057\u304b\u767b\u9332\u3055\u308c\u306a\u3044\u3002\u30ea\u30d5\u30ec\u30c3\u30b7\u30e5\uff3d\u306b\u5931\u6557\u3057\u305f\u5834\u5408\u306f\u6307\u6570\u30d0\u30c3\u30af\u30aa\u30d5\u3067\u6700\u5927"
   },
   {
-   "added": "送って新しいトークンを取得",
-   "was": "処理",
-   "kinds": [],
-   "new_words": [
-    "取得"
-   ],
-   "where": "登録し、ワーカーがリフレッシュ要求を［送って新しいトークンを取得］します。同一ユーザーのジョブは、ユー"
-  },
-  {
-   "added": "をキーに",
-   "was": "単位で",
-   "kinds": [],
-   "new_words": [
-    "キー"
-   ],
-   "where": "同一ユーザーのジョブは、ユーザーID［をキーに］重複を取り除きます。リフレッシュに失"
-  },
-  {
-   "added": "、ワーカー",
-   "was": "",
+   "added": "\u3057\u305f\u5834\u5408",
+   "was": "\u6642",
    "kinds": [
-    "条件"
+    "\u6761\u4ef6"
    ],
-   "new_words": [],
-   "where": "除きます。リフレッシュに失敗した場合［、ワーカー］は指数バックオフで間隔を空けながら最"
+   "new_words": [
+    "\u5834\u5408"
+   ],
+   "where": "\u3057\u304b\u767b\u9332\u3055\u308c\u306a\u3044\u3002\u30ea\u30d5\u30ec\u30c3\u30b7\u30e5\u306b\u5931\u6557\uff3b\u3057\u305f\u5834\u5408\uff3d\u306f\u6307\u6570\u30d0\u30c3\u30af\u30aa\u30d5\u3067\u6700\u59273\u56de\u307e\u3067\u30ea\u30c8\u30e9"
   },
   {
-   "added": "間隔を空けながら",
-   "was": "",
+   "added": "3\u56de\u76ee",
+   "was": "\u305d\u308c\u3067",
    "kinds": [],
    "new_words": [
-    "間隔"
+    "\u56de\u76ee"
    ],
-   "where": "した場合、ワーカーは指数バックオフで［間隔を空けながら］最大3回まで再試行します。3回失敗す"
-  },
-  {
-   "added": "3回失敗する",
-   "was": "上限に達した",
-   "kinds": [],
-   "new_words": [
-    "回失敗"
-   ],
-   "where": "空けながら最大3回まで再試行します。［3回失敗する］と、ワーカーはそのユーザーを再ログイ"
-  },
-  {
-   "added": "が必要な",
-   "was": "を促す",
-   "kinds": [],
-   "new_words": [
-    "必要"
-   ],
-   "where": "、ワーカーはそのユーザーを再ログイン［が必要な］状態に切り替えます。\n\n重複排除と再"
+   "where": "\u30d0\u30c3\u30af\u30aa\u30d5\u3067\u6700\u59273\u56de\u307e\u3067\u30ea\u30c8\u30e9\u30a4\u3057\u3001\uff3b3\u56de\u76ee\uff3d\u3082\u5931\u6557\u3057\u305f\u3089\u30bb\u30c3\u30b7\u30e7\u30f3\u3092\u5931\u52b9\u3055\u305b\u308b\u3002"
   }
  ],
- "logic": [],
+ "logic": [
+  {
+   "kind": "\u6587\u982d\u306e\u6307\u793a\u8a9e",
+   "sentence": "\u3053\u308c\u307e\u3067\u306f\u3001\u30c8\u30fc\u30af\u30f3\u306e\u671f\u9650\u5207\u308c\u3092\u691c\u77e5\u3057\u305f\u30ea\u30af\u30a8\u30b9\u30c8\u304c\u3001\u305d\u306e\u5834\u3067\u8a8d\u8a3c\u30b5\u30fc\u30d0\u30fc\u3092\u547c\u3093\u3067\u3044\u305f\u3002"
+  }
+ ],
  "bold": [],
  "endings": {
-  "stance": "説明",
+  "stance": null,
   "changes": [],
   "flags": [],
   "orig_flags": []

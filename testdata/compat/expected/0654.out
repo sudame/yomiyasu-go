@@ -1,131 +1,164 @@
 {
  "markers": [
   {
-   "kind": "念押し",
+   "kind": "\u7fa9\u52d9",
    "orig": 0,
-   "rewrite": 2,
+   "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "常に",
-    "必ず"
+    "\u3079\u304d"
    ]
   },
   {
-   "kind": "つなぎ",
-   "orig": 1,
-   "rewrite": 2,
-   "orig_hits": [
-    "しかし"
-   ],
+   "kind": "\u610f\u5fd7",
+   "orig": 0,
+   "rewrite": 1,
+   "orig_hits": [],
    "rewrite_hits": [
-    "そのため",
-    "しかし"
+    "\u3088\u3046\u306b\u3057\u307e\u3059"
+   ]
+  },
+  {
+   "kind": "\u6761\u4ef6",
+   "orig": 0,
+   "rewrite": 1,
+   "orig_hits": [],
+   "rewrite_hits": [
+    "\u305f\u3089"
    ]
   }
  ],
  "new_words": [
-  "不足",
-  "応答",
-  "日本時間"
+  "\u30b7\u30b9\u30c6\u30e0",
+  "\u30c1\u30fc\u30e0",
+  "\u5b9f\u884c",
+  "\u7ba1\u7406\u8005",
+  "\u8a2d\u5b9a",
+  "\u901a\u77e5",
+  "\u958b\u767a",
+  "\u96c6\u8a08\u51e6\u7406"
  ],
  "lost_words": [
-  "JST",
-  "影響範囲",
-  "必須化",
-  "整備",
-  "正常化",
-  "結果",
-  "長引",
-  "集中"
+  "\u30ad\u30e5\u30fc",
+  "\u8fd4\u5374"
  ],
  "structure": [
-  "文の数が変わった（17 → 20）"
+  "\u7b87\u6761\u66f8\u304d\u3092\u5730\u306e\u6587\u306b\u3057\u305f\u3002\u5404\u9805\u76ee\u306e\u6587\u672b\uff08\u6307\u793a\u30fb\u8aac\u660e\u30fb\u8a55\u4fa1\uff09\u304c\u5143\u3068\u540c\u3058\u304b\u898b\u308b"
  ],
  "spans": [
   {
-   "added": "日本時間の",
+   "added": "\u51e6\u7406\u304c",
+   "was": "\u3092",
+   "kinds": [],
+   "new_words": [
+    "\u51e6\u7406"
+   ],
+   "where": "\u307e\u3067\u3057\u305f\u3002\u3055\u3089\u306b\u5728\u5eab\u7167\u4f1a\u30af\u30a8\u30ea\u306b\u96c6\u8a08\uff3b\u51e6\u7406\u304c\uff3d\u542b\u307e\u308c\u3066\u304a\u308a\u30011\u4ef6\u306e\u5b9f\u884c\u306b\u6570\u79d2\u304b\u304b\u3063"
+  },
+  {
+   "added": "\u306e\u5b9f\u884c",
    "was": "",
    "kinds": [],
    "new_words": [
-    "日本時間"
+    "\u5b9f\u884c"
    ],
-   "where": "%が失敗しました。\n\n【発生日時】\n［日本時間の］2026年9月28日20:05〜20"
+   "where": "\u30af\u30a8\u30ea\u306b\u96c6\u8a08\u51e6\u7406\u304c\u542b\u307e\u308c\u3066\u304a\u308a\u30011\u4ef6\uff3b\u306e\u5b9f\u884c\uff3d\u306b\u6570\u79d2\u304b\u304b\u3063\u3066\u3044\u307e\u3057\u305f\u3002\u63a5\u7d9a\u304c\u30d7\u30fc\u30eb"
   },
   {
-   "added": "ため",
-   "was": "結果、",
-   "kinds": [
-    "つなぎ"
-   ],
-   "new_words": [],
-   "where": "の処理時間が長くなっていました。その［ため］接続が解放されず、待機リクエストが積"
-  },
-  {
-   "added": "APIが",
+   "added": "\u958b\u767a\u30c1\u30fc\u30e0\u306f",
    "was": "",
-   "kinds": [
-    "念押し"
-   ],
-   "new_words": [],
-   "where": "40に引き上げたところ、20:30に［APIが］正常に応答するようになりました。\n\n"
-  },
-  {
-   "added": "に応答するようになり",
-   "was": "化し",
-   "kinds": [
-    "念押し"
-   ],
-   "new_words": [
-    "応答"
-   ],
-   "where": "げたところ、20:30にAPIが正常［に応答するようになり］ました。\n\n【再発防止策】\nスローク"
-  },
-  {
-   "added": "し、不足している",
-   "was": "と",
    "kinds": [],
    "new_words": [
-    "不足"
+    "\u958b\u767a",
+    "\u30c1\u30fc\u30e0"
    ],
-   "where": "再発防止策】\nスロークエリを全件点検［し、不足している］インデックスを追加します。プール使用"
+   "where": "\u305f\u3053\u3068\u3092\u78ba\u8a8d\u3057\u307e\u3057\u305f\u3002\n\n\u518d\u767a\u9632\u6b62\n\uff3b\u958b\u767a\u30c1\u30fc\u30e0\u306f\uff3d\u5728\u5eab\u7167\u4f1a\u306b\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u3092\u8ffd\u52a0\u3057\u3001\u96c6\u8a08"
   },
   {
-   "added": "を",
-   "was": "の",
+   "added": "\u3088\u3046\u306b\u3057\u307e\u3059\u3002",
+   "was": "\n",
    "kinds": [
-    "念押し"
+    "\u610f\u5fd7"
    ],
    "new_words": [],
-   "where": "します。キャンペーンの前には負荷試験［を］必ず実施します。あわせて、接続待ちタ"
+   "where": "\u8ffd\u52a0\u3057\u3001\u96c6\u8a08\u7d50\u679c\u3092\u30ad\u30e3\u30c3\u30b7\u30e5\u304b\u3089\u8fd4\u3059\uff3b\u3088\u3046\u306b\u3057\u307e\u3059\u3002\uff3d\u30d7\u30fc\u30eb\u4f7f\u7528\u7387\u304c80%\u3092\u8d85\u3048\u305f\u3089\u3001\u30b7\u30b9"
   },
   {
-   "added": "ず実施します。あわせて",
-   "was": "須化",
+   "added": "\u3001\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u306b\u901a\u77e5\u3059\u308b",
+   "was": "",
    "kinds": [
-    "念押し"
+    "\u6761\u4ef6"
+   ],
+   "new_words": [
+    "\u30b7\u30b9\u30c6\u30e0",
+    "\u7ba1\u7406\u8005",
+    "\u901a\u77e5"
+   ],
+   "where": "\u307e\u3059\u3002\u30d7\u30fc\u30eb\u4f7f\u7528\u7387\u304c80%\u3092\u8d85\u3048\u305f\u3089\uff3b\u3001\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u306b\u901a\u77e5\u3059\u308b\uff3d\u30a2\u30e9\u30fc\u30c8\u3092\u8a2d\u5b9a\u3057\u307e\u3059\u3002\u5927\u578b\u30ad\u30e3\u30f3\u30da\u30fc"
+  },
+  {
+   "added": "\u8a2d\u5b9a\u3057\u307e",
+   "was": "\u98db\u3070",
+   "kinds": [],
+   "new_words": [
+    "\u8a2d\u5b9a"
+   ],
+   "where": "\u3001\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u306b\u901a\u77e5\u3059\u308b\u30a2\u30e9\u30fc\u30c8\u3092\uff3b\u8a2d\u5b9a\u3057\u307e\uff3d\u3059\u3002\u5927\u578b\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u306e\u524d\u306b\u306f\u3001\u5fc5\u305a\u8ca0"
+  },
+  {
+   "added": "\u306f\u3001\u5fc5\u305a",
+   "was": "",
+   "kinds": [
+    "\u5ff5\u62bc\u3057"
    ],
    "new_words": [],
-   "where": "す。キャンペーンの前には負荷試験を必［ず実施します。あわせて］、接続待ちタイムアウトを短縮します。"
+   "where": "\u3092\u8a2d\u5b9a\u3057\u307e\u3059\u3002\u5927\u578b\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u306e\u524d\u306b\uff3b\u306f\u3001\u5fc5\u305a\uff3d\u8ca0\u8377\u8a66\u9a13\u3092\u5b9f\u65bd\u3057\u307e\u3059\u3002\n\n\u79c1\u305f\u3061\u306f\u30d7"
+  },
+  {
+   "added": "\u306b\u3059\u3079\u304d",
+   "was": "",
+   "kinds": [
+    "\u7fa9\u52d9"
+   ],
+   "new_words": [],
+   "where": "\u53d7\u3051\u3001\u4e0a\u9650\u5024\u3082\u30ad\u30e3\u30d1\u30b7\u30c6\u30a3\u8a08\u753b\u306e\u5bfe\u8c61\uff3b\u306b\u3059\u3079\u304d\uff3d\u3060\u3068\u8a8d\u8b58\u3057\u307e\u3057\u305f\u3002"
   }
  ],
  "logic": [
   {
-   "kind": "文頭のつなぎ",
-   "sentence": "そのため接続が解放されず、待機リクエストが積み上がって、プールに空きがなくなりました。"
-  },
-  {
-   "kind": "文頭の指示語",
-   "sentence": "そのため接続が解放されず、待機リクエストが積み上がって、プールに空きがなくなりました。"
-  },
-  {
-   "kind": "文頭のつなぎ",
-   "sentence": "しかし負荷が続いていたため、エラーが再び発生しました。"
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u3055\u3089\u306b\u5728\u5eab\u7167\u4f1a\u30af\u30a8\u30ea\u306b\u96c6\u8a08\u51e6\u7406\u304c\u542b\u307e\u308c\u3066\u304a\u308a\u30011\u4ef6\u306e\u5b9f\u884c\u306b\u6570\u79d2\u304b\u304b\u3063\u3066\u3044\u307e\u3057\u305f\u3002"
   }
  ],
  "bold": [],
  "endings": {
-  "stance": "説明",
-  "changes": [],
+  "stance": null,
+  "changes": [
+   {
+    "orig": "\u5728\u5eab\u7167\u4f1a\u306b\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u3092\u8ffd\u52a0\u3057\u3001\u96c6\u8a08\u7d50\u679c\u306f\u30ad\u30e3\u30c3\u30b7\u30e5\u304b\u3089\u8fd4\u3059",
+    "orig_kind": "\u5e38\u4f53\u30fb\u7b87\u6761\u66f8\u304d",
+    "rewrite": "\u958b\u767a\u30c1\u30fc\u30e0\u306f\u5728\u5eab\u7167\u4f1a\u306b\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u3092\u8ffd\u52a0\u3057\u3001\u96c6\u8a08\u7d50\u679c\u3092\u30ad\u30e3\u30c3\u30b7\u30e5\u304b\u3089\u8fd4\u3059\u3088\u3046\u306b\u3057\u307e\u3059\u3002",
+    "rewrite_kind": "\u52d5\u4f5c\uff08\u301c\u3057\u307e\u3059\uff09"
+   },
+   {
+    "orig": "\u30d7\u30fc\u30eb\u4f7f\u7528\u7387\u304c80%\u3092\u8d85\u3048\u305f\u3089\u30a2\u30e9\u30fc\u30c8\u3092\u98db\u3070\u3059",
+    "orig_kind": "\u5e38\u4f53\u30fb\u7b87\u6761\u66f8\u304d",
+    "rewrite": "\u30d7\u30fc\u30eb\u4f7f\u7528\u7387\u304c80%\u3092\u8d85\u3048\u305f\u3089\u3001\u30b7\u30b9\u30c6\u30e0\u7ba1\u7406\u8005\u306b\u901a\u77e5\u3059\u308b\u30a2\u30e9\u30fc\u30c8\u3092\u8a2d\u5b9a\u3057\u307e\u3059\u3002",
+    "rewrite_kind": "\u52d5\u4f5c\uff08\u301c\u3057\u307e\u3059\uff09"
+   },
+   {
+    "orig": "\u5927\u578b\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u306e\u524d\u306b\u8ca0\u8377\u8a66\u9a13\u3092\u5fc5\u305a\u5b9f\u65bd\u3059\u308b",
+    "orig_kind": "\u5e38\u4f53\u30fb\u7b87\u6761\u66f8\u304d",
+    "rewrite": "\u5927\u578b\u30ad\u30e3\u30f3\u30da\u30fc\u30f3\u306e\u524d\u306b\u306f\u3001\u5fc5\u305a\u8ca0\u8377\u8a66\u9a13\u3092\u5b9f\u65bd\u3057\u307e\u3059\u3002",
+    "rewrite_kind": "\u52d5\u4f5c\uff08\u301c\u3057\u307e\u3059\uff09"
+   },
+   {
+    "orig": "\u30d7\u30fc\u30eb\u4e0a\u9650\u306f\u300c\u3068\u308a\u3042\u3048\u305a\u52d5\u304f\u5024\u300d\u306e\u307e\u307e\u653e\u7f6e\u3057\u304c\u3061\u3067\u3059\u3002",
+    "orig_kind": "\u65ad\u5b9a\uff08\u301c\u3067\u3059\uff09",
+    "rewrite": "\u79c1\u305f\u3061\u306f\u30d7\u30fc\u30eb\u4e0a\u9650\u3092\u300c\u3068\u308a\u3042\u3048\u305a\u52d5\u304f\u5024\u300d\u306e\u307e\u307e\u653e\u7f6e\u3057\u304c\u3061\u3067\u3057\u305f\u3002",
+    "rewrite_kind": "\u904e\u53bb"
+   }
+  ],
   "flags": [],
   "orig_flags": []
  }

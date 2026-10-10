@@ -1,168 +1,118 @@
 {
  "markers": [
   {
-   "kind": "可能",
-   "orig": 1,
-   "rewrite": 2,
-   "orig_hits": [
-    "けます"
-   ],
+   "kind": "\u3064\u306a\u304e",
+   "orig": 0,
+   "rewrite": 1,
+   "orig_hits": [],
    "rewrite_hits": [
-    "けます",
-    "できます"
-   ]
-  },
-  {
-   "kind": "つなぎ",
-   "orig": 5,
-   "rewrite": 4,
-   "orig_hits": [
-    "まず",
-    "次に",
-    "まず",
-    "ので",
-    "ので"
-   ],
-   "rewrite_hits": [
-    "まず",
-    "次に",
-    "まず",
-    "ので"
+    "\u306e\u3067"
    ]
   }
  ],
  "new_words": [
-  "修正",
-  "問題",
-  "大変",
-  "実装",
-  "着手",
-  "経由"
+  "\u30b7\u30b9\u30c6\u30e0",
+  "\u5f85\u6a5f\u6642\u9593",
+  "\u65e5\u9593\u4fdd\u6301",
+  "\u767a\u751f",
+  "\u8a2d\u5b9a"
  ],
  "lost_words": [
-  "ロジック",
-  "一番大",
-  "分離"
+  "\u4e8c\u91cd\u51e6\u7406",
+  "\u4e8c\u91cd\u53cd\u6620",
+  "\u4fdd\u5b58\u9805\u76ee",
+  "\u4fdd\u6301\u671f\u9593",
+  "\u5373\u5ea7",
+  "\u5bfe\u8c61",
+  "\u62c5\u5f53",
+  "\u7f72\u540d\u691c\u8a3c",
+  "\u9593\u9694"
  ],
- "structure": [],
+ "structure": [
+  "\u6587\u306e\u6570\u304c\u5909\u308f\u3063\u305f\uff0819 \u2192 20\uff09"
+ ],
  "spans": [
   {
-   "added": "まとめて実装して",
-   "was": "並んで",
+   "added": "\u8a2d\u5b9a\u3059\u308b\u3002",
+   "was": "\u304b\u3051\u3001",
    "kinds": [],
    "new_words": [
-    "実装"
+    "\u8a2d\u5b9a"
    ],
-   "where": "TP呼び出し、割引計算を1メソッドに［まとめて実装して］います。今は問題なく動いていても、決"
+   "where": "\u5b9f\u884c\u3059\u308b\u3002\u30a4\u30d9\u30f3\u30c8ID\u306b\u306f\u4e00\u610f\u5236\u7d04\u3092\uff3b\u8a2d\u5b9a\u3059\u308b\u3002\uff3d\u30d7\u30ed\u30d0\u30a4\u30c0\u304c\u540c\u3058\u30a4\u30d9\u30f3\u30c8\u3092\u518d\u9001\u307e\u305f\u306f"
   },
   {
-   "added": "問題なく",
+   "added": "\u3057\u305f\u5834\u5408\u3001\u30b7\u30b9\u30c6\u30e0",
+   "was": "",
+   "kinds": [
+    "\u6761\u4ef6"
+   ],
+   "new_words": [
+    "\u30b7\u30b9\u30c6\u30e0"
+   ],
+   "where": "\u30c0\u304c\u540c\u3058\u30a4\u30d9\u30f3\u30c8\u3092\u518d\u9001\u307e\u305f\u306f\u91cd\u8907\u914d\u4fe1\uff3b\u3057\u305f\u5834\u5408\u3001\u30b7\u30b9\u30c6\u30e0\uff3d\u306f\u518d\u51e6\u7406\u305b\u305a\u306b200\u3092\u8fd4\u3059\u3002\n\n\u30ea\u30c8"
+  },
+  {
+   "added": "\u306e\u5f85\u6a5f\u6642\u9593\u306f",
    "was": "",
    "kinds": [],
    "new_words": [
-    "問題"
+    "\u5f85\u6a5f\u6642\u9593"
    ],
-   "where": "ソッドにまとめて実装しています。今は［問題なく］動いていても、決済プロバイダを差し替"
+   "where": "\u30aa\u30d5\u306b\u30b8\u30c3\u30bf\u3092\u52a0\u3048\u3066\u518d\u5b9f\u884c\u3059\u308b\u3002\u521d\u56de\uff3b\u306e\u5f85\u6a5f\u6642\u9593\u306f\uff3d30\u79d2\u3001\u4e0a\u9650\u306f1\u6642\u9593\u3067\u3001\u6700\u59278\u56de\u307e\u3067"
   },
   {
-   "added": "修正す",
-   "was": "触",
-   "kinds": [],
-   "new_words": [
-    "修正"
-   ],
-   "where": "ルールを変えるときも、このメソッドを［修正す］ることになります。\n\n提案は三つです"
-  },
-  {
-   "added": "経由",
-   "was": "の裏",
-   "kinds": [],
-   "new_words": [
-    "経由"
-   ],
-   "where": "teway` というインターフェース［経由］にして、サービスがHTTPの詳細を知"
-  },
-  {
-   "added": "すれ",
-   "was": "しておけ",
-   "kinds": [
-    "条件"
-   ],
-   "new_words": [],
-   "where": "す。割引計算は副作用のない純粋関数に［すれ］ば、モックなしで単体テストを書けます"
-  },
-  {
-   "added": "け",
-   "was": "離す",
-   "kinds": [
-    "条件"
-   ],
-   "new_words": [],
-   "where": "が本体より長くなっています。責務を分［け］れば、その準備コードを短くできます。"
-  },
-  {
-   "added": "、",
+   "added": "\u30b7\u30b9\u30c6\u30e0\u306f\u3001",
    "was": "",
-   "kinds": [
-    "条件"
-   ],
-   "new_words": [],
-   "where": "より長くなっています。責務を分ければ［、］その準備コードを短くできます。\n\n一"
-  },
-  {
-   "added": "でき",
-   "was": "なり",
-   "kinds": [
-    "可能"
-   ],
-   "new_words": [],
-   "where": "責務を分ければ、その準備コードを短く［でき］ます。\n\n一度に全部直すのが大変なら"
-  },
-  {
-   "added": "大変なら",
-   "was": "重ければ",
-   "kinds": [
-    "条件",
-    "つなぎ"
-   ],
+   "kinds": [],
    "new_words": [
-    "大変"
+    "\u30b7\u30b9\u30c6\u30e0"
    ],
-   "where": "短くできます。\n\n一度に全部直すのが［大変なら］、まず決済部分だけを先に切り出す形で"
-  }
- ],
- "logic": [
+   "where": "\u3001\u305f\u3060\u3061\u306bDLQ\u3078\u9001\u308b\u3002\n\nDLQ\n\uff3b\u30b7\u30b9\u30c6\u30e0\u306f\u3001\uff3d\u6700\u5927\u8a66\u884c\u56de\u6570\u3092\u8d85\u3048\u305f\u30a4\u30d9\u30f3\u30c8\u3068\u6052\u4e45\u7684"
+  },
   {
-   "kind": "文頭の指示語",
-   "sentence": "このレビューで気になったのは、サービス層が担う責務が多すぎる点だけです。"
+   "added": "\u304c\u767a\u751f\u3057\u305f",
+   "was": "\u306e",
+   "kinds": [],
+   "new_words": [
+    "\u767a\u751f"
+   ],
+   "where": "\u56de\u6570\u3092\u8d85\u3048\u305f\u30a4\u30d9\u30f3\u30c8\u3068\u6052\u4e45\u7684\u306a\u30a8\u30e9\u30fc\uff3b\u304c\u767a\u751f\u3057\u305f\uff3d\u30a4\u30d9\u30f3\u30c8\u3092DLQ\u3078\u79fb\u3059\u3002DLQ\u306b\u306f\u30a4"
+  },
+  {
+   "added": "\u9593\u4fdd\u6301",
+   "was": "\u3068",
+   "kinds": [],
+   "new_words": [
+    "\u9593\u4fdd\u6301"
+   ],
+   "where": "\u30a8\u30e9\u30fc\u5185\u5bb9\u3001\u8a66\u884c\u5c65\u6b74\u3092\u4fdd\u5b58\u3057\u300130\u65e5\uff3b\u9593\u4fdd\u6301\uff3d\u3059\u308b\u3002DLQ\u306e\u4ef6\u6570\u304c\u95be\u5024\u3092\u8d85\u3048\u308b\u3068\u3001"
+  },
+  {
+   "added": "\u308b\u3068\u3001\u30b7\u30b9\u30c6\u30e0\u306f",
+   "was": "\u305f\u3089",
+   "kinds": [],
+   "new_words": [
+    "\u30b7\u30b9\u30c6\u30e0"
+   ],
+   "where": "\u9593\u4fdd\u6301\u3059\u308b\u3002DLQ\u306e\u4ef6\u6570\u304c\u95be\u5024\u3092\u8d85\u3048\uff3b\u308b\u3068\u3001\u30b7\u30b9\u30c6\u30e0\u306f\uff3dSlack\u3078\u901a\u77e5\u3059\u308b\u3002\n\n\u518d\u51e6\u7406\n\u904b"
+  },
+  {
+   "added": "\u306e\u3067",
+   "was": "\u305f\u3081",
+   "kinds": [
+    "\u3064\u306a\u304e"
+   ],
+   "new_words": [],
+   "where": "\u3067\u304d\u308b\u3002\u51aa\u7b49\u30ad\u30fc\u306b\u30a4\u30d9\u30f3\u30c8ID\u3092\u4f7f\u3046\uff3b\u306e\u3067\uff3d\u3001\u518d\u6295\u5165\u3057\u3066\u3082\u6c7a\u6e08\u304c\u4e8c\u91cd\u306b\u53cd\u6620\u3055\u308c\u308b"
   }
  ],
+ "logic": [],
  "bold": [],
  "endings": {
-  "stance": "説明",
-  "changes": [
-   {
-    "orig": "このレビュー、サービス層の責務が広がりすぎている点だけ気になりました。",
-    "orig_kind": "過去",
-    "rewrite": "このレビューで気になったのは、サービス層が担う責務が多すぎる点だけです。",
-    "rewrite_kind": "断定（〜です）"
-   }
-  ],
-  "flags": [
-   {
-    "note": "事実・結果・考えの文書に、読み手への勧めや頼みがある（最後の1文を除く）。立場が合っているか見る",
-    "sentences": [
-     "まずDBアクセスを `OrderRepository` と `InventoryRepository` に分けてください。"
-    ]
-   }
-  ],
-  "orig_flags": [
-   {
-    "note": "事実・結果・考えの文書に、読み手への勧めや頼みがある（最後の1文を除く）。立場が合っているか見る",
-    "sentences": [
-     "まずDBアクセスは `OrderRepository` と `InventoryRepository` に切り出してください。"
-    ]
-   }
-  ]
+  "stance": null,
+  "changes": [],
+  "flags": [],
+  "orig_flags": []
  }
 }

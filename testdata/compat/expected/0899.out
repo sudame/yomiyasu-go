@@ -1,116 +1,157 @@
 {
  "markers": [
   {
-   "kind": "つなぎ",
+   "kind": "\u53ef\u80fd",
    "orig": 0,
    "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "ので"
+    "\u3067\u304d\u308b"
+   ]
+  },
+  {
+   "kind": "\u6761\u4ef6",
+   "orig": 0,
+   "rewrite": 1,
+   "orig_hits": [],
+   "rewrite_hits": [
+    "\u308c\u3070"
    ]
   }
  ],
  "new_words": [
-  "システム",
-  "待機時間",
-  "日間保持",
-  "発生",
-  "設定"
+  "\u30a2\u30d7\u30ea",
+  "\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0",
+  "\u30d5\u30ed\u30f3\u30c8\u30a8\u30f3\u30c9",
+  "\u30e2\u30d0\u30a4\u30eb\u30a2\u30d7\u30ea",
+  "\u4e21\u65b9",
+  "\u4eba\u624b",
+  "\u524d\u6bb5",
+  "\u554f\u984c",
+  "\u56de\u76f4\u5217",
+  "\u62c5\u5f53",
+  "\u69cb\u7bc9",
+  "\u9069\u7528"
  ],
  "lost_words": [
-  "二重処理",
-  "二重反映",
-  "保存項目",
-  "保持期間",
-  "即座",
-  "対象",
-  "担当",
-  "署名検証",
-  "間隔"
+  "\u30ea\u30af\u30a8\u30b9\u30c8",
+  "\u4ed5\u69d8\u5171\u6709",
+  "\u4f59\u88d5",
+  "\u679a\u631f",
+  "\u753b\u9762\u8981\u4ef6",
+  "\u7d50\u8ad6",
+  "\u80cc\u8ca0",
+  "\u9006\u7b97"
  ],
- "structure": [
-  "文の数が変わった（19 → 20）"
- ],
+ "structure": [],
  "spans": [
   {
-   "added": "設定する。",
-   "was": "かけ、",
+   "added": "\u30a2\u30d7\u30ea",
+   "was": "",
    "kinds": [],
    "new_words": [
-    "設定"
+    "\u30a2\u30d7\u30ea"
    ],
-   "where": "実行する。イベントIDには一意制約を［設定する。］プロバイダが同じイベントを再送または"
+   "where": "PI\u306b\u306fREST\u3092\u4f7f\u3044\u3001\u81ea\u793e\u306eWeb\uff3b\u30a2\u30d7\u30ea\uff3d\u3068\u30e2\u30d0\u30a4\u30eb\u30a2\u30d7\u30ea\u306b\u306fGraphQL\u306e"
   },
   {
-   "added": "した場合、システム",
-   "was": "",
+   "added": "\u30a2\u30d7\u30ea\u306b",
+   "was": "\u5411\u3051",
+   "kinds": [],
+   "new_words": [
+    "\u30a2\u30d7\u30ea"
+   ],
+   "where": "\u3092\u4f7f\u3044\u3001\u81ea\u793e\u306eWeb\u30a2\u30d7\u30ea\u3068\u30e2\u30d0\u30a4\u30eb\uff3b\u30a2\u30d7\u30ea\u306b\uff3d\u306fGraphQL\u306eBFF\u5c64\u3092\u7f6e\u3044\u3066\u3001"
+  },
+  {
+   "added": "\u3044\u3066\u3001\u4e21\u65b9\u3092",
+   "was": "\u304f",
+   "kinds": [],
+   "new_words": [
+    "\u4e21\u65b9"
+   ],
+   "where": "\u30d7\u30ea\u306b\u306fGraphQL\u306eBFF\u5c64\u3092\u7f6e\uff3b\u3044\u3066\u3001\u4e21\u65b9\u3092\uff3d\u4f75\u7528\u3059\u308b\u3053\u3068\u306b\u3057\u305f\u3002\n\n\u5f53\u521d\u306fGra"
+  },
+  {
+   "added": "\u3067\u304d",
+   "was": "\u304c\u305d\u306e\u307e\u307e\u4f7f\u3048",
    "kinds": [
-    "条件"
-   ],
-   "new_words": [
-    "システム"
-   ],
-   "where": "ダが同じイベントを再送または重複配信［した場合、システム］は再処理せずに200を返す。\n\nリト"
-  },
-  {
-   "added": "の待機時間は",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "待機時間"
-   ],
-   "where": "オフにジッタを加えて再実行する。初回［の待機時間は］30秒、上限は1時間で、最大8回まで"
-  },
-  {
-   "added": "システムは、",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "システム"
-   ],
-   "where": "、ただちにDLQへ送る。\n\nDLQ\n［システムは、］最大試行回数を超えたイベントと恒久的"
-  },
-  {
-   "added": "が発生した",
-   "was": "の",
-   "kinds": [],
-   "new_words": [
-    "発生"
-   ],
-   "where": "回数を超えたイベントと恒久的なエラー［が発生した］イベントをDLQへ移す。DLQにはイ"
-  },
-  {
-   "added": "間保持",
-   "was": "と",
-   "kinds": [],
-   "new_words": [
-    "間保持"
-   ],
-   "where": "エラー内容、試行履歴を保存し、30日［間保持］する。DLQの件数が閾値を超えると、"
-  },
-  {
-   "added": "ると、システムは",
-   "was": "たら",
-   "kinds": [],
-   "new_words": [
-    "システム"
-   ],
-   "where": "間保持する。DLQの件数が閾値を超え［ると、システムは］Slackへ通知する。\n\n再処理\n運"
-  },
-  {
-   "added": "ので",
-   "was": "ため",
-   "kinds": [
-    "つなぎ"
+    "\u53ef\u80fd"
    ],
    "new_words": [],
-   "where": "できる。冪等キーにイベントIDを使う［ので］、再投入しても決済が二重に反映される"
+   "where": "\u307e\u307e\u4f7f\u3048\u3001OpenAPI\u3067\u4ed5\u69d8\u3082\u5171\u6709\uff3b\u3067\u304d\uff3d\u308bREST\u306e\u307b\u3046\u304c\u904b\u7528\u3057\u3084\u3059\u3044\u3002Gr"
+  },
+  {
+   "added": "\u554f\u984c\u3078\u306e",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u554f\u984c"
+   ],
+   "where": "\u3067\u306f\u3001\u30af\u30a8\u30ea\u5358\u4f4d\u306e\u30b3\u30b9\u30c8\u5236\u9650\u3084N+1\uff3b\u554f\u984c\u3078\u306e\uff3d\u5bfe\u7b56\u3092\u81ea\u524d\u3067\u5b9f\u88c5\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044\u3002"
+  },
+  {
+   "added": "\u5b9f\u88c5\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044",
+   "was": "\u4f5c\u308a\u8fbc\u3080\u5fc5\u8981\u304c\u3042\u308b",
+   "kinds": [
+    "\u7fa9\u52d9",
+    "\u6761\u4ef6"
+   ],
+   "new_words": [],
+   "where": "\u30b9\u30c8\u5236\u9650\u3084N+1\u554f\u984c\u3078\u306e\u5bfe\u7b56\u3092\u81ea\u524d\u3067\uff3b\u5b9f\u88c5\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044\uff3d\u3002\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u306f4\u4eba\u306e\u30c1\u30fc\u30e0\u3067\u3001\u305d\u306e"
+  },
+  {
+   "added": "\u62c5\u5f53\u3059\u308b\u4eba\u624b",
+   "was": "\u80cc\u8ca0\u3046\u4f59\u88d5",
+   "kinds": [],
+   "new_words": [
+    "\u62c5\u5f53",
+    "\u4eba\u624b"
+   ],
+   "where": "\u30af\u30a8\u30f3\u30c9\u306f4\u4eba\u306e\u30c1\u30fc\u30e0\u3067\u3001\u305d\u306e\u4fdd\u5b88\u3092\uff3b\u62c5\u5f53\u3059\u308b\u4eba\u624b\uff3d\u304c\u306a\u3044\u3002\n\n\u305d\u3053\u3067\u65e2\u5b58\u306eREST\u306f\u6b8b"
+  },
+  {
+   "added": "\u69cb\u7bc9\u3057\u3066\u3001REST\u306e\u524d\u6bb5\u306b\u7f6e\u304f",
+   "was": "1\u679a\u631f\u3080",
+   "kinds": [],
+   "new_words": [
+    "\u69cb\u7bc9",
+    "\u524d\u6bb5"
+   ],
+   "where": "Apollo Server\u3067BFF\u3092\uff3b\u69cb\u7bc9\u3057\u3066\u3001REST\u306e\u524d\u6bb5\u306b\u7f6e\u304f\uff3d\u3002\u753b\u9762\u306e\u8981\u4ef6\u3092\u3082\u3068\u306b\u30b9\u30ad\u30fc\u30de\u3092\u8a2d\u8a08\u3057"
+  },
+  {
+   "added": "\u306b\u9069\u7528",
+   "was": "\u3067\u8a66",
+   "kinds": [],
+   "new_words": [
+    "\u9069\u7528"
+   ],
+   "where": "\u3001\u6700\u521d\u306f\u6ce8\u6587\u4e00\u89a7\u3068\u30de\u30a4\u30da\u30fc\u30b8\u306e2\u753b\u9762\uff3b\u306b\u9069\u7528\uff3d\u3059\u308b\u30023\u304b\u6708\u5f8c\u306b\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0\u304c"
+  },
+  {
+   "added": "\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0\u304c",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0"
+   ],
+   "where": "\u30da\u30fc\u30b8\u306e2\u753b\u9762\u306b\u9069\u7528\u3059\u308b\u30023\u304b\u6708\u5f8c\u306b\uff3b\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0\u304c\uff3d\u30ec\u30b9\u30dd\u30f3\u30b9\u6642\u9593\u3068\u5b9f\u88c5\u5de5\u6570\u3092\u8a08\u6e2c\u3057\u3001\u5bfe"
   }
  ],
- "logic": [],
+ "logic": [
+  {
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u305f\u3060\u3057\u30d1\u30fc\u30c8\u30ca\u30fc\u5411\u3051API\u3067\u306f\u3001HTTP\u30ad\u30e3\u30c3\u30b7\u30e5\u3068\u30ec\u30fc\u30c8\u5236\u9650\u3092\u305d\u306e\u307e\u307e\u4f7f\u3048\u3001OpenAPI\u3067\u4ed5\u69d8\u3082\u5171\u6709\u3067\u304d\u308bREST\u306e\u307b\u3046\u304c\u904b\u7528\u3057\u3084\u3059\u3044\u3002"
+  },
+  {
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u305d\u3053\u3067\u65e2\u5b58\u306eREST\u306f\u6b8b\u3057\u3001\u30d5\u30ed\u30f3\u30c8\u30a8\u30f3\u30c9\u5411\u3051\u306bApollo Server\u3067BFF\u3092\u69cb\u7bc9\u3057\u3066\u3001REST\u306e\u524d\u6bb5\u306b\u7f6e\u304f\u3002"
+  }
+ ],
  "bold": [],
  "endings": {
-  "stance": "説明",
+  "stance": null,
   "changes": [],
   "flags": [],
   "orig_flags": []

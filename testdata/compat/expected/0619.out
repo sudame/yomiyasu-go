@@ -1,42 +1,13 @@
 {
-  "score": 80,
-  "is_clean": false,
+  "score": 100,
+  "is_clean": true,
   "metrics": {
-    "char_count": 50,
-    "total_lines": 2,
+    "char_count": 419,
+    "total_lines": 4,
     "list_lines": 0,
     "list_ratio": 0.0,
-    "bold_count": 2,
-    "bold_per_1000": 40.0
+    "bold_count": 0,
+    "bold_per_1000": 0.0
   },
-  "findings": [
-    {
-      "rule": "bold_not_rendered",
-      "line": 1,
-      "severity": "error",
-      "message": "太字の印（**）が記号に接していて、GitHub などでは太字にならず ** がそのまま表示されます。直し方: かっこの内側だけを太字にする。",
-      "snippet": "𠮷野家で**「牛丼」**を食べま → 𠮷野家で「**牛丼**」を食べま"
-    },
-    {
-      "rule": "bold_not_rendered",
-      "line": 2,
-      "severity": "error",
-      "message": "太字の印（**）が記号に接していて、GitHub などでは太字にならず ** がそのまま表示されます。直し方: 句読点を太字の外に出す。",
-      "snippet": "。\n𠮷は**必須です。**詳しくは → 。\n𠮷は**必須です**。詳しくは"
-    },
-    {
-      "rule": "emoji_prohibited",
-      "line": 1,
-      "severity": "warn",
-      "message": "絵文字（😀）が検出されました。AI特有の装飾を排し、平文で記述してください。",
-      "snippet": "𠮷野家で**「牛丼」**を食べました😀。地味に効きます。"
-    },
-    {
-      "rule": "metaphor_verb",
-      "line": 1,
-      "severity": "warn",
-      "message": "比喩動詞「効く」の過剰使用が検出されました。不自然な比喩動詞であれば、ふだん使う動詞や客観的な表現に書き直してください。ただし、文字どおりの動作や状態変化を表している場合は無理に言い換える必要はありません。",
-      "snippet": "𠮷野家で**「牛丼」**を食べました😀。地味に効きます。"
-    }
-  ]
+  "findings": []
 }
