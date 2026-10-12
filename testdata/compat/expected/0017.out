@@ -1,6 +1,6 @@
 {
-  "score": 95,
-  "is_clean": false,
+  "score": 100,
+  "is_clean": true,
   "metrics": {
     "char_count": 19,
     "total_lines": 2,
@@ -9,13 +9,5 @@
     "bold_count": 0,
     "bold_per_1000": 0.0
   },
-  "findings": [
-    {
-      "rule": "unnatural_halfwidth_space",
-      "line": 1,
-      "severity": "warn",
-      "message": "英単語の前後に不要な半角空白が空けられています。日本語の助詞と自然に接続させてください。",
-      "snippet": "この\u001cREADME\u001cを読みます。"
-    }
-  ]
+  "findings": []
 }
