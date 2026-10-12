@@ -1,100 +1,50 @@
 {
  "markers": [
   {
-   "kind": "依頼",
-   "orig": 0,
+   "kind": "\u3064\u306a\u304e",
+   "orig": 2,
    "rewrite": 1,
-   "orig_hits": [],
-   "rewrite_hits": [
-    "てください"
-   ]
-  },
-  {
-   "kind": "勧誘",
-   "orig": 1,
-   "rewrite": 0,
    "orig_hits": [
-    "ましょう"
+    "\u3053\u3068\u3067",
+    "\u306e\u3067"
    ],
-   "rewrite_hits": []
-  },
-  {
-   "kind": "評価",
-   "orig": 0,
-   "rewrite": 1,
-   "orig_hits": [],
    "rewrite_hits": [
-    "重要"
+    "\u306e\u3067"
    ]
-  },
-  {
-   "kind": "念押し",
-   "orig": 1,
-   "rewrite": 0,
-   "orig_hits": [
-    "必ず"
-   ],
-   "rewrite_hits": []
   }
  ],
  "new_words": [
-  "重要"
+  "\u4f5c\u696d"
  ],
- "lost_words": [],
+ "lost_words": [
+  "\u904b\u7528"
+ ],
  "structure": [
-  "箇条書きを地の文にした。各項目の文末（指示・説明・評価）が元と同じか見る",
-  "段落をまとめた（2 → 1）。まとめた段落の話題が1つか見る",
-  "文の数が変わった（4 → 3）"
+  "\u6587\u306e\u6570\u304c\u5909\u308f\u3063\u305f\uff0812 \u2192 11\uff09"
  ],
  "spans": [
   {
-   "added": "てください",
-   "was": "ましょう",
-   "kinds": [
-    "依頼"
-   ],
-   "new_words": [],
-   "where": "設定ファイルを読み込みます。保存し［てください］。手順と結果を確認し、共有することが"
-  },
-  {
-   "added": "ことが重要です。",
+   "added": "\u3053\u306e\u4f5c\u696d\u3067\u3001",
    "was": "",
-   "kinds": [
-    "評価"
-   ],
+   "kinds": [],
    "new_words": [
-    "重要"
+    "\u4f5c\u696d"
    ],
-   "where": "ださい。手順と結果を確認し、共有する［ことが重要です。］"
+   "where": "\u306e\u5834\u3067\u672c\u4eba\u306b\u76f4\u3057\u3066\u3082\u3089\u3046\u3053\u3068\u306b\u3057\u305f\u3002\uff3b\u3053\u306e\u4f5c\u696d\u3067\u3001\uff3d\u53e4\u304f\u306a\u3063\u305f\u8a18\u8ff0\u3082\u898b\u3064\u304b\u308b\u3002\n\n\u534a\u5e74\u5f8c"
   }
  ],
- "logic": [],
+ "logic": [
+  {
+   "kind": "\u6587\u982d\u306e\u6307\u793a\u8a9e",
+   "sentence": "\u3053\u306e\u4f5c\u696d\u3067\u3001\u53e4\u304f\u306a\u3063\u305f\u8a18\u8ff0\u3082\u898b\u3064\u304b\u308b\u3002"
+  }
+ ],
  "bold": [],
  "endings": {
-  "stance": "説明",
-  "changes": [
-   {
-    "orig": "手順を確認する",
-    "orig_kind": "常体・箇条書き",
-    "rewrite": "手順と結果を確認し、共有することが重要です。",
-    "rewrite_kind": "評価"
-   }
-  ],
-  "flags": [
-   {
-    "note": "事実・結果・考えの文書に、読み手への勧めや頼みがある（最後の1文を除く）。立場が合っているか見る",
-    "sentences": [
-     "保存してください。"
-    ]
-   }
-  ],
-  "orig_flags": [
-   {
-    "note": "事実・結果・考えの文書に、読み手への勧めや頼みがある（最後の1文を除く）。立場が合っているか見る",
-    "sentences": [
-     "必ず保存しましょう。"
-    ]
-   }
-  ]
- }
+  "stance": null,
+  "changes": [],
+  "flags": [],
+  "orig_flags": []
+ },
+ "type_changes": []
 }
