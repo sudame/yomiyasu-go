@@ -1,35 +1,13 @@
 {
-  "score": 85,
-  "is_clean": false,
+  "score": 100,
+  "is_clean": true,
   "metrics": {
-    "char_count": 464,
-    "total_lines": 7,
+    "char_count": 428,
+    "total_lines": 8,
     "list_lines": 0,
     "list_ratio": 0.0,
     "bold_count": 0,
     "bold_per_1000": 0.0
   },
-  "findings": [
-    {
-      "rule": "sentence_end_repetition",
-      "line": 5,
-      "severity": "warn",
-      "message": "同一文末「ました」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
-      "snippet": "複数のリクエストが同時に届くと、同じリフレッシュトークンで API を重複して呼び出し、後続のリクエストが失敗することがありました。"
-    },
-    {
-      "rule": "sentence_end_repetition",
-      "line": 9,
-      "severity": "warn",
-      "message": "同一文末「ます」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
-      "snippet": "期限切れ直前に届いたリクエストのために、同期処理をフォールバックとして残しています。"
-    },
-    {
-      "rule": "unnatural_halfwidth_space",
-      "line": 5,
-      "severity": "warn",
-      "message": "英単語の前後に不要な半角空白が空けられています。日本語の助詞と自然に接続させてください。",
-      "snippet": "従来は、アクセストークンの期限切れを検知したリクエストが、その場でリフレッシュ API を呼んでいました。複数のリクエストが同時に届くと、同じリフレッシュトークンで API を重複して呼び出し、後続のリクエストが失敗することがありました。レスポンス時間も、リフレッシュの待ち時間の分だけ延びていました。"
-    }
-  ]
+  "findings": []
 }
