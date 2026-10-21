@@ -1,9 +1,27 @@
 {
-  "score": 100,
-  "is_clean": true,
+  "format": "yomiyasu-lint",
+  "format_version": 2,
+  "tool_version": "2.1.1",
+  "candidate_count": 0,
+  "counts": {
+    "error": 0,
+    "warn": 0,
+    "info": 0
+  },
+  "no_rule_findings": true,
+  "rule_penalty_score": 100,
+  "not_judged": [
+    "meaning_preservation",
+    "reader_comprehension"
+  ],
+  "context": {
+    "doc_type": null,
+    "reader": null,
+    "skipped_by_doc_type": {}
+  },
   "metrics": {
-    "char_count": 531,
-    "total_lines": 7,
+    "char_count": 414,
+    "total_lines": 5,
     "list_lines": 0,
     "list_ratio": 0.0,
     "bold_count": 0,
