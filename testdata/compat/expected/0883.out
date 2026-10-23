@@ -1,124 +1,767 @@
 {
+ "format": "yomiyasu-diff",
+ "format_version": 2,
+ "tool_version": "2.2.0",
+ "status": "has_candidates",
+ "changed": true,
+ "candidate_count": 12,
+ "meaning_risk_count": 0,
+ "fail_on_meaning_risk_count": 0,
+ "not_judged": [
+  "meaning_equivalence",
+  "reader_comprehension"
+ ],
+ "context": {
+  "doc_type": null,
+  "reader": null
+ },
+ "meaning_risks": [],
  "markers": [
   {
-   "kind": "条件",
-   "orig": 1,
+   "kind": "\u4f9d\u983c",
+   "orig": 2,
    "rewrite": 3,
    "orig_hits": [
-    "場合"
+    "\u3066\u304f\u3060\u3055\u3044",
+    "\u3066\u304f\u3060\u3055\u3044"
    ],
    "rewrite_hits": [
-    "れば",
-    "場合",
-    "場合"
+    "\u3066\u304f\u3060\u3055\u3044",
+    "\u3066\u304f\u3060\u3055\u3044",
+    "\u3066\u304f\u3060\u3055\u3044"
    ]
   },
   {
-   "kind": "つなぎ",
+   "kind": "\u53ef\u80fd",
    "orig": 0,
    "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "そのため"
+    "\u3067\u304d\u308b"
    ]
   }
  ],
  "new_words": [
-  "不要",
-  "判明",
-  "実装",
-  "用意"
+  "\u5404\u81ea"
  ],
  "lost_words": [
-  "以下",
-  "比較結果",
-  "要望",
-  "該当領域",
-  "課題"
+  "\u5185\u5bb9",
+  "\u52d5\u4f5c\u78ba\u8a8d",
+  "\u544a\u77e5",
+  "\u5f71\u97ff",
+  "\u65e5\u6642"
  ],
  "structure": [
-  "文の数が変わった（10 → 11）"
+  "\u6bb5\u843d\u3092\u307e\u3068\u3081\u305f\uff0816 \u2192 7\uff09\u3002\u307e\u3068\u3081\u305f\u6bb5\u843d\u306e\u8a71\u984c\u304c1\u3064\u304b\u898b\u308b",
+  "\u6587\u306e\u6570\u304c\u5909\u308f\u3063\u305f\uff0819 \u2192 14\uff09"
  ],
  "spans": [
   {
-   "added": "。その",
-   "was": "",
+   "added": "\u3063\u305f\u5834\u5408\u306f",
+   "was": "\u308c\u3070",
    "kinds": [
-    "可能",
-    "つなぎ"
+    "\u6761\u4ef6"
    ],
    "new_words": [],
-   "where": "が必要な項目だけを指定して取得できる［。その］ため、モバイルアプリのようにデータ量"
+   "where": "\u307e\u3067\u3092\u4e88\u5b9a\u3057\u3066\u3044\u307e\u3059\u3002\u4f5c\u696d\u304c\u65e9\u304f\u7d42\u308f\uff3b\u3063\u305f\u5834\u5408\u306f\uff3d\u3001\u305d\u306e\u6642\u70b9\u3067\u30b5\u30fc\u30d3\u30b9\u3092\u5fa9\u65e7\u3057\u307e\u3059\u3002\n"
   },
   {
-   "added": "は、不要な項目を取得する",
+   "added": "\u3067\u304d\u308b\u3053\u3068\u3092",
    "was": "",
-   "kinds": [],
-   "new_words": [
-    "不要"
-   ],
-   "where": "プリのようにデータ量を絞りたい画面で［は、不要な項目を取得する］オーバーフェッチを減らせる。一方で、"
-  },
-  {
-   "added": "実装し、運用しなければならず",
-   "was": "行う必要があり",
    "kinds": [
-    "条件"
-   ],
-   "new_words": [
-    "実装"
-   ],
-   "where": "問題への対策、キャッシュ設計を自前で［実装し、運用しなければならず］、運用コストが増える。チームにはGr"
-  },
-  {
-   "added": "場合",
-   "was": "データ取得の要望に",
-   "kinds": [
-    "条件"
+    "\u53ef\u80fd"
    ],
    "new_words": [],
-   "where": "さい。画面ごとに必要なデータが異なる［場合］は、BFF層を設けるか、フィールドを"
+   "where": "\u3002\u3042\u308f\u305b\u3066\u3001\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u304b\u3089\u30ea\u30b9\u30c8\u30a2\uff3b\u3067\u304d\u308b\u3053\u3068\u3092\uff3d\u78ba\u8a8d\u3057\u307e\u3059\u3002\n\n\u505c\u6b62\u3059\u308b\u306e\u306f\u3001\u672c\u756a\u30b5"
   },
   {
-   "added": "を用意して",
-   "was": "で",
+   "added": "\u306f\u3001\u5404\u81ea\u3067",
+   "was": "\u306b",
    "kinds": [],
    "new_words": [
-    "用意"
+    "\u5404\u81ea"
    ],
-   "where": "るか、フィールドを指定するパラメータ［を用意して］対応する。\n\n以上より、当面はRES"
+   "where": "nance \u306b\u968f\u6642\u6295\u7a3f\u3057\u307e\u3059\u3002\u5fa9\u65e7\u5f8c\uff3b\u306f\u3001\u5404\u81ea\u3067\uff3d\u52d5\u4f5c\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u6c17\u306b\u306a\u308b\u70b9\u304c"
   },
   {
-   "added": "いと判明し",
-   "was": "っ",
+   "added": "\u3057\u3066\u304f\u3060\u3055",
+   "was": "\u3092\u304a\u9858",
    "kinds": [
-    "条件"
+    "\u4f9d\u983c"
    ],
-   "new_words": [
-    "判明"
-   ],
-   "where": "けAPIでデータ取得の柔軟性が足りな［いと判明し］た場合に限り、その領域へのGraph"
+   "new_words": [],
+   "where": "\u7a3f\u3057\u307e\u3059\u3002\u5fa9\u65e7\u5f8c\u306f\u3001\u5404\u81ea\u3067\u52d5\u4f5c\u3092\u78ba\u8a8d\uff3b\u3057\u3066\u304f\u3060\u3055\uff3d\u3044\u3002\u6c17\u306b\u306a\u308b\u70b9\u304c\u3042\u308c\u3070\u3001\u79c1\u307e\u3067DM\u3092"
   }
  ],
- "logic": [
-  {
-   "kind": "文頭のつなぎ",
-   "sentence": "そのため、モバイルアプリのようにデータ量を絞りたい画面では、不要な項目を取得するオーバーフェッチを減らせる。"
-  },
-  {
-   "kind": "文頭の指示語",
-   "sentence": "そのため、モバイルアプリのようにデータ量を絞りたい画面では、不要な項目を取得するオーバーフェッチを減らせる。"
-  },
-  {
-   "kind": "文頭のつなぎ",
-   "sentence": "一方で、チームはクエリの複雑度制限、N+1問題への対策、キャッシュ設計を自前で実装し、運用しなければならず、運用コストが増える。"
-  }
- ],
+ "logic": [],
  "bold": [],
  "endings": {
-  "stance": "決まり",
-  "changes": [],
-  "flags": [],
-  "orig_flags": []
+  "stance": "\u8aac\u660e",
+  "changes": [
+   {
+    "orig": "\u571f\u66dc\u65e5 02:00\u301c05:00(\u4e88\u5b9a)",
+    "orig_kind": "\u4f53\u8a00\u6b62\u3081\u306a\u3069",
+    "rewrite": "\u4f5c\u696d\u306f\u571f\u66dc\u65e5\u306e02:00\u304b\u308905:00\u307e\u3067\u3092\u4e88\u5b9a\u3057\u3066\u3044\u307e\u3059\u3002",
+    "rewrite_kind": "\u8aac\u660e\uff08\u301c\u3066\u3044\u307e\u3059\uff09"
+   },
+   {
+    "orig": "\u30fb\u80a5\u5927\u5316\u3057\u305f\u30c6\u30fc\u30d6\u30eb\u306eVACUUM\u3068\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u518d\u69cb\u7bc9",
+    "orig_kind": "\u4f53\u8a00\u6b62\u3081\u306a\u3069",
+    "rewrite": "\u4f5c\u696d\u3067\u306f\u3001PostgreSQL\u306e\u30de\u30a4\u30ca\u30fc\u30d0\u30fc\u30b8\u30e7\u30f3\u3092\u66f4\u65b0\u3057\u3001\u80a5\u5927\u5316\u3057\u305f\u30c6\u30fc\u30d6\u30eb\u306bVACUUM\u3092\u5b9f\u884c\u3057\u3066\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u3092\u518d\u69cb\u7bc9\u3057\u307e\u3059\u3002",
+    "rewrite_kind": "\u52d5\u4f5c\uff08\u301c\u3057\u307e\u3059\uff09"
+   },
+   {
+    "orig": "\u30fb\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u304b\u3089\u306e\u30ea\u30b9\u30c8\u30a2\u78ba\u8a8d",
+    "orig_kind": "\u4f53\u8a00\u6b62\u3081\u306a\u3069",
+    "rewrite": "\u3042\u308f\u305b\u3066\u3001\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u304b\u3089\u30ea\u30b9\u30c8\u30a2\u3067\u304d\u308b\u3053\u3068\u3092\u78ba\u8a8d\u3057\u307e\u3059\u3002",
+    "rewrite_kind": "\u52d5\u4f5c\uff08\u301c\u3057\u307e\u3059\uff09"
+   },
+   {
+    "orig": "\u30fb\u672c\u756a\u30b5\u30fc\u30d3\u30b9\u3001\u7ba1\u7406\u753b\u9762\u3001\u793e\u5185\u30c0\u30c3\u30b7\u30e5\u30dc\u30fc\u30c9\u304c\u505c\u6b62\u3057\u307e\u3059",
+    "orig_kind": "\u52d5\u4f5c\uff08\u301c\u3057\u307e\u3059\uff09",
+    "rewrite": "\u505c\u6b62\u3059\u308b\u306e\u306f\u3001\u672c\u756a\u30b5\u30fc\u30d3\u30b9\u3001\u7ba1\u7406\u753b\u9762\u3001\u793e\u5185\u30c0\u30c3\u30b7\u30e5\u30dc\u30fc\u30c9\u3067\u3059\u3002",
+    "rewrite_kind": "\u65ad\u5b9a\uff08\u301c\u3067\u3059\uff09"
+   },
+   {
+    "orig": "\u5fa9\u65e7\u5f8c\u306b\u52d5\u4f5c\u78ba\u8a8d\u3092\u304a\u9858\u3044\u3057\u307e\u3059\u3002",
+    "orig_kind": "\u52d5\u4f5c\uff08\u301c\u3057\u307e\u3059\uff09",
+    "rewrite": "\u5fa9\u65e7\u5f8c\u306f\u3001\u5404\u81ea\u3067\u52d5\u4f5c\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+    "rewrite_kind": "\u4f9d\u983c"
+   }
+  ],
+  "flags": [
+   {
+    "note": "\u4e8b\u5b9f\u30fb\u7d50\u679c\u30fb\u8003\u3048\u306e\u6587\u66f8\u306b\u3001\u8aad\u307f\u624b\u3078\u306e\u52e7\u3081\u3084\u983c\u307f\u304c\u3042\u308b\uff08\u6700\u5f8c\u306e1\u6587\u3092\u9664\u304f\uff09\u3002\u7acb\u5834\u304c\u5408\u3063\u3066\u3044\u308b\u304b\u898b\u308b",
+    "sentences": [
+     "\u91d1\u66dc18\u6642\u307e\u3067\u306b\u3001\u9577\u6642\u9593\u304b\u304b\u308b\u624b\u52d5\u30af\u30a8\u30ea\u3084\u30a8\u30af\u30b9\u30dd\u30fc\u30c8\u3092\u7d42\u308f\u3089\u305b\u3066\u304f\u3060\u3055\u3044\u3002",
+     "\u9867\u5ba2\u304b\u3089\u554f\u3044\u5408\u308f\u305b\u304c\u3042\u3063\u305f\u5834\u5408\u306f\u3001\u505c\u6b62\u6642\u9593\u3092\u6848\u5185\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+     "\u5fa9\u65e7\u5f8c\u306f\u3001\u5404\u81ea\u3067\u52d5\u4f5c\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+    ]
+   }
+  ],
+  "orig_flags": [
+   {
+    "note": "\u4e8b\u5b9f\u30fb\u7d50\u679c\u30fb\u8003\u3048\u306e\u6587\u66f8\u306b\u3001\u8aad\u307f\u624b\u3078\u306e\u52e7\u3081\u3084\u983c\u307f\u304c\u3042\u308b\uff08\u6700\u5f8c\u306e1\u6587\u3092\u9664\u304f\uff09\u3002\u7acb\u5834\u304c\u5408\u3063\u3066\u3044\u308b\u304b\u898b\u308b",
+    "sentences": [
+     "\u30fb\u91d1\u66dc18\u6642\u307e\u3067\u306b\u3001\u9577\u6642\u9593\u304b\u304b\u308b\u624b\u52d5\u30af\u30a8\u30ea\u3084\u30a8\u30af\u30b9\u30dd\u30fc\u30c8\u3092\u7d42\u308f\u3089\u305b\u3066\u304f\u3060\u3055\u3044",
+     "\u30fb\u9867\u5ba2\u304b\u3089\u554f\u3044\u5408\u308f\u305b\u304c\u3042\u3063\u305f\u5834\u5408\u306f\u3001\u505c\u6b62\u6642\u9593\u3092\u6848\u5185\u3057\u3066\u304f\u3060\u3055\u3044"
+    ]
+   }
+  ]
+ },
+ "type_changes": [],
+ "full_diff": {
+  "encoding_notes": [],
+  "final_newline": {
+   "old": false,
+   "new": false
+  },
+  "limits_applied": [],
+  "hunks": [
+   {
+    "index": 1,
+    "tag": "replace",
+    "old_start": 1,
+    "old_end": 1,
+    "new_start": 1,
+    "new_end": 1,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u3010\u30e1\u30f3\u30c6\u30ca\u30f3\u30b9\u544a\u77e5\u3011\u4eca\u9031\u672b\u3001DB\u306e\u5b9a\u671f\u30e1\u30f3\u30c6\u30ca\u30f3\u30b9\u3092\u884c\u3044\u307e\u3059"
+    ],
+    "new_lines": [
+     "\u4eca\u9031\u672b\u306bDB\u306e\u5b9a\u671f\u30e1\u30f3\u30c6\u30ca\u30f3\u30b9\u3092\u884c\u3044\u307e\u3059"
+    ],
+    "segments": [
+     [
+      "-",
+      "\u3010\u30e1\u30f3\u30c6\u30ca\u30f3\u30b9\u544a\u77e5\u3011"
+     ],
+     [
+      "=",
+      "\u4eca\u9031\u672b"
+     ],
+     [
+      "-",
+      "\u3001"
+     ],
+     [
+      "+",
+      "\u306b"
+     ],
+     [
+      "=",
+      "DB\u306e\u5b9a\u671f\u30e1\u30f3\u30c6\u30ca\u30f3\u30b9\u3092\u884c\u3044\u307e\u3059"
+     ]
+    ],
+    "segments_omitted": null
+   },
+   {
+    "index": 2,
+    "tag": "replace",
+    "old_start": 5,
+    "old_end": 7,
+    "new_start": 5,
+    "new_end": 5,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u25a0 \u65e5\u6642",
+     "\u571f\u66dc\u65e5 02:00\u301c05:00(\u4e88\u5b9a)",
+     "\u4f5c\u696d\u304c\u65e9\u304f\u7d42\u308f\u308c\u3070\u3001\u305d\u306e\u6642\u70b9\u3067\u5fa9\u65e7\u3057\u307e\u3059\u3002"
+    ],
+    "new_lines": [
+     "\u4f5c\u696d\u306f\u571f\u66dc\u65e5\u306e02:00\u304b\u308905:00\u307e\u3067\u3092\u4e88\u5b9a\u3057\u3066\u3044\u307e\u3059\u3002\u4f5c\u696d\u304c\u65e9\u304f\u7d42\u308f\u3063\u305f\u5834\u5408\u306f\u3001\u305d\u306e\u6642\u70b9\u3067\u30b5\u30fc\u30d3\u30b9\u3092\u5fa9\u65e7\u3057\u307e\u3059\u3002"
+    ],
+    "segments": [
+     [
+      "-",
+      "\u25a0 \u65e5\u6642\n"
+     ],
+     [
+      "+",
+      "\u4f5c\u696d\u306f"
+     ],
+     [
+      "=",
+      "\u571f\u66dc\u65e5"
+     ],
+     [
+      "-",
+      " "
+     ],
+     [
+      "+",
+      "\u306e"
+     ],
+     [
+      "=",
+      "02:00"
+     ],
+     [
+      "-",
+      "\u301c"
+     ],
+     [
+      "+",
+      "\u304b\u3089"
+     ],
+     [
+      "=",
+      "05:00"
+     ],
+     [
+      "-",
+      "("
+     ],
+     [
+      "+",
+      "\u307e\u3067\u3092"
+     ],
+     [
+      "=",
+      "\u4e88\u5b9a"
+     ],
+     [
+      "-",
+      ")\n"
+     ],
+     [
+      "+",
+      "\u3057\u3066\u3044\u307e\u3059\u3002"
+     ],
+     [
+      "=",
+      "\u4f5c\u696d\u304c\u65e9\u304f\u7d42\u308f"
+     ],
+     [
+      "-",
+      "\u308c\u3070"
+     ],
+     [
+      "+",
+      "\u3063\u305f\u5834\u5408\u306f"
+     ],
+     [
+      "=",
+      "\u3001\u305d\u306e\u6642\u70b9\u3067"
+     ],
+     [
+      "+",
+      "\u30b5\u30fc\u30d3\u30b9\u3092"
+     ],
+     [
+      "=",
+      "\u5fa9\u65e7\u3057\u307e\u3059\u3002"
+     ]
+    ],
+    "segments_omitted": null
+   },
+   {
+    "index": 3,
+    "tag": "replace",
+    "old_start": 9,
+    "old_end": 12,
+    "new_start": 7,
+    "new_end": 7,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u25a0 \u5185\u5bb9",
+     "\u30fbPostgreSQL\u306e\u30de\u30a4\u30ca\u30fc\u30d0\u30fc\u30b8\u30e7\u30f3\u66f4\u65b0",
+     "\u30fb\u80a5\u5927\u5316\u3057\u305f\u30c6\u30fc\u30d6\u30eb\u306eVACUUM\u3068\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u518d\u69cb\u7bc9",
+     "\u30fb\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u304b\u3089\u306e\u30ea\u30b9\u30c8\u30a2\u78ba\u8a8d"
+    ],
+    "new_lines": [
+     "\u4f5c\u696d\u3067\u306f\u3001PostgreSQL\u306e\u30de\u30a4\u30ca\u30fc\u30d0\u30fc\u30b8\u30e7\u30f3\u3092\u66f4\u65b0\u3057\u3001\u80a5\u5927\u5316\u3057\u305f\u30c6\u30fc\u30d6\u30eb\u306bVACUUM\u3092\u5b9f\u884c\u3057\u3066\u30a4\u30f3\u30c7\u30c3\u30af\u30b9\u3092\u518d\u69cb\u7bc9\u3057\u307e\u3059\u3002\u3042\u308f\u305b\u3066\u3001\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u304b\u3089\u30ea\u30b9\u30c8\u30a2\u3067\u304d\u308b\u3053\u3068\u3092\u78ba\u8a8d\u3057\u307e\u3059\u3002"
+    ],
+    "segments": [
+     [
+      "-",
+      "\u25a0 \u5185\u5bb9\n\u30fb"
+     ],
+     [
+      "+",
+      "\u4f5c\u696d\u3067\u306f\u3001"
+     ],
+     [
+      "=",
+      "PostgreSQL\u306e\u30de\u30a4\u30ca\u30fc\u30d0\u30fc\u30b8\u30e7\u30f3"
+     ],
+     [
+      "+",
+      "\u3092"
+     ],
+     [
+      "=",
+      "\u66f4\u65b0"
+     ],
+     [
+      "-",
+      "\n\u30fb"
+     ],
+     [
+      "+",
+      "\u3057\u3001"
+     ],
+     [
+      "=",
+      "\u80a5\u5927\u5316\u3057\u305f\u30c6\u30fc\u30d6\u30eb"
+     ],
+     [
+      "-",
+      "\u306e"
+     ],
+     [
+      "+",
+      "\u306b"
+     ],
+     [
+      "=",
+      "VACUUM"
+     ],
+     [
+      "-",
+      "\u3068"
+     ],
+     [
+      "+",
+      "\u3092\u5b9f\u884c\u3057\u3066"
+     ],
+     [
+      "=",
+      "\u30a4\u30f3\u30c7\u30c3\u30af\u30b9"
+     ],
+     [
+      "+",
+      "\u3092"
+     ],
+     [
+      "=",
+      "\u518d\u69cb\u7bc9"
+     ],
+     [
+      "-",
+      "\n\u30fb"
+     ],
+     [
+      "+",
+      "\u3057\u307e\u3059\u3002\u3042\u308f\u305b\u3066\u3001"
+     ],
+     [
+      "=",
+      "\u30d0\u30c3\u30af\u30a2\u30c3\u30d7\u304b\u3089"
+     ],
+     [
+      "-",
+      "\u306e"
+     ],
+     [
+      "=",
+      "\u30ea\u30b9\u30c8\u30a2"
+     ],
+     [
+      "+",
+      "\u3067\u304d\u308b\u3053\u3068\u3092"
+     ],
+     [
+      "=",
+      "\u78ba\u8a8d"
+     ],
+     [
+      "+",
+      "\u3057\u307e\u3059\u3002"
+     ]
+    ],
+    "segments_omitted": null
+   },
+   {
+    "index": 4,
+    "tag": "replace",
+    "old_start": 14,
+    "old_end": 16,
+    "new_start": 9,
+    "new_end": 9,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u25a0 \u5f71\u97ff",
+     "\u30fb\u672c\u756a\u30b5\u30fc\u30d3\u30b9\u3001\u7ba1\u7406\u753b\u9762\u3001\u793e\u5185\u30c0\u30c3\u30b7\u30e5\u30dc\u30fc\u30c9\u304c\u505c\u6b62\u3057\u307e\u3059",
+     "\u30fb\u505c\u6b62\u4e2d\u306e\u30d0\u30c3\u30c1\u51e6\u7406\u306f\u5fa9\u65e7\u5f8c\u306b\u307e\u3068\u3081\u3066\u518d\u5b9f\u884c\u3057\u307e\u3059"
+    ],
+    "new_lines": [
+     "\u505c\u6b62\u3059\u308b\u306e\u306f\u3001\u672c\u756a\u30b5\u30fc\u30d3\u30b9\u3001\u7ba1\u7406\u753b\u9762\u3001\u793e\u5185\u30c0\u30c3\u30b7\u30e5\u30dc\u30fc\u30c9\u3067\u3059\u3002\u505c\u6b62\u4e2d\u306b\u5b9f\u884c\u3067\u304d\u306a\u304b\u3063\u305f\u30d0\u30c3\u30c1\u51e6\u7406\u306f\u3001\u5fa9\u65e7\u5f8c\u306b\u307e\u3068\u3081\u3066\u518d\u5b9f\u884c\u3057\u307e\u3059\u3002"
+    ],
+    "segments": [
+     [
+      "-",
+      "\u25a0 \u5f71\u97ff\n\u30fb"
+     ],
+     [
+      "+",
+      "\u505c\u6b62\u3059\u308b\u306e\u306f\u3001"
+     ],
+     [
+      "=",
+      "\u672c\u756a\u30b5\u30fc\u30d3\u30b9\u3001\u7ba1\u7406\u753b\u9762\u3001\u793e\u5185\u30c0\u30c3\u30b7\u30e5\u30dc\u30fc\u30c9"
+     ],
+     [
+      "-",
+      "\u304c\u505c\u6b62\u3057\u307e"
+     ],
+     [
+      "+",
+      "\u3067"
+     ],
+     [
+      "=",
+      "\u3059"
+     ],
+     [
+      "-",
+      "\n\u30fb"
+     ],
+     [
+      "+",
+      "\u3002"
+     ],
+     [
+      "=",
+      "\u505c\u6b62\u4e2d"
+     ],
+     [
+      "-",
+      "\u306e"
+     ],
+     [
+      "+",
+      "\u306b\u5b9f\u884c\u3067\u304d\u306a\u304b\u3063\u305f"
+     ],
+     [
+      "=",
+      "\u30d0\u30c3\u30c1\u51e6\u7406\u306f"
+     ],
+     [
+      "+",
+      "\u3001"
+     ],
+     [
+      "=",
+      "\u5fa9\u65e7\u5f8c\u306b\u307e\u3068\u3081\u3066\u518d\u5b9f\u884c\u3057\u307e\u3059"
+     ],
+     [
+      "+",
+      "\u3002"
+     ]
+    ],
+    "segments_omitted": null
+   },
+   {
+    "index": 5,
+    "tag": "replace",
+    "old_start": 18,
+    "old_end": 20,
+    "new_start": 11,
+    "new_end": 11,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u25a0 \u304a\u9858\u3044",
+     "\u30fb\u91d1\u66dc18\u6642\u307e\u3067\u306b\u3001\u9577\u6642\u9593\u304b\u304b\u308b\u624b\u52d5\u30af\u30a8\u30ea\u3084\u30a8\u30af\u30b9\u30dd\u30fc\u30c8\u3092\u7d42\u308f\u3089\u305b\u3066\u304f\u3060\u3055\u3044",
+     "\u30fb\u9867\u5ba2\u304b\u3089\u554f\u3044\u5408\u308f\u305b\u304c\u3042\u3063\u305f\u5834\u5408\u306f\u3001\u505c\u6b62\u6642\u9593\u3092\u6848\u5185\u3057\u3066\u304f\u3060\u3055\u3044"
+    ],
+    "new_lines": [
+     "\u91d1\u66dc18\u6642\u307e\u3067\u306b\u3001\u9577\u6642\u9593\u304b\u304b\u308b\u624b\u52d5\u30af\u30a8\u30ea\u3084\u30a8\u30af\u30b9\u30dd\u30fc\u30c8\u3092\u7d42\u308f\u3089\u305b\u3066\u304f\u3060\u3055\u3044\u3002\u9867\u5ba2\u304b\u3089\u554f\u3044\u5408\u308f\u305b\u304c\u3042\u3063\u305f\u5834\u5408\u306f\u3001\u505c\u6b62\u6642\u9593\u3092\u6848\u5185\u3057\u3066\u304f\u3060\u3055\u3044\u3002"
+    ],
+    "segments": [
+     [
+      "-",
+      "\u25a0 \u304a\u9858\u3044\n\u30fb"
+     ],
+     [
+      "=",
+      "\u91d1\u66dc18\u6642\u307e\u3067\u306b\u3001\u9577\u6642\u9593\u304b\u304b\u308b\u624b\u52d5\u30af\u30a8\u30ea\u3084\u30a8\u30af\u30b9\u30dd\u30fc\u30c8\u3092\u7d42\u308f\u3089\u305b\u3066\u304f\u3060\u3055\u3044"
+     ],
+     [
+      "-",
+      "\n\u30fb"
+     ],
+     [
+      "+",
+      "\u3002"
+     ],
+     [
+      "=",
+      "\u9867\u5ba2\u304b\u3089\u554f\u3044\u5408\u308f\u305b\u304c\u3042\u3063\u305f\u5834\u5408\u306f\u3001\u505c\u6b62\u6642\u9593\u3092\u6848\u5185\u3057\u3066\u304f\u3060\u3055\u3044"
+     ],
+     [
+      "+",
+      "\u3002"
+     ]
+    ],
+    "segments_omitted": null
+   },
+   {
+    "index": 6,
+    "tag": "replace",
+    "old_start": 22,
+    "old_end": 22,
+    "new_start": 13,
+    "new_end": 13,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u4f5c\u696d\u306e\u9032\u6357\u306f #infra-maintenance \u306b\u968f\u6642\u6295\u7a3f\u3057\u307e\u3059\u3002\u5fa9\u65e7\u5f8c\u306b\u52d5\u4f5c\u78ba\u8a8d\u3092\u304a\u9858\u3044\u3057\u307e\u3059\u3002\u6c17\u306b\u306a\u308b\u70b9\u304c\u3042\u308c\u3070\u3001\u79c1\u307e\u3067DM\u3092\u304f\u3060\u3055\u3044\u3002"
+    ],
+    "new_lines": [
+     "\u79c1\u304c\u4f5c\u696d\u306e\u9032\u6357\u3092 #infra-maintenance \u306b\u968f\u6642\u6295\u7a3f\u3057\u307e\u3059\u3002\u5fa9\u65e7\u5f8c\u306f\u3001\u5404\u81ea\u3067\u52d5\u4f5c\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u6c17\u306b\u306a\u308b\u70b9\u304c\u3042\u308c\u3070\u3001\u79c1\u307e\u3067DM\u3092\u304f\u3060\u3055\u3044\u3002"
+    ],
+    "segments": [
+     [
+      "+",
+      "\u79c1\u304c"
+     ],
+     [
+      "=",
+      "\u4f5c\u696d\u306e\u9032\u6357"
+     ],
+     [
+      "-",
+      "\u306f"
+     ],
+     [
+      "+",
+      "\u3092"
+     ],
+     [
+      "=",
+      " #infra-maintenance \u306b\u968f\u6642\u6295\u7a3f\u3057\u307e\u3059\u3002\u5fa9\u65e7\u5f8c"
+     ],
+     [
+      "-",
+      "\u306b"
+     ],
+     [
+      "+",
+      "\u306f\u3001\u5404\u81ea\u3067"
+     ],
+     [
+      "=",
+      "\u52d5\u4f5c"
+     ],
+     [
+      "+",
+      "\u3092"
+     ],
+     [
+      "=",
+      "\u78ba\u8a8d"
+     ],
+     [
+      "-",
+      "\u3092\u304a\u9858"
+     ],
+     [
+      "+",
+      "\u3057\u3066\u304f\u3060\u3055"
+     ],
+     [
+      "=",
+      "\u3044"
+     ],
+     [
+      "-",
+      "\u3057\u307e\u3059"
+     ],
+     [
+      "=",
+      "\u3002\u6c17\u306b\u306a\u308b\u70b9\u304c\u3042\u308c\u3070\u3001\u79c1\u307e\u3067DM\u3092\u304f\u3060\u3055\u3044\u3002"
+     ]
+    ],
+    "segments_omitted": null
+   }
+  ]
+ },
+ "stiffness": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "metrics": {
+   "old": {
+    "sentences": 19,
+    "chars": 393,
+    "avg_sentence_length": 20.68,
+    "kanji_ratio": 31.89,
+    "kanji": 118,
+    "nominalizations": 2,
+    "nominalization_names": {
+     "\u3092\u5b9f\u65bd": 1,
+     "\u3092\u884c\u3046": 1
+    },
+    "no_chains": 0
+   },
+   "new": {
+    "sentences": 14,
+    "chars": 443,
+    "avg_sentence_length": 31.64,
+    "kanji_ratio": 29.02,
+    "kanji": 121,
+    "nominalizations": 2,
+    "nominalization_names": {
+     "\u3092\u5b9f\u65bd": 1,
+     "\u3092\u884c\u3046": 1
+    },
+    "no_chains": 0
+   }
+  },
+  "list": "references/lists/nominalization.txt",
+  "list_problem": null
+ },
+ "tone": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "counts": {
+   "old": {
+    "exclamation": 0,
+    "question": 0,
+    "emoji": 0,
+    "intensifier": 0,
+    "heading_chars": 0
+   },
+   "new": {
+    "exclamation": 0,
+    "question": 0,
+    "emoji": 0,
+    "intensifier": 0,
+    "heading_chars": 0
+   }
+  },
+  "list": "references/lists/intensifiers.txt",
+  "list_problem": null
+ },
+ "feeling": {
+  "list": "references/lists/feelings.txt",
+  "list_problem": null
+ },
+ "hedges": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "list": "references/lists/hedges.txt",
+  "list_problem": null
+ },
+ "immutable": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "meaning_risk_count": 0
+ },
+ "politeness": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "applicable": false,
+  "threshold": 0.2,
+  "metrics": null
+ },
+ "register": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "threshold": {
+   "min_sentences": 3,
+   "min_ratio": 0.5
+  },
+  "skipped_by": null
  }
 }
