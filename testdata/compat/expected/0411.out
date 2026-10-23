@@ -1,21 +1,31 @@
 {
-  "score": 95,
-  "is_clean": false,
+  "format": "yomiyasu-lint",
+  "format_version": 2,
+  "tool_version": "2.2.0",
+  "candidate_count": 0,
+  "counts": {
+    "error": 0,
+    "warn": 0,
+    "info": 0
+  },
+  "no_rule_findings": true,
+  "rule_penalty_score": 100,
+  "not_judged": [
+    "meaning_preservation",
+    "reader_comprehension"
+  ],
+  "context": {
+    "doc_type": null,
+    "reader": null,
+    "skipped_by_doc_type": {}
+  },
   "metrics": {
-    "char_count": 465,
-    "total_lines": 5,
+    "char_count": 429,
+    "total_lines": 4,
     "list_lines": 0,
     "list_ratio": 0.0,
     "bold_count": 0,
     "bold_per_1000": 0.0
   },
-  "findings": [
-    {
-      "rule": "sentence_end_repetition",
-      "line": 3,
-      "severity": "warn",
-      "message": "同一文末「ます」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
-      "snippet": "第一に、ビジネスルールの検証にDBと外部APIの両方が必要になるため、単体テストでモックの準備が煩雑になります。"
-    }
-  ]
+  "findings": []
 }
