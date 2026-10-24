@@ -1,10 +1,755 @@
-■ 言い回しの種類の増減（意味が変わりやすいところ）
-- 可能: 0 → 1（元: なし／後: できない）
-- 条件: 2 → 1（元: れば、場合／後: れば）
-- つなぎ: 2 → 0（元: ただし、最後に／後: なし）
-■ 元の文にない語: アウトボックステーブル、アプリケーション、スケールアウト、仕組、保存、採用、用意、設計段階、配信方式、開発者
-■ 消えた語: セマンティクス、一回配信、一意、事態、処理不能、同一、基本、場合、担保、整備、整合性、明示的、最後、永続化、波及、滞留数、第一、第三、第二、結合、退避、適用
-■ 文の数が変わった（9 → 10）
-■ つながりを確かめる場所（書き直した文。何と何をつないでいるか言えるか）
-- 文頭の指示語: この利点を得るには、開発者が配信保証とエラー処理を設計段階で決めておく必要がある。
-- 文頭の指示語: こうすると、処理できないメッセージが後続のメッセージの処理を止めることはない。
+{
+ "format": "yomiyasu-diff",
+ "format_version": 2,
+ "tool_version": "2.3.0",
+ "status": "has_candidates",
+ "changed": true,
+ "candidate_count": 4,
+ "meaning_risk_count": 0,
+ "fail_on_meaning_risk_count": 0,
+ "not_judged": [
+  "meaning_equivalence",
+  "reader_comprehension"
+ ],
+ "context": {
+  "doc_type": null,
+  "reader": null
+ },
+ "meaning_risks": [],
+ "markers": [
+  {
+   "kind": "\u53ef\u80fd",
+   "orig": 1,
+   "rewrite": 2,
+   "orig_hits": [
+    "\u3081\u308b"
+   ],
+   "rewrite_hits": [
+    "\u3081\u308b",
+    "\u3067\u304d\u306a\u3044"
+   ]
+  }
+ ],
+ "new_words": [
+  "\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3",
+  "\u505c\u6b62",
+  "\u5148\u982d",
+  "\u53d7\u4fe1\u5074",
+  "\u7834\u68c4",
+  "\u78ba\u8a8d",
+  "\u7a3c\u50cd\u72b6\u6cc1"
+ ],
+ "lost_words": [
+  "\u751f\u6b7b",
+  "\u76f8\u624b",
+  "\u9000\u907f"
+ ],
+ "structure": [],
+ "spans": [
+  {
+   "added": "\u505c\u6b62\u3057",
+   "was": "\u843d\u3061",
+   "kinds": [],
+   "new_words": [
+    "\u505c\u6b62"
+   ],
+   "where": "TTP\u3067\u3064\u306a\u3050\u3068\u3001\u4e0b\u6d41\u30b5\u30fc\u30d3\u30b9\u304c\u4e00\u3064\uff3b\u505c\u6b62\u3057\uff3d\u305f\u3060\u3051\u3067\u3001\u4e0a\u6d41\u306e\u30b5\u30fc\u30d3\u30b9\u307e\u3067\u30bf\u30a4\u30e0\u30a2"
+  },
+  {
+   "added": "\u53d7\u4fe1\u5074",
+   "was": "\u76f8\u624b",
+   "kinds": [],
+   "new_words": [
+    "\u53d7\u4fe1\u5074"
+   ],
+   "where": "\u3048\u305f\u3002\n\n\u30ad\u30e5\u30fc\u3092\u5165\u308c\u308b\u3068\u3001\u9001\u4fe1\u5074\u306f\uff3b\u53d7\u4fe1\u5074\uff3d\u306e\u7a3c\u50cd\u72b6\u6cc1\u3092\u78ba\u8a8d\u305b\u305a\u306b\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u7f6e"
+  },
+  {
+   "added": "\u7a3c\u50cd\u72b6\u6cc1",
+   "was": "\u751f\u6b7b",
+   "kinds": [],
+   "new_words": [
+    "\u7a3c\u50cd\u72b6\u6cc1"
+   ],
+   "where": "\n\u30ad\u30e5\u30fc\u3092\u5165\u308c\u308b\u3068\u3001\u9001\u4fe1\u5074\u306f\u53d7\u4fe1\u5074\u306e\uff3b\u7a3c\u50cd\u72b6\u6cc1\uff3d\u3092\u78ba\u8a8d\u305b\u305a\u306b\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u7f6e\u3044\u3066\u6b21\u306e\u51e6"
+  },
+  {
+   "added": "\u78ba\u8a8d",
+   "was": "\u6c17\u306b",
+   "kinds": [],
+   "new_words": [
+    "\u78ba\u8a8d"
+   ],
+   "where": "\u5165\u308c\u308b\u3068\u3001\u9001\u4fe1\u5074\u306f\u53d7\u4fe1\u5074\u306e\u7a3c\u50cd\u72b6\u6cc1\u3092\uff3b\u78ba\u8a8d\uff3d\u305b\u305a\u306b\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u7f6e\u3044\u3066\u6b21\u306e\u51e6\u7406\u3078\u9032"
+  },
+  {
+   "added": "\u6b21\u306e\u51e6\u7406\u3078",
+   "was": "\u5148\u306b",
+   "kinds": [
+    "\u53ef\u80fd"
+   ],
+   "new_words": [],
+   "where": "\u50cd\u72b6\u6cc1\u3092\u78ba\u8a8d\u305b\u305a\u306b\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u7f6e\u3044\u3066\uff3b\u6b21\u306e\u51e6\u7406\u3078\uff3d\u9032\u3081\u308b\u3002\u305f\u3060\u3057\u30ad\u30e5\u30fc\u3092\u7f6e\u304f\u3060\u3051\u3067\u306f\u8010"
+  },
+  {
+   "added": "\u30ad\u30e5\u30fc\u3092\u7f6e\u304f",
+   "was": "\u3001\u305d\u308c",
+   "kinds": [
+    "\u3064\u306a\u304e"
+   ],
+   "new_words": [],
+   "where": "\u30fc\u30b8\u3092\u7f6e\u3044\u3066\u6b21\u306e\u51e6\u7406\u3078\u9032\u3081\u308b\u3002\u305f\u3060\u3057\uff3b\u30ad\u30e5\u30fc\u3092\u7f6e\u304f\uff3d\u3060\u3051\u3067\u306f\u8010\u969c\u5bb3\u6027\u306f\u4e0a\u304c\u3089\u306a\u3044\u3002\u62bc\u3055\u3048"
+  },
+  {
+   "added": "\u7834\u68c4\u3059",
+   "was": "\u6368\u3066",
+   "kinds": [],
+   "new_words": [
+    "\u7834\u68c4"
+   ],
+   "where": "\u30b8ID\u3092\u8a18\u9332\u3057\u3001\u91cd\u8907\u3057\u305f\u30e1\u30c3\u30bb\u30fc\u30b8\u306f\uff3b\u7834\u68c4\u3059\uff3d\u308b\u3002\n\n\u4e8c\u3064\u76ee\u306f\u30ea\u30c8\u30e9\u30a4\u3068DLQ\u3060\u3002"
+  },
+  {
+   "added": "\u3053\u3046\u3059\u308c\u3070\u3001\u51e6\u7406\u3067\u304d\u306a\u3044",
+   "was": "",
+   "kinds": [
+    "\u53ef\u80fd",
+    "\u6761\u4ef6"
+   ],
+   "new_words": [],
+   "where": "d Letter Queue\u3078\u79fb\u3059\u3002\uff3b\u3053\u3046\u3059\u308c\u3070\u3001\u51e6\u7406\u3067\u304d\u306a\u3044\uff3d\u6bd2\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\u5148\u982d\u306b\u6b8b\u3063\u3066\u30ad\u30e5\u30fc\u304c\u9032"
+  },
+  {
+   "added": "\u5148\u982d\u306b\u6b8b\u3063\u3066",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u5148\u982d"
+   ],
+   "where": "\u3046\u3059\u308c\u3070\u3001\u51e6\u7406\u3067\u304d\u306a\u3044\u6bd2\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\uff3b\u5148\u982d\u306b\u6b8b\u3063\u3066\uff3d\u30ad\u30e5\u30fc\u304c\u9032\u307e\u306a\u304f\u306a\u308b\u4e8b\u6545\u3092\u9632\u3052\u308b\u3002\n"
+  },
+  {
+   "added": "\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u306f",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3"
+   ],
+   "where": "\n\n\u4e09\u3064\u76ee\u306fOutbox\u30d1\u30bf\u30fc\u30f3\u3060\u3002\uff3b\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u306f\uff3dDB\u66f4\u65b0\u3068\u30e1\u30c3\u30bb\u30fc\u30b8\u9001\u4fe1\u3092\u540c\u3058\u30c8\u30e9\u30f3"
+  }
+ ],
+ "logic": [
+  {
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u305f\u3060\u3057\u30ad\u30e5\u30fc\u3092\u7f6e\u304f\u3060\u3051\u3067\u306f\u8010\u969c\u5bb3\u6027\u306f\u4e0a\u304c\u3089\u306a\u3044\u3002"
+  }
+ ],
+ "bold": [],
+ "endings": {
+  "stance": "\u6c7a\u307e\u308a",
+  "changes": [],
+  "flags": [],
+  "orig_flags": []
+ },
+ "type_changes": [],
+ "full_diff": {
+  "encoding_notes": [],
+  "final_newline": {
+   "old": false,
+   "new": false
+  },
+  "limits_applied": [],
+  "hunks": [
+   {
+    "index": 1,
+    "tag": "replace",
+    "old_start": 1,
+    "old_end": 1,
+    "new_start": 1,
+    "new_end": 1,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u30de\u30a4\u30af\u30ed\u30b5\u30fc\u30d3\u30b9\u9593\u3092\u540c\u671fHTTP\u3067\u3064\u306a\u3050\u3068\u3001\u4e0b\u6d41\u304c\u4e00\u3064\u843d\u3061\u305f\u3060\u3051\u3067\u4e0a\u6d41\u307e\u3067\u30bf\u30a4\u30e0\u30a2\u30a6\u30c8\u304c\u9023\u9396\u3059\u308b\u3002\u3046\u3061\u306e\u30c1\u30fc\u30e0\u306f\u3053\u308c\u3067\u4f55\u5ea6\u304b\u591c\u4e2d\u306b\u8d77\u3053\u3055\u308c\u305f\u306e\u3067\u3001\u975e\u540c\u671f\u30e1\u30c3\u30bb\u30fc\u30b8\u30f3\u30b0\u30ad\u30e5\u30fc\u3092\u631f\u3080\u69cb\u6210\u306b\u5207\u308a\u66ff\u3048\u305f\u3002"
+    ],
+    "new_lines": [
+     "\u30de\u30a4\u30af\u30ed\u30b5\u30fc\u30d3\u30b9\u9593\u3092\u540c\u671fHTTP\u3067\u3064\u306a\u3050\u3068\u3001\u4e0b\u6d41\u30b5\u30fc\u30d3\u30b9\u304c\u4e00\u3064\u505c\u6b62\u3057\u305f\u3060\u3051\u3067\u3001\u4e0a\u6d41\u306e\u30b5\u30fc\u30d3\u30b9\u307e\u3067\u30bf\u30a4\u30e0\u30a2\u30a6\u30c8\u304c\u9023\u9396\u3059\u308b\u3002\u3046\u3061\u306e\u30c1\u30fc\u30e0\u306f\u3053\u308c\u3067\u4f55\u5ea6\u304b\u591c\u4e2d\u306b\u547c\u3073\u51fa\u3055\u308c\u305f\u306e\u3067\u3001\u975e\u540c\u671f\u30e1\u30c3\u30bb\u30fc\u30b8\u30f3\u30b0\u30ad\u30e5\u30fc\u3092\u631f\u3080\u69cb\u6210\u306b\u5207\u308a\u66ff\u3048\u305f\u3002"
+    ],
+    "segments": [
+     [
+      "=",
+      "\u30de\u30a4\u30af\u30ed\u30b5\u30fc\u30d3\u30b9\u9593\u3092\u540c\u671fHTTP\u3067\u3064\u306a\u3050\u3068\u3001\u4e0b\u6d41"
+     ],
+     [
+      "+",
+      "\u30b5\u30fc\u30d3\u30b9"
+     ],
+     [
+      "=",
+      "\u304c\u4e00\u3064"
+     ],
+     [
+      "-",
+      "\u843d\u3061"
+     ],
+     [
+      "+",
+      "\u505c\u6b62\u3057"
+     ],
+     [
+      "=",
+      "\u305f\u3060\u3051\u3067"
+     ],
+     [
+      "+",
+      "\u3001"
+     ],
+     [
+      "=",
+      "\u4e0a\u6d41"
+     ],
+     [
+      "+",
+      "\u306e\u30b5\u30fc\u30d3\u30b9"
+     ],
+     [
+      "=",
+      "\u307e\u3067\u30bf\u30a4\u30e0\u30a2\u30a6\u30c8\u304c\u9023\u9396\u3059\u308b\u3002\u3046\u3061\u306e\u30c1\u30fc\u30e0\u306f\u3053\u308c\u3067\u4f55\u5ea6\u304b\u591c\u4e2d\u306b"
+     ],
+     [
+      "-",
+      "\u8d77\u3053"
+     ],
+     [
+      "+",
+      "\u547c\u3073\u51fa"
+     ],
+     [
+      "=",
+      "\u3055\u308c\u305f\u306e\u3067\u3001\u975e\u540c\u671f\u30e1\u30c3\u30bb\u30fc\u30b8\u30f3\u30b0\u30ad\u30e5\u30fc\u3092\u631f\u3080\u69cb\u6210\u306b\u5207\u308a\u66ff\u3048\u305f\u3002"
+     ]
+    ],
+    "segments_omitted": null
+   },
+   {
+    "index": 2,
+    "tag": "replace",
+    "old_start": 3,
+    "old_end": 3,
+    "new_start": 3,
+    "new_end": 3,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u30ad\u30e5\u30fc\u3092\u5165\u308c\u308b\u3068\u3001\u9001\u4fe1\u5074\u306f\u76f8\u624b\u306e\u751f\u6b7b\u3092\u6c17\u306b\u305b\u305a\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u7f6e\u3044\u3066\u5148\u306b\u9032\u3081\u308b\u3002\u305f\u3060\u3057\u3001\u305d\u308c\u3060\u3051\u3067\u306f\u8010\u969c\u5bb3\u6027\u306f\u4e0a\u304c\u3089\u306a\u3044\u3002\u62bc\u3055\u3048\u3066\u304a\u304f\u3079\u304d\u70b9\u306f\u4e09\u3064\u3042\u308b\u3002"
+    ],
+    "new_lines": [
+     "\u30ad\u30e5\u30fc\u3092\u5165\u308c\u308b\u3068\u3001\u9001\u4fe1\u5074\u306f\u53d7\u4fe1\u5074\u306e\u7a3c\u50cd\u72b6\u6cc1\u3092\u78ba\u8a8d\u305b\u305a\u306b\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u7f6e\u3044\u3066\u6b21\u306e\u51e6\u7406\u3078\u9032\u3081\u308b\u3002\u305f\u3060\u3057\u30ad\u30e5\u30fc\u3092\u7f6e\u304f\u3060\u3051\u3067\u306f\u8010\u969c\u5bb3\u6027\u306f\u4e0a\u304c\u3089\u306a\u3044\u3002\u62bc\u3055\u3048\u3066\u304a\u304f\u3079\u304d\u70b9\u306f\u4e09\u3064\u3042\u308b\u3002"
+    ],
+    "segments": [
+     [
+      "=",
+      "\u30ad\u30e5\u30fc\u3092\u5165\u308c\u308b\u3068\u3001\u9001\u4fe1\u5074\u306f"
+     ],
+     [
+      "-",
+      "\u76f8\u624b"
+     ],
+     [
+      "+",
+      "\u53d7\u4fe1\u5074"
+     ],
+     [
+      "=",
+      "\u306e"
+     ],
+     [
+      "-",
+      "\u751f\u6b7b"
+     ],
+     [
+      "+",
+      "\u7a3c\u50cd\u72b6\u6cc1"
+     ],
+     [
+      "=",
+      "\u3092"
+     ],
+     [
+      "-",
+      "\u6c17\u306b"
+     ],
+     [
+      "+",
+      "\u78ba\u8a8d"
+     ],
+     [
+      "=",
+      "\u305b\u305a"
+     ],
+     [
+      "+",
+      "\u306b"
+     ],
+     [
+      "=",
+      "\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u7f6e\u3044\u3066"
+     ],
+     [
+      "-",
+      "\u5148\u306b"
+     ],
+     [
+      "+",
+      "\u6b21\u306e\u51e6\u7406\u3078"
+     ],
+     [
+      "=",
+      "\u9032\u3081\u308b\u3002\u305f\u3060\u3057"
+     ],
+     [
+      "-",
+      "\u3001\u305d\u308c"
+     ],
+     [
+      "+",
+      "\u30ad\u30e5\u30fc\u3092\u7f6e\u304f"
+     ],
+     [
+      "=",
+      "\u3060\u3051\u3067\u306f\u8010\u969c\u5bb3\u6027\u306f\u4e0a\u304c\u3089\u306a\u3044\u3002\u62bc\u3055\u3048\u3066\u304a\u304f\u3079\u304d\u70b9\u306f\u4e09\u3064\u3042\u308b\u3002"
+     ]
+    ],
+    "segments_omitted": null
+   },
+   {
+    "index": 3,
+    "tag": "replace",
+    "old_start": 5,
+    "old_end": 5,
+    "new_start": 5,
+    "new_end": 5,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u4e00\u3064\u76ee\u306f\u51aa\u7b49\u6027\u3060\u3002\u591a\u304f\u306e\u30d6\u30ed\u30fc\u30ab\u30fc\u306f at-least-once \u914d\u4fe1\u306a\u306e\u3067\u3001\u540c\u3058\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\u4e8c\u5ea6\u5c4a\u304f\u524d\u63d0\u3067\u6d88\u8cbb\u5074\u3092\u66f8\u304f\u3002\u30e1\u30c3\u30bb\u30fc\u30b8ID\u3092\u51e6\u7406\u6e08\u307f\u30c6\u30fc\u30d6\u30eb\u306b\u8a18\u9332\u3057\u3001\u91cd\u8907\u306f\u6368\u3066\u308b\u3002"
+    ],
+    "new_lines": [
+     "\u4e00\u3064\u76ee\u306f\u51aa\u7b49\u6027\u3060\u3002\u591a\u304f\u306e\u30d6\u30ed\u30fc\u30ab\u30fc\u306fat-least-once\u914d\u4fe1\u306a\u306e\u3067\u3001\u540c\u3058\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\u4e8c\u5ea6\u5c4a\u304f\u524d\u63d0\u3067\u6d88\u8cbb\u5074\u3092\u66f8\u304f\u3002\u51e6\u7406\u6e08\u307f\u30c6\u30fc\u30d6\u30eb\u306b\u30e1\u30c3\u30bb\u30fc\u30b8ID\u3092\u8a18\u9332\u3057\u3001\u91cd\u8907\u3057\u305f\u30e1\u30c3\u30bb\u30fc\u30b8\u306f\u7834\u68c4\u3059\u308b\u3002"
+    ],
+    "segments": [
+     [
+      "=",
+      "\u4e00\u3064\u76ee\u306f\u51aa\u7b49\u6027\u3060\u3002\u591a\u304f\u306e\u30d6\u30ed\u30fc\u30ab\u30fc\u306f"
+     ],
+     [
+      "-",
+      " "
+     ],
+     [
+      "=",
+      "at-least-once"
+     ],
+     [
+      "-",
+      " "
+     ],
+     [
+      "=",
+      "\u914d\u4fe1\u306a\u306e\u3067\u3001\u540c\u3058\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\u4e8c\u5ea6\u5c4a\u304f\u524d\u63d0\u3067\u6d88\u8cbb\u5074\u3092\u66f8\u304f\u3002"
+     ],
+     [
+      "-",
+      "\u30e1\u30c3\u30bb\u30fc\u30b8ID\u3092"
+     ],
+     [
+      "=",
+      "\u51e6\u7406\u6e08\u307f\u30c6\u30fc\u30d6\u30eb\u306b"
+     ],
+     [
+      "+",
+      "\u30e1\u30c3\u30bb\u30fc\u30b8ID\u3092"
+     ],
+     [
+      "=",
+      "\u8a18\u9332\u3057\u3001\u91cd\u8907"
+     ],
+     [
+      "+",
+      "\u3057\u305f\u30e1\u30c3\u30bb\u30fc\u30b8"
+     ],
+     [
+      "=",
+      "\u306f"
+     ],
+     [
+      "-",
+      "\u6368\u3066"
+     ],
+     [
+      "+",
+      "\u7834\u68c4\u3059"
+     ],
+     [
+      "=",
+      "\u308b\u3002"
+     ]
+    ],
+    "segments_omitted": null
+   },
+   {
+    "index": 4,
+    "tag": "replace",
+    "old_start": 7,
+    "old_end": 7,
+    "new_start": 7,
+    "new_end": 7,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u4e8c\u3064\u76ee\u306f\u30ea\u30c8\u30e9\u30a4\u3068DLQ\u3060\u3002\u5931\u6557\u3057\u305f\u3089\u6307\u6570\u30d0\u30c3\u30af\u30aa\u30d5\u3067\u6570\u56de\u518d\u8a66\u884c\u3057\u3001\u305d\u308c\u3067\u3082\u3060\u3081\u306a\u3089 Dead Letter Queue \u306b\u9000\u907f\u3059\u308b\u3002\u6bd2\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\u30ad\u30e5\u30fc\u3092\u8a70\u307e\u3089\u305b\u308b\u4e8b\u6545\u306f\u3001\u3053\u308c\u3067\u9632\u3052\u308b\u3002"
+    ],
+    "new_lines": [
+     "\u4e8c\u3064\u76ee\u306f\u30ea\u30c8\u30e9\u30a4\u3068DLQ\u3060\u3002\u51e6\u7406\u306b\u5931\u6557\u3057\u305f\u3089\u6307\u6570\u30d0\u30c3\u30af\u30aa\u30d5\u3067\u6570\u56de\u518d\u8a66\u884c\u3057\u3001\u305d\u308c\u3067\u3082\u5931\u6557\u3057\u305f\u3089Dead Letter Queue\u3078\u79fb\u3059\u3002\u3053\u3046\u3059\u308c\u3070\u3001\u51e6\u7406\u3067\u304d\u306a\u3044\u6bd2\u30e1\u30c3\u30bb\u30fc\u30b8\u304c\u5148\u982d\u306b\u6b8b\u3063\u3066\u30ad\u30e5\u30fc\u304c\u9032\u307e\u306a\u304f\u306a\u308b\u4e8b\u6545\u3092\u9632\u3052\u308b\u3002"
+    ],
+    "segments": [
+     [
+      "=",
+      "\u4e8c\u3064\u76ee\u306f\u30ea\u30c8\u30e9\u30a4\u3068DLQ\u3060\u3002"
+     ],
+     [
+      "+",
+      "\u51e6\u7406\u306b"
+     ],
+     [
+      "=",
+      "\u5931\u6557\u3057\u305f\u3089\u6307\u6570\u30d0\u30c3\u30af\u30aa\u30d5\u3067\u6570\u56de\u518d\u8a66\u884c\u3057\u3001\u305d\u308c\u3067\u3082"
+     ],
+     [
+      "-",
+      "\u3060\u3081\u306a"
+     ],
+     [
+      "+",
+      "\u5931\u6557\u3057\u305f"
+     ],
+     [
+      "=",
+      "\u3089"
+     ],
+     [
+      "-",
+      " "
+     ],
+     [
+      "=",
+      "Dead Letter Queue"
+     ],
+     [
+      "-",
+      " \u306b\u9000\u907f"
+     ],
+     [
+      "+",
+      "\u3078\u79fb"
+     ],
+     [
+      "=",
+      "\u3059"
+     ],
+     [
+      "-",
+      "\u308b"
+     ],
+     [
+      "=",
+      "\u3002"
+     ],
+     [
+      "+",
+      "\u3053\u3046\u3059\u308c\u3070\u3001\u51e6\u7406\u3067\u304d\u306a\u3044"
+     ],
+     [
+      "=",
+      "\u6bd2\u30e1\u30c3\u30bb\u30fc\u30b8\u304c"
+     ],
+     [
+      "+",
+      "\u5148\u982d\u306b\u6b8b\u3063\u3066"
+     ],
+     [
+      "=",
+      "\u30ad\u30e5\u30fc"
+     ],
+     [
+      "-",
+      "\u3092\u8a70"
+     ],
+     [
+      "+",
+      "\u304c\u9032"
+     ],
+     [
+      "=",
+      "\u307e"
+     ],
+     [
+      "-",
+      "\u3089\u305b"
+     ],
+     [
+      "+",
+      "\u306a\u304f\u306a"
+     ],
+     [
+      "=",
+      "\u308b\u4e8b\u6545"
+     ],
+     [
+      "-",
+      "\u306f\u3001\u3053\u308c\u3067"
+     ],
+     [
+      "+",
+      "\u3092"
+     ],
+     [
+      "=",
+      "\u9632\u3052\u308b\u3002"
+     ]
+    ],
+    "segments_omitted": null
+   },
+   {
+    "index": 5,
+    "tag": "replace",
+    "old_start": 9,
+    "old_end": 9,
+    "new_start": 9,
+    "new_end": 9,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u4e09\u3064\u76ee\u306f Outbox \u30d1\u30bf\u30fc\u30f3\u3060\u3002DB\u66f4\u65b0\u3068\u30e1\u30c3\u30bb\u30fc\u30b8\u9001\u4fe1\u3092\u540c\u3058\u30c8\u30e9\u30f3\u30b6\u30af\u30b7\u30e7\u30f3\u3067 Outbox \u30c6\u30fc\u30d6\u30eb\u306b\u66f8\u304d\u3001\u5225\u30d7\u30ed\u30bb\u30b9\u304c\u30ad\u30e5\u30fc\u3078\u8ee2\u9001\u3059\u308b\u3002\u3053\u308c\u3067DB\u3060\u3051\u66f4\u65b0\u3055\u308c\u3066\u901a\u77e5\u304c\u6d88\u3048\u308b\u4e0d\u6574\u5408\u304c\u306a\u304f\u306a\u308b\u3002"
+    ],
+    "new_lines": [
+     "\u4e09\u3064\u76ee\u306fOutbox\u30d1\u30bf\u30fc\u30f3\u3060\u3002\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u306fDB\u66f4\u65b0\u3068\u30e1\u30c3\u30bb\u30fc\u30b8\u9001\u4fe1\u3092\u540c\u3058\u30c8\u30e9\u30f3\u30b6\u30af\u30b7\u30e7\u30f3\u3067Outbox\u30c6\u30fc\u30d6\u30eb\u306b\u66f8\u304d\u3001\u5225\u30d7\u30ed\u30bb\u30b9\u304c\u305d\u308c\u3092\u30ad\u30e5\u30fc\u3078\u8ee2\u9001\u3059\u308b\u3002DB\u3060\u3051\u66f4\u65b0\u3055\u308c\u3066\u901a\u77e5\u304c\u9001\u3089\u308c\u306a\u3044\u4e0d\u6574\u5408\u306f\u3001\u3053\u308c\u3067\u8d77\u304d\u306a\u304f\u306a\u308b\u3002"
+    ],
+    "segments": [
+     [
+      "=",
+      "\u4e09\u3064\u76ee\u306f"
+     ],
+     [
+      "-",
+      " "
+     ],
+     [
+      "=",
+      "Outbox"
+     ],
+     [
+      "-",
+      " "
+     ],
+     [
+      "=",
+      "\u30d1\u30bf\u30fc\u30f3\u3060\u3002"
+     ],
+     [
+      "+",
+      "\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u306f"
+     ],
+     [
+      "=",
+      "DB\u66f4\u65b0\u3068\u30e1\u30c3\u30bb\u30fc\u30b8\u9001\u4fe1\u3092\u540c\u3058\u30c8\u30e9\u30f3\u30b6\u30af\u30b7\u30e7\u30f3\u3067"
+     ],
+     [
+      "-",
+      " "
+     ],
+     [
+      "=",
+      "Outbox"
+     ],
+     [
+      "-",
+      " "
+     ],
+     [
+      "=",
+      "\u30c6\u30fc\u30d6\u30eb\u306b\u66f8\u304d\u3001\u5225\u30d7\u30ed\u30bb\u30b9\u304c"
+     ],
+     [
+      "+",
+      "\u305d\u308c\u3092"
+     ],
+     [
+      "=",
+      "\u30ad\u30e5\u30fc\u3078\u8ee2\u9001\u3059\u308b\u3002"
+     ],
+     [
+      "-",
+      "\u3053\u308c\u3067"
+     ],
+     [
+      "=",
+      "DB\u3060\u3051\u66f4\u65b0\u3055\u308c\u3066\u901a\u77e5\u304c"
+     ],
+     [
+      "-",
+      "\u6d88\u3048\u308b"
+     ],
+     [
+      "+",
+      "\u9001\u3089\u308c\u306a\u3044"
+     ],
+     [
+      "=",
+      "\u4e0d\u6574\u5408"
+     ],
+     [
+      "-",
+      "\u304c"
+     ],
+     [
+      "+",
+      "\u306f\u3001\u3053\u308c\u3067\u8d77\u304d"
+     ],
+     [
+      "=",
+      "\u306a\u304f\u306a\u308b\u3002"
+     ]
+    ],
+    "segments_omitted": null
+   }
+  ]
+ },
+ "stiffness": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "metrics": {
+   "old": {
+    "sentences": 16,
+    "chars": 494,
+    "avg_sentence_length": 30.88,
+    "kanji_ratio": 26.71,
+    "kanji": 125,
+    "nominalizations": 0,
+    "nominalization_names": {},
+    "no_chains": 0
+   },
+   "new": {
+    "sentences": 16,
+    "chars": 558,
+    "avg_sentence_length": 34.88,
+    "kanji_ratio": 27.12,
+    "kanji": 144,
+    "nominalizations": 0,
+    "nominalization_names": {},
+    "no_chains": 0
+   }
+  },
+  "list": "references/lists/nominalization.txt",
+  "list_problem": null
+ },
+ "tone": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "counts": {
+   "old": {
+    "exclamation": 0,
+    "question": 0,
+    "emoji": 0,
+    "intensifier": 0,
+    "heading_chars": 0
+   },
+   "new": {
+    "exclamation": 0,
+    "question": 0,
+    "emoji": 0,
+    "intensifier": 0,
+    "heading_chars": 0
+   }
+  },
+  "list": "references/lists/intensifiers.txt",
+  "list_problem": null
+ },
+ "feeling": {
+  "list": "references/lists/feelings.txt",
+  "list_problem": null
+ },
+ "hedges": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "list": "references/lists/hedges.txt",
+  "list_problem": null
+ },
+ "immutable": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "meaning_risk_count": 0
+ },
+ "politeness": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "applicable": false,
+  "threshold": 0.2,
+  "metrics": null
+ },
+ "register": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "threshold": {
+   "min_sentences": 3,
+   "min_ratio": 0.5
+  },
+  "skipped_by": null
+ }
+}
