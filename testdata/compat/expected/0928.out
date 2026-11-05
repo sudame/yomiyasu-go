@@ -1,132 +1,808 @@
 {
+ "format": "yomiyasu-diff",
+ "format_version": 2,
+ "tool_version": "2.5.0",
+ "status": "has_candidates",
+ "changed": true,
+ "candidate_count": 8,
+ "meaning_risk_count": 2,
+ "fail_on_meaning_risk_count": 2,
+ "not_judged": [
+  "meaning_equivalence",
+  "reader_comprehension"
+ ],
+ "context": {
+  "doc_type": null,
+  "reader": null
+ },
+ "meaning_risks": [
+  {
+   "kind": "number",
+   "subkind": "replaced",
+   "old_line": 5,
+   "new_line": 5,
+   "old": "\u4e00\u89a7\u753b\u9762\u30673\u301c4\u672c\u306e\u30ea\u30af\u30a8\u30b9\u30c8\u3092\u76f4\u5217\u306b\u547c\u3093\u3067\u3044\u3066\u3001\u753b\u9762\u3054\u3068\u306b\u6b32\u3057\u3044\u9805\u76ee\u3082\u9055\u3046\u304b\u3089\u3060\u3002",
+   "new": "\u4e00\u89a7\u753b\u9762\u304cAPI\u30923\u301c4\u56de\u76f4\u5217\u306b\u547c\u3093\u3067\u304a\u308a\u3001\u753b\u9762\u3054\u3068\u306b\u5fc5\u8981\u306a\u9805\u76ee\u3082\u9055\u3046\u305f\u3081\u3060\u3002",
+   "detail": {
+    "removed": [
+     "4\u672c"
+    ],
+    "added": [
+     "4\u56de"
+    ]
+   },
+   "basis": null
+  },
+  {
+   "kind": "number",
+   "subkind": "lost",
+   "old_line": 7,
+   "new_line": 7,
+   "old": "\u305d\u3053\u3067\u65e2\u5b58\u306eREST\u306f\u6b8b\u3057\u3001\u30d5\u30ed\u30f3\u30c8\u5411\u3051\u306bApollo Server\u3067BFF\u30921\u679a\u631f\u3080\u3002",
+   "new": "\u305d\u3053\u3067\u65e2\u5b58\u306eREST\u306f\u6b8b\u3057\u3001\u30d5\u30ed\u30f3\u30c8\u30a8\u30f3\u30c9\u5411\u3051\u306bApollo Server\u3067BFF\u3092\u69cb\u7bc9\u3057\u3066\u3001REST\u306e\u524d\u6bb5\u306b\u7f6e\u304f\u3002",
+   "detail": {
+    "removed": [
+     "1\u679a"
+    ],
+    "added": []
+   },
+   "basis": null
+  }
+ ],
  "markers": [
   {
-   "kind": "義務",
+   "kind": "\u53ef\u80fd",
    "orig": 0,
    "rewrite": 1,
    "orig_hits": [],
    "rewrite_hits": [
-    "なければなりません"
+    "\u3067\u304d\u308b"
    ]
   },
   {
-   "kind": "条件",
-   "orig": 2,
-   "rewrite": 3,
-   "orig_hits": [
-    "れば",
-    "れば"
-   ],
-   "rewrite_hits": [
-    "れば",
-    "れば",
-    "れば"
-   ]
-  },
-  {
-   "kind": "つなぎ",
-   "orig": 2,
+   "kind": "\u6761\u4ef6",
+   "orig": 0,
    "rewrite": 1,
-   "orig_hits": [
-    "また",
-    "まず"
-   ],
+   "orig_hits": [],
    "rewrite_hits": [
-    "まず"
+    "\u308c\u3070"
    ]
   }
  ],
  "new_words": [
-  "用意"
+  "\u30a2\u30d7\u30ea",
+  "\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0",
+  "\u30d5\u30ed\u30f3\u30c8\u30a8\u30f3\u30c9",
+  "\u30e2\u30d0\u30a4\u30eb\u30a2\u30d7\u30ea",
+  "\u4e21\u65b9",
+  "\u4eba\u624b",
+  "\u524d\u6bb5",
+  "\u554f\u984c",
+  "\u56de\u76f4\u5217",
+  "\u62c5\u5f53",
+  "\u69cb\u7bc9",
+  "\u9069\u7528"
  ],
  "lost_words": [
-  "仕様変更",
-  "変更",
-  "毎回"
+  "\u30ea\u30af\u30a8\u30b9\u30c8",
+  "\u4ed5\u69d8\u5171\u6709",
+  "\u4f59\u88d5",
+  "\u679a\u631f",
+  "\u753b\u9762\u8981\u4ef6",
+  "\u7d50\u8ad6",
+  "\u80cc\u8ca0",
+  "\u9006\u7b97"
  ],
- "structure": [
-  "箇条書きを地の文にした。各項目の文末（指示・説明・評価）が元と同じか見る",
-  "段落をまとめた（4 → 3）。まとめた段落の話題が1つか見る"
- ],
+ "structure": [],
  "spans": [
   {
-   "added": "を用意する",
-   "was": "が",
+   "added": "\u30a2\u30d7\u30ea",
+   "was": "",
    "kinds": [],
    "new_words": [
-    "用意"
+    "\u30a2\u30d7\u30ea"
    ],
-   "where": "を確認するたびにDBとAPIのモック［を用意する］必要があり、単体テストを書きにくくな"
+   "where": "PI\u306b\u306fREST\u3092\u4f7f\u3044\u3001\u81ea\u793e\u306eWeb\uff3b\u30a2\u30d7\u30ea\uff3d\u3068\u30e2\u30d0\u30a4\u30eb\u30a2\u30d7\u30ea\u306b\u306fGraphQL\u306e"
   },
   {
-   "added": "ければな",
-   "was": "が",
-   "kinds": [
-    "条件"
+   "added": "\u30a2\u30d7\u30ea\u306b",
+   "was": "\u5411\u3051",
+   "kinds": [],
+   "new_words": [
+    "\u30a2\u30d7\u30ea"
    ],
-   "new_words": [],
-   "where": "構造が変わると、サービス層も修正しな［ければな］りません。\n\n次のように責務を分ける"
+   "where": "\u3092\u4f7f\u3044\u3001\u81ea\u793e\u306eWeb\u30a2\u30d7\u30ea\u3068\u30e2\u30d0\u30a4\u30eb\uff3b\u30a2\u30d7\u30ea\u306b\uff3d\u306fGraphQL\u306eBFF\u5c64\u3092\u7f6e\u3044\u3066\u3001"
   },
   {
-   "added": "いただけ",
-   "was": "もらえ",
+   "added": "\u3044\u3066\u3001\u4e21\u65b9\u3092",
+   "was": "\u304f",
+   "kinds": [],
+   "new_words": [
+    "\u4e21\u65b9"
+   ],
+   "where": "\u30d7\u30ea\u306b\u306fGraphQL\u306eBFF\u5c64\u3092\u7f6e\uff3b\u3044\u3066\u3001\u4e21\u65b9\u3092\uff3d\u4f75\u7528\u3059\u308b\u3053\u3068\u306b\u3057\u305f\u3002\n\n\u5f53\u521d\u306fGra"
+  },
+  {
+   "added": "\u3067\u304d",
+   "was": "\u304c\u305d\u306e\u307e\u307e\u4f7f\u3048",
    "kinds": [
-    "条件"
+    "\u53ef\u80fd"
    ],
    "new_words": [],
-   "where": "部API呼び出しの切り出しから始めて［いただけ］ればと思います。"
+   "where": "\u307e\u307e\u4f7f\u3048\u3001OpenAPI\u3067\u4ed5\u69d8\u3082\u5171\u6709\uff3b\u3067\u304d\uff3d\u308bREST\u306e\u307b\u3046\u304c\u904b\u7528\u3057\u3084\u3059\u3044\u3002Gr"
+  },
+  {
+   "added": "\u554f\u984c\u3078\u306e",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u554f\u984c"
+   ],
+   "where": "\u3067\u306f\u3001\u30af\u30a8\u30ea\u5358\u4f4d\u306e\u30b3\u30b9\u30c8\u5236\u9650\u3084N+1\uff3b\u554f\u984c\u3078\u306e\uff3d\u5bfe\u7b56\u3092\u81ea\u524d\u3067\u5b9f\u88c5\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044\u3002"
+  },
+  {
+   "added": "\u5b9f\u88c5\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044",
+   "was": "\u4f5c\u308a\u8fbc\u3080\u5fc5\u8981\u304c\u3042\u308b",
+   "kinds": [
+    "\u7fa9\u52d9",
+    "\u6761\u4ef6"
+   ],
+   "new_words": [],
+   "where": "\u30b9\u30c8\u5236\u9650\u3084N+1\u554f\u984c\u3078\u306e\u5bfe\u7b56\u3092\u81ea\u524d\u3067\uff3b\u5b9f\u88c5\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044\uff3d\u3002\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u306f4\u4eba\u306e\u30c1\u30fc\u30e0\u3067\u3001\u305d\u306e"
+  },
+  {
+   "added": "\u62c5\u5f53\u3059\u308b\u4eba\u624b",
+   "was": "\u80cc\u8ca0\u3046\u4f59\u88d5",
+   "kinds": [],
+   "new_words": [
+    "\u62c5\u5f53",
+    "\u4eba\u624b"
+   ],
+   "where": "\u30af\u30a8\u30f3\u30c9\u306f4\u4eba\u306e\u30c1\u30fc\u30e0\u3067\u3001\u305d\u306e\u4fdd\u5b88\u3092\uff3b\u62c5\u5f53\u3059\u308b\u4eba\u624b\uff3d\u304c\u306a\u3044\u3002\n\n\u305d\u3053\u3067\u65e2\u5b58\u306eREST\u306f\u6b8b"
+  },
+  {
+   "added": "\u69cb\u7bc9\u3057\u3066\u3001REST\u306e\u524d\u6bb5\u306b\u7f6e\u304f",
+   "was": "1\u679a\u631f\u3080",
+   "kinds": [],
+   "new_words": [
+    "\u69cb\u7bc9",
+    "\u524d\u6bb5"
+   ],
+   "where": "Apollo Server\u3067BFF\u3092\uff3b\u69cb\u7bc9\u3057\u3066\u3001REST\u306e\u524d\u6bb5\u306b\u7f6e\u304f\uff3d\u3002\u753b\u9762\u306e\u8981\u4ef6\u3092\u3082\u3068\u306b\u30b9\u30ad\u30fc\u30de\u3092\u8a2d\u8a08\u3057"
+  },
+  {
+   "added": "\u306b\u9069\u7528",
+   "was": "\u3067\u8a66",
+   "kinds": [],
+   "new_words": [
+    "\u9069\u7528"
+   ],
+   "where": "\u3001\u6700\u521d\u306f\u6ce8\u6587\u4e00\u89a7\u3068\u30de\u30a4\u30da\u30fc\u30b8\u306e2\u753b\u9762\uff3b\u306b\u9069\u7528\uff3d\u3059\u308b\u30023\u304b\u6708\u5f8c\u306b\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0\u304c"
+  },
+  {
+   "added": "\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0\u304c",
+   "was": "",
+   "kinds": [],
+   "new_words": [
+    "\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0"
+   ],
+   "where": "\u30da\u30fc\u30b8\u306e2\u753b\u9762\u306b\u9069\u7528\u3059\u308b\u30023\u304b\u6708\u5f8c\u306b\uff3b\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0\u304c\uff3d\u30ec\u30b9\u30dd\u30f3\u30b9\u6642\u9593\u3068\u5b9f\u88c5\u5de5\u6570\u3092\u8a08\u6e2c\u3057\u3001\u5bfe"
   }
  ],
  "logic": [
   {
-   "kind": "文頭の指示語",
-   "sentence": "このサービス層では、1つのメソッドにDBアクセス、外部API呼び出し、ビジネスルールの判断が混在しています。"
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u305f\u3060\u3057\u30d1\u30fc\u30c8\u30ca\u30fc\u5411\u3051API\u3067\u306f\u3001HTTP\u30ad\u30e3\u30c3\u30b7\u30e5\u3068\u30ec\u30fc\u30c8\u5236\u9650\u3092\u305d\u306e\u307e\u307e\u4f7f\u3048\u3001OpenAPI\u3067\u4ed5\u69d8\u3082\u5171\u6709\u3067\u304d\u308bREST\u306e\u307b\u3046\u304c\u904b\u7528\u3057\u3084\u3059\u3044\u3002"
   },
   {
-   "kind": "文頭の指示語",
-   "sentence": "こうすると、サービス層のテストはRepositoryとClientのスタブだけで書けます。"
-  },
-  {
-   "kind": "主題の「も」",
-   "sentence": "トランザクションの境界も、サービス層の1か所で管理できます。"
+   "kind": "\u6587\u982d\u306e\u3064\u306a\u304e",
+   "sentence": "\u305d\u3053\u3067\u65e2\u5b58\u306eREST\u306f\u6b8b\u3057\u3001\u30d5\u30ed\u30f3\u30c8\u30a8\u30f3\u30c9\u5411\u3051\u306bApollo Server\u3067BFF\u3092\u69cb\u7bc9\u3057\u3066\u3001REST\u306e\u524d\u6bb5\u306b\u7f6e\u304f\u3002"
   }
  ],
  "bold": [],
  "endings": {
-  "stance": null,
-  "changes": [
-   {
-    "orig": "この状態だと、ロジックの確認に毎回DBとAPIのモックが必要になり、単体テストが書きにくくなります。",
-    "orig_kind": "説明（〜ます）",
-    "rewrite": "ロジックを確認するたびにDBとAPIのモックを用意する必要があり、単体テストを書きにくくなっています。",
-    "rewrite_kind": "説明（〜ています）"
-   },
-   {
-    "orig": "また、外部APIの仕様変更やテーブル構造の変更が、そのままサービス層の修正につながります。",
-    "orig_kind": "説明（〜ます）",
-    "rewrite": "外部APIの仕様やテーブル構造が変わると、サービス層も修正しなければなりません。",
-    "rewrite_kind": "義務"
-   },
-   {
-    "orig": "DBアクセスはRepositoryに移し、サービス層からはインターフェース越しに呼び出す",
-    "orig_kind": "常体・箇条書き",
-    "rewrite": "DBアクセスはRepositoryに移し、サービス層はインターフェース越しに呼び出します。",
-    "rewrite_kind": "動作（〜します）"
-   },
-   {
-    "orig": "外部API呼び出しはClientクラスにまとめ、タイムアウトやリトライもそこで扱う",
-    "orig_kind": "常体・箇条書き",
-    "rewrite": "外部API呼び出しはClientクラスにまとめ、タイムアウトやリトライもそこで扱います。",
-    "rewrite_kind": "動作（〜します）"
-   },
-   {
-    "orig": "サービス層には、割引の適用条件や状態遷移といったビジネスルールの判断だけを残す",
-    "orig_kind": "常体・箇条書き",
-    "rewrite": "サービス層には、割引の適用条件や状態遷移といったビジネスルールの判断だけを残します。",
-    "rewrite_kind": "動作（〜します）"
-   }
-  ],
+  "stance": "\u8aac\u660e",
+  "changes": [],
   "flags": [],
   "orig_flags": []
- }
+ },
+ "type_changes": [],
+ "full_diff": {
+  "encoding_notes": [],
+  "final_newline": {
+   "old": false,
+   "new": false
+  },
+  "limits_applied": [],
+  "hunks": [
+   {
+    "index": 1,
+    "tag": "replace",
+    "old_start": 1,
+    "old_end": 1,
+    "new_start": 1,
+    "new_end": 1,
+    "old_blocks": [
+     "heading"
+    ],
+    "new_blocks": [
+     "heading"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "## \u6b21\u671fAPI\u57fa\u76e4\u306e\u9078\u5b9a\u30e1\u30e2\uff1aREST \u3068 GraphQL"
+    ],
+    "new_lines": [
+     "## \u6b21\u671fAPI\u57fa\u76e4\u306bREST\u3068GraphQL\u3092\u4f75\u7528\u3059\u308b\u9078\u5b9a\u30e1\u30e2"
+    ],
+    "segments": [
+     [
+      "=",
+      "## \u6b21\u671fAPI\u57fa\u76e4"
+     ],
+     [
+      "-",
+      "\u306e\u9078\u5b9a\u30e1\u30e2\uff1a"
+     ],
+     [
+      "+",
+      "\u306b"
+     ],
+     [
+      "=",
+      "REST"
+     ],
+     [
+      "-",
+      " "
+     ],
+     [
+      "=",
+      "\u3068"
+     ],
+     [
+      "-",
+      " "
+     ],
+     [
+      "=",
+      "GraphQL"
+     ],
+     [
+      "+",
+      "\u3092\u4f75\u7528\u3059\u308b\u9078\u5b9a\u30e1\u30e2"
+     ]
+    ],
+    "segments_omitted": null
+   },
+   {
+    "index": 2,
+    "tag": "replace",
+    "old_start": 3,
+    "old_end": 3,
+    "new_start": 3,
+    "new_end": 3,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u7d50\u8ad6\u3068\u3057\u3066\u3001\u5916\u90e8\u516c\u958bAPI\u306fREST\u3001\u81ea\u793e\u306eWeb\u3068\u30e2\u30d0\u30a4\u30eb\u5411\u3051\u306fGraphQL\u306eBFF\u5c64\u3092\u7f6e\u304f\u4f75\u7528\u306b\u3057\u305f\u3002"
+    ],
+    "new_lines": [
+     "\u5916\u90e8\u516c\u958bAPI\u306b\u306fREST\u3092\u4f7f\u3044\u3001\u81ea\u793e\u306eWeb\u30a2\u30d7\u30ea\u3068\u30e2\u30d0\u30a4\u30eb\u30a2\u30d7\u30ea\u306b\u306fGraphQL\u306eBFF\u5c64\u3092\u7f6e\u3044\u3066\u3001\u4e21\u65b9\u3092\u4f75\u7528\u3059\u308b\u3053\u3068\u306b\u3057\u305f\u3002"
+    ],
+    "segments": [
+     [
+      "-",
+      "\u7d50\u8ad6\u3068\u3057\u3066\u3001"
+     ],
+     [
+      "=",
+      "\u5916\u90e8\u516c\u958bAPI"
+     ],
+     [
+      "+",
+      "\u306b"
+     ],
+     [
+      "=",
+      "\u306fREST"
+     ],
+     [
+      "+",
+      "\u3092\u4f7f\u3044"
+     ],
+     [
+      "=",
+      "\u3001\u81ea\u793e\u306eWeb"
+     ],
+     [
+      "+",
+      "\u30a2\u30d7\u30ea"
+     ],
+     [
+      "=",
+      "\u3068\u30e2\u30d0\u30a4\u30eb"
+     ],
+     [
+      "-",
+      "\u5411\u3051"
+     ],
+     [
+      "+",
+      "\u30a2\u30d7\u30ea\u306b"
+     ],
+     [
+      "=",
+      "\u306fGraphQL\u306eBFF\u5c64\u3092\u7f6e"
+     ],
+     [
+      "-",
+      "\u304f"
+     ],
+     [
+      "+",
+      "\u3044\u3066\u3001\u4e21\u65b9\u3092"
+     ],
+     [
+      "=",
+      "\u4f75\u7528"
+     ],
+     [
+      "+",
+      "\u3059\u308b\u3053\u3068"
+     ],
+     [
+      "=",
+      "\u306b\u3057\u305f\u3002"
+     ]
+    ],
+    "segments_omitted": null
+   },
+   {
+    "index": 3,
+    "tag": "replace",
+    "old_start": 5,
+    "old_end": 5,
+    "new_start": 5,
+    "new_end": 5,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u5f53\u521d\u306fGraphQL\u3078\u306e\u4e00\u672c\u5316\u304c\u6709\u529b\u3060\u3063\u305f\u3002\u4e00\u89a7\u753b\u9762\u30673\u301c4\u672c\u306e\u30ea\u30af\u30a8\u30b9\u30c8\u3092\u76f4\u5217\u306b\u547c\u3093\u3067\u3044\u3066\u3001\u753b\u9762\u3054\u3068\u306b\u6b32\u3057\u3044\u9805\u76ee\u3082\u9055\u3046\u304b\u3089\u3060\u3002\u305f\u3060\u3057\u30d1\u30fc\u30c8\u30ca\u30fc\u5411\u3051API\u3067\u306f\u3001HTTP\u30ad\u30e3\u30c3\u30b7\u30e5\u3001\u30ec\u30fc\u30c8\u5236\u9650\u3001OpenAPI\u306b\u3088\u308b\u4ed5\u69d8\u5171\u6709\u304c\u305d\u306e\u307e\u307e\u4f7f\u3048\u308bREST\u306e\u307b\u3046\u304c\u904b\u7528\u3057\u3084\u3059\u3044\u3002GraphQL\u3067\u306f\u3001\u30af\u30a8\u30ea\u5358\u4f4d\u306e\u30b3\u30b9\u30c8\u5236\u9650\u3084N+1\u5bfe\u7b56\u3092\u81ea\u524d\u3067\u4f5c\u308a\u8fbc\u3080\u5fc5\u8981\u304c\u3042\u308b\u3002\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u304c4\u4eba\u306e\u30c1\u30fc\u30e0\u3067\u306f\u3001\u305d\u306e\u4fdd\u5b88\u3092\u80cc\u8ca0\u3046\u4f59\u88d5\u304c\u306a\u3044\u3002"
+    ],
+    "new_lines": [
+     "\u5f53\u521d\u306fGraphQL\u306b\u4e00\u672c\u5316\u3059\u308b\u6848\u304c\u6709\u529b\u3060\u3063\u305f\u3002\u4e00\u89a7\u753b\u9762\u304cAPI\u30923\u301c4\u56de\u76f4\u5217\u306b\u547c\u3093\u3067\u304a\u308a\u3001\u753b\u9762\u3054\u3068\u306b\u5fc5\u8981\u306a\u9805\u76ee\u3082\u9055\u3046\u305f\u3081\u3060\u3002\u305f\u3060\u3057\u30d1\u30fc\u30c8\u30ca\u30fc\u5411\u3051API\u3067\u306f\u3001HTTP\u30ad\u30e3\u30c3\u30b7\u30e5\u3068\u30ec\u30fc\u30c8\u5236\u9650\u3092\u305d\u306e\u307e\u307e\u4f7f\u3048\u3001OpenAPI\u3067\u4ed5\u69d8\u3082\u5171\u6709\u3067\u304d\u308bREST\u306e\u307b\u3046\u304c\u904b\u7528\u3057\u3084\u3059\u3044\u3002GraphQL\u3067\u306f\u3001\u30af\u30a8\u30ea\u5358\u4f4d\u306e\u30b3\u30b9\u30c8\u5236\u9650\u3084N+1\u554f\u984c\u3078\u306e\u5bfe\u7b56\u3092\u81ea\u524d\u3067\u5b9f\u88c5\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044\u3002\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u306f4\u4eba\u306e\u30c1\u30fc\u30e0\u3067\u3001\u305d\u306e\u4fdd\u5b88\u3092\u62c5\u5f53\u3059\u308b\u4eba\u624b\u304c\u306a\u3044\u3002"
+    ],
+    "segments": [
+     [
+      "=",
+      "\u5f53\u521d\u306fGraphQL"
+     ],
+     [
+      "-",
+      "\u3078\u306e"
+     ],
+     [
+      "+",
+      "\u306b"
+     ],
+     [
+      "=",
+      "\u4e00\u672c\u5316"
+     ],
+     [
+      "+",
+      "\u3059\u308b\u6848"
+     ],
+     [
+      "=",
+      "\u304c\u6709\u529b\u3060\u3063\u305f\u3002\u4e00\u89a7\u753b\u9762"
+     ],
+     [
+      "-",
+      "\u3067"
+     ],
+     [
+      "+",
+      "\u304cAPI\u3092"
+     ],
+     [
+      "=",
+      "3\u301c4"
+     ],
+     [
+      "-",
+      "\u672c\u306e\u30ea\u30af\u30a8\u30b9\u30c8\u3092"
+     ],
+     [
+      "+",
+      "\u56de"
+     ],
+     [
+      "=",
+      "\u76f4\u5217\u306b\u547c\u3093\u3067"
+     ],
+     [
+      "-",
+      "\u3044\u3066"
+     ],
+     [
+      "+",
+      "\u304a\u308a"
+     ],
+     [
+      "=",
+      "\u3001\u753b\u9762\u3054\u3068\u306b"
+     ],
+     [
+      "-",
+      "\u6b32\u3057\u3044"
+     ],
+     [
+      "+",
+      "\u5fc5\u8981\u306a"
+     ],
+     [
+      "=",
+      "\u9805\u76ee\u3082\u9055\u3046"
+     ],
+     [
+      "-",
+      "\u304b\u3089"
+     ],
+     [
+      "+",
+      "\u305f\u3081"
+     ],
+     [
+      "=",
+      "\u3060\u3002\u305f\u3060\u3057\u30d1\u30fc\u30c8\u30ca\u30fc\u5411\u3051API\u3067\u306f\u3001HTTP\u30ad\u30e3\u30c3\u30b7\u30e5"
+     ],
+     [
+      "-",
+      "\u3001"
+     ],
+     [
+      "+",
+      "\u3068"
+     ],
+     [
+      "=",
+      "\u30ec\u30fc\u30c8\u5236\u9650"
+     ],
+     [
+      "+",
+      "\u3092\u305d\u306e\u307e\u307e\u4f7f\u3048"
+     ],
+     [
+      "=",
+      "\u3001OpenAPI"
+     ],
+     [
+      "-",
+      "\u306b\u3088\u308b"
+     ],
+     [
+      "+",
+      "\u3067"
+     ],
+     [
+      "=",
+      "\u4ed5\u69d8"
+     ],
+     [
+      "+",
+      "\u3082"
+     ],
+     [
+      "=",
+      "\u5171\u6709"
+     ],
+     [
+      "-",
+      "\u304c\u305d\u306e\u307e\u307e\u4f7f\u3048"
+     ],
+     [
+      "+",
+      "\u3067\u304d"
+     ],
+     [
+      "=",
+      "\u308bREST\u306e\u307b\u3046\u304c\u904b\u7528\u3057\u3084\u3059\u3044\u3002GraphQL\u3067\u306f\u3001\u30af\u30a8\u30ea\u5358\u4f4d\u306e\u30b3\u30b9\u30c8\u5236\u9650\u3084N+1"
+     ],
+     [
+      "+",
+      "\u554f\u984c\u3078\u306e"
+     ],
+     [
+      "=",
+      "\u5bfe\u7b56\u3092\u81ea\u524d\u3067"
+     ],
+     [
+      "-",
+      "\u4f5c\u308a\u8fbc\u3080\u5fc5\u8981\u304c\u3042\u308b"
+     ],
+     [
+      "+",
+      "\u5b9f\u88c5\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044"
+     ],
+     [
+      "=",
+      "\u3002\u30d0\u30c3\u30af\u30a8\u30f3\u30c9"
+     ],
+     [
+      "-",
+      "\u304c"
+     ],
+     [
+      "+",
+      "\u306f"
+     ],
+     [
+      "=",
+      "4\u4eba\u306e\u30c1\u30fc\u30e0\u3067"
+     ],
+     [
+      "-",
+      "\u306f"
+     ],
+     [
+      "=",
+      "\u3001\u305d\u306e\u4fdd\u5b88\u3092"
+     ],
+     [
+      "-",
+      "\u80cc\u8ca0\u3046\u4f59\u88d5"
+     ],
+     [
+      "+",
+      "\u62c5\u5f53\u3059\u308b\u4eba\u624b"
+     ],
+     [
+      "=",
+      "\u304c\u306a\u3044\u3002"
+     ]
+    ],
+    "segments_omitted": null
+   },
+   {
+    "index": 4,
+    "tag": "replace",
+    "old_start": 7,
+    "old_end": 7,
+    "new_start": 7,
+    "new_end": 7,
+    "old_blocks": [
+     "paragraph"
+    ],
+    "new_blocks": [
+     "paragraph"
+    ],
+    "whitespace_only": false,
+    "notes": [],
+    "moved_to": null,
+    "moved_from": null,
+    "old_lines": [
+     "\u305d\u3053\u3067\u65e2\u5b58\u306eREST\u306f\u6b8b\u3057\u3001\u30d5\u30ed\u30f3\u30c8\u5411\u3051\u306bApollo Server\u3067BFF\u30921\u679a\u631f\u3080\u3002\u30b9\u30ad\u30fc\u30de\u306f\u753b\u9762\u8981\u4ef6\u304b\u3089\u9006\u7b97\u3057\u3066\u8a2d\u8a08\u3057\u3001\u6700\u521d\u306f\u6ce8\u6587\u4e00\u89a7\u3068\u30de\u30a4\u30da\u30fc\u30b8\u306e2\u753b\u9762\u3067\u8a66\u3059\u30023\u304b\u6708\u5f8c\u306b\u30ec\u30b9\u30dd\u30f3\u30b9\u6642\u9593\u3068\u5b9f\u88c5\u5de5\u6570\u3092\u8a08\u6e2c\u3057\u3001\u5bfe\u8c61\u753b\u9762\u3092\u5e83\u3052\u308b\u304b\u5224\u65ad\u3059\u308b\u3002"
+    ],
+    "new_lines": [
+     "\u305d\u3053\u3067\u65e2\u5b58\u306eREST\u306f\u6b8b\u3057\u3001\u30d5\u30ed\u30f3\u30c8\u30a8\u30f3\u30c9\u5411\u3051\u306bApollo Server\u3067BFF\u3092\u69cb\u7bc9\u3057\u3066\u3001REST\u306e\u524d\u6bb5\u306b\u7f6e\u304f\u3002\u753b\u9762\u306e\u8981\u4ef6\u3092\u3082\u3068\u306b\u30b9\u30ad\u30fc\u30de\u3092\u8a2d\u8a08\u3057\u3001\u6700\u521d\u306f\u6ce8\u6587\u4e00\u89a7\u3068\u30de\u30a4\u30da\u30fc\u30b8\u306e2\u753b\u9762\u306b\u9069\u7528\u3059\u308b\u30023\u304b\u6708\u5f8c\u306b\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0\u304c\u30ec\u30b9\u30dd\u30f3\u30b9\u6642\u9593\u3068\u5b9f\u88c5\u5de5\u6570\u3092\u8a08\u6e2c\u3057\u3001\u5bfe\u8c61\u753b\u9762\u3092\u5e83\u3052\u308b\u304b\u3069\u3046\u304b\u3092\u5224\u65ad\u3059\u308b\u3002"
+    ],
+    "segments": [
+     [
+      "=",
+      "\u305d\u3053\u3067\u65e2\u5b58\u306eREST\u306f\u6b8b\u3057\u3001\u30d5\u30ed\u30f3\u30c8"
+     ],
+     [
+      "+",
+      "\u30a8\u30f3\u30c9"
+     ],
+     [
+      "=",
+      "\u5411\u3051\u306bApollo Server\u3067BFF\u3092"
+     ],
+     [
+      "-",
+      "1\u679a\u631f\u3080"
+     ],
+     [
+      "+",
+      "\u69cb\u7bc9\u3057\u3066\u3001REST\u306e\u524d\u6bb5\u306b\u7f6e\u304f"
+     ],
+     [
+      "=",
+      "\u3002"
+     ],
+     [
+      "+",
+      "\u753b\u9762\u306e\u8981\u4ef6\u3092\u3082\u3068\u306b"
+     ],
+     [
+      "=",
+      "\u30b9\u30ad\u30fc\u30de"
+     ],
+     [
+      "-",
+      "\u306f\u753b\u9762\u8981\u4ef6\u304b\u3089\u9006\u7b97\u3057\u3066"
+     ],
+     [
+      "+",
+      "\u3092"
+     ],
+     [
+      "=",
+      "\u8a2d\u8a08\u3057\u3001\u6700\u521d\u306f\u6ce8\u6587\u4e00\u89a7\u3068\u30de\u30a4\u30da\u30fc\u30b8\u306e2\u753b\u9762"
+     ],
+     [
+      "-",
+      "\u3067\u8a66"
+     ],
+     [
+      "+",
+      "\u306b\u9069\u7528"
+     ],
+     [
+      "=",
+      "\u3059"
+     ],
+     [
+      "+",
+      "\u308b"
+     ],
+     [
+      "=",
+      "\u30023\u304b\u6708\u5f8c\u306b"
+     ],
+     [
+      "+",
+      "\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0\u304c"
+     ],
+     [
+      "=",
+      "\u30ec\u30b9\u30dd\u30f3\u30b9\u6642\u9593\u3068\u5b9f\u88c5\u5de5\u6570\u3092\u8a08\u6e2c\u3057\u3001\u5bfe\u8c61\u753b\u9762\u3092\u5e83\u3052\u308b\u304b"
+     ],
+     [
+      "+",
+      "\u3069\u3046\u304b\u3092"
+     ],
+     [
+      "=",
+      "\u5224\u65ad\u3059\u308b\u3002"
+     ]
+    ],
+    "segments_omitted": null
+   }
+  ]
+ },
+ "stiffness": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "metrics": {
+   "old": {
+    "sentences": 9,
+    "chars": 375,
+    "avg_sentence_length": 41.67,
+    "kanji_ratio": 29.01,
+    "kanji": 103,
+    "nominalizations": 0,
+    "nominalization_names": {},
+    "no_chains": 0
+   },
+   "new": {
+    "sentences": 9,
+    "chars": 422,
+    "avg_sentence_length": 46.89,
+    "kanji_ratio": 26.62,
+    "kanji": 107,
+    "nominalizations": 0,
+    "nominalization_names": {},
+    "no_chains": 0
+   }
+  },
+  "list": "references/lists/nominalization.txt",
+  "list_problem": null
+ },
+ "tone": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "counts": {
+   "old": {
+    "exclamation": 0,
+    "question": 0,
+    "emoji": 0,
+    "intensifier": 0,
+    "heading_chars": 25
+   },
+   "new": {
+    "exclamation": 0,
+    "question": 0,
+    "emoji": 0,
+    "intensifier": 0,
+    "heading_chars": 29
+   }
+  },
+  "list": "references/lists/intensifiers.txt",
+  "list_problem": null
+ },
+ "feeling": {
+  "list": "references/lists/feelings.txt",
+  "list_problem": null
+ },
+ "hedges": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "list": "references/lists/hedges.txt",
+  "list_problem": null
+ },
+ "immutable": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "meaning_risk_count": 0
+ },
+ "politeness": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "applicable": false,
+  "threshold": 0.2,
+  "metrics": null
+ },
+ "register": {
+  "level": "review",
+  "candidate_count": 0,
+  "candidates": [],
+  "threshold": {
+   "min_sentences": 3,
+   "min_ratio": 0.5
+  },
+  "skipped_by": null
+ },
+ "added_actors": [
+  {
+   "old_line": 7,
+   "new_line": 7,
+   "old": "3\u304b\u6708\u5f8c\u306b\u30ec\u30b9\u30dd\u30f3\u30b9\u6642\u9593\u3068\u5b9f\u88c5\u5de5\u6570\u3092\u8a08\u6e2c\u3057\u3001\u5bfe\u8c61\u753b\u9762\u3092\u5e83\u3052\u308b\u304b\u5224\u65ad\u3059\u308b\u3002",
+   "new": "3\u304b\u6708\u5f8c\u306b\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0\u304c\u30ec\u30b9\u30dd\u30f3\u30b9\u6642\u9593\u3068\u5b9f\u88c5\u5de5\u6570\u3092\u8a08\u6e2c\u3057\u3001\u5bfe\u8c61\u753b\u9762\u3092\u5e83\u3052\u308b\u304b\u3069\u3046\u304b\u3092\u5224\u65ad\u3059\u308b\u3002",
+   "actors": [
+    {
+     "word": "\u30d0\u30c3\u30af\u30a8\u30f3\u30c9\u30c1\u30fc\u30e0",
+     "frame": "subject",
+     "tier": "B",
+     "narrowed_from": "\u30c1\u30fc\u30e0"
+    }
+   ]
+  }
+ ],
+ "heading_shapes": [
+  {
+   "old_line": 1,
+   "new_line": 1,
+   "old": "\u6b21\u671fAPI\u57fa\u76e4\u306e\u9078\u5b9a\u30e1\u30e2\uff1aREST \u3068 GraphQL",
+   "new": "\u6b21\u671fAPI\u57fa\u76e4\u306bREST\u3068GraphQL\u3092\u4f75\u7528\u3059\u308b\u9078\u5b9a\u30e1\u30e2"
+  }
+ ],
+ "comma_increase": null
 }

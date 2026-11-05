@@ -1,132 +1,60 @@
 {
- "markers": [
-  {
-   "kind": "念押し",
-   "orig": 0,
-   "rewrite": 2,
-   "orig_hits": [],
-   "rewrite_hits": [
-    "常に",
-    "必ず"
-   ]
+  "format": "yomiyasu-lint",
+  "format_version": 2,
+  "tool_version": "2.5.0",
+  "candidate_count": 4,
+  "counts": {
+    "error": 1,
+    "warn": 3,
+    "info": 0
   },
-  {
-   "kind": "つなぎ",
-   "orig": 1,
-   "rewrite": 2,
-   "orig_hits": [
-    "しかし"
-   ],
-   "rewrite_hits": [
-    "そのため",
-    "しかし"
-   ]
-  }
- ],
- "new_words": [
-  "不足",
-  "応答",
-  "日本時間"
- ],
- "lost_words": [
-  "JST",
-  "影響範囲",
-  "必須化",
-  "整備",
-  "正常化",
-  "結果",
-  "長引",
-  "集中"
- ],
- "structure": [
-  "文の数が変わった（17 → 20）"
- ],
- "spans": [
-  {
-   "added": "日本時間の",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "日本時間"
-   ],
-   "where": "%が失敗しました。\n\n【発生日時】\n［日本時間の］2026年9月28日20:05〜20"
+  "no_rule_findings": false,
+  "rule_penalty_score": 82,
+  "not_judged": [
+    "meaning_preservation",
+    "reader_comprehension"
+  ],
+  "context": {
+    "doc_type": null,
+    "reader": null,
+    "skipped_by_doc_type": {}
   },
-  {
-   "added": "ため",
-   "was": "結果、",
-   "kinds": [
-    "つなぎ"
-   ],
-   "new_words": [],
-   "where": "の処理時間が長くなっていました。その［ため］接続が解放されず、待機リクエストが積"
+  "metrics": {
+    "char_count": 46,
+    "total_lines": 4,
+    "list_lines": 2,
+    "list_ratio": 0.5,
+    "bold_count": 1,
+    "bold_per_1000": 21.74
   },
-  {
-   "added": "APIが",
-   "was": "",
-   "kinds": [
-    "念押し"
-   ],
-   "new_words": [],
-   "where": "40に引き上げたところ、20:30に［APIが］正常に応答するようになりました。\n\n"
-  },
-  {
-   "added": "に応答するようになり",
-   "was": "化し",
-   "kinds": [
-    "念押し"
-   ],
-   "new_words": [
-    "応答"
-   ],
-   "where": "げたところ、20:30にAPIが正常［に応答するようになり］ました。\n\n【再発防止策】\nスローク"
-  },
-  {
-   "added": "し、不足している",
-   "was": "と",
-   "kinds": [],
-   "new_words": [
-    "不足"
-   ],
-   "where": "再発防止策】\nスロークエリを全件点検［し、不足している］インデックスを追加します。プール使用"
-  },
-  {
-   "added": "を",
-   "was": "の",
-   "kinds": [
-    "念押し"
-   ],
-   "new_words": [],
-   "where": "します。キャンペーンの前には負荷試験［を］必ず実施します。あわせて、接続待ちタ"
-  },
-  {
-   "added": "ず実施します。あわせて",
-   "was": "須化",
-   "kinds": [
-    "念押し"
-   ],
-   "new_words": [],
-   "where": "す。キャンペーンの前には負荷試験を必［ず実施します。あわせて］、接続待ちタイムアウトを短縮します。"
-  }
- ],
- "logic": [
-  {
-   "kind": "文頭のつなぎ",
-   "sentence": "そのため接続が解放されず、待機リクエストが積み上がって、プールに空きがなくなりました。"
-  },
-  {
-   "kind": "文頭の指示語",
-   "sentence": "そのため接続が解放されず、待機リクエストが積み上がって、プールに空きがなくなりました。"
-  },
-  {
-   "kind": "文頭のつなぎ",
-   "sentence": "しかし負荷が続いていたため、エラーが再び発生しました。"
-  }
- ],
- "bold": [],
- "endings": {
-  "stance": "説明",
-  "changes": [],
-  "flags": [],
-  "orig_flags": []
- }
+  "findings": [
+    {
+      "rule": "sentence_end_repetition",
+      "line": 3,
+      "severity": "warn",
+      "message": "\u540c\u4e00\u6587\u672b\u300c\u3067\u3059\u300d\u304c3\u56de\u4ee5\u4e0a\u9023\u7d9a\u3057\u3066\u3044\u307e\u3059\u3002\u8aad\u307f\u306b\u304f\u304f\u306a\u3063\u3066\u3044\u306a\u3044\u304b\u78ba\u8a8d\u3057\u3001\u81ea\u7136\u306a\u8aac\u660e\u3084\u6587\u4f53\u306f\u4fdd\u3063\u3066\u304f\u3060\u3055\u3044\u3002",
+      "snippet": "\u6b21\u3082\u5927\u4e8b\u3067\u3059\u3002"
+    },
+    {
+      "rule": "bold_not_rendered",
+      "line": 6,
+      "severity": "error",
+      "message": "\u592a\u5b57\u306e\u8a18\u53f7\uff08**\uff09\u306b\u3064\u3044\u3066\u3001\u592a\u5b57\u3068\u3057\u3066\u8868\u793a\u3055\u308c\u306a\u3044\u53ef\u80fd\u6027\u306e\u3042\u308b\u66f8\u304d\u65b9\u304c\u898b\u3064\u304b\u308a\u307e\u3057\u305f\u3002GitHub \u306a\u3069\u3067\u592a\u5b57\u306b\u306a\u3089\u305a ** \u304c\u305d\u306e\u307e\u307e\u8868\u793a\u3055\u308c\u308b\u3053\u3068\u304c\u3042\u308a\u307e\u3059\u3002\u76f4\u3057\u65b9: \u304b\u3063\u3053\u306e\u5185\u5074\u3060\u3051\u3092\u592a\u5b57\u306b\u3059\u308b\u3002",
+      "snippet": "- **\u300c\u5f37\u8abf\u300d**\u3067\u3059\u3002 \u2192 - \u300c**\u5f37\u8abf**\u300d\u3067\u3059\u3002"
+    },
+    {
+      "rule": "meta_filler",
+      "line": 3,
+      "severity": "warn",
+      "message": "\u524d\u7f6e\u30d5\u30a3\u30e9\u30fc\u300c\u91cd\u8981\u306a\u306e\u306f\u300d\u304c\u691c\u51fa\u3055\u308c\u307e\u3057\u305f\u3002\u5358\u306a\u308b\u524d\u7f6e\u304d\u3084\u4e0d\u8981\u306a\u98fe\u308a\u3067\u3042\u308c\u3070\u524a\u308a\u3001\u672c\u984c\u304b\u3089\u66f8\u3044\u3066\u304f\u3060\u3055\u3044\u3002\u305f\u3060\u3057\u3001\u300c\u4f55\u304c\u5927\u4e8b\u304b\u300d\u3068\u3044\u3046\u8a55\u4fa1\u3084\u4e3b\u5f35\u305d\u306e\u3082\u306e\u3092\u62c5\u3063\u3066\u3044\u308b\u5834\u5408\u306f\u3001\u8ff0\u8a9e\u306b\u79fb\u3059\u306a\u3069\u3057\u3066\u610f\u5473\u3092\u6b8b\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+      "snippet": "\u91cd\u8981\u306a\u306e\u306f\u3001\u8a2d\u8a08\u3067\u3059\u3002\u3053\u308c\u306f\u5927\u4e8b\u3067\u3059\u3002\u6b21\u3082\u5927\u4e8b\u3067\u3059\u3002"
+    },
+    {
+      "rule": "trailing_colon",
+      "line": 5,
+      "severity": "warn",
+      "message": "\u6587\u672b\u306b\u30b3\u30ed\u30f3\uff08\uff1a\uff09\u304c\u3042\u308a\u307e\u3059\u3002\u30e9\u30d9\u30eb\u3068\u5024\u306e\u5bfe\u5fdc\u306a\u3069\u306b\u5fc5\u8981\u304b\u78ba\u8a8d\u3057\u3001\u4e0d\u8981\u306a\u524d\u7f6e\u304d\u306a\u3089\u6574\u7406\u3057\u3066\u304f\u3060\u3055\u3044\u3002",
+      "snippet": "- \u9805\u76ee\uff1a"
+    }
+  ]
 }

@@ -1,42 +1,46 @@
 {
-  "score": 80,
-  "is_clean": false,
+  "format": "yomiyasu-lint",
+  "format_version": 2,
+  "tool_version": "2.5.0",
+  "candidate_count": 2,
+  "counts": {
+    "error": 0,
+    "warn": 2,
+    "info": 0
+  },
+  "no_rule_findings": false,
+  "rule_penalty_score": 91,
+  "not_judged": [
+    "meaning_preservation",
+    "reader_comprehension"
+  ],
+  "context": {
+    "doc_type": null,
+    "reader": null,
+    "skipped_by_doc_type": {}
+  },
   "metrics": {
-    "char_count": 46,
-    "total_lines": 4,
-    "list_lines": 2,
-    "list_ratio": 0.5,
-    "bold_count": 1,
-    "bold_per_1000": 21.74
+    "char_count": 421,
+    "total_lines": 3,
+    "list_lines": 0,
+    "list_ratio": 0.0,
+    "bold_count": 0,
+    "bold_per_1000": 0.0
   },
   "findings": [
     {
       "rule": "sentence_end_repetition",
       "line": 3,
       "severity": "warn",
-      "message": "同一文末「です」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
-      "snippet": "次も大事です。"
+      "message": "\u540c\u4e00\u6587\u672b\u300c\u307e\u3059\u300d\u304c3\u56de\u4ee5\u4e0a\u9023\u7d9a\u3057\u3066\u3044\u307e\u3059\u3002\u8aad\u307f\u306b\u304f\u304f\u306a\u3063\u3066\u3044\u306a\u3044\u304b\u78ba\u8a8d\u3057\u3001\u81ea\u7136\u306a\u8aac\u660e\u3084\u6587\u4f53\u306f\u4fdd\u3063\u3066\u304f\u3060\u3055\u3044\u3002",
+      "snippet": "\u5916\u90e8API\u547c\u3073\u51fa\u3057\u306fClient\u30af\u30e9\u30b9\u306b\u307e\u3068\u3081\u3001\u30bf\u30a4\u30e0\u30a2\u30a6\u30c8\u3084\u30ea\u30c8\u30e9\u30a4\u3082\u305d\u3053\u3067\u6271\u3044\u307e\u3059\u3002"
     },
     {
-      "rule": "bold_not_rendered",
-      "line": 6,
-      "severity": "error",
-      "message": "太字の印（**）が記号に接していて、GitHub などでは太字にならず ** がそのまま表示されます。直し方: かっこの内側だけを太字にする。",
-      "snippet": "- **「強調」**です。 → - 「**強調**」です。"
-    },
-    {
-      "rule": "meta_filler",
-      "line": 3,
-      "severity": "warn",
-      "message": "前置フィラー「重要なのは」が検出されました。単なる前置きや不要な飾りであれば削り、本題から書いてください。ただし、「何が大事か」という評価や主張そのものを担っている場合は、述語に移すなどして意味を残してください。",
-      "snippet": "重要なのは、設計です。これは大事です。次も大事です。"
-    },
-    {
-      "rule": "trailing_colon",
+      "rule": "sentence_end_repetition",
       "line": 5,
       "severity": "warn",
-      "message": "文末にコロン（：）があります。ラベルと値の対応などに必要か確認し、不要な前置きなら整理してください。",
-      "snippet": "- 項目："
+      "message": "\u540c\u4e00\u6587\u672b\u300c\u307e\u3059\u300d\u304c3\u56de\u4ee5\u4e0a\u9023\u7d9a\u3057\u3066\u3044\u307e\u3059\u3002\u8aad\u307f\u306b\u304f\u304f\u306a\u3063\u3066\u3044\u306a\u3044\u304b\u78ba\u8a8d\u3057\u3001\u81ea\u7136\u306a\u8aac\u660e\u3084\u6587\u4f53\u306f\u4fdd\u3063\u3066\u304f\u3060\u3055\u3044\u3002",
+      "snippet": "\u4e00\u5ea6\u306b\u5168\u90e8\u3092\u76f4\u3059\u306e\u304c\u5927\u5909\u3067\u3042\u308c\u3070\u3001\u307e\u305a\u5916\u90e8API\u547c\u3073\u51fa\u3057\u306e\u5207\u308a\u51fa\u3057\u304b\u3089\u59cb\u3081\u3066\u3044\u305f\u3060\u3051\u308c\u3070\u3068\u601d\u3044\u307e\u3059\u3002"
     }
   ]
 }
