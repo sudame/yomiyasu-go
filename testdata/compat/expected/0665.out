@@ -1,98 +1,46 @@
 {
- "markers": [
-  {
-   "kind": "条件",
-   "orig": 0,
-   "rewrite": 1,
-   "orig_hits": [],
-   "rewrite_hits": [
-    "場合"
-   ]
-  }
- ],
- "new_words": [
-  "同期的",
-  "回目",
-  "場合",
-  "数秒返",
-  "方式",
-  "登録"
- ],
- "lost_words": [
-  "同期呼",
-  "失敗時",
-  "数秒止"
- ],
- "structure": [],
- "spans": [
-  {
-   "added": "ぶ方式",
-   "was": "び出し",
-   "kinds": [],
-   "new_words": [
-    "方式"
-   ],
-   "where": "クエスト内で同期的に認証サーバーを呼［ぶ方式］から、非同期キューに積んでワーカーが"
+  "format": "yomiyasu-lint",
+  "format_version": 2,
+  "tool_version": "3.1.0",
+  "candidate_count": 2,
+  "counts": {
+    "error": 0,
+    "warn": 2,
+    "info": 0
   },
-  {
-   "added": "する方式へ変更し",
-   "was": "に切り替え",
-   "kinds": [],
-   "new_words": [
-    "方式"
-   ],
-   "where": "、非同期キューに積んでワーカーが実行［する方式へ変更し］た。\n\n背景\nこれまでは、トークンの"
+  "no_rule_findings": false,
+  "rule_penalty_score": 91,
+  "not_judged": [
+    "meaning_preservation",
+    "reader_comprehension"
+  ],
+  "context": {
+    "doc_type": null,
+    "reader": null,
+    "skipped_by_doc_type": {}
   },
-  {
-   "added": "登録し",
-   "was": "積み",
-   "kinds": [],
-   "new_words": [
-    "登録"
-   ],
-   "where": "検知するとリフレッシュ要求をキューに［登録し］、ワーカーがその要求を処理する。ユー"
+  "metrics": {
+    "char_count": 421,
+    "total_lines": 3,
+    "list_lines": 0,
+    "list_ratio": 0.0,
+    "bold_count": 0,
+    "bold_per_1000": 0.0
   },
-  {
-   "added": "しか登録されない。リフレッシュ",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "登録"
-   ],
-   "where": "けたので、同じユーザーのジョブは1件［しか登録されない。リフレッシュ］に失敗した場合は指数バックオフで最大"
-  },
-  {
-   "added": "した場合",
-   "was": "時",
-   "kinds": [
-    "条件"
-   ],
-   "new_words": [
-    "場合"
-   ],
-   "where": "しか登録されない。リフレッシュに失敗［した場合］は指数バックオフで最大3回までリトラ"
-  },
-  {
-   "added": "3回目",
-   "was": "それで",
-   "kinds": [],
-   "new_words": [
-    "回目"
-   ],
-   "where": "バックオフで最大3回までリトライし、［3回目］も失敗したらセッションを失効させる。"
-  }
- ],
- "logic": [
-  {
-   "kind": "文頭の指示語",
-   "sentence": "これまでは、トークンの期限切れを検知したリクエストが、その場で認証サーバーを呼んでいた。"
-  }
- ],
- "bold": [],
- "endings": {
-  "stance": "勧め",
-  "changes": [],
-  "flags": [],
-  "orig_flags": []
- }
+  "findings": [
+    {
+      "rule": "sentence_end_repetition",
+      "line": 3,
+      "severity": "warn",
+      "message": "\u540c\u4e00\u6587\u672b\u300c\u307e\u3059\u300d\u304c3\u56de\u4ee5\u4e0a\u9023\u7d9a\u3057\u3066\u3044\u307e\u3059\u3002\u8aad\u307f\u306b\u304f\u304f\u306a\u3063\u3066\u3044\u306a\u3044\u304b\u78ba\u8a8d\u3057\u3001\u81ea\u7136\u306a\u8aac\u660e\u3084\u6587\u4f53\u306f\u4fdd\u3063\u3066\u304f\u3060\u3055\u3044\u3002",
+      "snippet": "\u5916\u90e8API\u547c\u3073\u51fa\u3057\u306fClient\u30af\u30e9\u30b9\u306b\u307e\u3068\u3081\u3001\u30bf\u30a4\u30e0\u30a2\u30a6\u30c8\u3084\u30ea\u30c8\u30e9\u30a4\u3082\u305d\u3053\u3067\u6271\u3044\u307e\u3059\u3002"
+    },
+    {
+      "rule": "sentence_end_repetition",
+      "line": 5,
+      "severity": "warn",
+      "message": "\u540c\u4e00\u6587\u672b\u300c\u307e\u3059\u300d\u304c3\u56de\u4ee5\u4e0a\u9023\u7d9a\u3057\u3066\u3044\u307e\u3059\u3002\u8aad\u307f\u306b\u304f\u304f\u306a\u3063\u3066\u3044\u306a\u3044\u304b\u78ba\u8a8d\u3057\u3001\u81ea\u7136\u306a\u8aac\u660e\u3084\u6587\u4f53\u306f\u4fdd\u3063\u3066\u304f\u3060\u3055\u3044\u3002",
+      "snippet": "\u4e00\u5ea6\u306b\u5168\u90e8\u3092\u76f4\u3059\u306e\u304c\u5927\u5909\u3067\u3042\u308c\u3070\u3001\u307e\u305a\u5916\u90e8API\u547c\u3073\u51fa\u3057\u306e\u5207\u308a\u51fa\u3057\u304b\u3089\u59cb\u3081\u3066\u3044\u305f\u3060\u3051\u308c\u3070\u3068\u601d\u3044\u307e\u3059\u3002"
+    }
+  ]
 }
