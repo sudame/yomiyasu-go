@@ -1,42 +1,39 @@
 {
-  "score": 80,
-  "is_clean": false,
+  "format": "yomiyasu-lint",
+  "format_version": 2,
+  "tool_version": "3.4.0",
+  "candidate_count": 1,
+  "counts": {
+    "error": 0,
+    "warn": 0,
+    "info": 1
+  },
+  "no_rule_findings": false,
+  "rule_penalty_score": 98,
+  "not_judged": [
+    "meaning_preservation",
+    "reader_comprehension"
+  ],
+  "context": {
+    "doc_type": null,
+    "reader": null,
+    "skipped_by_doc_type": {}
+  },
   "metrics": {
-    "char_count": 46,
+    "char_count": 441,
     "total_lines": 4,
-    "list_lines": 2,
-    "list_ratio": 0.5,
-    "bold_count": 1,
-    "bold_per_1000": 21.74
+    "list_lines": 0,
+    "list_ratio": 0.0,
+    "bold_count": 0,
+    "bold_per_1000": 0.0
   },
   "findings": [
     {
-      "rule": "sentence_end_repetition",
-      "line": 3,
-      "severity": "warn",
-      "message": "同一文末「です」が3回以上連続しています。読みにくくなっていないか確認し、自然な説明や文体は保ってください。",
-      "snippet": "次も大事です。"
-    },
-    {
-      "rule": "bold_not_rendered",
-      "line": 6,
-      "severity": "error",
-      "message": "太字の印（**）が記号に接していて、GitHub などでは太字にならず ** がそのまま表示されます。直し方: かっこの内側だけを太字にする。",
-      "snippet": "- **「強調」**です。 → - 「**強調**」です。"
-    },
-    {
-      "rule": "meta_filler",
-      "line": 3,
-      "severity": "warn",
-      "message": "前置フィラー「重要なのは」が検出されました。単なる前置きや不要な飾りであれば削り、本題から書いてください。ただし、「何が大事か」という評価や主張そのものを担っている場合は、述語に移すなどして意味を残してください。",
-      "snippet": "重要なのは、設計です。これは大事です。次も大事です。"
-    },
-    {
-      "rule": "trailing_colon",
+      "rule": "pause_comma",
       "line": 5,
-      "severity": "warn",
-      "message": "文末にコロン（：）があります。ラベルと値の対応などに必要か確認し、不要な前置きなら整理してください。",
-      "snippet": "- 項目："
+      "severity": "info",
+      "message": "\u77ed\u3044\u4e3b\u8a9e\u3084\u4e3b\u984c\u306e\u3059\u3050\u3042\u3068\u306b\u8aad\u70b9\u304c\u3042\u308a\u307e\u3059\uff08\u300cREST\u3067\u306f\u3001\u300d\uff09\u3002\u9593\u3092\u4f5c\u308b\u3060\u3051\u306e\u8aad\u70b9\u306fAI\u306e\u6587\u7ae0\u3089\u3057\u304f\u898b\u3048\u307e\u3059\u3002\u6b21\u306e\u3068\u304d\u306f\u8aad\u70b9\u3092\u6b8b\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u8aad\u70b9\u306e\u3059\u3050\u3042\u3068\u306b\u5225\u306e\u4e3b\u8a9e\u3084\u4e3b\u984c\u304c\u6765\u308b\u3068\u304d\u3001\u9577\u3044\u6761\u4ef6\u3084\u5834\u9762\u306e\u67a0\u3092\u533a\u5207\u308b\u3068\u304d\u3001\u8a9e\u3092\u4e26\u3079\u3066\u3044\u308b\u3068\u304d\u3001\u5916\u3059\u3068\u8a9e\u304c\u3064\u306a\u304c\u3063\u305f\u308a\u639b\u304b\u308a\u5148\u304c\u5909\u308f\u3063\u305f\u308a\u3059\u308b\u3068\u304d\u3067\u3059\u3002\u5c0f\u8aac\u3084\u968f\u7b46\u3067\u66f8\u304d\u624b\u304c\u9593\u3068\u3057\u3066\u7f6e\u3044\u305f\u8aad\u70b9\u3082\u6b8b\u3057\u3066\u304b\u307e\u3044\u307e\u305b\u3093\u3002\u305d\u308c\u4ee5\u5916\u306f\u8aad\u70b9\u3060\u3051\u3092\u5916\u3057\u3001\u8a9e\u9806\u3068\u8ff0\u8a9e\u306f\u5909\u3048\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002\u6587\u982d\u306e\u5834\u9762\u306e\u67a0\uff08\u300c\u3053\u306e\u8a18\u4e8b\u3067\u306f\u3001\u300d\u306a\u3069\uff09\u306e\u3042\u3068\u306e\u53e5\u304c\u9577\u304f\u3001\u8aad\u70b9\u3092\u5916\u3059\u3068\u533a\u5207\u308a\u304c\u898b\u3048\u306b\u304f\u304f\u306a\u308b\u306a\u3089\u6b8b\u3057\u3066\u304b\u307e\u3044\u307e\u305b\u3093\u3002",
+      "snippet": "REST\u3067\u306f\u3001HTTP\u30ad\u30e3\u30c3\u30b7\u30e5\u3084CDN\u3092\u305d\u306e\u307e\u307e\u4f7f\u3048\u3001\u30a8\u30f3\u30c9\u30dd\u30a4\u30f3\u30c8\u5358\u4f4d\u3067\u30a2\u30af\u30bb\u30b9\u5236\u5fa1\u3084\u76e3\u8996\u304c\u3067\u304d\u308b\u3002\u65e2\u5b58\u306e\u5916\u90e8\u9023\u643a\u5148\u3082REST\u3067\u63a5\u7d9a\u3057\u3066\u3044\u308b\u305f\u3081\u3001\u79fb\u884c\u30b3\u30b9\u30c8\u304c\u5c0f\u3055\u3044\u3002\u753b\u9762\u3054\u3068\u306b\u5fc5\u8981\u306a\u30c7\u30fc\u30bf\u304c\u7570\u306a\u308b\u5834\u5408\u306f\u3001BFF\u5c64\u3092\u8a2d\u3051\u308b\u304b\u3001\u30d5\u30a3\u30fc\u30eb\u30c9\u3092\u6307\u5b9a\u3059\u308b\u30d1\u30e9\u30e1\u30fc\u30bf\u3092\u7528\u610f\u3057\u3066\u5bfe\u5fdc\u3059\u308b\u3002"
     }
   ]
 }
