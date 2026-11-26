@@ -1,124 +1,39 @@
 {
- "markers": [
-  {
-   "kind": "可能",
-   "orig": 1,
-   "rewrite": 0,
-   "orig_hits": [
-    "できない"
-   ],
-   "rewrite_hits": []
+  "format": "yomiyasu-lint",
+  "format_version": 2,
+  "tool_version": "3.4.1",
+  "candidate_count": 1,
+  "counts": {
+    "error": 0,
+    "warn": 0,
+    "info": 1
   },
-  {
-   "kind": "つなぎ",
-   "orig": 0,
-   "rewrite": 1,
-   "orig_hits": [],
-   "rewrite_hits": [
-    "さらに"
-   ]
-  }
- ],
- "new_words": [
-  "システム",
-  "保持",
-  "管理者",
-  "設定",
-  "開発者"
- ],
- "lost_words": [
-  "データベースコネクションプール",
-  "占有",
-  "増加",
-  "枯渇",
-  "状態",
-  "発生",
-  "負荷実績",
-  "返却"
- ],
- "structure": [
-  "箇条書きを地の文にした。各項目の文末（指示・説明・評価）が元と同じか見る"
- ],
- "spans": [
-  {
-   "added": "保持",
-   "was": "長く占有",
-   "kinds": [],
-   "new_words": [
-    "保持"
-   ],
-   "where": "切った。実行時間の長いクエリが接続を［保持］し続けたため、後続のリクエストは接続"
-  },
-  {
-   "added": "システム管理者が",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "システム",
-    "管理者"
-   ],
-   "where": "にタイムアウトした。\n\n3. 対応\n［システム管理者が］接続上限を一時的に引き上げ、アプリケ"
-  },
-  {
-   "added": "開発者は、負荷の実績に基づいて",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "開発者"
-   ],
-   "where": "とを確認した。\n\n4. 再発防止策\n［開発者は、負荷の実績に基づいて］プールサイズと接続取得のタイムアウト"
-  },
-  {
-   "added": "システム管理者は",
-   "was": "\n",
-   "kinds": [],
-   "new_words": [
-    "システム",
-    "管理者"
-   ],
-   "where": "善し、必要なインデックスを追加する。［システム管理者は］接続使用率を監視し、閾値を超えた時点"
-  },
-  {
-   "added": "が届くように設定",
-   "was": "",
-   "kinds": [],
-   "new_words": [
-    "設定"
-   ],
-   "where": "用率を監視し、閾値を超えた時点で通知［が届くように設定］する。さらに負荷試験を定期的に実施し"
-  },
-  {
-   "added": "さらに",
-   "was": "\n",
-   "kinds": [
-    "つなぎ"
-   ],
-   "new_words": [],
-   "where": "えた時点で通知が届くように設定する。［さらに］負荷試験を定期的に実施し、オートスケ"
-  }
- ],
- "logic": [
-  {
-   "kind": "文頭の指示語",
-   "sentence": "この間、一部の利用者がサービスを利用できなかった。"
-  },
-  {
-   "kind": "文頭のつなぎ",
-   "sentence": "さらに負荷試験を定期的に実施し、オートスケールを導入する。"
-  }
- ],
- "bold": [],
- "endings": {
-  "stance": "説明",
-  "changes": [
-   {
-    "orig": "**件名：** 高負荷時のデータベースコネクションプール枯渇によるAPI 504エラーの発生",
-    "orig_kind": "体言止めなど",
-    "rewrite": "件名は、高負荷時にデータベースのコネクションプールの空きがなくなり、APIが504エラーを返した件である。",
-    "rewrite_kind": "常体"
-   }
+  "no_rule_findings": false,
+  "rule_penalty_score": 98,
+  "not_judged": [
+    "meaning_preservation",
+    "reader_comprehension"
   ],
-  "flags": [],
-  "orig_flags": []
- }
+  "context": {
+    "doc_type": null,
+    "reader": null,
+    "skipped_by_doc_type": {}
+  },
+  "metrics": {
+    "char_count": 451,
+    "total_lines": 4,
+    "list_lines": 0,
+    "list_ratio": 0.0,
+    "bold_count": 0,
+    "bold_per_1000": 0.0
+  },
+  "findings": [
+    {
+      "rule": "pause_comma",
+      "line": 1,
+      "severity": "info",
+      "message": "\u77ed\u3044\u4e3b\u8a9e\u3084\u4e3b\u984c\u306e\u3059\u3050\u3042\u3068\u306b\u8aad\u70b9\u304c\u3042\u308a\u307e\u3059\uff08\u300c\u3053\u306e\u30b5\u30fc\u30d3\u30b9\u5c64\u3067\u306f\u3001\u300d\uff09\u3002\u9593\u3092\u4f5c\u308b\u3060\u3051\u306e\u8aad\u70b9\u306fAI\u306e\u6587\u7ae0\u3089\u3057\u304f\u898b\u3048\u307e\u3059\u3002\u6b21\u306e\u3068\u304d\u306f\u8aad\u70b9\u3092\u6b8b\u3057\u3066\u304f\u3060\u3055\u3044\u3002\u8aad\u70b9\u306e\u3059\u3050\u3042\u3068\u306b\u5225\u306e\u4e3b\u8a9e\u3084\u4e3b\u984c\u304c\u6765\u308b\u3068\u304d\u3001\u9577\u3044\u6761\u4ef6\u3084\u5834\u9762\u306e\u67a0\u3092\u533a\u5207\u308b\u3068\u304d\u3001\u8a9e\u3092\u4e26\u3079\u3066\u3044\u308b\u3068\u304d\u3001\u5916\u3059\u3068\u8a9e\u304c\u3064\u306a\u304c\u3063\u305f\u308a\u639b\u304b\u308a\u5148\u304c\u5909\u308f\u3063\u305f\u308a\u3059\u308b\u3068\u304d\u3067\u3059\u3002\u5c0f\u8aac\u3084\u968f\u7b46\u3067\u66f8\u304d\u624b\u304c\u9593\u3068\u3057\u3066\u7f6e\u3044\u305f\u8aad\u70b9\u3082\u6b8b\u3057\u3066\u304b\u307e\u3044\u307e\u305b\u3093\u3002\u305d\u308c\u4ee5\u5916\u306f\u8aad\u70b9\u3060\u3051\u3092\u5916\u3057\u3001\u8a9e\u9806\u3068\u8ff0\u8a9e\u306f\u5909\u3048\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002",
+      "snippet": "\u3053\u306e\u30b5\u30fc\u30d3\u30b9\u5c64\u3067\u306f\u3001DB\u30a2\u30af\u30bb\u30b9\u3001\u5916\u90e8API\u547c\u3073\u51fa\u3057\u3001\u30d3\u30b8\u30cd\u30b9\u30ed\u30b8\u30c3\u30af\u30921\u3064\u306e\u30e1\u30bd\u30c3\u30c9\u306b\u307e\u3068\u3081\u3066\u66f8\u3044\u3066\u3044\u307e\u3059\u3002\u3053\u308c\u3089\u306e\u8cac\u52d9\u3092\u5206\u3051\u308b\u3053\u3068\u3092\u63d0\u6848\u3057\u307e\u3059\u3002"
+    }
+  ]
 }
